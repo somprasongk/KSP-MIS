@@ -2133,7 +2133,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63878</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/KSP-BI</IISUrl>
+          <IISUrl>http://localhost/KSP-MIS</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
