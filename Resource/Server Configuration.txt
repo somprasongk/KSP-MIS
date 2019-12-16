@@ -6,11 +6,26 @@ Gateway : 203.159.252.2
 	Pass : 1qaz@WSX
 	User : somprasong
 	Pass : 1qaz@WSX
--------------- App Server ------------------
+-------------- App Server (Remote) ------------------
 Remote Desktop : 192.168.40.132
 User : tittech
 Pass : 1qaz@WSX
--------------- Database Server ------------------
-Remote Desktop : 192.168.40.132
+-------------- Database Server (Remote) -------------
+Remote Desktop : 192.168.40.133
 User : tittech
 Pass : 1qaz@WSX
+-------------- SQLServer Login (SA) ------------------
+Server : 192.168.40.133
+User : sa
+Pass : 1qaz@WSX
+-------------- SQLServer Login KSP-TEPIS ------------------
+Server : 192.168.40.133
+Database : KSP-TEPIS
+User : tepis
+Pass : tepis2019
+-------------- SQLServer Login KSP-FINANCE ------------------
+Server : 192.168.40.133
+Database : KSP-FINANCE
+User : finance
+Pass : finance2019
+
