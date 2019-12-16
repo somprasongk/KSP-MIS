@@ -2,8 +2,10 @@
 Gateway : 203.159.252.2
 	User : sathit
 	Pass : 1qaz@WSX
+	
 	User : thanyalak
 	Pass : 1qaz@WSX
+	
 	User : somprasong
 	Pass : 1qaz@WSX
 -------------- App Server (Remote) ------------------
