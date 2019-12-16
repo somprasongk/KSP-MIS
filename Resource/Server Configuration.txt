@@ -1,0 +1,16 @@
+----------------FortiClient------------------
+Gateway : 203.159.252.2
+	User : sathit
+	Pass : 1qaz@WSX
+	User : thanyalak
+	Pass : 1qaz@WSX
+	User : somprasong
+	Pass : 1qaz@WSX
+-------------- App Server ------------------
+Remote Desktop : 192.168.40.132
+User : tittech
+Pass : 1qaz@WSX
+-------------- Database Server ------------------
+Remote Desktop : 192.168.40.132
+User : tittech
+Pass : 1qaz@WSX
