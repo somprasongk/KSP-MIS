@@ -1,0 +1,93 @@
+﻿.kt-aside, .kt-aside-menu {
+    background: #ccc;
+}/*เมนูด้านซ้าย*/
+.kt-aside-menu .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__link-text {
+    color: #3a3a5d;
+    font-size: 1.1rem;
+}/*เมนูด้านซ้าย*/
+.kt-aside-menu .kt-menu__nav > .kt-menu__item .kt-menu__submenu .kt-menu__item > .kt-menu__link .kt-menu__link-text {
+    color: #3a3a5d;
+    font-size: 1.1rem;
+}/*เมนูด้านซ้าย*/
+.kt-header-menu .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__link-text {
+    font-size: 1.2rem;
+}/*เมนูด้านบน*/
+.kt-header-menu-mobile .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__link-text {
+    font-size: 1.2rem;
+}/*เมนูด้านบน*/
+.kt-aside-menu .kt-menu__nav > .kt-menu__section .kt-menu__section-text {
+    font-size: 1.1rem;
+}/*เมนูด้านซ้าย*/
+
+
+
+/* Change Left Menu Size to 450px*/
+
+.kt-iconbox--wave:after {
+    left: -450px;
+}
+.kt-iconbox--animate:after {
+    left: -450px;
+}
+.kt-iconbox--animate-slower:after {
+    left: -450px;
+}
+.kt-iconbox--animate-fast:after {
+    left: -450px;
+}
+.kt-iconbox--animate-faster:after {
+    left: -450px;
+}
+@media (min-width: 1025px) {
+
+    .kt-aside--fixed .kt-wrapper {
+        padding-left: 450px;
+    }
+    .kt-aside--enabled.kt-subheader--fixed .kt-subheader {
+        left: 450px;
+    }
+
+    .kt-aside--enabled .kt-header.kt-header--fixed {
+        left: 450px;
+    }
+    .kt-aside--enabled .kt-header.kt-header--fixed {
+        left: 450px;
+    }
+    .kt-header--fixed.kt-aside--static .kt-aside__brand {
+        width: 450px;
+    }
+    .kt-aside {
+        width: 450px;
+    }
+
+    .kt-aside--minimizing .kt-aside .kt-aside-menu .kt-menu__nav {
+      width: 450px;
+    }
+    .kt-aside--minimize .kt-header.kt-header--fixed {
+        left: 78px;
+    }
+
+    .kt-aside--fixed.kt-aside--minimize-hover .kt-aside {
+        width: 450px;
+    }
+    .kt-aside-menu.kt-aside-menu--dropdown .kt-menu__nav > .kt-menu__item:not([data-ktmenu-submenu-mode=accordion]).kt-menu__item--hover > .kt-menu__submenu {
+        margin-left: 450px;
+    }
+    .kt-footer--fixed .kt-footer {
+        left: 450px;
+    }
+
+
+}
+
+
+
+@media (max-width: 1024px) {
+    .kt-aside {
+        width: 450px !important;
+        left: -450px;
+    }
+    .kt-aside--on .kt-aside-close {
+        left: 420px;
+    }
+}
