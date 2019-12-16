@@ -1,5 +1,5 @@
 ﻿.kt-aside, .kt-aside-menu {
-    background: #ccc;
+    background: #ddd;
 }/*เมนูด้านซ้าย*/
 .kt-aside-menu .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__link-text {
     color: #3a3a5d;
@@ -89,5 +89,9 @@
     }
     .kt-aside--on .kt-aside-close {
         left: 420px;
+    }
+
+    #kt_header_mobile_toggler {
+        display:none;
     }
 }
