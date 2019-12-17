@@ -88,6 +88,11 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ASS-01.aspx" />
+    <Content Include="ASS-02.aspx" />
+    <Content Include="ASS-03.aspx" />
+    <Content Include="ASS-04.aspx" />
+    <Content Include="ASS-05.aspx" />
     <Content Include="assets\css\extent.css" />
     <Content Include="assets\css\pages\error\error-1.css" />
     <Content Include="assets\css\pages\error\error-1.js" />
@@ -1791,17 +1796,394 @@
     <Content Include="assets\plugins\mapplic\mapplic-ie.css" />
     <Content Include="assets\plugins\mapplic\mapplic.css" />
     <Content Include="assets\plugins\mapplic\mapplic.js" />
+    <Content Include="BDG-01.aspx" />
+    <Content Include="BDG-02.aspx" />
+    <Content Include="BDG-03.aspx" />
+    <Content Include="BDG-04.aspx" />
+    <Content Include="BDG-05.aspx" />
+    <Content Include="BDG-06.aspx" />
+    <Content Include="BDG-07.aspx" />
+    <Content Include="BDG-08.aspx" />
+    <Content Include="BDG-09.aspx" />
+    <Content Include="BDG-10.aspx" />
+    <Content Include="BDG-11.aspx" />
+    <Content Include="BDG-12.aspx" />
+    <Content Include="BDG-13.aspx" />
+    <Content Include="BDG-14.aspx" />
+    <Content Include="BDG-15.aspx" />
+    <Content Include="QuickPanel.html" />
+    <Content Include="ETH-01.aspx" />
+    <Content Include="ETH-02.aspx" />
+    <Content Include="ETH-03.aspx" />
+    <Content Include="HR-01.aspx" />
+    <Content Include="HR-02.aspx" />
+    <Content Include="HR-03.aspx" />
+    <Content Include="HR-04.aspx" />
+    <Content Include="HR-05.aspx" />
+    <Content Include="HR-06.aspx" />
+    <Content Include="HR-07.aspx" />
+    <Content Include="HR-08.aspx" />
     <Content Include="LIC-01.aspx" />
+    <Content Include="LIC-02.aspx" />
+    <Content Include="LIC-03.aspx" />
+    <Content Include="LIC-04.aspx" />
+    <Content Include="LIC-05.aspx" />
+    <Content Include="LIC-06.aspx" />
+    <Content Include="LIC-07.aspx" />
+    <Content Include="LIC-08.aspx" />
+    <Content Include="LIC-09.aspx" />
+    <Content Include="LIC-10.aspx" />
+    <Content Include="LIC-11.aspx" />
+    <Content Include="LIC-12.aspx" />
+    <Content Include="LIC-13.aspx" />
+    <Content Include="LIC-14.aspx" />
+    <Content Include="LIC-15.aspx" />
+    <Content Include="LIC-16.aspx" />
+    <Content Include="LIC-17.aspx" />
+    <Content Include="STD-01.aspx" />
+    <Content Include="STD-02.aspx" />
+    <Content Include="STD-03.aspx" />
+    <Content Include="uc_Breadcrumb.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\BusinessLogin.vb" />
     <Compile Include="App_Code\CommonResponse.vb" />
     <Compile Include="App_Code\Converter.vb" />
+    <Compile Include="ASS-01.aspx.designer.vb">
+      <DependentUpon>ASS-01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASS-01.aspx.vb">
+      <DependentUpon>ASS-01.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ASS-02.aspx.designer.vb">
+      <DependentUpon>ASS-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASS-02.aspx.vb">
+      <DependentUpon>ASS-02.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ASS-03.aspx.designer.vb">
+      <DependentUpon>ASS-03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASS-03.aspx.vb">
+      <DependentUpon>ASS-03.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ASS-04.aspx.designer.vb">
+      <DependentUpon>ASS-04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASS-04.aspx.vb">
+      <DependentUpon>ASS-04.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ASS-05.aspx.designer.vb">
+      <DependentUpon>ASS-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASS-05.aspx.vb">
+      <DependentUpon>ASS-05.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-01.aspx.designer.vb">
+      <DependentUpon>BDG-01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-01.aspx.vb">
+      <DependentUpon>BDG-01.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-02.aspx.designer.vb">
+      <DependentUpon>BDG-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-02.aspx.vb">
+      <DependentUpon>BDG-02.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-03.aspx.designer.vb">
+      <DependentUpon>BDG-03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-03.aspx.vb">
+      <DependentUpon>BDG-03.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-04.aspx.designer.vb">
+      <DependentUpon>BDG-04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-04.aspx.vb">
+      <DependentUpon>BDG-04.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-05.aspx.designer.vb">
+      <DependentUpon>BDG-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-05.aspx.vb">
+      <DependentUpon>BDG-05.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-06.aspx.designer.vb">
+      <DependentUpon>BDG-06.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-06.aspx.vb">
+      <DependentUpon>BDG-06.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-07.aspx.designer.vb">
+      <DependentUpon>BDG-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-07.aspx.vb">
+      <DependentUpon>BDG-07.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-08.aspx.designer.vb">
+      <DependentUpon>BDG-08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-08.aspx.vb">
+      <DependentUpon>BDG-08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-09.aspx.designer.vb">
+      <DependentUpon>BDG-09.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-09.aspx.vb">
+      <DependentUpon>BDG-09.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-10.aspx.designer.vb">
+      <DependentUpon>BDG-10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-10.aspx.vb">
+      <DependentUpon>BDG-10.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-11.aspx.designer.vb">
+      <DependentUpon>BDG-11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-11.aspx.vb">
+      <DependentUpon>BDG-11.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-12.aspx.designer.vb">
+      <DependentUpon>BDG-12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-12.aspx.vb">
+      <DependentUpon>BDG-12.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-13.aspx.designer.vb">
+      <DependentUpon>BDG-13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-13.aspx.vb">
+      <DependentUpon>BDG-13.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-14.aspx.designer.vb">
+      <DependentUpon>BDG-14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-14.aspx.vb">
+      <DependentUpon>BDG-14.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BDG-15.aspx.designer.vb">
+      <DependentUpon>BDG-15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDG-15.aspx.vb">
+      <DependentUpon>BDG-15.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ETH-01.aspx.designer.vb">
+      <DependentUpon>ETH-01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETH-01.aspx.vb">
+      <DependentUpon>ETH-01.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ETH-02.aspx.designer.vb">
+      <DependentUpon>ETH-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETH-02.aspx.vb">
+      <DependentUpon>ETH-02.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ETH-03.aspx.designer.vb">
+      <DependentUpon>ETH-03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETH-03.aspx.vb">
+      <DependentUpon>ETH-03.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HR-01.aspx.designer.vb">
+      <DependentUpon>HR-01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR-01.aspx.vb">
+      <DependentUpon>HR-01.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HR-02.aspx.designer.vb">
+      <DependentUpon>HR-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR-02.aspx.vb">
+      <DependentUpon>HR-02.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HR-03.aspx.designer.vb">
+      <DependentUpon>HR-03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR-03.aspx.vb">
+      <DependentUpon>HR-03.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HR-04.aspx.designer.vb">
+      <DependentUpon>HR-04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR-04.aspx.vb">
+      <DependentUpon>HR-04.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HR-05.aspx.designer.vb">
+      <DependentUpon>HR-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR-05.aspx.vb">
+      <DependentUpon>HR-05.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HR-06.aspx.designer.vb">
+      <DependentUpon>HR-06.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR-06.aspx.vb">
+      <DependentUpon>HR-06.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HR-07.aspx.designer.vb">
+      <DependentUpon>HR-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR-07.aspx.vb">
+      <DependentUpon>HR-07.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HR-08.aspx.designer.vb">
+      <DependentUpon>HR-08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR-08.aspx.vb">
+      <DependentUpon>HR-08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="LIC-01.aspx.designer.vb">
       <DependentUpon>LIC-01.aspx</DependentUpon>
     </Compile>
     <Compile Include="LIC-01.aspx.vb">
       <DependentUpon>LIC-01.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-02.aspx.designer.vb">
+      <DependentUpon>LIC-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-02.aspx.vb">
+      <DependentUpon>LIC-02.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-03.aspx.designer.vb">
+      <DependentUpon>LIC-03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-03.aspx.vb">
+      <DependentUpon>LIC-03.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-04.aspx.designer.vb">
+      <DependentUpon>LIC-04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-04.aspx.vb">
+      <DependentUpon>LIC-04.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-05.aspx.designer.vb">
+      <DependentUpon>LIC-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-05.aspx.vb">
+      <DependentUpon>LIC-05.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-06.aspx.designer.vb">
+      <DependentUpon>LIC-06.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-06.aspx.vb">
+      <DependentUpon>LIC-06.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-07.aspx.designer.vb">
+      <DependentUpon>LIC-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-07.aspx.vb">
+      <DependentUpon>LIC-07.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-08.aspx.designer.vb">
+      <DependentUpon>LIC-08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-08.aspx.vb">
+      <DependentUpon>LIC-08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-09.aspx.designer.vb">
+      <DependentUpon>LIC-09.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-09.aspx.vb">
+      <DependentUpon>LIC-09.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-10.aspx.designer.vb">
+      <DependentUpon>LIC-10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-10.aspx.vb">
+      <DependentUpon>LIC-10.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-11.aspx.designer.vb">
+      <DependentUpon>LIC-11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-11.aspx.vb">
+      <DependentUpon>LIC-11.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-12.aspx.designer.vb">
+      <DependentUpon>LIC-12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-12.aspx.vb">
+      <DependentUpon>LIC-12.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-13.aspx.designer.vb">
+      <DependentUpon>LIC-13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-13.aspx.vb">
+      <DependentUpon>LIC-13.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-14.aspx.designer.vb">
+      <DependentUpon>LIC-14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-14.aspx.vb">
+      <DependentUpon>LIC-14.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-15.aspx.designer.vb">
+      <DependentUpon>LIC-15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-15.aspx.vb">
+      <DependentUpon>LIC-15.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-16.aspx.designer.vb">
+      <DependentUpon>LIC-16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-16.aspx.vb">
+      <DependentUpon>LIC-16.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-17.aspx.designer.vb">
+      <DependentUpon>LIC-17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-17.aspx.vb">
+      <DependentUpon>LIC-17.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="MasterPage.Master.designer.vb">
@@ -1830,6 +2212,34 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="STD-01.aspx.designer.vb">
+      <DependentUpon>STD-01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STD-01.aspx.vb">
+      <DependentUpon>STD-01.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STD-02.aspx.designer.vb">
+      <DependentUpon>STD-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STD-02.aspx.vb">
+      <DependentUpon>STD-02.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STD-03.aspx.designer.vb">
+      <DependentUpon>STD-03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STD-03.aspx.vb">
+      <DependentUpon>STD-03.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="uc_Breadcrumb.ascx.designer.vb">
+      <DependentUpon>uc_Breadcrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Breadcrumb.ascx.vb">
+      <DependentUpon>uc_Breadcrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
