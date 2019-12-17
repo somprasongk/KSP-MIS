@@ -1,0 +1,925 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb" Inherits="KSP_MIS.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8" />
+		<title>MIS สำนักเลขาธิการคุรุสภา | ภาพรวม</title>
+		<meta name="description" content="Page with empty content">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!--begin::Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
+
+		<!--end::Fonts -->
+
+		<!--begin::Page Vendors Styles(used by this page) -->
+		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Page Vendors Styles -->
+
+		<!--begin::Global Theme Styles(used by all pages) -->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Global Theme Styles -->
+
+		<!--begin::Layout Skins(used by all pages) -->
+		<link href="assets/css/extent.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Layout Skins -->
+		<link rel="shortcut icon" href="assets/media/icons/icon.ico" />
+
+		<asp:ContentPlaceHolder ID="HeaderCss" runat="server"></asp:ContentPlaceHolder>
+
+	</head>
+
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading">
+
+		<!-- begin:: Page -->
+
+		<!-- begin:: Header Mobile -->
+		<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+			<div class="kt-header-mobile__logo">
+				<a href="javascript:;">
+					<img alt="Logo" src="assets/media/logos/logo.png" />
+				</a>
+			</div>
+			<div class="kt-header-mobile__toolbar">
+				<button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+				<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>
+				<button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+			</div>
+		</div>
+
+		<!-- end:: Header Mobile -->
+		<div class="kt-grid kt-grid--hor kt-grid--root">
+			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+
+				<!-- begin:: Aside -->
+				<button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+				<div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+
+					<!-- begin:: Aside -->
+					<div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
+						<div class="kt-aside__brand-logo">
+							<a href="javascript:;">
+								<img alt="Logo" src="assets/media/logos/logo.png">
+							</a>
+						</div>
+						<div class="kt-aside__brand-tools">
+							<button class="kt-aside__brand-aside-toggler" id="kt_aside_toggler"><span></span></button>
+						</div>
+					</div>
+
+					<!-- end:: Aside -->
+
+					<!-- begin:: Aside Menu -->
+					<div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+
+						<div id="kt_aside_menu" class="kt-aside-menu " data-ktmenu-vertical="1" data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+							<ul class="kt-menu__nav ">
+								<li class="kt-menu__item " aria-haspopup="true">
+									<a href="javascript:;" class="kt-menu__link ">
+										<i class="kt-menu__link-icon fa flaticon2-pie-chart-1"></i><span class="kt-menu__link-text">ภาพรวม</span>
+									</a>
+								</li>
+								<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+									<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+										<i class="kt-menu__link-icon fa fa-user-check"></i>
+										<span class="kt-menu__link-text">ใบอนุญาตประกอบวิชาชีพ</span>
+										<i class="kt-menu__ver-arrow la la-angle-right"></i>
+									</a>
+									<div class="kt-menu__submenu ">
+										<span class="kt-menu__arrow"></span>
+										<ul class="kt-menu__subnav">
+											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+													<i class="kt-menu__link-icon fa fa-user-friends"></i>
+													<span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาต</span>
+													<i class="kt-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<div class="kt-menu__submenu ">
+													<span class="kt-menu__arrow"></span>
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-01.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามประเภทคำขอ</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-04.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามประเภทคำขอ รายปี</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-12.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามประเภทวิชาชีพ รายปี</span>
+															</a>
+														</li>
+
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-02.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามสังกัด</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-03.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามสังกัด รายปี</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-11.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามสังกัด รายเดือน</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-09.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามสังกัด และประเภทวิชาชีพ รายปี</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-10.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามสังกัดถานศึกษา และประเภทวิชาชีพ รายปี</span>
+															</a>
+														</li>
+
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-05.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามสังกัด และช่วงอายุ</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-06.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามวุฒิ และประเภทวิชาชีพ</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-08.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามวุฒิการศึกษา ในแต่ละปี</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-07.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามสังกัด ประเภทวิชาชีพ และเพศ</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+													<i class="kt-menu__link-icon fa fa-copy"></i>
+													<span class="kt-menu__link-text">จำนวนเอกสาร</span>
+													<i class="kt-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<div class="kt-menu__submenu ">
+													<span class="kt-menu__arrow"></span>
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-14.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">เอกสารเข้า ตามประเภทเอกสาร</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-13.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">เอกสารออก ตามประเภทเอกสาร</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-15.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">การออกใบแทนใบอนุญาต และสาเหตุการออกใบแทน</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+													<i class="kt-menu__link-icon flaticon2-world"></i>
+													<span class="kt-menu__link-text">สรุปจำนวนบุคคลากรต่างประเทศ</span>
+													<i class="kt-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<div class="kt-menu__submenu ">
+													<span class="kt-menu__arrow"></span>
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-16.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">10 อันดับประเทศที่ได้รับใบอนุญาตตามประเภทคำขอ</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-17.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">จำนวนชาวต่างประเทศที่ได้รับอนุญาต ตามช่วงเวลา</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+									<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+										<i class="kt-menu__link-icon fa fa-medal"></i>
+										<span class="kt-menu__link-text">มาตรฐานวิชาชีพครู</span>
+										<i class="kt-menu__ver-arrow la la-angle-right"></i>
+									</a>
+									<div class="kt-menu__submenu ">
+										<span class="kt-menu__arrow"></span>
+										<ul class="kt-menu__subnav">
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="STD-01.aspx" class="kt-menu__link ">
+													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+													<span class="kt-menu__link-text">จำนวนผู้ฝึกอบรม</span>
+												</a>
+											</li>
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="STD-02.aspx" class="kt-menu__link ">
+													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+													<span class="kt-menu__link-text">ผู้ขอรับรองมาตรฐานวิชาชีพ</span>
+												</a>
+											</li>
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="STD-03.aspx" class="kt-menu__link ">
+													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+													<span class="kt-menu__link-text">หลักสูตรที่ได้รับการรับรองตามต้นสังกัด</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+									<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+										<i class="kt-menu__link-icon fa fa-balance-scale"></i>
+										<span class="kt-menu__link-text">จรรยาบรรณวิชาชีพครู</span>
+										<i class="kt-menu__ver-arrow la la-angle-right"></i>
+									</a>
+									<div class="kt-menu__submenu ">
+										<span class="kt-menu__arrow"></span>
+										<ul class="kt-menu__subnav">
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="ETH-01.aspx" class="kt-menu__link ">
+													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+													<span class="kt-menu__link-text">คดีจรรยาบรรณทุกสังกัดตามประเภทความผิด</span>
+												</a>
+											</li>
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="ETH-02.aspx" class="kt-menu__link ">
+													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+													<span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณแยกตามสังกัด</span>
+												</a>
+											</li>
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="ETH-03.aspx" class="kt-menu__link ">
+													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+													<span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณสังกัดกรุงเทพมหานคร</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+									<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+										<i class="kt-menu__link-icon fab fa-black-tie"></i>
+										<span class="kt-menu__link-text">งานบริหารงานบุคคล</span>
+										<i class="kt-menu__ver-arrow la la-angle-right"></i>
+									</a>
+									<div class="kt-menu__submenu ">
+										<span class="kt-menu__arrow"></span>
+										<ul class="kt-menu__subnav">
+
+											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+													<i class="kt-menu__link-icon fa fa-user-friends"></i>
+													<span class="kt-menu__link-text">จำนวนบุคคลากร</span>
+													<i class="kt-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<div class="kt-menu__submenu ">
+													<span class="kt-menu__arrow"></span>
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="HR-01.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามสายงาน</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="HR-08.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามระดับความชำนาญ</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+													<i class="kt-menu__link-icon fa fa-hand-holding-usd"></i>
+													<span class="kt-menu__link-text">เงินค่าตอบแทน</span>
+													<i class="kt-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<div class="kt-menu__submenu ">
+													<span class="kt-menu__arrow"></span>
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="HR-02.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">เงินรายได้รายเดือน และเงินตอบแทนอื่นๆ</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="HR-03.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">เงินเดือนย้อนหลัง 60 เดือน</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="HR-04.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">รายชื่อและยอดรวมเงินหักสะสม กบจ.</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+													<i class="kt-menu__link-icon flaticon2-chart"></i>
+													<span class="kt-menu__link-text">การพัฒนาทรัพยากรบุคคล</span>
+													<i class="kt-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<div class="kt-menu__submenu ">
+													<span class="kt-menu__arrow"></span>
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="HR-05.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">กิจกรรมการพัฒนาบุคคลากรตามประเภท</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="HR-06.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ผู้มีคุณสมบัติคัดเลือกในกลุ่มบริหาร เพื่อเลื่อนวิทยฐานะ</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="HR-07.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">การขอพระราชทานเครื่องราชอิสริยาภรณ์</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+
+										</ul>
+									</div>
+								</li>
+
+								<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+									<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+										<i class="kt-menu__link-icon fa fa-chart-pie"></i>
+										<span class="kt-menu__link-text">การบริหารงบประมาณ</span>
+										<i class="kt-menu__ver-arrow la la-angle-right"></i>
+									</a>
+									<div class="kt-menu__submenu ">
+										<span class="kt-menu__arrow"></span>
+										<ul class="kt-menu__subnav">
+											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+													<i class="kt-menu__link-icon fa fa-check-circle"></i>
+													<span class="kt-menu__link-text">งบดุลย์และการประเมินผล</span>
+													<i class="kt-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<div class="kt-menu__submenu ">
+													<span class="kt-menu__arrow"></span>
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-01.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">สรุปข้อมูลงบประมาณประจำปี</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-11.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">สรุปฐานะทางการเงิน</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-12.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">สรุปผลการดำเนินงานทางการเงิน</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-14.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ฐานะเงินงบประมาณรายจ่ายปีปัจจุบันและปีก่อน</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-13.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ผลตัวชี้วัดตามปีงบประมาณ</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+													<i class="kt-menu__link-icon fa fa-sign-out-alt"></i>
+													<span class="kt-menu__link-text">งบประมาณรายจ่ายประจำปี</span>
+													<i class="kt-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<div class="kt-menu__submenu ">
+													<span class="kt-menu__arrow"></span>
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-02.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามพันธกิจ/งาน/โครงการ/งบรายจ่าย</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-15.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามพันธกิจ/งบรายจ่าย</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-08.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามส่วนงาน/งบรายจ่าย</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-09.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ตามพันธกิจ/ไตรมาส</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-03.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">เปรียบเทียบงบระหว่างปีตามแผนงาน</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-04.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">เปรียบเทียบงบระหว่างปีตามส่วนงาน</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-05.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">งบประมาณกันเหลื่อมปี</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-06.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ทะเบียนคุมสัญญายืมเงินทดรองจ่าย</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="BDG-07.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">การจัดซื้อจัดจ้างประจำปี</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="javascript:;" class="kt-menu__link ">
+													<i class="kt-menu__link-icon fa fa-sign-in-alt"></i>
+													<span class="kt-menu__link-text">ประมาณการรายรับประจำปี ตามไตรมาสก์</span>
+												</a>
+											</li>
+											<li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+													<i class="kt-menu__link-icon fa fa-dice-d6"></i>
+													<span class="kt-menu__link-text">การบริหารทรัพยากร</span>
+													<i class="kt-menu__ver-arrow la la-angle-right"></i>
+												</a>
+												<div class="kt-menu__submenu ">
+													<span class="kt-menu__arrow"></span>
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="ASS-01.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ทะเบียนคุมพัสดุครุภัณฑ์</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="ASS-02.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">วัสดุคงเหลือแยกประเภท</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="ASS-03.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">การเบิกจ่ายวัสดุ</span>
+															</a>
+														</li>
+
+														<li class="kt-menu__item" aria-haspopup="true">
+															<a href="ASS-04.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">การขอใช้ห้องประชุม</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="ASS-05.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">การแจ้งงานบริการอาคารสถานที่</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>							
+
+							</ul>
+						</div>
+					</div>
+
+					<!-- end:: Aside Menu -->
+				</div>
+
+				<!-- end:: Aside -->
+				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+
+					<!-- begin:: Header -->
+					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+
+
+						<!-- begin: Header Menu -->
+						<button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+						<div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+							<div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-default ">
+								<ul class="kt-menu__nav ">
+									<li class="kt-menu__item " aria-haspopup="true"><a href="javascript:;" class="kt-menu__link "><span class="kt-menu__link-text">ภาพรวม</span></a></li>
+									<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+										<a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">รายงาน</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+										<div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1500px;">
+											<div class="kt-menu__subnav">
+												<ul class="kt-menu__content">
+
+													<li class="kt-menu__item ">
+														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-user-check"></i> <span class="kt-menu__link-text">ใบอนุญาตประกอบวิชาชีพ</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+														<ul class="kt-menu__inner">
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามประเภทคำขอ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-04.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามประเภทคำขอ รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-12.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามประเภทวิชาชีพ รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-11.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด รายเดือน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-09.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด และประเภทวิชาชีพ รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-10.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัดถานศึกษา และประเภทวิชาชีพ รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-05.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด และช่วงอายุ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-06.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามวุฒิ และประเภทวิชาชีพ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-08.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามวุฒิการศึกษา ในแต่ละปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-07.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด ประเภทวิชาชีพ และเพศ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-14.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเอกสารเอกสารเข้า ตามประเภทเอกสาร</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-13.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเอกสารเอกสารออก ตามประเภทเอกสาร</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-15.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเอกสารการออกใบแทนใบอนุญาต และสาเหตุการออกใบแทน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-16.asxp" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">10 อันดับประเทศที่ได้รับใบอนุญาตตามประเภทคำขอ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-17.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนชาวต่างประเทศที่ได้รับอนุญาต ตามช่วงเวลา</span></a></li>
+														</ul>
+
+
+													</li>
+													<li class="kt-menu__item ">
+														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-medal"></i> <span class="kt-menu__link-text">มาตรฐานวิชาชีพครู</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+														<ul class="kt-menu__inner">
+															<li class="kt-menu__item " aria-haspopup="true"><a href="STD-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ฝึกอบรม</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="STD-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ผู้ขอรับรองมาตรฐานวิชาชีพ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="STD-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">หลักสูตรที่ได้รับการรับรองตามต้นสังกัด</span></a></li>
+														</ul>
+
+														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-balance-scale"></i> <span class="kt-menu__link-text">จรรยาบรรณวิชาชีพครู</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+														<ul class="kt-menu__inner">
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ETH-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">คดีจรรยาบรรณทุกสังกัดตามประเภทความผิด</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ETH-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณแยกตามสังกัด</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ETH-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณสังกัดกรุงเทพมหานคร</span></a></li>
+														</ul>
+
+														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fab fa-black-tie"></i> <span class="kt-menu__link-text">งานบริหารงานบุคคล</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+														<ul class="kt-menu__inner">
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนบุคคลากรตามสายงาน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-08.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนบุคคลากรตามระดับความชำนาญ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">เงินรายได้รายเดือน และเงินตอบแทนอื่นๆ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">เงินเดือนย้อนหลัง 60 เดือน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-04.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">รายชื่อและยอดรวมเงินหักสะสม กบจ.</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-05.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">กิจกรรมการพัฒนาบุคคลากรตามประเภท</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-06.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ผู้มีคุณสมบัติคัดเลือกในกลุ่มบริหาร เพื่อเลื่อนวิทยฐานะ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-07.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">การขอพระราชทานเครื่องราชอิสริยาภรณ์</span></a></li>
+														</ul>
+
+													</li>
+													<li class="kt-menu__item ">
+														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-chart-pie"></i> <span class="kt-menu__link-text">การบริหารงบประมาณ</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+														<ul class="kt-menu__inner">
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">สรุปข้อมูลงบประมาณประจำปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-11.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">สรุปฐานะทางการเงิน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-12.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">สรุปผลการดำเนินงานทางการเงิน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-14.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ฐานะเงินงบประมาณรายจ่ายปีปัจจุบันและปีก่อน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-13.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ผลตัวชี้วัดตามปีงบประมาณ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">งบประมาณรายจ่ายประจำปีตามพันธกิจ/งาน/โครงการ/งบรายจ่าย</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-15.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">งบประมาณรายจ่ายประจำปีตามพันธกิจ/งบรายจ่าย</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-08.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">งบประมาณรายจ่ายประจำปีตามส่วนงาน/งบรายจ่าย</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-09.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">งบประมาณรายจ่ายประจำปีตามพันธกิจ/ไตรมาส</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">เปรียบเทียบงบระหว่างปีตามแผนงาน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-04.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">เปรียบเทียบงบระหว่างปีตามส่วนงาน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-05.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">งบประมาณกันเหลื่อมปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-06.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ทะเบียนคุมสัญญายืมเงินทดรองจ่าย</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-07.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">การจัดซื้อจัดจ้างประจำปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="BDG-10.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ประมาณการรายรับประจำปี ตามไตรมาสก์</span></a></li>
+
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ASS-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ทะเบียนคุมพัสดุครุภัณฑ์</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ASS-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">วัสดุคงเหลือแยกประเภท</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ASS-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">การเบิกจ่ายวัสดุ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ASS-04.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">การขอใช้ห้องประชุม</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ASS-05.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">การแจ้งงานบริการอาคารสถานที่</span></a></li>
+
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+
+								</ul>
+
+							</div>
+						</div>
+
+						<!-- end: Header Menu -->
+						<!-- begin:: Header Topbar -->
+						<div class="kt-header__topbar">
+
+							<!--begin: Search -->
+							<div class="kt-header__topbar-item kt-header__topbar-item--search dropdown" id="kt_quick_search_toggle">
+								<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+									<span class="kt-header__topbar-icon">
+										<i class="flaticon2-search-1"></i>
+									</span>
+								</div>
+								<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-lg">
+									<div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+										<form method="get" class="kt-quick-search__form">
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+												<input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+											</div>
+										</form>
+										<div class="kt-quick-search__wrapper kt-scroll" data-scroll="true" data-height="325" data-mobile-height="200">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--end: Search -->
+							<!--begin: Quick Actions -->
+							<!--end: Quick Actions -->
+							<!--begin: User Bar -->
+							<div class="kt-header__topbar-item kt-header__topbar-item--user">
+								<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px,0px">
+									<div class="kt-header__topbar-user">
+										<!--<span class="kt-header__topbar-welcome kt-hidden-mobile">สวัสดีคุณ,</span>
+					<span class="kt-header__topbar-username kt-hidden-mobile">สมประสงค์</span>-->
+										<img alt="Pic" class="kt-radius-100" src="assets/media/users/300_25.jpg" />
+
+										<!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+										<!--<span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold">S</span>-->
+									</div>
+								</div>
+								<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl">
+
+									<!--begin: Head -->
+									<div class="kt-user-card kt-user-card--skin-dark kt-notification-item-padding-x" style="background-image: url(assets/media/misc/bg-1.jpg)">
+										<!--<div class="kt-user-card__avatar">
+						<img class="kt-hidden" alt="Pic" src="assets/media/users/300_25.jpg" />
+						<span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">S</span>
+					</div>-->
+										<div class="kt-user-card__name">
+											สมประสงค์ กาญจนวัฒนา
+										</div>
+										<!--<div class="kt-user-card__badge">
+						<span class="btn btn-success btn-sm btn-bold btn-font-md">23 messages</span>
+					</div>-->
+									</div>
+
+									<!--end: Head -->
+									<!--begin: Navigation -->
+									<div class="kt-notification">
+
+										<div class="kt-notification__custom kt-space-between">
+											<a href="custom/user/login-v2.html" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Sign Out</a>
+										</div>
+									</div>
+
+									<!--end: Navigation -->
+								</div>
+							</div>
+
+							<!--end: User Bar -->
+						</div>
+
+						<!-- end:: Header Topbar -->
+					</div>
+
+					<!-- end:: Header -->
+					<div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+
+						<!-- begin:: Subheader -->
+						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
+							<div class="kt-container  kt-container--fluid ">
+								<div class="kt-subheader__main">
+
+									<asp:ContentPlaceHolder ID="Breadcrumb" runat="server"></asp:ContentPlaceHolder>
+
+									
+								</div>
+								<div class="kt-subheader__toolbar">
+									<div class="kt-subheader__wrapper">
+										<a href="#" class="btn kt-subheader__btn-daterange" id="kt_dashboard_daterangepicker" data-toggle="kt-tooltip" title="Select dashboard daterange" data-placement="left">
+											<span class="kt-subheader__btn-daterange-title" id="kt_dashboard_daterangepicker_title">วันนี้</span>&nbsp;
+											<span class="kt-subheader__btn-daterange-date" id="kt_dashboard_daterangepicker_date">Aug 16</span>
+
+											<!--<i class="flaticon2-calendar-1"></i>-->
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--sm">
+												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+													<rect x="0" y="0" width="24" height="24" />
+													<path d="M4.875,20.75 C4.63541667,20.75 4.39583333,20.6541667 4.20416667,20.4625 L2.2875,18.5458333 C1.90416667,18.1625 1.90416667,17.5875 2.2875,17.2041667 C2.67083333,16.8208333 3.29375,16.8208333 3.62916667,17.2041667 L4.875,18.45 L8.0375,15.2875 C8.42083333,14.9041667 8.99583333,14.9041667 9.37916667,15.2875 C9.7625,15.6708333 9.7625,16.2458333 9.37916667,16.6291667 L5.54583333,20.4625 C5.35416667,20.6541667 5.11458333,20.75 4.875,20.75 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+													<path d="M2,11.8650466 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 C20.6568542,3 22,4.34314575 22,6 L22,15 C22,15.0032706 21.9999948,15.0065399 21.9999843,15.009808 L22.0249378,15 L22.0249378,19.5857864 C22.0249378,20.1380712 21.5772226,20.5857864 21.0249378,20.5857864 C20.7597213,20.5857864 20.5053674,20.4804296 20.317831,20.2928932 L18.0249378,18 L12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.23590829,11 3.04485894,11.3127315 2,11.8650466 Z M6,7 C5.44771525,7 5,7.44771525 5,8 C5,8.55228475 5.44771525,9 6,9 L15,9 C15.5522847,9 16,8.55228475 16,8 C16,7.44771525 15.5522847,7 15,7 L6,7 Z" fill="#000000" />
+												</g>
+											</svg> </a>
+										<div class="dropdown dropdown-inline" data-toggle="kt-tooltip" title="Quick actions" data-placement="left">
+											<a href="#" class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--success kt-svg-icon--md">
+													<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<polygon points="0 0 24 0 24 24 0 24" />
+														<path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+														<path d="M11,14 L9,14 C8.44771525,14 8,13.5522847 8,13 C8,12.4477153 8.44771525,12 9,12 L11,12 L11,10 C11,9.44771525 11.4477153,9 12,9 C12.5522847,9 13,9.44771525 13,10 L13,12 L15,12 C15.5522847,12 16,12.4477153 16,13 C16,13.5522847 15.5522847,14 15,14 L13,14 L13,16 C13,16.5522847 12.5522847,17 12,17 C11.4477153,17 11,16.5522847 11,16 L11,14 Z" fill="#000000" />
+													</g>
+												</svg>
+
+												<!--<i class="flaticon2-plus"></i>-->
+											</a>
+											<div class="dropdown-menu dropdown-menu-fit dropdown-menu-md dropdown-menu-right">
+
+												<!--begin::Nav-->
+												<ul class="kt-nav">
+													<li class="kt-nav__head">
+														Add anything or jump to:
+														<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
+													</li>
+													<li class="kt-nav__separator"></li>
+													<li class="kt-nav__item">
+														<a href="#" class="kt-nav__link">
+															<i class="kt-nav__link-icon flaticon2-drop"></i>
+															<span class="kt-nav__link-text">Order</span>
+														</a>
+													</li>
+													<li class="kt-nav__item">
+														<a href="#" class="kt-nav__link">
+															<i class="kt-nav__link-icon flaticon2-calendar-8"></i>
+															<span class="kt-nav__link-text">Ticket</span>
+														</a>
+													</li>
+													<li class="kt-nav__item">
+														<a href="#" class="kt-nav__link">
+															<i class="kt-nav__link-icon flaticon2-telegram-logo"></i>
+															<span class="kt-nav__link-text">Goal</span>
+														</a>
+													</li>
+													<li class="kt-nav__item">
+														<a href="#" class="kt-nav__link">
+															<i class="kt-nav__link-icon flaticon2-new-email"></i>
+															<span class="kt-nav__link-text">Support Case</span>
+															<span class="kt-nav__link-badge">
+																<span class="kt-badge kt-badge--success">5</span>
+															</span>
+														</a>
+													</li>
+													<li class="kt-nav__separator"></li>
+													<li class="kt-nav__foot">
+														<a class="btn btn-label-brand btn-bold btn-sm" href="#">Upgrade plan</a>
+														<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Learn more</a>
+													</li>
+												</ul>
+
+												<!--end::Nav-->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- end:: Subheader -->
+
+						<!-- begin:: Content -->
+						<div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+							
+							<asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+						</div>
+
+						<!-- end:: Content -->
+					</div>
+
+					<!-- begin:: Footer -->
+					<div class="kt-footer  kt-grid__item kt-grid kt-grid--desktop kt-grid--ver-desktop" id="kt_footer">
+						<div class="kt-container  kt-container--fluid ">
+							<div class="kt-footer__copyright">
+								2019&nbsp;&copy;&nbsp;<a href="http://www.ksp.or.th/" target="_blank" class="kt-link">KSP.or.th</a>
+							</div>
+							<div class="kt-footer__menu">
+								<a href="http://www.ksp.or.th/ksp2018/ksp_vision_mission/" target="_blank" class="kt-footer__menu-link kt-link">วิสัยทัศน์และพันธกิจ</a>
+								<a href="http://www.ksp.or.th/ksp2018/contact/" target="_blank" class="kt-footer__menu-link kt-link">ติดต่อคุรุสภา</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- end:: Footer -->
+				</div>
+			</div>
+		</div>
+
+		<!-- end:: Page -->
+
+		<!-- begin::Quick Panel -->
+		<!-- end::Quick Panel -->
+
+		<!-- begin::Scrolltop -->
+		<div id="kt_scrolltop" class="kt-scrolltop">
+			<i class="fa fa-arrow-up"></i>
+		</div>
+		<!-- end::Scrolltop -->
+
+		<!-- begin::Sticky Toolbar -->		
+		<!-- end::Sticky Toolbar -->
+
+		<!-- begin::Demo Panel -->
+		<!-- end::Demo Panel -->
+
+		<!--Begin:: Chat-->
+		<!--ENd:: Chat-->
+
+		<!-- begin::Global Config(global config for global JS sciprts) -->
+		<script type="text/html" src="assets/js/ThemeOption.js"></script>
+
+		<!-- end::Global Config -->
+
+		<!--begin::Global Theme Bundle(used by all pages) -->
+		<script src="assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+		<script src="assets/js/scripts.bundle.js" type="text/javascript"></script>
+
+		<!--end::Global Theme Bundle -->
+
+		<!--begin::Page Vendors(used by this page) -->
+		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+
+		<!--end::Page Vendors -->
+
+		<!--begin::Page Scripts(used by this page) -->
+		<script src="assets/js/pages/dashboard.js" type="text/javascript"></script>
+		<!--end::Page Scripts -->
+
+		<asp:ContentPlaceHolder ID="ScriptContainer" runat="server"></asp:ContentPlaceHolder>
+	</body>
+
+	<!-- end::Body -->
+</html>
