@@ -164,6 +164,7 @@
     <Content Include="assets\css\pages\wizard\wizard-4.js" />
     <Content Include="assets\css\style.bundle.css" />
     <Content Include="assets\css\style.bundle.js" />
+    <Content Include="assets\js\extent.js" />
     <Content Include="assets\js\global\components\base\app.js" />
     <Content Include="assets\js\global\components\base\avatar.js" />
     <Content Include="assets\js\global\components\base\datatable\core.datatable.js" />
@@ -193,6 +194,7 @@
     <Content Include="assets\js\global\layout\offcanvas-panel.js" />
     <Content Include="assets\js\global\layout\quick-panel.js" />
     <Content Include="assets\js\global\layout\quick-search.js" />
+    <Content Include="assets\js\jquery.cookie.min.js" />
     <Content Include="assets\js\lib.js" />
     <Content Include="assets\js\pages\builder.js" />
     <Content Include="assets\js\pages\components\base\dropdown.js" />
@@ -1847,7 +1849,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\BusinessLogin.vb" />
+    <Compile Include="App_Code\BusinessLogic.vb" />
     <Compile Include="App_Code\CommonResponse.vb" />
     <Compile Include="App_Code\Converter.vb" />
     <Compile Include="ASS-01.aspx.designer.vb">

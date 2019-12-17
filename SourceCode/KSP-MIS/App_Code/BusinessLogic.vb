@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 
-Public Class BusinessLogin
+Public Class BusinessLogic
 
     'Public PlayStoreURL As String = ConfigurationManager.AppSettings("PlayStoreURL").ToString
     'Public PortalAppURL As String = ConfigurationManager.AppSettings("PortalAppURL").ToString

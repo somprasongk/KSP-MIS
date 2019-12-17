@@ -116,6 +116,12 @@ function urlParam(param) {
     }
 }
 
+function getOnlyPageName() {
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    return page;
+}
+
 function downloadTextFile(text, filename) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));

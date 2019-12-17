@@ -23,6 +23,60 @@ Partial Public Class MasterPage
     Protected WithEvents HeaderCss As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
+    '''PageBody control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PageBody As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''LIC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LIC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''STD control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents STD As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''ETH control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ETH As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''HR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''BDG control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BDG As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''Breadcrumb control.
     '''</summary>
     '''<remarks>
