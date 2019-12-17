@@ -88,6 +88,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\extent.css" />
     <Content Include="assets\css\pages\error\error-1.css" />
     <Content Include="assets\css\pages\error\error-1.js" />
     <Content Include="assets\css\pages\error\error-2.css" />
@@ -661,6 +662,8 @@
     <Content Include="assets\media\flags\261-kiribati.svg" />
     <Content Include="assets\media\flags\262-hawaii.svg" />
     <Content Include="assets\media\icons\exchange.svg" />
+    <Content Include="assets\media\icons\icon.ico" />
+    <Content Include="assets\media\icons\icon.png" />
     <Content Include="assets\media\icons\logout.svg" />
     <Content Include="assets\media\icons\question.svg" />
     <Content Include="assets\media\icons\svg\Clothes\Brassiere.svg" />

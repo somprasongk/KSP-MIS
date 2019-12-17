@@ -1,15 +1,15 @@
 ﻿.kt-aside, .kt-aside-menu {
-    background: #ddd;
+    /* background: #ddd;*/
 }/*เมนูด้านซ้าย*/
 .kt-aside-menu .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__link-text {
-    color: #3a3a5d;
+    /*color: #3a3a5d;*/
     font-size: 1.1rem;
 }/*เมนูด้านซ้าย*/
-.kt-aside-menu .kt-menu__nav > .kt-menu__item .kt-menu__submenu .kt-menu__item > .kt-menu__link .kt-menu__link-text {
-    color: #3a3a5d;
+    .kt-aside-menu .kt-menu__nav > .kt-menu__item .kt-menu__submenu .kt-menu__item > .kt-menu__link .kt-menu__link-text {
+    /*color: #3a3a5d;*/
     font-size: 1.1rem;
 }/*เมนูด้านซ้าย*/
-.kt-header-menu .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__link-text {
+        .kt-header-menu .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__link-text {
     font-size: 1.2rem;
 }/*เมนูด้านบน*/
 .kt-header-menu-mobile .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__link-text {
@@ -17,6 +17,7 @@
 }/*เมนูด้านบน*/
 .kt-aside-menu .kt-menu__nav > .kt-menu__section .kt-menu__section-text {
     font-size: 1.1rem;
+    font-weight:600;
 }/*เมนูด้านซ้าย*/
 
 
