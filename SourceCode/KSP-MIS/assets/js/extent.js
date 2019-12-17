@@ -10,7 +10,8 @@ $(document).ready(function () {
 
     //hightlight current menu
     var highLightMenu = function () {
-        var pageCode = getOnlyPageName().toUpperCase().replace('.ASPX', '');
+        var pageName = getOnlyPageName();
+        var pageCode = pageName.toUpperCase().replace('.ASPX', '');
         switch (pageCode.split('-')[0]) {
             case "LIC":
             case "STD":
@@ -23,6 +24,16 @@ $(document).ready(function () {
                 break;
         }
 
+        var li = $('#kt_aside_menu').find('a[href="' + pageName + '"]').closest('li');
+        if (li.length > 0) {
+            li.addClass('kt-menu__item--active');
+            li.addClass('kt-menu__item--open');
+        }
+        li = li.closest('li.kt-menu__item--submenu');
+        if (li.length > 0) {
+            li.addClass('kt-menu__item--open');
+        }
+       
     }
     highLightMenu();
 
