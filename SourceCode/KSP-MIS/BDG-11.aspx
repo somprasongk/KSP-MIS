@@ -6,6 +6,8 @@
 <asp:Content ID="Breadcrumb" ContentPlaceHolderID="Breadcrumb" runat="server">    
     <uc1:uc_Breadcrumb runat="server" id="uc_Breadcrumb" />
 </asp:Content>
+<asp:Content ID="FilterPlaceHolder" ContentPlaceHolderID="FilterPlaceHolder" runat="server">
+</asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">

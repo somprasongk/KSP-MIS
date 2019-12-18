@@ -13,6 +13,9 @@ $(document).ready(function () {
         var pageName = getOnlyPageName();
         var pageCode = pageName.toUpperCase().replace('.ASPX', '');
         switch (pageCode.split('-')[0]) {
+            case "DEFAULT":
+                $('#kt_aside_menu a[href="default.aspx"]').closest('li').addClass('kt-menu__item--active');
+                break;
             case "LIC":
             case "STD":
             case "ETH":
@@ -36,8 +39,4 @@ $(document).ready(function () {
        
     }
     highLightMenu();
-
-    
-
-    //getOnlyPageName
 });

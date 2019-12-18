@@ -1813,7 +1813,7 @@
     <Content Include="BDG-13.aspx" />
     <Content Include="BDG-14.aspx" />
     <Content Include="BDG-15.aspx" />
-    <Content Include="QuickPanel.html" />
+    <Content Include="Default.aspx" />
     <Content Include="ETH-01.aspx" />
     <Content Include="ETH-02.aspx" />
     <Content Include="ETH-03.aspx" />
@@ -1842,6 +1842,7 @@
     <Content Include="LIC-15.aspx" />
     <Content Include="LIC-16.aspx" />
     <Content Include="LIC-17.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="STD-01.aspx" />
     <Content Include="STD-02.aspx" />
     <Content Include="STD-03.aspx" />
@@ -1990,6 +1991,13 @@
     </Compile>
     <Compile Include="BDG-15.aspx.vb">
       <DependentUpon>BDG-15.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ETH-01.aspx.designer.vb">
@@ -2186,6 +2194,13 @@
     </Compile>
     <Compile Include="LIC-17.aspx.vb">
       <DependentUpon>LIC-17.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="MasterPage.Master.designer.vb">

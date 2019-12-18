@@ -34,6 +34,7 @@
 
     End Sub
 
+
     Private Function GetMenuSubCode(ByVal PageName As String) As Integer
         Return CInt(PageName.ToUpper.Replace(".ASPX", "").Split("-")(1))
     End Function

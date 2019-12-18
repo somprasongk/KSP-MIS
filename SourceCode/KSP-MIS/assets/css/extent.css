@@ -114,3 +114,24 @@
 .kt-subheader .kt-subheader__main .kt-subheader__title {
     font-weight: 600;
 } /*Page Title*/
+
+
+.kt-quick-panel .kt-quick-panel__content {
+    padding:0;
+}/* Search Panel */
+
+#kt_quick_panel::-webkit-scrollbar {
+    width: 6px;
+    background-color: white;
+}
+
+#kt_quick_panel::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #5867dd;
+    border-radius: 3px;
+    visibility: hidden;
+
+}
+#kt_quick_panel:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}

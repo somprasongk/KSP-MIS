@@ -86,6 +86,24 @@ Partial Public Class MasterPage
     Protected WithEvents Breadcrumb As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
+    '''FormMain control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FormMain As Global.System.Web.UI.HtmlControls.HtmlForm
+
+    '''<summary>
+    '''MainScriptManager control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MainScriptManager As Global.System.Web.UI.ScriptManager
+
+    '''<summary>
     '''MainContent control.
     '''</summary>
     '''<remarks>
@@ -93,6 +111,15 @@ Partial Public Class MasterPage
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents MainContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
+
+    '''<summary>
+    '''FilterPlaceHolder control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FilterPlaceHolder As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
     '''ScriptContainer control.
