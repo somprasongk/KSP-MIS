@@ -77,6 +77,15 @@ Partial Public Class MasterPage
     Protected WithEvents BDG As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
+    '''DOC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DOC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''Breadcrumb control.
     '''</summary>
     '''<remarks>

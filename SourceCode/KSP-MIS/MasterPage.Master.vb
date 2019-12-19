@@ -28,6 +28,8 @@
                 HR.Attributes("Class") &= GroupExpandCSS
             Case "BDG", "ASS"
                 BDG.Attributes("Class") &= GroupExpandCSS
+            Case "DOC"
+                DOC.Attributes("Class") &= GroupExpandCSS
         End Select
 
         Dim PageCode As String = PageName.ToUpper.Replace(".ASPX", "")
