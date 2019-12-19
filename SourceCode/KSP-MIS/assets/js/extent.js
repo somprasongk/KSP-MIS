@@ -22,6 +22,7 @@ $(document).ready(function () {
             case "HR":
             case "BDG":
             case "ASS":
+            case "DOC":
                 break;
             default: return;
                 break;
