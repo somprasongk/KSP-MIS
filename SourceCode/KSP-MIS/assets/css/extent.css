@@ -96,7 +96,7 @@
 
 .kt-header-menu .kt-menu__submenu--fixed {
     transform: scale(0.8) !important;
-    top: 5px !important;
+    top: 0px !important;
     left: -150px !important;
     margin-top: -30px !important;
 } /*Mega Menu*/
@@ -134,4 +134,30 @@
 }
 #kt_quick_panel:hover::-webkit-scrollbar-thumb {
     visibility: visible;
+}/* Scrollbar ของ Filter Panel*/
+
+/*.kt-portlet__head-actions .kt-quick-search .input-group * {
+    border: none;
+    background-color : unset;
+}*/
+/* Search หัวตาราง*/
+
+.dashboard-table .dashboard-title {
+    /*font-weight:600 !important;*/
+}
+/* font หัวตาราง*/
+
+/*------------------------Content Portlet----------------------*/
+.dashboard-chart {
+
+}
+
+.dashboard-table-container {
+    padding: 0 !important;
+}
+
+.dashboard-table-container .dataTable th {
+    font-weight:600;
+    font-size:14px;
+    text-align:center;
 }

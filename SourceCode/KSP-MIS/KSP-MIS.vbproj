@@ -1433,6 +1433,10 @@
     <Content Include="assets\media\illustrations\working.svg" />
     <Content Include="assets\media\logos\favicon.ico" />
     <Content Include="assets\media\logos\logo-12.png" />
+    <Content Include="assets\media\logos\logo-150.png" />
+    <Content Include="assets\media\logos\logo-200.png" />
+    <Content Include="assets\media\logos\logo-350.png" />
+    <Content Include="assets\media\logos\logo.png" />
     <Content Include="assets\media\misc\bg-1.jpg" />
     <Content Include="assets\media\misc\bg-2.jpg" />
     <Content Include="assets\media\misc\owl.video.play.png" />
@@ -1814,6 +1818,9 @@
     <Content Include="BDG-14.aspx" />
     <Content Include="BDG-15.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="DOC-01.aspx" />
+    <Content Include="DOC-02.aspx" />
+    <Content Include="DOC-03.aspx" />
     <Content Include="ETH-01.aspx" />
     <Content Include="ETH-02.aspx" />
     <Content Include="ETH-03.aspx" />
@@ -1846,6 +1853,8 @@
     <Content Include="STD-01.aspx" />
     <Content Include="STD-02.aspx" />
     <Content Include="STD-03.aspx" />
+    <Content Include="table_header.html" />
+    <Content Include="table_scroll.html" />
     <Content Include="uc_Breadcrumb.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -1998,6 +2007,27 @@
     </Compile>
     <Compile Include="Default.aspx.vb">
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DOC-01.aspx.designer.vb">
+      <DependentUpon>DOC-01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOC-01.aspx.vb">
+      <DependentUpon>DOC-01.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DOC-02.aspx.designer.vb">
+      <DependentUpon>DOC-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOC-02.aspx.vb">
+      <DependentUpon>DOC-02.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DOC-03.aspx.designer.vb">
+      <DependentUpon>DOC-03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOC-03.aspx.vb">
+      <DependentUpon>DOC-03.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ETH-01.aspx.designer.vb">

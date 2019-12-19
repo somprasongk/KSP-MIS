@@ -566,7 +566,36 @@
 										</ul>
 									</div>
 								</li>							
-
+								<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover" id="DOC" runat="server">
+									<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+										<i class="kt-menu__link-icon fa fa-copy"></i>
+										<span class="kt-menu__link-text">สารบรรณ</span>
+										<i class="kt-menu__ver-arrow la la-angle-right"></i>
+									</a>
+									<div class="kt-menu__submenu ">
+										<span class="kt-menu__arrow"></span>
+										<ul class="kt-menu__subnav">
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="DOC-01.aspx" class="kt-menu__link ">
+													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+													<span class="kt-menu__link-text">จำนวนเอกสารเข้าตามหน่วยงาน ประเภทเอกสาร</span>
+												</a>
+											</li>
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="DOC-02.aspx" class="kt-menu__link ">
+													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+													<span class="kt-menu__link-text">จำนวนเอกสารออกตามหน่วยงาน ประเภทเอกสาร</span>
+												</a>
+											</li>
+											<li class="kt-menu__item " aria-haspopup="true">
+												<a href="DOC-03.aspx" class="kt-menu__link ">
+													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+													<span class="kt-menu__link-text">เปรียบเทียบจำนวนเอกสาร เข้า-ออก</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -616,7 +645,12 @@
 															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-17.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนชาวต่างประเทศที่ได้รับอนุญาต ตามช่วงเวลา</span></a></li>
 														</ul>
 
-
+														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-copy"></i> <span class="kt-menu__link-text">สารบรรณ</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+														<ul class="kt-menu__inner">
+															<li class="kt-menu__item " aria-haspopup="true"><a href="DOC-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเข้าตามหน่วยงาน ประเภทเอกสาร</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="DOC-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนออกตามหน่วยงาน ประเภทเอกสาร</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="DOC-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">เปรียบเทียบจำนวนเอกสาร เข้า-ออกตามหน่วยงาน</span></a></li>
+														</ul>
 													</li>
 													<li class="kt-menu__item ">
 														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-medal"></i> <span class="kt-menu__link-text">มาตรฐานวิชาชีพครู</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
@@ -781,6 +815,7 @@
 												<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 													<i class="fa fa-save"></i> บันทึก / ส่งออก
 												</button>
+
 												<div class="dropdown-menu dropdown-menu-fit dropdown-menu-md dropdown-menu-right">
 													<ul class="kt-nav">
 														<li class="kt-nav__head">
@@ -838,7 +873,7 @@
 							<asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
 
 
-<div id="kt_quick_panel" class="kt-quick-panel">
+	<div id="kt_quick_panel" class="kt-quick-panel">
 			<a href="#" class="kt-quick-panel__close" id="kt_quick_panel_close_btn"><i class="flaticon2-delete"></i></a>			
 			<div class="kt-quick-panel__content">
 				
