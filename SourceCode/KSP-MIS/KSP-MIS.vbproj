@@ -93,11 +93,13 @@
     <Content Include="ASS-03.aspx" />
     <Content Include="ASS-04.aspx" />
     <Content Include="ASS-05.aspx" />
+    <Content Include="assets\charts\highcharts-more.js" />
     <Content Include="assets\charts\highcharts.js" />
     <Content Include="assets\charts\modules\accessibility.js" />
     <Content Include="assets\charts\modules\export-data.js" />
     <Content Include="assets\charts\modules\exporting.js" />
     <Content Include="assets\charts\modules\series-label.js" />
+    <Content Include="assets\charts\modules\sunburst.js" />
     <Content Include="assets\css\extent.css" />
     <Content Include="assets\css\pages\error\error-1.css" />
     <Content Include="assets\css\pages\error\error-1.js" />
@@ -2576,6 +2578,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\PublishProfiles\TempPublish.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>

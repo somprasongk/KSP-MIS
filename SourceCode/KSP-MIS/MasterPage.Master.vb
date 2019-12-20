@@ -1,4 +1,6 @@
-﻿Public Class MasterPage
+﻿
+Public Class MasterPage
+
     Inherits System.Web.UI.MasterPage
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -8,7 +10,7 @@
     End Sub
 
     Private Sub SetLeftMenu()
-        If Not IsNothing(Request.Cookies("leftMenuExpand").Value) AndAlso Request.Cookies("leftMenuExpand").Value <> "true" Then
+        If Not IsNothing(Request.Cookies("leftMenuExpand")) AndAlso Request.Cookies("leftMenuExpand").Value <> "true" Then
             PageBody.Attributes("class") &= " kt-aside--minimize"
         End If
 
