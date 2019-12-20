@@ -641,12 +641,8 @@
              $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
          });
 
-
-         
-     </script>
-
-
-    	<script type="text/javascript">
+                 
+ 
             var data = [
                 {
                     id: '0.0',
@@ -901,7 +897,9 @@
                 }
             ];
 
+         $(document).ready(function () {
 
+         
             Highcharts.chart('chart1', {
 
                 chart: {
@@ -960,12 +958,11 @@
                     pointFormat: '<b>{point.name}</b> <br>{point.value}'
                 }
             });
-
-          
-
+                  
             Highcharts.chart('chart2', {
                 chart: {
-                    type: 'bar'
+                    type: 'bar',
+                    height: "300px"
                 },
                 title: {
                     text: '',
@@ -989,7 +986,7 @@
                 //    enabled: true
                 //},
                 tooltip: {
-                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเอกสารออก: <b>{point.y} รายการ</b>'
+                    pointFormat: '{หน่วยงาน} งบประมาณ: <b>{point.y} บาท</b>'
                 },
                  series: [{
                     name: 'ค่าใช้จ่ายแยกตามประเภท',
@@ -1007,7 +1004,6 @@
                     }
                 }]
             });
-
 
             Highcharts.chart('chart3', {
                 chart: {
@@ -1032,7 +1028,7 @@
                     }
                 },
                 tooltip: {
-                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเอกสารออก: <b>{point.y} รายการ</b>'
+                    pointFormat: '<b>{point.y} บาท</b>'
                 },
                 series: [{
                     name: 'แผนงานบุคคลภาครัฐ',
@@ -1048,7 +1044,8 @@
                     }
                 ]
             });
-                      
+
+         });
 		</script>
 </asp:Content>
 

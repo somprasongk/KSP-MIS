@@ -320,7 +320,7 @@
                         formatter: function () {
                             return Math.abs(this.value);
                         }
-                    },
+                    }
                     //accessibility: {
                     //    description: 'Percentage population',
                     //    rangeDescription: 'Range: 0 to 5%'
