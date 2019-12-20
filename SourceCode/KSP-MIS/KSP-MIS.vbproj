@@ -93,6 +93,11 @@
     <Content Include="ASS-03.aspx" />
     <Content Include="ASS-04.aspx" />
     <Content Include="ASS-05.aspx" />
+    <Content Include="assets\charts\highcharts.js" />
+    <Content Include="assets\charts\modules\accessibility.js" />
+    <Content Include="assets\charts\modules\export-data.js" />
+    <Content Include="assets\charts\modules\exporting.js" />
+    <Content Include="assets\charts\modules\series-label.js" />
     <Content Include="assets\css\extent.css" />
     <Content Include="assets\css\pages\error\error-1.css" />
     <Content Include="assets\css\pages\error\error-1.js" />
@@ -1853,8 +1858,6 @@
     <Content Include="STD-01.aspx" />
     <Content Include="STD-02.aspx" />
     <Content Include="STD-03.aspx" />
-    <Content Include="table_header.html" />
-    <Content Include="table_scroll.html" />
     <Content Include="uc_Breadcrumb.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -2586,6 +2589,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

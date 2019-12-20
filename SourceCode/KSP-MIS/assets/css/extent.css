@@ -152,6 +152,10 @@
 
 }
 
+.highcharts-button.highcharts-contextbutton {
+    display:none;
+}
+
 .dashboard-table-container {
     padding: 0 !important;
 }

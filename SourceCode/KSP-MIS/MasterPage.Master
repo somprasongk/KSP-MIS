@@ -30,6 +30,14 @@
 		<!--end::Layout Skins -->
 		<link rel="shortcut icon" href="assets/media/icons/icon.ico" />
 
+		<!--begin::Chart Library-->
+		<script src="assets/charts/highcharts.js"></script>
+		<script src="assets/charts/modules/series-label.js"></script>
+		<script src="assets/charts/modules/exporting.js"></script>
+		<script src="assets/charts/modules/export-data.js"></script>
+		<script src="assets/charts/modules/accessibility.js"></script>
+		<!--end::Chart Library -->
+
 		<asp:ContentPlaceHolder ID="HeaderCss" runat="server"></asp:ContentPlaceHolder>
 
 	</head>

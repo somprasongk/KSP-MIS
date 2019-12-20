@@ -11,12 +11,12 @@
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row">
-		<div class="col-12 dashboard-chart">
+		<div class="col-6 dashboard-chart">
 
 			
 			<div class="kt-portlet">
 										
-				<div class="kt-portlet__body">
+				<div class="kt-portlet__body" id="chart1">
 					
 
 				</div>
@@ -24,10 +24,21 @@
 
 			<!--end:: Widgets/Activity-->
 		</div>
-						
-		<div class="col-lg-6 col-xl-6 col-sm-12 order-lg-1 order-xl-1">
 
-		</div>
+        <div class="col-6 dashboard-chart">
+
+			
+			<div class="kt-portlet">
+										
+				<div class="kt-portlet__body" id="chart2">
+					
+
+				</div>
+			</div>
+
+			<!--end:: Widgets/Activity-->
+		</div>					
+	
 	</div>
 
 	<div class="row">
@@ -189,5 +200,169 @@
             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด จำนวน xxx รายการ');
         });
 
-	</script>
+        var docData = [
+            {
+                name: 'สำนักมาตรฐานวิชาชีพ',
+                y: 523,
+                color: 'salmon'
+            },
+            {
+                name: 'สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ',
+                y: 432,
+                color: 'brown'
+            },
+            {
+                name: 'สำนักจรรยาบรรณวิชาชีพและนิติกร',
+                y: 400,
+                color: 'olive'
+            },
+            {
+                name: 'สำนักพัฒนาและส่งเสริมวิชาชีพ',
+                y: 370,
+                color: 'teal'
+            },
+            {
+                name: 'สำนักนโยบายและแผน',
+                y: 317,
+                color: 'lightblue'
+            },
+            {
+                name: 'สำนักอำนวยการ',
+                y: 300,
+                color: 'violet'
+            },
+            {
+                name: 'สำนักเทคโนโลยีสารสนเทศและการสื่อสาร',
+                y: 275,
+                color: 'pink'
+            },
+            {
+                name: 'หน่วยตรวจสอบภายใน',
+                y: 245,
+                color: 'coral'
+            },
+            {
+                name: 'กลุ่มพัฒนาระบบงาน',
+                y: 225,
+                color: 'seagreen'
+            },
+            {
+                name: 'สถาบันคุรุพัฒนา',
+                y: 215,
+                color: 'gold'
+            }
+        ];
+
+
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '',
+                    style: {
+                        display:'none'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนหนังสือเอกสารเข้า'
+                    }
+                },
+                //legend: {
+                //    enabled: true
+                //},
+                tooltip: {
+                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเอกสารเข้า: <b>{point.y} รายการ</b>'
+                },
+                plotOptions: {
+                    //column: {
+                    //    //pointPadding: 0.2,
+                    //    //borderWidth: 0,
+                    //    //borderRadius: 20
+                    //}
+                },
+                series: [{
+                    name: 'หน่วยงาน',
+                    data: docData,
+                    dataLabels: {
+                        //enabled: true,
+                        //rotation: -90,
+                        //color: '#FFFFFF',
+                        //align: 'right' //,
+                        //format: '{point.y:.1f}', // one decimal
+                        //y: 10 //, // 10 pixels down from the top
+                        //style: {
+                        //    fontSize: '13px',
+                        //    fontFamily: 'Verdana, sans-serif'
+                        //}
+                    }
+                }]
+            });
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'pie'
+                },
+                title: {
+                    text: '',
+                    style: {
+                        display: 'none'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนหนังสือเอกสารเข้า'
+                    }
+                },
+                //legend: {
+                //    enabled: true
+                //},
+                tooltip: {
+                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเอกสารเข้า: <b>{point.y} รายการ</b>'
+                },
+                plotOptions: {
+                    //column: {
+                    //    //pointPadding: 0.2,
+                    //    //borderWidth: 0,
+                    //    //borderRadius: 20
+                    //}
+                },
+                series: [{
+                    name: 'หน่วยงาน',
+                    data: docData,
+                    dataLabels: {
+                        //enabled: true,
+                        //rotation: -90,
+                        //color: '#FFFFFF',
+                        //align: 'right' //,
+                        //format: '{point.y:.1f}', // one decimal
+                        //y: 10 //, // 10 pixels down from the top
+                        //style: {
+                        //    fontSize: '13px',
+                        //    fontFamily: 'Verdana, sans-serif'
+                        //}
+                    }
+                }]
+            });
+        });
+
+        
+    </script>
 </asp:Content>
