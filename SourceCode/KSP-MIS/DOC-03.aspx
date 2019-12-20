@@ -211,9 +211,6 @@
             }
         ];
 
-        var docIn = [523, 432, 400, 370, 317, 300, 275, 245, 225, 215];
-        var docOut = [623, 332, 315, 250, 227, 200, 175, 145, 140, 105];
-
         var dataOut = [
             {
                 name: 'สำนักมาตรฐานวิชาชีพ',
@@ -270,7 +267,9 @@
         function docData(data,step) {
             var result = [];
             for (var i = 0; i < data.length; i++) {
-                result.push(step * data[i].y);
+                var item = data[i];
+                item.y = item.y*step;
+                result.push(item);
             }
             return result;
         }
@@ -284,24 +283,6 @@
         }
 
         $(document).ready(function () {
-
-
-            
-
-   
-            //// Age categories
-            //var categories = [
-            //    'สำนักมาตรฐานวิชาชีพ',
-            //    'สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ',
-            //    'สำนักจรรยาบรรณวิชาชีพและนิติกร',
-            //    'สำนักพัฒนาและส่งเสริมวิชาชีพ',
-            //    'สำนักนโยบายและแผน',
-            //    'สำนักอำนวยการ',
-            //    'สำนักเทคโนโลยีสารสนเทศและการสื่อสาร',
-            //    'หน่วยตรวจสอบภายใน',
-            //    'กลุ่มพัฒนาระบบงาน',
-            //    'สถาบันคุรุพัฒนา'
-            //];
 
             Highcharts.chart('chart1', {
                 chart: {
@@ -354,20 +335,19 @@
 
                 tooltip: {
                     formatter: function () {
-                        return '<b>' + this.series.name + '</b> : ' + this.point.y +' รายการ<br/>';
+                        return '<b>' + this.series.name + '</b> : ' + Math.abs(this.point.y) +' รายการ<br/>';
                     }
                 },
 
                 series: [{
                     name: 'เอกสารเข้า',
-                    data: docData(dataIn, -1)
+                    data: docData(dataIn,-1)
                 }, {
                     name: 'เอกสารออก',
-                    data: docData(dataOut, 1)
+                     data: dataOut
                 }]
             });
 
-            //var a = docData(dataIn);
 
         });
     </script>
