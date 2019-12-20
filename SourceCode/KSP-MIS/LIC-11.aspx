@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -20,19 +20,6 @@
                 </div>
             </div>
 
-            <!--end:: Widgets/Activity-->
-        </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
         </div>
 
     </div>
@@ -86,7 +73,7 @@
                                 <th>ก.ย.</th>
                                 <th>ต.ค.</th>
                                 <th>พ.ย.</th>
-                                <th>ธ.ค.</th>
+                                <th class="border-right">ธ.ค.</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -284,8 +271,8 @@
                             </tr>
                         </tbody>
                         <tfoot>
-                            <tr>
-                                <td colspan="2">รวม</td>
+                            <tr class="dtrg-group">
+                                <td colspan="2" class="text-center">รวม</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -313,5 +300,316 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+    <script type="text/javascript">
+
+
+     $(document).ready(function () {
+             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปี พ.ศ. 2561');
+     });
+
+        var Org1 = [
+             { name: 'มค', y: 1800 }
+            , { name: 'กพ', y: 1500 }
+            , { name: 'มีค', y: 1700 }
+            , { name: 'เมย', y: 1800 }
+            , { name: 'พค', y: 2000 }
+            , { name: 'มิย', y: 2100 }
+            , { name: 'กค', y: 2300 }
+            , { name: 'สค', y: 2200 }
+            , { name: 'กย', y: 2400 }
+            , { name: 'ตค', y: 2500 }
+            , { name: 'พย', y: 1500 }
+            , { name: 'ธค', y: 2000 }
+        ];
+
+        var Org2 = [
+           
+             { name: 'มค', y: 900 }
+            , { name: 'กพ', y: 800 }
+            , { name: 'มีค', y: 700 }
+            , { name: 'เมย', y: 750 }
+            , { name: 'พค', y: 600 }
+            , { name: 'มิย', y: 400 }
+            , { name: 'กค', y: 650 }
+            , { name: 'สค', y: 800 }
+            , { name: 'กย', y: 1000 }
+             , { name: 'ตค', y: 700 }
+            , { name: 'พย', y: 1000 }
+            , { name: 'ธค', y: 1200 }
+        ];
+
+        var Org3 = [
+
+            { name: 'มค', y: 90 }
+            , { name: 'กพ', y: 80 }
+            , { name: 'มีค', y: 70 }
+            , { name: 'เมย', y: 75 }
+            , { name: 'พค', y: 60 }
+            , { name: 'มิย', y: 40 }
+            , { name: 'กค', y: 65 }
+            , { name: 'สค', y: 80 }
+            , { name: 'กย', y: 100 }
+            , { name: 'ตค', y: 70 }
+            , { name: 'พย', y: 100 }
+            , { name: 'ธค', y: 120 }
+        ];
+
+        var Org4 = [
+
+            { name: 'มค', y: 200 }
+            , { name: 'กพ', y: 200 }
+            , { name: 'มีค', y: 100 }
+            , { name: 'เมย', y: 120 }
+            , { name: 'พค', y: 160 }
+            , { name: 'มิย', y: 140 }
+            , { name: 'กค', y: 165 }
+            , { name: 'สค', y: 180 }
+            , { name: 'กย', y: 200 }
+            , { name: 'ตค', y: 170 }
+            , { name: 'พย', y: 200 }
+            , { name: 'ธค', y: 220 }
+        ];
+
+        var Org5 = [
+
+            { name: 'มค', y: 250 }
+            , { name: 'กพ', y: 150 }
+            , { name: 'มีค', y: 170 }
+            , { name: 'เมย', y: 180 }
+            , { name: 'พค', y: 200 }
+            , { name: 'มิย', y: 240 }
+            , { name: 'กค', y: 265 }
+            , { name: 'สค', y: 280 }
+            , { name: 'กย', y: 120 }
+            , { name: 'ตค', y: 150 }
+            , { name: 'พย', y: 210 }
+            , { name: 'ธค', y: 260 }
+        ];
+
+        var Org6 = [
+
+            { name: 'มค', y: 150 }
+            , { name: 'กพ', y: 250 }
+            , { name: 'มีค', y: 270 }
+            , { name: 'เมย', y: 280 }
+            , { name: 'พค', y: 300 }
+            , { name: 'มิย', y: 440 }
+            , { name: 'กค', y: 265 }
+            , { name: 'สค', y: 380 }
+            , { name: 'กย', y: 220 }
+            , { name: 'ตค', y: 250 }
+            , { name: 'พย', y: 310 }
+            , { name: 'ธค', y: 360 }
+        ];
+
+        var Org6 = [
+
+            { name: 'มค', y: 450 }
+            , { name: 'กพ', y: 550 }
+            , { name: 'มีค', y: 370 }
+            , { name: 'เมย', y: 380 }
+            , { name: 'พค', y: 400 }
+            , { name: 'มิย', y: 340 }
+            , { name: 'กค', y: 465 }
+            , { name: 'สค', y: 380 }
+            , { name: 'กย', y: 320 }
+            , { name: 'ตค', y: 350 }
+            , { name: 'พย', y: 410 }
+            , { name: 'ธค', y: 460 }
+        ];
+
+        var Org7 = [
+
+            { name: 'มค', y: 450 }
+            , { name: 'กพ', y: 550 }
+            , { name: 'มีค', y: 370 }
+            , { name: 'เมย', y: 380 }
+            , { name: 'พค', y: 400 }
+            , { name: 'มิย', y: 340 }
+            , { name: 'กค', y: 465 }
+            , { name: 'สค', y: 380 }
+            , { name: 'กย', y: 320 }
+            , { name: 'ตค', y: 350 }
+            , { name: 'พย', y: 410 }
+            , { name: 'ธค', y: 460 }
+        ];
+
+        var Org8 = [
+
+            { name: 'มค', y: 50 }
+            , { name: 'กพ', y: 50 }
+            , { name: 'มีค', y: 70 }
+            , { name: 'เมย', y: 80 }
+            , { name: 'พค', y: 00 }
+            , { name: 'มิย', y: 40 }
+            , { name: 'กค', y: 65 }
+            , { name: 'สค', y: 80 }
+            , { name: 'กย', y: 20 }
+            , { name: 'ตค', y: 50 }
+            , { name: 'พย', y: 10 }
+            , { name: 'ธค', y: 60 }
+        ];
+
+        var Org9 = [
+
+            { name: 'มค', y: 150 }
+            , { name: 'กพ', y: 150 }
+            , { name: 'มีค', y: 170 }
+            , { name: 'เมย', y: 180 }
+            , { name: 'พค', y: 100 }
+            , { name: 'มิย', y: 140 }
+            , { name: 'กค', y: 165 }
+            , { name: 'สค', y: 180 }
+            , { name: 'กย', y: 120 }
+            , { name: 'ตค', y: 150 }
+            , { name: 'พย', y: 110 }
+            , { name: 'ธค', y: 60 }
+        ];
+
+        var Org10 = [
+
+            { name: 'มค', y: 40 }
+            , { name: 'กพ', y: 50 }
+            , { name: 'มีค', y: 70 }
+            , { name: 'เมย', y: 80 }
+            , { name: 'พค', y: 10 }
+            , { name: 'มิย', y: 14 }
+            , { name: 'กค', y: 16 }
+            , { name: 'สค', y: 18 }
+            , { name: 'กย', y: 20 }
+            , { name: 'ตค', y: 50 }
+            , { name: 'พย', y: 10 }
+            , { name: 'ธค', y: 60 }
+        ];
+
+
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'ปี พ.ศ 2561',
+                    style: {
+                        display: 'relative'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    crosshair: true
+                },
+
+                yAxis: [ // Primary yAxis
+                    {
+                        labels: {
+                            format: '{value} คน'
+                            //,
+                            //style: {
+                            //    color: Highcharts.getOptions().colors[2]
+                            //}
+                        },
+                        title: {
+                            text: 'รวม'
+                            //,
+                            //style: {
+                            //    color: Highcharts.getOptions().colors[2]
+                            //}
+                        }
+                    },
+                    { // Secondary yAxis
+                        gridLineWidth: 1,
+                        labels: {
+                            format: '{value} คน'
+                        },
+                        title: {
+                            text: 'ประเภทคำขอ',
+                            style: {
+                                color: Highcharts.getOptions().colors[0]
+                            }
+                        }
+                    }
+                ]
+                ,
+                tooltip: {
+                    formatter: function () {
+                        return this.series.name + ': ' + this.y + '<br/>' +
+                            'รวม : ' + this.point.stackTotal;
+                    }
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'normal'
+                    }
+                },
+                series: [
+                    {
+                        name: 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน',
+                        type: 'column',
+                        data: Org1,
+                        yAxis: 1
+                        //color: 'gold',
+                    }
+                    , {
+                        name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชนนพื้นฐาน',
+                        type: 'column',
+                        data: Org2,
+                        yAxis: 1
+                        //color: 'gold',
+                    }
+                    , {
+                        name: 'กรุงเทพมหานคร',
+                        type: 'column',
+                        data: Org3,
+                        yAxis: 1
+                        //color: 'gold',
+                    }, {
+                        name: 'สำนักงานคณะกรรมการการอาชีวศึกษา',
+                        type: 'column',
+                        data: Org4,
+                        yAxis: 1
+                        //color: 'gold',
+                    }, {
+                        name: 'สำนักงานคณะกรรมการการอุดมศึกษา',
+                        type: 'column',
+                        data: Org5,
+                        yAxis: 1
+                        //color: 'gold',
+                    } , {
+                        name: 'องค์กรปกครองส่วนท้องถิ่น',
+                        type: 'column',
+                        data: Org6,
+                        yAxis: 1
+                        //color: 'gold',
+                    }, {
+                        name: 'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย',
+                        type: 'column',
+                        data: Org7,
+                        yAxis: 1
+                        //color: 'gold',
+                    }, {
+                        name: 'สํานักบริหารงานการศึกษาพิเศษ',
+                        type: 'column',
+                        data: Org8,
+                        yAxis: 1
+                        //color: 'gold',
+                    }, {
+                        name: 'สถาบันบัณฑิตพัฒนศิลป์',
+                        type: 'column',
+                        data: Org9,
+                        yAxis: 1
+                        //color: 'gold',
+                    }, {
+                        name: 'โรงเรียนมหิดลวิทยานุสรณ์',
+                        type: 'column',
+                        data: Org10,
+                        yAxis: 1
+                        //color: 'gold',
+                    }
+                ]
+            });
+        });
+    </script>
 </asp:Content>
 

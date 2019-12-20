@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -20,21 +20,7 @@
                 </div>
             </div>
 
-            <!--end:: Widgets/Activity-->
         </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
     </div>
     <div class="row">
         <div class="col-12 dashboard-table">
@@ -135,4 +121,115 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปี พ.ศ. 2552 - 2560');
+        });
+
+        var Type1 = [
+            { name: '2552', y: 10000 }
+            , { name: '2553', y: 12000 }
+            , { name: '2554', y: 13000 }
+            , { name: '2555', y: 12000 }
+            , { name: '2556', y: 11000 }
+            , { name: '2557', y: 9000 }
+            , { name: '2558', y: 7000 }
+            , { name: '2559', y: 6000 }
+            , { name: '2560', y: 7050 }
+        ];
+
+        var Type2 = [
+            { name: '2552', y: 5000 }
+            , { name: '2553', y: 6000 }
+            , { name: '2554', y: 8000 }
+            , { name: '2555', y: 5000 }
+            , { name: '2556', y: 8000 }
+            , { name: '2557', y: 6000 }
+            , { name: '2558', y: 4000 }
+            , { name: '2559', y: 5000 }
+            , { name: '2560', y: 7000 }
+        ];
+
+        var Type3 = [
+            { name: '2552', y: 3000 }
+            , { name: '2553', y: 4050 }
+            , { name: '2554', y: 3000 }
+            , { name: '2555', y: 4000 }
+            , { name: '2556', y: 3000 }
+            , { name: '2557', y: 1000 }
+            , { name: '2558', y: 1000 }
+            , { name: '2559', y: 4000 }
+            , { name: '2560', y: 2750 }
+        ];
+
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'spline',
+                    zoomType: 'xy',
+                    height:300
+                },
+                title: {
+                    text: 'ผู้ได้รับอนุญาตปี พ.ศ. 2552 - 2560',
+                    style: {
+                        display: 'relative'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    crosshair: true
+                },
+
+                yAxis: {
+                        labels: {
+                            format: '{value} คน'
+                            //,
+                            //style: {
+                            //    color: Highcharts.getOptions().colors[2]
+                            //}
+                        },
+                        title: {
+                            text: 'ได้รับอนุญาต (คน)'
+                            //,
+                            //style: {
+                            //    color: Highcharts.getOptions().colors[2]
+                            //}
+                        }
+                    }                   
+                ,
+                tooltip: {
+                    formatter: function () {
+                        return this.series.name + ': ' + this.y + '<br/>' +
+                            'รวม : ' + this.point.stackTotal;
+                    }
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'normal'
+                    }
+                },
+                series: [
+                    {
+                        name: 'ต่ออายุใบอนุญาต',
+                        data: Type1,
+                        color: 'orange'
+                    },
+                    {
+                        name: 'ครู',
+                        data: Type2,
+                        color: 'darkgreen'
+                    },
+                    {
+                        name: 'ขึ้นทะเบียนรับใบอนุญาต',                        
+                        data: Type3,
+                        color: 'steelblue'
+                    }
+
+                ]
+            });
+        });
+    </script>
+
 </asp:Content>
