@@ -257,4 +257,12 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
+        });
+
+    </script>
+
 </asp:Content>
