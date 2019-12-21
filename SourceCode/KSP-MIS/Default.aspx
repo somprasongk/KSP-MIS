@@ -9,7 +9,7 @@
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-lg-6 col-md-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -26,7 +26,7 @@
 
         </div>
 
-        <div class="col-6 dashboard-chart">
+        <div class="col-lg-6 col-md-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -35,7 +35,6 @@
                 </div>
             </div>
 
-            <!--end:: Widgets/Activity-->
         </div>
 
     </div>
