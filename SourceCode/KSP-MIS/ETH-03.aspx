@@ -146,4 +146,176 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด จำนวน xxx รายการ');
+        });
+
+        var docData = [
+            {
+                name: 'ประวัติหน้าที่โดยมิชอบ',
+                y: 523,
+                color: 'salmon'
+            },
+            {
+                name: 'ทำร้ายร่างกาย',
+                y: 432,
+                color: 'brown'
+            },
+            {
+                name: 'ชู้สาว',
+                y: 400,
+                color: 'olive'
+            },
+            {
+                name: 'ความผิดเกี่ยวกับเพศ',
+                y: 370,
+                color: 'teal'
+            },
+            {
+                name: 'การพนันและสุรา,ยาเสพติด',
+                y: 317,
+                color: 'lightblue'
+            },
+            {
+                name: 'ความผิดเกี่ยวกับทรัพย์',
+                y: 245,
+                color: 'coral'
+            },
+            {
+                name: 'ละทิ้ง,ละเว้น',
+                y: 215,
+                color: 'gold'
+            },
+            {
+                name: 'ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม',
+                y: 225,
+                color: 'seagreen'
+            },
+            {
+                name: 'ความผิดทางแพ่ง',
+                y: 275,
+                color: 'pink'
+            },            
+            {
+                name: 'อื่นๆ',
+                y: 300,
+                color: 'silver'
+            }
+        ];
+
+
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '',
+                    style: {
+                        display:'none'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนคดีผิดทางจรรยาบรรณ'
+                    }
+                },
+                //legend: {
+                //    enabled: true
+                //},
+                tooltip: {
+                    pointFormat: '{ความผิดทางจรรยาบรรณ} จำนวน: <b>{point.y} คดี</b>'
+                },
+                plotOptions: {
+                    //column: {
+                    //    //pointPadding: 0.2,
+                    //    //borderWidth: 0,
+                    //    //borderRadius: 20
+                    //}
+                },
+                series: [{
+                    name: 'ความผิดทางจรรยาบรรณ',
+                    data: docData,
+                    dataLabels: {
+                        //enabled: true,
+                        //rotation: -90,
+                        //color: '#FFFFFF',
+                        //align: 'right' //,
+                        //format: '{point.y:.1f}', // one decimal
+                        //y: 10 //, // 10 pixels down from the top
+                        //style: {
+                        //    fontSize: '13px',
+                        //    fontFamily: 'Verdana, sans-serif'
+                        //}
+                    }
+                }]
+            });
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'pie'
+                },
+                title: {
+                    text: '',
+                    style: {
+                        display: 'none'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนคดี'
+                    }
+                },
+                //legend: {
+                //    enabled: true
+                //},
+                tooltip: {
+                    pointFormat: '{ความผิดทางจรรยาบรรณ} จำนวน: <b>{point.y} คดี</b>'
+                },
+                plotOptions: {
+                    //column: {
+                    //    //pointPadding: 0.2,
+                    //    //borderWidth: 0,
+                    //    //borderRadius: 20
+                    //}
+                },
+                series: [{
+                    name: 'ความผิดทางจรรยาบรรณ',
+                    data: docData,
+                    dataLabels: {
+                        //enabled: true,
+                        //rotation: -90,
+                        //color: '#FFFFFF',
+                        //align: 'right' //,
+                        //format: '{point.y:.1f}', // one decimal
+                        //y: 10 //, // 10 pixels down from the top
+                        //style: {
+                        //    fontSize: '13px',
+                        //    fontFamily: 'Verdana, sans-serif'
+                        //}
+                    }
+                }]
+            });
+        });
+
+        
+    </script>
 </asp:Content>
+

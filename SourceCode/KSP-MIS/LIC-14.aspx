@@ -126,4 +126,156 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด จำนวน xxx รายการ');
+        });
+
+        var docData = [
+            {
+                name: 'ใบอนุญาตประกอบวิชาชีพ',
+                y: 523,
+                color: 'salmon'
+            },
+            {
+                name: 'หนังสืออนุญาตให้ประกอบวิชาชีพ<br/>โดยไม่มีใบอนุญาต (ผ่อนผัน)',
+                y: 432,
+                color: 'brown'
+            },
+            {
+                name: 'ใบอนุญาตปฏิบัติการสอน',
+                y: 400,
+                color: 'olive'
+            },
+            {
+                name: 'ใบแทนใบอนุญาต',
+                y: 370,
+                color: 'teal'
+            },
+            {
+                name: 'ทวงเอกสารต่างๆ',
+                y: 317,
+                color: 'lightblue'
+            },
+            {
+                name: 'อื่นๆ',
+                y: 300,
+                color: 'silver'
+            }
+        ];
+
+
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '',
+                    style: {
+                        display:'none'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนเอกสารเข้า'
+                    }
+                },
+                //legend: {
+                //    enabled: true
+                //},
+                tooltip: {
+                    pointFormat: '{ประเภทเอกสาร} จำนวนเอกสารเข้า: <b>{point.y} รายการ</b>'
+                },
+                plotOptions: {
+                    //column: {
+                    //    //pointPadding: 0.2,
+                    //    //borderWidth: 0,
+                    //    //borderRadius: 20
+                    //}
+                },
+                series: [{
+                    name: 'ประเภทเอกสาร',
+                    data: docData,
+                    dataLabels: {
+                        //enabled: true,
+                        //rotation: -90,
+                        //color: '#FFFFFF',
+                        //align: 'right' //,
+                        //format: '{point.y:.1f}', // one decimal
+                        //y: 10 //, // 10 pixels down from the top
+                        //style: {
+                        //    fontSize: '13px',
+                        //    fontFamily: 'Verdana, sans-serif'
+                        //}
+                    }
+                }]
+            });
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'pie'
+                },
+                title: {
+                    text: '',
+                    style: {
+                        display: 'none'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนเอกสารเข้า'
+                    }
+                },
+                //legend: {
+                //    enabled: true
+                //},
+                tooltip: {
+                    pointFormat: '{ประเภทเอกสาร} จำนวนเอกสารเข้า: <b>{point.y} รายการ</b>'
+                },
+                plotOptions: {
+                    //column: {
+                    //    //pointPadding: 0.2,
+                    //    //borderWidth: 0,
+                    //    //borderRadius: 20
+                    //}
+                },
+                series: [{
+                    name: 'ประเภทเอกสาร',
+                    data: docData,
+                    dataLabels: {
+                        //enabled: true,
+                        //rotation: -90,
+                        //color: '#FFFFFF',
+                        //align: 'right' //,
+                        //format: '{point.y:.1f}', // one decimal
+                        //y: 10 //, // 10 pixels down from the top
+                        //style: {
+                        //    fontSize: '13px',
+                        //    fontFamily: 'Verdana, sans-serif'
+                        //}
+                    }
+                }]
+            });
+        });
+
+        
+    </script>
 </asp:Content>
+
