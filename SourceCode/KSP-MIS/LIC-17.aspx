@@ -87,16 +87,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>
-                                
-
-                                    
-											<div class="progress kt-progress--sm">
-												<div class="progress-bar kt-bg-brand" style="width: 40%;"></div>
-											</div>
-								
-
-                                </td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -1111,10 +1102,37 @@
                          name: 'ปีงบประมาณ 2561',
                          type: 'column',
                          data: data
+                     },
+                     {
+                         name: 'ปีงบประมาณ 2561',
+                         type: 'spline',
+                         color: '#1dc9b7',
+                         data: data
                      }
                      
                  ]
              });
          });
+
+        $(document).ready(function () {
+
+            var colHTML = '<div style="width:4px; height:30px; background:#2c77f4; "></div>';
+            
+            var rowHTML = '<div class="progress kt-progress--sm" style="height:4px; background:white;">';
+            rowHTML += '<div class="progress-bar kt-bg-brand" style="width:xxx%;"></div>';
+            rowHTML += '</div>';
+
+            var i = 0;
+            $('.dataTable[role="grid"] tbody tr').each(function () {
+
+                var tr = $(this);
+                tr.find('td:last')
+                    .css('padding', '0')
+                    .css('vertical-align', 'bottom')
+                    .append(rowHTML.replace('xxx', (100 - (i*2))));
+               
+                i += 1;
+            });
+        });
     </script>
 </asp:Content>
