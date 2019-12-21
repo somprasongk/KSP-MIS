@@ -101,6 +101,7 @@
     <Content Include="assets\charts\modules\data.js" />
     <Content Include="assets\charts\modules\export-data.js" />
     <Content Include="assets\charts\modules\exporting.js" />
+    <Content Include="assets\charts\modules\networkgraph.js" />
     <Content Include="assets\charts\modules\series-label.js" />
     <Content Include="assets\charts\modules\sunburst.js" />
     <Content Include="assets\css\extent.css" />
