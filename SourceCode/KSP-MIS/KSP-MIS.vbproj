@@ -93,9 +93,12 @@
     <Content Include="ASS-03.aspx" />
     <Content Include="ASS-04.aspx" />
     <Content Include="ASS-05.aspx" />
+    <Content Include="assets\charts\highcharts-3d.js" />
     <Content Include="assets\charts\highcharts-more.js" />
     <Content Include="assets\charts\highcharts.js" />
     <Content Include="assets\charts\modules\accessibility.js" />
+    <Content Include="assets\charts\modules\cylinder.js" />
+    <Content Include="assets\charts\modules\data.js" />
     <Content Include="assets\charts\modules\export-data.js" />
     <Content Include="assets\charts\modules\exporting.js" />
     <Content Include="assets\charts\modules\series-label.js" />

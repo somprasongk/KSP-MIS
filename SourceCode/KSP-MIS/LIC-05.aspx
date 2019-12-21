@@ -11,28 +11,53 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
-
-
+        <div class="col-3 dashboard-chart">
             <div class="kt-portlet">
-
                 <div class="kt-portlet__body" id="chart1">
                 </div>
             </div>
-
-            <!--end:: Widgets/Activity-->
         </div>
-
-        <div class="col-6 dashboard-chart">
-
-
+        <div class="col-3 dashboard-chart">
             <div class="kt-portlet">
-
                 <div class="kt-portlet__body" id="chart2">
                 </div>
             </div>
-
-            <!--end:: Widgets/Activity-->
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart3">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart4">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart5">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart6">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart7">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart8">
+                </div>
+            </div>
         </div>
 
     </div>
@@ -148,4 +173,85 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
+        });
+
+        var ages = ['น้อยกว่า 31 ปี', '31-40 ปี', '41-50 ปี', '51-60 ปี', '61-70 ปี', '70 ปีขึ้นไป']
+
+        var orgs = ['สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน',
+            'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน',
+            'กรุงเทพมหานคร',
+            'สำนักงานคณะกรรมการการอาชีวศึกษา',
+            'สำนักงานคณะกรรมการการอุดมศึกษา',
+            'องค์กรปกครองส่วนท้องถิ่น',
+            'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย',
+            'สถาบันบัณฑิตพัฒนศิลป์'];
+
+        function genData() {
+            var result = [];
+            for (var i = 0; i < ages.length; i++) {
+                result.push(    
+                    randomInteger(10, 5000)
+                    //{ name: ages[i], y: randomInteger(10,5000) }
+                );                
+            }
+            return result;
+        }
+
+        $(document).ready(function () {
+
+            for (var i = 0; i < orgs.length; i++) {
+               
+
+                Highcharts.chart('chart' + (i + 1), {
+                    chart: {
+                        type: "area",
+                        polar: true,
+                        height: 300
+                    },
+                    title: {
+                        text: orgs[i],
+                        style: {
+                            fontSize: 12
+                        }
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    xAxis: {
+                        categories: ages,
+                        lineWidth: 0
+                    },
+                    yAxis: {
+                        max: 5000,
+                        reversed: false,
+                        lineWidth: 0,
+                        allowDecimals: false
+                    },
+                    series: [{
+                        name: '',
+                        data: genData()
+                    }],
+                    plotOptions: {
+                        series: {
+                            animation: true,
+                            lineWidth: 4,
+                            marker: {
+                                radius: 3,
+                                symbol: "circle"
+                            },
+                            dataLabels: {
+                                enabled: false
+                            }
+                        }
+                    }
+                });
+            }
+            
+        });
+
+    </script>
 </asp:Content>
