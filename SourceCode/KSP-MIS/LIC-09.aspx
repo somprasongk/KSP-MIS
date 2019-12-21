@@ -157,7 +157,7 @@
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">5</th>
-                                <td>อาชีว</td>
+                                <td>อาชีวะ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -299,6 +299,21 @@
                                 <td></td>
                                 <td></td>
                             </tr>
+                            <tr role="row" class="dtrg-group">
+                                <th colspan="2" class="text-center">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -312,4 +327,145 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2552-2554');
+         });
+       
+
+        $(document).ready(function () {
+
+        
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'แบ่งตามสังกัด พ.ศ.2552-2554'
+                },
+                xAxis: {
+                    categories: [
+                        'พ.ศ.2552',
+                        'พ.ศ.2553',
+                        'พ.ศ.2554'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวน (คน)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.0f} คน</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                        name: 'สพฐ.',
+                        data: [25000, 27000, 29000]
+                    }, {
+                        name: 'สช.',
+                        data: [15000, 13000, 12000]
+                    }, {
+                        name: 'กรุงเทพฯ',
+                        data: [12000, 14000, 15000]
+                    }, {
+                        name: 'อาชีวะ',
+                        data: [10000, 9000, 8000]
+                    }, {
+                        name: '	สกอ.',
+                        data: [8000, 8500, 10000]
+                    }, {
+                        name: 'สำนักงานพระพุทธฯ',
+                        data: [4000, 5000, 7000]
+                    }, {
+                        name: 'สถานบัณบัณฑิตพัฒนศิลป์',
+                        data: [3000, 2700, 2500]
+                    }, {
+                        name: 'สถานบัณบัณฑิตพัฒนศิลป์',
+                        data: [2000, 1900, 1400]
+                    }, {
+                        name: 'สถานบัณบัณฑิตพัฒนศิลป์',
+                        data: [1500, 1000, 1200]
+                    },                    {
+                        name: 'การศึกษาพิเศษ',
+                        data: [400, 250, 333]
+                    },
+                    {
+                        name: 'ตชด.',
+                        data: [66, 100, 133]
+                    }
+
+
+                ]
+            });
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'แบ่งตามประเภทบุคคลากร พ.ศ.2552-2554'
+                },
+                xAxis: {
+                    categories: [
+                        'พ.ศ.2552',
+                        'พ.ศ.2553',
+                        'พ.ศ.2554'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวน (คน)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.0f} คน</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                        name: 'ครู',
+                        color : 'lightblue',
+                        data: [24366, 16666, 12000]
+                }, {
+                        name: 'ครู ต่างประเทศ',
+                        color: 'slateblue',
+                        data: [15000, 11000, 9000]
+                }, {
+                        name: 'ผู้บริหารสถานศึกษา',
+                        color: 'navy',
+                        data: [6666, 6000, 5333]
+                }
+                ]
+            });
+        });
+
+        
+        
+
+   </script>
 </asp:Content>
