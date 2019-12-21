@@ -10,34 +10,9 @@
 <asp:Content ID="FilterPlaceHolder" ContentPlaceHolderID="FilterPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+   
     <div class="row">
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart1">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="col-12 dashboard-table">
+        <div class="col-6 dashboard-table">
             <div class="kt-portlet">
                 <div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
@@ -169,10 +144,97 @@
             <!--end::Section-->
         </div>
 
-        <!--end::Form-->
+       <div class="col-3 dashboard-chart">
+
+
+            <div class="kt-portlet">
+
+                <div class="kt-portlet__body" id="chart1">
+                </div>
+            </div>
+
+            <!--end:: Widgets/Activity-->
+        </div>
+
+        <div class="col-3 dashboard-chart">
+
+
+            <div class="kt-portlet">
+
+                <div class="kt-portlet__body" id="chart2">
+                </div>
+            </div>
+
+            <!--end:: Widgets/Activity-->
+        </div>
     </div>
 
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปี พ.ศ. 2559-2560');
+         });
+
+        var category = [
+            'ฟิลิปปินส์',
+            'สหรัฐอเมริกา',
+            'สหราชอาณาจักร',
+            'จีน',
+            'แคเมอรูน',
+            'แคนาดา',
+            'แอฟริกาใต้',
+            'ออสเตรเลีย',
+            'อินเดีย',
+            'ไอร์แลนด์ / ฝรั่งเศส'
+        ];
+
+
+
+        $(document).ready(function () {
+
+            for (var i = 1; i <= 2; i++) {
+                Highcharts.chart('chart' + i, {
+                    chart: {
+                        type: 'bar',
+                        height: 520
+                    },
+                    title: {
+                        text: '10 อันดับประเทศที่ได้รับใบอนุญาต ตามประเภทคำขอ ปี พ.ศ. <b>' + (2558+i) + '</b>',
+                        style: {
+                            fontSize: 14
+                        }
+                    },
+                    xAxis: {
+                        categories: category
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'จำนวน (คน)'
+                        }
+                    },
+                    legend: {
+                        reversed: true
+                    },
+                    plotOptions: {
+                        series: {
+                            stacking: 'normal'
+                        }
+                    },
+                    series: [{
+                        name: 'หนังสืออนุญาต',
+                        color: 'lightblue',
+                        data: [1000, 950, 900, 800, 650, 550, 500, 300, 250, 100]
+                    }, {
+                        name: 'ใบอนุญาต',
+                        data: [1000, 950, 900, 800, 650, 550, 500, 300, 250, 100]
+                    }]
+                });
+            }
+            
+        });
+    </script>
 </asp:Content>

@@ -11,28 +11,12 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
-
-
+        <div class="col-12 dashboard-chart">
             <div class="kt-portlet">
 
                 <div class="kt-portlet__body" id="chart1">
                 </div>
             </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
         </div>
 
     </div>
@@ -85,7 +69,7 @@
                                 <th>พ.ค.</th>
                                 <th>มิ.ย.</th>
                                 <th>ส.ค.</th>
-                                <th>ก.ย.</th>
+                                <th class="border-right">ก.ย.</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -103,7 +87,16 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
+                                <td>
+                                
+
+                                    
+											<div class="progress kt-progress--sm">
+												<div class="progress-bar kt-bg-brand" style="width: 40%;"></div>
+											</div>
+								
+
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -1003,7 +996,7 @@
                             </tr>
                         </tbody>
                         <tfoot>
-                            <tr>
+                            <tr class="dtrg-group">
                                 <td colspan="2">รวม</td>
                                 <td></td>
                                 <td></td>
@@ -1032,4 +1025,96 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ 2562');
+         });
+
+        var data = [
+             { name: 'ตค', y: 2500 }
+            , { name: 'พย', y: 1500 }
+            , { name: 'ธค', y: 2000 }
+             , { name: 'มค', y: 1800 }
+             , { name: 'กพ', y: 1500 }
+             , { name: 'มีค', y: 1700 }
+             , { name: 'เมย', y: 1800 }
+             , { name: 'พค', y: 2000 }
+             , { name: 'มิย', y: 2100 }
+             , { name: 'กค', y: 2300 }
+             , { name: 'สค', y: 2200 }
+             , { name: 'กย', y: 2400 }            
+         ];
+
+      
+         $(document).ready(function () {
+
+             Highcharts.chart('chart1', {
+                 chart: {
+                     zoomType: 'xy'
+                 },
+                 title: {
+                     text: 'ปีงบประมาณ 2561',
+                     style: {
+                         display: 'relative'
+                     }
+                 },
+                 xAxis: {
+                     type: 'category',
+                     crosshair: true
+                 },
+
+                 yAxis: [ // Primary yAxis
+                     {
+                         labels: {
+                             format: '{value} คน'
+                             //,
+                             //style: {
+                             //    color: Highcharts.getOptions().colors[2]
+                             //}
+                         },
+                         title: {
+                             text: 'รวม'
+                             //,
+                             //style: {
+                             //    color: Highcharts.getOptions().colors[2]
+                             //}
+                         }
+                     },
+                     { // Secondary yAxis
+                         gridLineWidth: 1,
+                         labels: {
+                             format: '{value} คน'
+                         },
+                         title: {
+                             text: 'ยอดรวมชาวต่างชาติ',
+                             style: {
+                                 color: Highcharts.getOptions().colors[0]
+                             }
+                         }
+                     }
+                 ]
+                 ,
+                 tooltip: {
+                     formatter: function () {
+                         return this.series.name + ': ' + this.y + '<br/>' +
+                             'รวม : ' + this.point.stackTotal;
+                     }
+                 },
+                 plotOptions: {
+                     column: {
+                         stacking: 'normal'
+                     }
+                 },
+                 series: [
+                     {
+                         name: 'ปีงบประมาณ 2561',
+                         type: 'column',
+                         data: data
+                     }
+                     
+                 ]
+             });
+         });
+    </script>
 </asp:Content>
