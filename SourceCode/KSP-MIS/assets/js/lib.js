@@ -9,6 +9,10 @@ function genRadomString(length) {
     return result;
 }
 
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function reportFileSize(size) {
     var KB = 1024;
     var MB = KB * KB;

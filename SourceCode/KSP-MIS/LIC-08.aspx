@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,19 +22,7 @@
 
             <!--end:: Widgets/Activity-->
         </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
+        
     </div>
     <div class="row">
         <div class="col-12 dashboard-table">
@@ -172,4 +160,74 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2552-2560');
+         });
+
+
+
+         $(document).ready(function () {
+
+             Highcharts.chart('chart1', {
+                 chart: {
+                     type: 'area'
+                 },
+                 title: {
+                     text: 'จำนวนผู้ได้รับใบอนุญาตตามวุฒิการศึกษา ในแต่ละปี พ.ศ.2552-2560'
+                 },
+                 xAxis: {
+
+                     categories: ['ปี 2552', 'ปี 2553', 'ปี 2554', 'ปี 2555', 'ปี 2556', 'ปี 2557', 'ปี 2558', 'ปี 2559','ปี 2560'],
+                     tickmarkPlacement: 'on',
+                     title: {
+                         enabled: false
+                     }
+                 },
+                 yAxis: {
+                     title: {
+                         text: 'Billions'
+                     },
+                     labels: {
+                         formatter: function () {
+                             return this.value / 1000;
+                         }
+                     }
+                 },
+                 tooltip: {
+                     split: true,
+                     valueSuffix: ' จำนวน (คน)'
+                 },
+                 plotOptions: {
+                     area: {
+                         stacking: 'normal',
+                         lineWidth: 0,
+                         marker: {
+                             lineWidth: 1,
+                             lineColor: '#666666'
+                         }
+                     }
+                 },
+                 series: [{
+                         name: 'B. Education',
+                        data: [150, 180, 120, 100, 140, 200, 150, 200, 300]
+                 }, {
+                         name: 'M. Education',
+                         data: [1100, 1400, 1500, 1500, 1100, 1000, 900, 1200, 1050]
+                 }, {
+                         name: 'Postgraduate certificate in education',
+                         data: [500, 600, 800, 500, 800, 600, 400, 500, 700]
+                 }, {
+                         name: 'B. Arts',
+                         data: [600, 600, 500, 500, 700, 750, 600, 700, 700]
+                 }, {
+                         name: 'B. Science',
+                         data: [1000, 1200, 1300, 1200, 1100, 900,700, 600, 750]
+                 }]
+             });
+         });
+
+
+    </script>
 </asp:Content>
