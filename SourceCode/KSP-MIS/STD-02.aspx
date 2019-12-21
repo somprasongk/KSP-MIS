@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-8 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -23,9 +23,7 @@
             <!--end:: Widgets/Activity-->
         </div>
 
-        <div class="col-6 dashboard-chart">
-
-
+        <div class="col-4 dashboard-chart">
             <div class="kt-portlet">
 
                 <div class="kt-portlet__body" id="chart2">
@@ -34,6 +32,7 @@
 
             <!--end:: Widgets/Activity-->
         </div>
+
 
     </div>
     <div class="row">
@@ -200,5 +199,377 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด จำนวน xxx รายการ');
+        });
+
+
+        var Plan1 = [
+             {
+                 name: 'ภาษาและเทคโนโลยีสำหรับครู',
+                 y: 500
+             },
+             {
+                 name: 'การพัฒนาหลักสูตร',
+                 y: 500
+             },
+             {
+                 name: 'การจัดการเรียนรู้',
+                 y: 100
+             },
+             {
+                 name: 'จิตวิทยาสำหรับครู',
+                 y: 300
+             },
+             {
+                 name: 'การวัดและประเมินผลการศึกษา',
+                 y: 100
+             },
+             {
+                 name: 'การบริหารจัดการในห้องเรียน',
+                 y: 400
+             },
+             {
+                 name: 'การวิจัยทางการศึกษา',
+                 y: 50
+             },
+             {
+                 name: 'นวัตกรรมและเทคโนโลยีสารสนเทศ<br/>ทางการศึกษา',
+                 y: 300
+             },
+             {
+                 name: 'ความเป็นครู',
+                 y: 400
+             }
+
+        ];
+        var Plan2 = [
+             {
+                 name: 'ภาษาและเทคโนโลยีสำหรับครู',
+                 y: 1000
+             },
+             {
+                 name: 'การพัฒนาหลักสูตร',
+                 y: 3000
+             },
+             {
+                 name: 'การจัดการเรียนรู้',
+                 y: 2400
+             },
+             {
+                 name: 'จิตวิทยาสำหรับครู',
+                 y: 2000
+             },
+             {
+                 name: 'การวัดและประเมินผลการศึกษา',
+                 y: 1400
+             },
+             {
+                 name: 'การบริหารจัดการในห้องเรียน',
+                 y: 3600
+             },
+             {
+                 name: 'การวิจัยทางการศึกษา',
+                 y: 2300
+             },
+             {
+                 name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
+                 y: 3000
+             },
+             {
+                 name: 'ความเป็นครู',
+                 y: 2600
+             }
+
+        ];
+
+        var Plan3 = [
+            {
+                name: 'ภาษาและเทคโนโลยีสำหรับครู',
+                y: 100
+            },
+            {
+                name: 'การพัฒนาหลักสูตร',
+                y: 500
+            },
+            {
+                name: 'การจัดการเรียนรู้',
+                y: 900
+            },
+            {
+                name: 'จิตวิทยาสำหรับครู',
+                y: 300
+            },
+            {
+                name: 'การวัดและประเมินผลการศึกษา',
+                y: 200
+            },
+            {
+                name: 'การบริหารจัดการในห้องเรียน',
+                y: 500
+            },
+            {
+                name: 'การวิจัยทางการศึกษา',
+                y: 100
+            },
+            {
+                name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
+                y: 300
+            },
+            {
+                name: 'ความเป็นครู',
+                y: 0
+            }
+        ];
+        var Plan4 = [
+           {
+               name: 'ภาษาและเทคโนโลยีสำหรับครู',
+               y: 2800
+           },
+           {
+               name: 'การพัฒนาหลักสูตร',
+               y: 2380
+           },
+           {
+               name: 'การจัดการเรียนรู้',
+               y: 2655
+           },
+           {
+               name: 'จิตวิทยาสำหรับครู',
+               y: 3000
+           },
+            {
+                name: 'การวัดและประเมินผลการศึกษา',
+                y: 2000
+            },
+            {
+                name: 'การบริหารจัดการในห้องเรียน',
+                y: 2000
+            },
+            {
+                name: 'การวิจัยทางการศึกษา',
+                y: 3500
+            },
+            {
+                name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
+                y: 2200
+            },
+            {
+                name: 'ความเป็นครู',
+                y: 2900
+            }
+        ];
+        var Total = [
+           {
+               name: 'ภาษาและเทคโนโลยีสำหรับครู',
+               y: 2800,
+               color: 'salmon'
+           },
+           {
+               name: 'การพัฒนาหลักสูตร',
+               y: 1000,
+               color: 'brown'
+           },
+           {
+               name: 'การจัดการเรียนรู้',
+               y: 6000,
+               color: 'olive'
+           },
+           {
+               name: 'จิตวิทยาสำหรับครู',
+               y: 3000,
+               color: 'teal'
+           },
+            {
+                name: 'การวัดและประเมินผลการศึกษา',
+                y: 2000,
+                color: 'lightblue'
+            },
+            {
+                name: 'การบริหารจัดการในห้องเรียน',
+                y: 2000,
+                color: 'violet'
+            },
+            {
+                name: 'การวิจัยทางการศึกษา',
+                y: 3500,
+                color: 'pink'
+            },
+            {
+                name: 'นวัตกรรมและเทคโนโลยี<br/>สารสนเทศทางการศึกษา',
+                y: 2200,
+                color: 'coral'
+            },
+            {
+                name: 'ความเป็นครู',
+                y: 3000,
+                color: 'seagreen'
+            }
+        ];
+
+        function docData(data,step) {
+            var result = [];
+            for (var i = 0; i < data.length; i++) {
+                var item = data[i];
+                item.y = item.y*step;
+                result.push(item);
+            }
+            return result;
+        }
+
+        function categories() {
+            var result = [];
+            for (var i = 0; i < Plan1.length; i++) {
+                result.push(Plan1[i].name);
+            }
+            return result;
+        }
+
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: 'จำนวนผู้ผ่าน/ไม่ผ่านการทดสอบมาตรฐานวิชาชีพ ชาย|หญิง <br/>  ในปี 2562',
+                    style: {
+                        display: 'relative'
+                    }
+                },
+                xAxis: [{
+                    categories: categories(),
+                    reversed: false,
+                    //labels: {
+                    //    step: 1
+                    //},
+                    accessibility: {
+                        description: 'ชาย'
+                    }
+                }, { // mirror axis on right side
+                    opposite: true,
+                    reversed: false,
+                    categories: categories(),
+                    //linkedTo: 0,
+                    //labels: {
+                    //    step: 1
+                    //},
+                    accessibility: {
+                        description: 'หญิง'
+                    }
+                }],
+                yAxis: {
+                    title: {
+                        text: null
+                    },
+                    labels: {
+                        formatter: function () {
+                            return Math.abs(this.value);
+                        }
+                    },
+                    //accessibility: {
+                    //    description: 'Percentage population',
+                    //    rangeDescription: 'Range: 0 to 5%'
+                    //}
+                },
+                plotOptions: {
+                    series: {
+                        stacking: 'normal'
+                    }
+                },
+
+                tooltip: {
+                    formatter: function () {
+                        return '<b>' + this.series.name + '</b> : ' + Math.abs(this.point.y) + ' คน<br/>' + 
+                            'รวม : ' + this.point.stackTotal + ' คน<br/>';
+                    }
+                },
+
+                series: [{
+                    name: 'ไม่ผ่าน (ช)',
+                    data: docData(Plan1, -1),
+                    color: 'darksilver',
+                    stack: 'Doc1'
+                },
+                {
+                    name: 'ผ่าน (ช)',
+                    data: docData(Plan2, -1),
+                    color: 'steelblue',
+                    stack: 'Doc1'
+                },
+                {
+                    name: 'ไม่ผ่าน (ญ)',
+                    data: Plan3,
+                    color: 'silver',
+                    stack: 'Doc2'
+                }
+                , {
+                    name: 'ผ่าน (ญ)',
+                    type: 'bar',
+                    data: Plan4,
+                    color: 'pink',
+                    stack: 'Doc2'
+         
+                }]
+            });
+
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'pie'
+                },
+                title: {
+                    text: 'จำนวนผู้ลงทะเบียน ปี 2562',
+                    style: {
+                        display: 'relative'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนหนังสือเอกสารเข้า'
+                    }
+                },
+                //legend: {
+                //    enabled: true
+                //},
+                tooltip: {
+                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเอกสารเข้า: <b>{point.y} รายการ</b>'
+                },
+                plotOptions: {
+                    //column: {
+                    //    //pointPadding: 0.2,
+                    //    //borderWidth: 0,
+                    //    //borderRadius: 20
+                    //}
+                },
+                series: [{
+                    name: 'หน่วยงาน',
+                    data: Total,
+                    dataLabels: {
+                        //enabled: true,
+                        //rotation: -90,
+                        //color: '#FFFFFF',
+                        //align: 'right' //,
+                        //format: '{point.y:.1f}', // one decimal
+                        //y: 10 //, // 10 pixels down from the top
+                        //style: {
+                        //    fontSize: '13px',
+                        //    fontFamily: 'Verdana, sans-serif'
+                        //}
+                    }
+                }]
+            });
+
+        });
+    </script>
 </asp:Content>
 
