@@ -1,11 +1,12 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-01.aspx.vb" Inherits="KSP_MIS.HR_01" %>
+
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
     <style>
-    th span {
-        writing-mode:vertical-rl;
-    } 
+        th span {
+            writing-mode: vertical-rl;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Breadcrumb" ContentPlaceHolderID="Breadcrumb" runat="server">
@@ -15,7 +16,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-12 dashboard-chart">
+        <div class="col-6 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -27,50 +28,38 @@
             <!--end:: Widgets/Activity-->
         </div>
 
-        <div class="col-3 dashboard-chart">
+        <div class="col-6 dashboard-chart">
 
+            <div class="row">
+                 <div class="col-6 kt-portlet">
 
-            <div class="kt-portlet">
+                    <div class="kt-portlet__body" id="chart2">
+                    </div>
+                </div>
+                 <div class="col-6 kt-portlet">
 
-                <div class="kt-portlet__body" id="chart2">
+                    <div class="kt-portlet__body" id="chart4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 kt-portlet">
+
+                    <div class="kt-portlet__body" id="chart3">
+                    </div>
+                </div>
+               
+                <div class="col-6 kt-portlet">
+
+                    <div class="kt-portlet__body" id="chart5">
+                    </div>
                 </div>
             </div>
 
             <!--end:: Widgets/Activity-->
         </div>
-                <div class="col-3 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart3">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-                <div class="col-3 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart4">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-                <div class="col-3 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart5">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
+        
 
     </div>
     <div class="row">
@@ -104,7 +93,7 @@
                 </div>
                 <div class="kt-portlet__body dashboard-table-container">
 
-                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
+                    <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
                                 <th rowspan="3">ประเภท/กลุ่ม</th>
@@ -142,7 +131,7 @@
 
                         <tbody>
                             <tr role="row" class="odd">
-                                <td rowspan="11">  ปฏิบัติการ</td>
+                                <td rowspan="11">ปฏิบัติการ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -504,7 +493,7 @@
         var Plan4 = [
            {
                name: 'ผู้บริหาร สนง.',
-               y:150
+               y: 150
            },
            {
                name: 'บริหาร',
@@ -520,11 +509,37 @@
            }
         ];
 
+        var Degree1 = [
+              { name: 'ผู้บริหาร สนง.', y: 10 }
+            , { name: 'บริหาร', y: 5 }
+            , { name: 'วิชาการ', y: 20 }
+            , { name: 'ปฏิบัติการ', y: 5 }
+        ];
+        var Degree2 = [
+              { name: 'ผู้บริหาร สนง.', y: 20 }
+            , { name: 'บริหาร', y: 5 }
+            , { name: 'วิชาการ', y: 20 }
+            , { name: 'ปฏิบัติการ', y: 15 }
+        ];
+        var Degree3 = [
+              { name: 'ผู้บริหาร สนง.', y: 20 }
+            , { name: 'บริหาร', y: 30 }
+            , { name: 'วิชาการ', y: 20 }
+            , { name: 'ปฏิบัติการ', y: 25 }
+        ];
+        var Degree4 = [
+             { name: 'ผู้บริหาร สนง.', y: 50 }
+           , { name: 'บริหาร', y: 60 }
+           , { name: 'วิชาการ', y: 40 }
+           , { name: 'ปฏิบัติการ', y: 55 }
+        ];
+
         $(document).ready(function () {
 
             Highcharts.chart('chart1', {
                 chart: {
-                    zoomType: 'xy'
+                    zoomType: 'xy',
+                    height:650
                 },
                 title: {
                     text: 'จำนวนบุคคลากรตามสายงาน พ.ศ.2562',
@@ -542,14 +557,17 @@
                 yAxis: [ // Primary yAxis
                     {
                         labels: {
-                            format: '{value} คน'
+                            format: '{value} %'
                             //,
                             //style: {
                             //    color: Highcharts.getOptions().colors[2]
                             //}
                         },
                         title: {
-                            text: 'รวม'
+                            text: 'วุฒิการศึกษา',
+                            min: 0,
+                            max:100
+                            
                             //,
                             //style: {
                             //    color: Highcharts.getOptions().colors[2]
@@ -589,35 +607,67 @@
                         type: 'column',
                         data: Plan1,
                         yAxis: 1,
-                        color: 'SteelBlue',
-                        stack: 'Doc2'
+                        color: 'TEAL',
+                        stack: 'Doc1'
                     },
                     {
                         name: 'ชำนาญการ',
                         type: 'column',
                         data: Plan2,
                         yAxis: 1,
-                        color: 'coral',
-                        stack: 'Doc2'
-                    }                    ,
+                        color: 'LIGHTSEAGREEN',
+                        stack: 'Doc1'
+                    },
                     {
                         name: 'ปฏิบัติการ',
                         type: 'column',
                         data: Plan3,
                         yAxis: 1,
-                        color: 'violet',
-                        stack: 'Doc2'
-                    }                    ,
+                        color: 'LIGHTSEAGREEN',
+                        stack: 'Doc1'
+                    },
                     {
                         name: 'เจ้าหน้าที่',
                         type: 'column',
                         data: Plan4,
                         yAxis: 1,
-                        color: 'teal',
+                        color: 'DARKSEAGREEN',
+                        stack: 'Doc1'
+                    }
+                    ,
+                    {
+                        name: 'วุฒิการศึกษา ป.เอก',
+                        type: 'column',
+                        data: Degree1,
+                        yAxis: 0,
+                        color: 'VIOLET',
+                        stack: 'Doc2'
+                    },
+                    {
+                        name: 'วุฒิการศึกษา ป.โท',
+                        type: 'column',
+                        data: Degree2,
+                        yAxis: 0,
+                        color: 'PLUM',
+                        stack: 'Doc2'
+                    },
+                    {
+                        name: 'วุฒิการศึกษา ป.ตรี',
+                        type: 'column',
+                        data: Degree3,
+                        yAxis: 0,
+                        color: 'THISTLE',
                         stack: 'Doc2'
                     }
-
-
+                    ,
+                    { 
+                        name: 'วุฒิการศึกษา ต่ำกว่า ป.ตรี',
+                        type: 'column',
+                        data: Degree4,
+                        yAxis: 0,
+                        color: 'LAVENDER',
+                        stack: 'Doc2'
+                    }
                 ]
             });
 
@@ -626,11 +676,17 @@
 
                 Highcharts.chart('chart' + (i + 2), {
                     chart: {
-                        type: "area",
+                        type: "line",
                         polar: true,
                         height: 300
                     },
                     title: {
+                        text: 'ช่วงอายุบุคคลากร',
+                        style: {
+                            fontSize: 14
+                        }
+                    },
+                    subtitle: {
                         text: orgs[i],
                         style: {
                             fontSize: 12
@@ -658,34 +714,25 @@
                         {
                             name: 'หญิง',
                             data: genDataF(),
-                            color: 'pink',                            
+                            color: 'pink',
                         }
                     ],
                     plotOptions: {
                         series:
                             {
-                            animation: true,
-                            lineWidth: 4,
-                            marker: {
-                                radius: 3,
-                                symbol: "circle"
-                            },
-                            dataLabels: {
-                                enabled: false
+                                animation: true,
+                                lineWidth: 4,
+                                marker: {
+                                    radius: 3,
+                                    symbol: "circle"
+                                },
+                                dataLabels: {
+                                    enabled: false
+                                }
                             }
-                            }
-
-                        
-
-
-
                     }
                 });
-
-
             }
-
-
         });
     </script>
 
