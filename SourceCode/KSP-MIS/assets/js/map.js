@@ -47,7 +47,7 @@ function initMap(div) {
         styles: mapStyle,
         center: { lat: 13.6, lng: 100.6 },
         streetViewControl: false,
-        zoom: 5,
+        zoom: 6,
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         mapTypeControl: false,
         mapTypeControlOptions: {
