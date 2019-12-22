@@ -61,11 +61,11 @@
 								<div class="kt-login__copyright">
 									&copy 2020 KSP.or.th
 								</div>
-								<%--<div class="kt-login__menu">
-									<a href="#" class="kt-link">Privacy</a>
-									<a href="#" class="kt-link">Legal</a>
-									<a href="#" class="kt-link">Contact</a>
-								</div>--%>
+								<div class="kt-login__menu">
+									<a href="javascript:;" class="kt-link">Privacy</a>
+									<a href="javascript:;" class="kt-link">Legal</a>
+									<a href="javascript:;" class="kt-link">Contact</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -76,9 +76,9 @@
 					<div class="kt-grid__item kt-grid__item--fluid  kt-grid__item--order-tablet-and-mobile-1  kt-login__wrapper">
 
 						<!--begin::Head-->
-						<div class="kt-login__head">
+						<%--<div class="kt-login__head">
 							<img src="assets/media/logos/logo-200.png" />
-						</div>
+						</div>--%>
 
 						<!--end::Head-->
 
@@ -88,6 +88,7 @@
 							<!--begin::Signin-->
 							<div class="kt-login__form">
 								<div class="kt-login__title">
+									<h3 style="margin-bottom:30px;"><img src="assets/media/logos/logo-200.png" /></h3>
 									<h3>เข้าสู่ระบบ</h3>
 								</div>
 

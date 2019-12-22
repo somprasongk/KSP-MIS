@@ -1835,6 +1835,10 @@
     <Content Include="ETH-01.aspx" />
     <Content Include="ETH-02.aspx" />
     <Content Include="ETH-03.aspx" />
+    <Content Include="GIS-01.aspx" />
+    <Content Include="GIS-02.aspx" />
+    <Content Include="GIS-03.aspx" />
+    <Content Include="GIS-04.aspx" />
     <Content Include="HR-01.aspx" />
     <Content Include="HR-02.aspx" />
     <Content Include="HR-03.aspx" />
@@ -2058,6 +2062,34 @@
     </Compile>
     <Compile Include="ETH-03.aspx.vb">
       <DependentUpon>ETH-03.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="GIS-01.aspx.designer.vb">
+      <DependentUpon>GIS-01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GIS-01.aspx.vb">
+      <DependentUpon>GIS-01.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="GIS-02.aspx.designer.vb">
+      <DependentUpon>GIS-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GIS-02.aspx.vb">
+      <DependentUpon>GIS-02.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="GIS-03.aspx.designer.vb">
+      <DependentUpon>GIS-03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GIS-03.aspx.vb">
+      <DependentUpon>GIS-03.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="GIS-04.aspx.designer.vb">
+      <DependentUpon>GIS-04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GIS-04.aspx.vb">
+      <DependentUpon>GIS-04.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="HR-01.aspx.designer.vb">
