@@ -897,7 +897,7 @@
 														</li>
 														<li class="kt-nav__separator"></li>
 														<li class="kt-nav__item">
-															<a href="javascript:;" class="kt-nav__link">
+															<a href="javascript:;" onclick="topRightMenuPrinting($(this))" class="kt-nav__link">
 																<i class="kt-nav__link-icon fa fa-print"></i>
 																<span class="kt-nav__link-text">พิมพ์หน้านี้</span>
 															</a>

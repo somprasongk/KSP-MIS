@@ -43,3 +43,8 @@ $(document).ready(function () {
 
 
 });
+
+function topRightMenuPrinting(btn) {
+    btn.closest('dropdown-menu').removeClass('show').prev('button').attr('aria-expanded', false);
+    setTimeout(window.print, 1000);
+}
