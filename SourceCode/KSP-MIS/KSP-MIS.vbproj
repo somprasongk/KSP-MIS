@@ -207,6 +207,7 @@
     <Content Include="assets\js\global\layout\quick-search.js" />
     <Content Include="assets\js\jquery.cookie.min.js" />
     <Content Include="assets\js\lib.js" />
+    <Content Include="assets\js\map.js" />
     <Content Include="assets\js\pages\builder.js" />
     <Content Include="assets\js\pages\components\base\dropdown.js" />
     <Content Include="assets\js\pages\components\calendar\background-events.js" />

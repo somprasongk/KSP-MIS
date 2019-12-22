@@ -741,7 +741,7 @@
 												<li class="kt-menu__item " aria-haspopup="true">
 													<a href="GIS-02.aspx" class="kt-menu__link ">
 														<i class="kt-menu__link-icon fa fa-medal"></i>
-														<span class="kt-menu__link-text">จำนวนสถาบันที่ได้รับการรองมาตรฐาน</span>
+														<span class="kt-menu__link-text">สถาบันที่ได้รับการรองมาตรฐาน</span>
 													</a>
 												</li>	
 												<li class="kt-menu__item " aria-haspopup="true">
@@ -930,175 +930,179 @@
 			<a href="#" class="kt-quick-panel__close" id="kt_quick_panel_close_btn"><i class="flaticon2-delete"></i></a>			
 			<div class="kt-quick-panel__content">
 				
-				<div class="kt-portlet">
-										<div class="kt-portlet__head">
-											<div class="kt-portlet__head-label">
-												<h3 class="kt-portlet__head-title">
-													เงื่อนไขการแสดงผล
-												</h3>
-											</div>
-										</div>
+				<div class="kt-portlet" id="MainFilter">
+                    <div class="kt-portlet__head">
+                        <div class="kt-portlet__head-label">
+                            <h3 class="kt-portlet__head-title">เงื่อนไขการแสดงผล
+                            </h3>
+                        </div>
+                    </div>
 
-										<!--begin::Form-->
-										<div class="kt-form kt-form--label-right">
-											<div class="kt-portlet__body">												
-												<div class="form-group row">
-													<label class="col-3 col-form-label">ชื่อ</label>
-													<div class="col-9">
-														<input class="form-control" type="text">
-													</div>
-												</div>
+                    <!--begin::Form-->
+                    <div class="kt-form kt-form--label-right" >
+                        <div class="kt-portlet__body">
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">ชื่อ</label>
+                                <div class="col-9">
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">สังกัด</label>
+                                <div class="col-9">
 
-												<div class="form-group row">
-													<label class="col-3 col-form-label">สังกัด</label>
-													<div class="col-9">
-														
-														<select class="form-control">
-															<option>ทั้งหมด</option>
-															<option>สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน</option>
-															<option>สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</option>
-															<option>องค์การปกครองส่วนท้องถิ่น</option>
-															<option>กรุงเทพมหานคร</option>
-															<option>สำนักงานคณะกรรมการการอาชีวศึกษา</option>
-															<option>สำนักงานคณะกรรมการการอุดมศึกษา</option>
-															<option>สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย</option>
-															<option>โรงเรียนมหิดลวิทยานุสรณ์</option>
-															<option>สถาบันพัฒนศิลป์</option>
-															<option>สำนักบริหารงานการศึกษาพิเศษ</option>
-														</select>
-													</div>
-												</div>
+                                    <select class="form-control">
+                                        <option>ทั้งหมด</option>
+                                        <option>สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน</option>
+                                        <option>สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</option>
+                                        <option>องค์การปกครองส่วนท้องถิ่น</option>
+                                        <option>กรุงเทพมหานคร</option>
+                                        <option>สำนักงานคณะกรรมการการอาชีวศึกษา</option>
+                                        <option>สำนักงานคณะกรรมการการอุดมศึกษา</option>
+                                        <option>สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย</option>
+                                        <option>โรงเรียนมหิดลวิทยานุสรณ์</option>
+                                        <option>สถาบันพัฒนศิลป์</option>
+                                        <option>สำนักบริหารงานการศึกษาพิเศษ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <labe class="col-3 col-form-label text-right">บุคคลากร</labe>
+                                <div class="col-9">
+                                    <div class="kt-radio-inline">
+                                        <label class="kt-radio kt-radio--tick kt-radio--danger">
+                                            <input type="radio" name="radio2">
+                                            ไทย
+										
+                                            <span></span>
+                                        </label>
+                                        <label class="kt-radio kt-radio--tick kt-radio--warning">
+                                            <input type="radio" name="radio2">
+                                            ต่างประเทศ
+										
+                                            <span></span>
+                                        </label>
+                                        <label class="kt-radio kt-radio--tick kt-radio--success">
+                                            <input type="radio" name="radio2">
+                                            ทั้งหมด
+										
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">ประเภท</label>
+                                <div class="col-9">
+                                    <div class="kt-checkbox-list">
+                                        <label class="kt-checkbox kt-checkbox--tick kt-checkbox--success">
+                                            <input type="checkbox">
+                                            ครู
+											<span></span>
+                                        </label>
+                                        <label class="kt-checkbox kt-checkbox--tick kt-checkbox--danger">
+                                            <input type="checkbox">
+                                            ผู้บริหารสถานศึกษา
+											<span></span>
+                                        </label>
+                                        <label class="kt-checkbox kt-checkbox--tick kt-checkbox--info">
+                                            <input type="checkbox">
+                                            ผู้บริหารการศึกษา
+											<span></span>
+                                        </label>
+                                        <label class="kt-checkbox kt-checkbox--tick kt-checkbox--warning">
+                                            <input type="checkbox">
+                                            ศึกษานิเทศ
+											<span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">วันที่</label>
+                                <div class="col-9">
+                                    <input class="form-control" type="date" value="2011-08-19">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">ถึงวันที่</label>
+                                <div class="col-9">
+                                    <input class="form-control" type="date" value="2012-08-19">
+                                </div>
+                            </div>
 
-												<div class="form-group row">
-													<labe class="col-3 col-form-label text-right">บุคคลากร</labe>
-													<div class="col-9">
-														<div class="kt-radio-inline">
-															<label class="kt-radio kt-radio--tick kt-radio--danger">
-																<input type="radio" name="radio2"> ไทย
-																<span></span>
-															</label>
-															<label class="kt-radio kt-radio--tick kt-radio--warning">
-																<input type="radio" name="radio2"> ต่างประเทศ
-																<span></span>
-															</label>
-															<label class="kt-radio kt-radio--tick kt-radio--success">													
-																<input type="radio" name="radio2"> ทั้งหมด
-																<span></span>
-															</label>
-														</div>
-													</div>
-												</div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">เดือน</label>
+                                <div class="col-9">
+                                    <input class="form-control" type="month" value="2011-08">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">ถึงเดือน</label>
+                                <div class="col-9">
+                                    <input class="form-control" type="month" value="2012-08">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">ปี</label>
+                                <div class="col-9">
+                                    <select class="form-control">
+                                        <option></option>
+                                        <option>2550</option>
+                                        <option>2551</option>
+                                        <option>2552</option>
+                                        <option>2553</option>
+                                        <option>2554</option>
+                                        <option>2555</option>
+                                        <option>2556</option>
+                                        <option>2557</option>
+                                        <option>2558</option>
+                                        <option>2559</option>
+                                        <option>2560</option>
+                                        <option>2561</option>
+                                        <option>2562</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">ถึงปี</label>
+                                <div class="col-9">
+                                    <select class="form-control">
+                                        <option></option>
+                                        <option>2550</option>
+                                        <option>2551</option>
+                                        <option>2552</option>
+                                        <option>2553</option>
+                                        <option>2554</option>
+                                        <option>2555</option>
+                                        <option>2556</option>
+                                        <option>2557</option>
+                                        <option>2558</option>
+                                        <option>2559</option>
+                                        <option>2560</option>
+                                        <option>2561</option>
+                                        <option>2562</option>
+                                    </select>
+                                </div>
+                            </div>
 
-												<div class="form-group row">
-													<label class="col-3 col-form-label">ประเภท</label>
-													<div class="col-9">
-														<div class="kt-checkbox-list">
-															<label class="kt-checkbox kt-checkbox--tick kt-checkbox--success">
-																<input type="checkbox"> ครู
-																<span></span>
-															</label>
-															<label class="kt-checkbox kt-checkbox--tick kt-checkbox--danger">
-																<input type="checkbox"> ผู้บริหารสถานศึกษา
-																<span></span>
-															</label>
-															<label class="kt-checkbox kt-checkbox--tick kt-checkbox--info">
-																<input type="checkbox"> ผู้บริหารการศึกษา
-																<span></span>
-															</label>
-															<label class="kt-checkbox kt-checkbox--tick kt-checkbox--warning">
-																<input type="checkbox"> ศึกษานิเทศ
-																<span></span>
-															</label>
-														</div>
-													</div>
-												</div>
-
-
-													
-
-												<div class="form-group row">
-													<label class="col-3 col-form-label">วันที่</label>
-													<div class="col-9">
-														<input class="form-control" type="date" value="2011-08-19">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-3 col-form-label">ถึงวันที่</label>
-													<div class="col-9">
-														<input class="form-control" type="date" value="2012-08-19">
-													</div>
-												</div>
-
-												<div class="form-group row">
-													<label class="col-3 col-form-label">เดือน</label>
-													<div class="col-9">
-														<input class="form-control" type="month" value="2011-08">
-													</div>
-												</div>												
-												<div class="form-group row">
-													<label class="col-3 col-form-label">ถึงเดือน</label>
-													<div class="col-9">
-														<input class="form-control" type="month" value="2012-08">
-													</div>
-												</div>		
-												<div class="form-group row">
-													<label class="col-3 col-form-label">ปี</label>
-													<div class="col-9">
-														<select class="form-control">
-															<option></option>
-															<option>2550</option>
-															<option>2551</option>
-															<option>2552</option>
-															<option>2553</option>
-															<option>2554</option>
-															<option>2555</option>
-															<option>2556</option>
-															<option>2557</option>
-															<option>2558</option>
-															<option>2559</option>
-															<option>2560</option>
-															<option>2561</option>
-															<option>2562</option>
-														</select>
-													</div>
-												</div>												
-												<div class="form-group row">
-													<label class="col-3 col-form-label">ถึงปี</label>
-													<div class="col-9">
-														<select class="form-control">
-															<option></option>
-															<option>2550</option>
-															<option>2551</option>
-															<option>2552</option>
-															<option>2553</option>
-															<option>2554</option>
-															<option>2555</option>
-															<option>2556</option>
-															<option>2557</option>
-															<option>2558</option>
-															<option>2559</option>
-															<option>2560</option>
-															<option>2561</option>
-															<option>2562</option>
-														</select>
-													</div>
-												</div>	
-												
-											</div>
-											<div class="kt-portlet__foot">
-												<div class="kt-form__actions">
-													<div class="row">
-														<div class="col-12 text-center">
-															<button type="reset" class="btn btn-success">Apply</button>
-															<button type="reset" class="btn btn-secondary">Reset</button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+                        </div>
+                        <div class="kt-portlet__foot">
+                            <div class="kt-form__actions">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <button type="reset" class="btn btn-success">Apply</button>
+                                        <button type="reset" class="btn btn-secondary">Reset</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
 
 				<asp:ContentPlaceHolder ID="FilterPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+				
 			</div>
 	</div>
 
