@@ -434,9 +434,10 @@
                     type: 'bar'
                 },
                 title: {
-                    text: 'จำนวนผู้ผ่าน/ไม่ผ่านการทดสอบมาตรฐานวิชาชีพ ชาย|หญิง <br/>  ในปี 2562',
+                    text: 'จำนวนผู้ผ่าน/ไม่ผ่านการทดสอบมาตรฐานวิชาชีพ ชาย|หญิง ในปี 2562',
                     style: {
-                        display: 'relative'
+                        display: 'relative',
+                        fontSize: 14
                     }
                 },
                 xAxis: [{
@@ -490,7 +491,7 @@
                 series: [{
                     name: 'ไม่ผ่าน (ช)',
                     data: docData(Plan1, -1),
-                    color: 'darksilver',
+                    color: 'red',
                     stack: 'Doc1'
                 },
                 {
@@ -502,7 +503,7 @@
                 {
                     name: 'ไม่ผ่าน (ญ)',
                     data: Plan3,
-                    color: 'silver',
+                    color: 'red',
                     stack: 'Doc2'
                 }
                 , {
@@ -521,9 +522,10 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'จำนวนผู้ลงทะเบียน ปี 2562',
+                    text: 'มาตรฐานวิชาชีพที่ใช้รับรอง ปี 2562',
                     style: {
-                        display: 'relative'
+                        display: 'relative',
+                        fontSize:14
                     }
                 },
                 xAxis: {

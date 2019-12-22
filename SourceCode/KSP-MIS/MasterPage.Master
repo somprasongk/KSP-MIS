@@ -621,8 +621,6 @@
 				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
 
 					
-								
-
 					<!-- begin:: Header -->
 					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
 						<!-- begin: Header Menu -->
@@ -725,6 +723,45 @@
 											</div>
 										</div>
 									</li>
+									
+									<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+										<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+											<i class="kt-menu__link-icon fa fa-globe"></i>
+											<span class="kt-menu__link-text">ภาพรวมเชิงพื้นที่</span>
+											<i class="kt-menu__ver-arrow la la-angle-right"></i>
+										</a>
+										<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+											<ul class="kt-menu__subnav">
+												<li class="kt-menu__item " aria-haspopup="true">
+													<a href="GIS-01.aspx" class="kt-menu__link">
+														<i class="kt-menu__link-icon fa fa-user-check"></i>
+														<span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาต</span>
+													</a>													
+												</li>
+												<li class="kt-menu__item " aria-haspopup="true">
+													<a href="GIS-02.aspx" class="kt-menu__link ">
+														<i class="kt-menu__link-icon fa fa-medal"></i>
+														<span class="kt-menu__link-text">จำนวนสถาบันที่ได้รับการรองมาตรฐาน</span>
+													</a>
+												</li>	
+												<li class="kt-menu__item " aria-haspopup="true">
+													<a href="GIS-03.aspx" class="kt-menu__link ">
+														<i class="kt-menu__link-icon flaticon2-cup"></i>
+														<span class="kt-menu__link-text">จำนวนผู้ได้รับรางวัลเกียรติคุณ</span>
+													</a>
+												</li>
+												<li class="kt-menu__item " aria-haspopup="true">
+													<a href="GIS-04.aspx" class="kt-menu__link ">
+														<i class="kt-menu__link-icon fa fa-balance-scale"></i>
+														<span class="kt-menu__link-text">จำนวนดตีจรรยาบรรณวิชาชีพ</span>
+													</a>
+												</li>		
+											</ul>
+										</div>
+									</li>
+
+
+
 
 								</ul>
 
@@ -759,6 +796,7 @@
 
 							<!--end: Search -->
 							<!--begin: Quick Actions -->
+							
 							<!--end: Quick Actions -->
 							<!--begin: User Bar -->
 							<div class="kt-header__topbar-item kt-header__topbar-item--user">
@@ -807,6 +845,7 @@
 						<!-- end:: Header Topbar -->
 					</div>
 
+					
 					<!-- end:: Header -->
 					<div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
 
