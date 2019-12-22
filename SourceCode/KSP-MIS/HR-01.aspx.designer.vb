@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class HR_01
-
+    
     '''<summary>
     '''uc_Breadcrumb control.
     '''</summary>
