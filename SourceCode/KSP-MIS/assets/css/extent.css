@@ -120,6 +120,11 @@
     padding:0;
 }/* Search Panel */
 
+.kt-portlet__head-toolbar {
+    display:none;
+} /* Search ตาราง*/
+
+
 #kt_quick_panel::-webkit-scrollbar {
     width: 6px;
     background-color: white;
@@ -185,4 +190,12 @@
 
 .dashboard-table-container tr.level-2 td:nth-child(2) {
     padding-left: 30px;
+}
+
+
+/*-------------------Map------------------*/
+#map {
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
