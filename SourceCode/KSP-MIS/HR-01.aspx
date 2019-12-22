@@ -15,7 +15,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -27,12 +27,45 @@
             <!--end:: Widgets/Activity-->
         </div>
 
-        <div class="col-6 dashboard-chart">
+        <div class="col-3 dashboard-chart">
 
 
             <div class="kt-portlet">
 
                 <div class="kt-portlet__body" id="chart2">
+                </div>
+            </div>
+
+            <!--end:: Widgets/Activity-->
+        </div>
+                <div class="col-3 dashboard-chart">
+
+
+            <div class="kt-portlet">
+
+                <div class="kt-portlet__body" id="chart3">
+                </div>
+            </div>
+
+            <!--end:: Widgets/Activity-->
+        </div>
+                <div class="col-3 dashboard-chart">
+
+
+            <div class="kt-portlet">
+
+                <div class="kt-portlet__body" id="chart4">
+                </div>
+            </div>
+
+            <!--end:: Widgets/Activity-->
+        </div>
+                <div class="col-3 dashboard-chart">
+
+
+            <div class="kt-portlet">
+
+                <div class="kt-portlet__body" id="chart5">
                 </div>
             </div>
 
@@ -378,4 +411,283 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
+        });
+
+        var ages = ['61-70 ปี', '51-60 ปี', '41-50 ปี', '31-40 ปี', '20-30 ปี']
+
+        var orgs = ['ผู้บริหาร สนง.',
+            'บริหาร',
+            'วิชาการ',
+            'ปฏิบัติการ'];
+
+        function genDataM() {
+            var result = [];
+            for (var i = 0; i < ages.length; i++) {
+                result.push(
+                    randomInteger(10, 5000)
+                    //{ name: ages[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+
+        function genDataF() {
+            var result = [];
+            for (var i = 0; i < ages.length; i++) {
+                result.push(
+                    randomInteger(10, 2000)
+                    //{ name: ages[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+
+
+        var Plan1 = [
+             {
+                 name: 'ผู้บริหาร สนง.',
+                 y: 145
+             },
+             {
+                 name: 'บริหาร',
+                 y: 430
+             },
+             {
+                 name: 'วิชาการ',
+                 y: 500
+             },
+             {
+                 name: 'ปฏิบัติการ',
+                 y: 980
+             }
+
+        ];
+        var Plan2 = [
+            {
+                name: 'ผู้บริหาร สนง.',
+                y: 130
+            },
+            {
+                name: 'บริหาร',
+                y: 320
+            },
+            {
+                name: 'วิชาการ',
+                y: 500
+            },
+            {
+                name: 'ปฏิบัติการ',
+                y: 890
+            }
+        ];
+        var Plan3 = [
+            {
+                name: 'ผู้บริหาร สนง.',
+                y: 120
+            },
+            {
+                name: 'บริหาร',
+                y: 200
+            },
+            {
+                name: 'วิชาการ',
+                y: 450
+            },
+            {
+                name: 'ปฏิบัติการ',
+                y: 1100
+            }
+        ];
+        var Plan4 = [
+           {
+               name: 'ผู้บริหาร สนง.',
+               y:150
+           },
+           {
+               name: 'บริหาร',
+               y: 200
+           },
+           {
+               name: 'วิชาการ',
+               y: 365
+           },
+           {
+               name: 'ปฏิบัติการ',
+               y: 1000
+           }
+        ];
+
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'จำนวนบุคคลากรตามสายงาน พ.ศ.2562',
+                    style: {
+                        display: 'relative'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45
+                    }
+                },
+
+                yAxis: [ // Primary yAxis
+                    {
+                        labels: {
+                            format: '{value} คน'
+                            //,
+                            //style: {
+                            //    color: Highcharts.getOptions().colors[2]
+                            //}
+                        },
+                        title: {
+                            text: 'รวม'
+                            //,
+                            //style: {
+                            //    color: Highcharts.getOptions().colors[2]
+                            //}
+                        },
+                        opposite: true
+                    }
+                    ,
+                    { // Secondary yAxis
+                        gridLineWidth: 1,
+                        labels: {
+                            format: '{value} คน'
+                        },
+                        title: {
+                            text: 'จำนวนบุคลากร',
+                            style: {
+                                color: Highcharts.getOptions().colors[0]
+                            }
+                        }
+                    }
+                ]
+                ,
+                tooltip: {
+                    formatter: function () {
+                        return this.series.name + ': ' + this.y + '<br/>' +
+                            'รวม : ' + this.point.stackTotal;
+                    }
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'normal'
+                    }
+                },
+                series: [
+                    {
+                        name: 'เชี่ยวชาญ',
+                        type: 'column',
+                        data: Plan1,
+                        yAxis: 1,
+                        color: 'SteelBlue',
+                        stack: 'Doc2'
+                    },
+                    {
+                        name: 'ชำนาญการ',
+                        type: 'column',
+                        data: Plan2,
+                        yAxis: 1,
+                        color: 'coral',
+                        stack: 'Doc2'
+                    }                    ,
+                    {
+                        name: 'ปฏิบัติการ',
+                        type: 'column',
+                        data: Plan3,
+                        yAxis: 1,
+                        color: 'violet',
+                        stack: 'Doc2'
+                    }                    ,
+                    {
+                        name: 'เจ้าหน้าที่',
+                        type: 'column',
+                        data: Plan4,
+                        yAxis: 1,
+                        color: 'teal',
+                        stack: 'Doc2'
+                    }
+
+
+                ]
+            });
+
+            for (var i = 0; i < orgs.length; i++) {
+
+
+                Highcharts.chart('chart' + (i + 2), {
+                    chart: {
+                        type: "area",
+                        polar: true,
+                        height: 300
+                    },
+                    title: {
+                        text: orgs[i],
+                        style: {
+                            fontSize: 12
+                        }
+                    },
+                    legend: {
+                        enabled: true
+                    },
+                    xAxis: {
+                        categories: ages,
+                        lineWidth: 0
+                    },
+                    yAxis: {
+                        max: 5000,
+                        reversed: false,
+                        lineWidth: 0,
+                        allowDecimals: false
+                    },
+                    series: [
+                        {
+                            name: 'ชาย',
+                            data: genDataM(),
+                            color: 'lightblue',
+                        },
+                        {
+                            name: 'หญิง',
+                            data: genDataF(),
+                            color: 'pink',                            
+                        }
+                    ],
+                    plotOptions: {
+                        series:
+                            {
+                            animation: true,
+                            lineWidth: 4,
+                            marker: {
+                                radius: 3,
+                                symbol: "circle"
+                            },
+                            dataLabels: {
+                                enabled: false
+                            }
+                            }
+
+                        
+
+
+
+                    }
+                });
+
+
+            }
+
+
+        });
+    </script>
+
+
 </asp:Content>
