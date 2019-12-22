@@ -362,7 +362,50 @@
                             </tr>
                         </tbody>
                     </table>
-
+                    <div class="text-danger kt-font-bold">
+                        ควรจะเป็นแบบข้างล่างนี้ไหม
+                    </div>
+                    <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
+                        <thead>
+                            <tr role="row">
+                                <th rowspan="2">#</th>
+                                <th rowspan="2">ชื่อ-สกุล</th>
+                                <th rowspan="2">เลขที่ตำแหน่ง</th>
+                                <th rowspan="2">ส่วนงาน</th>
+                                <th rowspan="2">วันบรรณจุ</th>
+                                <th rowspan="2">วันเกษียณอายุ</th>
+                                <th rowspan="2">อายุงานเกษียณ</th>
+                                <th rowspan="1" colspan="7" class="text-center">เงินเดือนย้อนหลัง 60 เดือน เพื่อการคำนวณบำเน็จรายเดือน</th>
+                            </tr>
+                            <tr>
+                                <th colspan="1">เริ่มจากเดือน</th>
+                                <th colspan="1">เงินเดือนเริ่มต้น (บาท)</th>
+                                <th colspan="1">จนถึงเดือน</th>
+                                <th colspan="1">เงินเดือนสิ้นสุด (บาท)</th>
+                                <th colspan="1">รวมจำนวน (เดือน)</th>   
+                                <th colspan="1">เฉลี่ยเดือนละ (บาท)</th>
+                                <th colspan="1">รวมจำนวน (บาท)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                     <table>
 
                 </div>
             </div>
@@ -375,5 +418,12 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ 2556-2561');
+        });
+
+    </script>
 </asp:Content>
 

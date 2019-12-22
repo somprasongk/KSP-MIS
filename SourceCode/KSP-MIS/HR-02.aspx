@@ -11,24 +11,12 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
 
                 <div class="kt-portlet__body" id="chart1">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
                 </div>
             </div>
 
@@ -88,7 +76,7 @@
                                 <th>มิ.ย.</th>
                                 <th>ก.ค.</th>
                                 <th>ส.ค.</th>
-                                <th>ก.ย.</th>
+                                <th class="border-right">ก.ย.</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -181,5 +169,81 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
+        });
+
+        var months = ['ต.ค.', 'พ.ย.', 'ธ.ค.', 'ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.'];
+
+        Highcharts.chart('chart1', {
+            chart: {
+                zoomType: 'xy',
+                type:'line'
+            },
+            title: {
+                text: '',
+                style: {
+                    display: 'none'
+                }
+            },
+            xAxis: {
+                type: 'category',
+                categories: months,
+                crosshair: true
+            },
+
+            yAxis: [ // Primary yAxis
+                {
+                    min:0,
+                    labels: {
+                        format: '{value} คน',
+                        style: {
+                            color: Highcharts.getOptions().colors[4]
+                        }
+                    },
+                    title: {
+                        text: 'รวมจำนวน'
+                    },
+                    opposite: true
+                }
+                ,
+                { // Secondary yAxis
+                    gridLineWidth: 1,
+                    labels: {
+                        format: '{value} บาท'
+                    },
+                    title: {
+                        text: 'รวมจำนวน',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    }
+                }
+            ]
+            ,
+            tooltip: {
+                pointFormat: '<b>{point.y} คน</b>'
+            },
+            series: [{
+                name: 'จำนวนเงิน',
+                type: 'column',
+                data: [25000000, 26000000, 25500000, 25000400, 24000000, 24300000, 25500000, 25900000, 25000000, 25000000, 24300000, 25000000],
+                yAxis: 1
+
+            },
+            {
+                name: 'บุคคลากรที่ได้รับเงินเดือน',
+                type: 'spline',
+                data: [1000, 1003, 998, 1000, 1010, 1020, 1000, 999, 1000, 1000, 1004, 1000],
+                yAxis: 0,
+                color: 'violet'
+            }
+            ]
+        });
+
+    </script>
+       
+
 </asp:Content>
 

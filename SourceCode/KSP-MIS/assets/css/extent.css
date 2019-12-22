@@ -121,7 +121,7 @@
 }/* Search Panel */
 
 .kt-portlet__head-toolbar {
-    display:none;
+    display:none !important;
 } /* Search ตาราง*/
 
 
