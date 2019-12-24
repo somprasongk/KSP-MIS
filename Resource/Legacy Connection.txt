@@ -1,0 +1,7 @@
+---------------- TEPIS -----------------------
+ip 192.168.10.1
+port 1521
+service name KURUSAPA
+user MIS
+pass MISONLY
+schema KURUSAPA
