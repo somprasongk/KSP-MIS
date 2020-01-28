@@ -446,5 +446,227 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+        <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด');
+        });
+
+        $(document).ready(function () {
+
+            
+
+            var Degree1 = [
+                  { name: 'ผู้บริหาร สนง.', y: 10 }
+                , { name: 'บริหาร', y: 5 }
+                , { name: 'วิชาการ', y: 20 }
+                , { name: 'ปฏิบัติการ', y: 5 }
+            ];
+            var Degree2 = [
+                  { name: 'ผู้บริหาร สนง.', y: 20 }
+                , { name: 'บริหาร', y: 5 }
+                , { name: 'วิชาการ', y: 20 }
+                , { name: 'ปฏิบัติการ', y: 15 }
+            ];
+            var Degree3 = [
+                  { name: 'ผู้บริหาร สนง.', y: 20 }
+                , { name: 'บริหาร', y: 30 }
+                , { name: 'วิชาการ', y: 20 }
+                , { name: 'ปฏิบัติการ', y: 25 }
+            ];
+            var Degree4 = [
+                 { name: 'ผู้บริหาร สนง.', y: 50 }
+               , { name: 'บริหาร', y: 60 }
+               , { name: 'วิชาการ', y: 40 }
+               , { name: 'ปฏิบัติการ', y: 55 }
+            ];
+
+            var degree = ['ต่ำกว่าปริญญาตรี'
+                            , 'ปริญญาบัณฑิตวิชาชีพครู'
+                            , 'ประกาศนียบัตรบัณฑิตวิชาชีพครู'
+                            , 'ประกาศนียบัตรบัณฑิตทางการบริหาร'
+                            , 'ปริญญาตรี'
+                            , 'ปริญญาตรีทางการศึกษา'
+                            , 'ปริญญาโท'
+                            , 'ปริญญาโททางการศึกษา'
+                            , 'ปริญญาเอกทางการศึกษา'
+                            , 'ไม่มีวุฒิการศึกษา<br>(ปริญญาตรี / ปริญญาโท / ปริญญาเอก)'
+                            , 'วุฒิอื่นๆ']
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    zoomType: 'xy',
+                    height: 650
+                },
+                title: {
+                    text: 'จำนวนวุฒิการศึกษาของบุคคลากรตามกลุ่ม/ประเภท',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: 'ปี พ.ศ.2562',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        //rotation: -45
+                    }
+                },
+
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนวุฒิการศึกษา'
+                    },
+                    stackLabels: {
+                        enabled: true,
+                        style: {
+                            fontWeight: 'bold',
+                            color: ( // theme
+                                Highcharts.defaultOptions.title.style &&
+                                Highcharts.defaultOptions.title.style.color
+                            ) || 'gray'
+                        }
+                    }
+                },
+                tooltip: {
+                    formatter: function () {
+                        return this.series.name + ': ' + this.y + '<br/>' +
+                            'รวม : ' + this.point.stackTotal;
+                    }
+                },
+                
+                plotOptions: {
+                    column: {
+                        stacking: 'normal',
+                        dataLabels: {
+                            enabled: true
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: 'วุฒิการศึกษา ป.เอก',
+                        type: 'column',
+                        data: Degree1,
+                        color: 'VIOLET'
+                    },
+                    {
+                        name: 'วุฒิการศึกษา ป.โท',
+                        type: 'column',
+                        data: Degree2,
+                        color: 'PLUM'
+                    },
+                    {
+                        name: 'วุฒิการศึกษา ป.ตรี',
+                        type: 'column',
+                        data: Degree3,
+                        color: 'THISTLE'
+                    }
+                    ,
+                    {
+                        name: 'วุฒิการศึกษา ต่ำกว่า ป.ตรี',
+                        type: 'column',
+                        data: Degree4,
+                        color: 'LAVENDER'
+                    }
+                ]
+            });
+
+
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'column'                    ,
+                    height: 650
+                },
+                title: {
+                    text: 'จำนวนบุคคลากร แบ่งตามช่วงอายุ'
+                },
+
+                title: {
+                    text: 'จำนวนบุคคลากรกลุ่ม/ประเภท แบ่งตามช่วงอายุ',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: 'ปี พ.ศ.2562',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+
+                xAxis: {
+                    categories: ['ผู้บริหาร สนง.', 'บริหาร', 'วิชาการ', 'ปฏิบัติการ']
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนบุคลากร'
+                    },
+                    stackLabels: {
+                        enabled: true,
+                        style: {
+                            fontWeight: 'bold',
+                            color: ( // theme
+                                Highcharts.defaultOptions.title.style &&
+                                Highcharts.defaultOptions.title.style.color
+                            ) || 'gray'
+                        }
+                    }
+                },
+                legend: {
+                    //align: 'right',
+                    //x: -30,
+                    //verticalAlign: 'top',
+                    //y: 25,
+                    //floating: true,
+                    //backgroundColor:
+                    //    Highcharts.defaultOptions.legend.backgroundColor || 'white',
+                    //borderColor: '#CCC',
+                    //borderWidth: 1,
+                    //shadow: false
+                    reversed: true
+                },
+                tooltip: {
+                    headerFormat: '<b>{point.x}</b><br/>',
+                    pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'normal',
+                        dataLabels: {
+                            enabled: true
+                        }
+                    }
+                },
+                series: [{
+                    name: 'ช่วงอายุ 61-70 ปี',
+                    data: [52, 69, 75, 53]
+                }, {
+                    name: 'ช่วงอายุ 51-60 ปี',
+                    data: [69, 85, 116, 101]
+                }, {
+                    name: 'ช่วงอายุ 41-50 ปี',
+                    data: [86, 82, 74, 73]
+                }, {
+                    name: 'ช่วงอายุ 31-40 ปี',
+                    data: [40, 44, 41, 64]
+                }, {
+                    name: 'ช่วงอายุ 20-30 ปี',
+                    data: [117, 120, 54, 105]
+                }]
+            });
+        });
+
+        
+
+
+    </script>
+
 </asp:Content>
 

@@ -566,12 +566,10 @@
                         title: {
                             text: 'วุฒิการศึกษา',
                             min: 0,
-                            max:100
-                            
-                            //,
-                            //style: {
-                            //    color: Highcharts.getOptions().colors[2]
-                            //}
+                            max: 100,
+                            style: {
+                                color: 'ORCHID'
+                            }
                         },
                         opposite: true
                     }
@@ -584,7 +582,7 @@
                         title: {
                             text: 'จำนวนบุคลากร',
                             style: {
-                                color: Highcharts.getOptions().colors[0]
+                                color: 'MEDIUMSEAGREEN'
                             }
                         }
                     }
@@ -615,7 +613,7 @@
                         type: 'column',
                         data: Plan2,
                         yAxis: 1,
-                        color: 'LIGHTSEAGREEN',
+                        color: 'SEAGREEN',
                         stack: 'Doc1'
                     },
                     {
@@ -733,6 +731,17 @@
                     }
                 });
             }
+
+
+
+
+
+
+
+
+
+
+
         });
     </script>
 

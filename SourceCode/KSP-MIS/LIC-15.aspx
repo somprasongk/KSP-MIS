@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,19 +22,7 @@
 
             <!--end:: Widgets/Activity-->
         </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
+        
     </div>
     <div class="row">
         <div class="col-12 dashboard-table">
@@ -132,4 +120,58 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
+        });
+
+        $(document).ready(function () {
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: 'จำนวนเอกสารการออกใบแทนใบอนุญาต และสาเหตุการออกใบแทน',
+                    style: {
+                                fontSize: 14
+                    }
+                        },
+                subtitle: {
+                    text: 'พ.ศ.2562',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+                xAxis: {
+                    categories: ['ครู', 'ผู้บริหารสถานศึกษา', 'ผู้บริหารการศึกษา', 'ศึกษานิเทศก์']
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'สาเหตุการออกใบแทนใบอนุญาต'
+                    }
+                },
+                legend: {
+                    reversed: true
+                },
+                plotOptions: {
+                    series: {
+                        stacking: 'normal',
+                        threshold: null
+                    }
+                },
+                series: [{
+                    name: 'ชำรุด สูญหาย',
+                    data: [95, 33, 14, 57]
+                }, {
+                    name: 'เปลี่ยนข้อมูลทางทะเบียน (แก้ไขคำนำหน้า-ชื่อ-สกุล)',
+                    data: [22, 12, 43, 22]
+                }, {
+                    name: 'เจ้าหน้าที่ขอแก้ไข',
+                    data: [293, 114,94, 112]
+                }]
+            });
+
+        });
+    </script>
 </asp:Content>
