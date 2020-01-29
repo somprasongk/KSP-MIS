@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,18 +22,7 @@
 
             <!--end:: Widgets/Activity-->
         </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
+         
 
     </div>
     <div class="row">
@@ -156,5 +145,96 @@
 </asp:Content>
 
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ 2562');
+         });
+
+         var vision = ['พันธกิจที่ 1', 'พันธกิจที่ 2'];
+         var budget = ['งบกลาง', 'งบบุคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น'];
+
+         function genData() {
+             var result = [];
+             for (var i = 0; i < budget.length; i++) {
+                 result.push(
+                     randomInteger(50000, 100000)
+                     //{ name: subject[i], y: randomInteger(10,5000) }
+                 );
+             }
+             return result;
+         }
+
+      
+         $(document).ready(function () {
+
+             for (var i = 0; i < vision.length; i++) {
+             
+               Highcharts.chart('chart' + (i+1), {
+                 chart: {
+                     type: 'area'
+                 },
+                 title: {
+                     text: 'งบประมาณรายจ่ายประจำปี ' + vision[i],
+                     style: {
+                         fontSize: 14
+                     }
+                 },
+                 subtitle: {
+                     text: 'ปีงบประมาณ 2562',
+                     style: {
+                         fontSize: 12
+                     }
+                 },
+                 xAxis: {
+                     categories: ['งบกลาง', 'งบบุคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น'],
+                     tickmarkPlacement: 'on',
+                     title: {
+                         enabled: false
+                     }
+                 },
+                 yAxis: {
+                     title: {
+                         text: 'บาท'
+                     },
+                     labels: {
+                         formatter: function () {
+                             return this.value ;
+                         }
+                     }
+                 },
+                 tooltip: {
+                     split: true,
+                     valueSuffix: ' บาท'
+                 },
+                 plotOptions: {
+                     area: {
+                         stacking: 'normal',
+                         lineColor: '#666666',
+                         lineWidth: 1,
+                         marker: {
+                             lineWidth: 1,
+                             lineColor: '#666666'
+                         }
+                     }
+                 },
+                 series: [{
+                     name: 'พันธกิจ 1',
+                     data: genData(),
+                     color: '#E1558F'
+                 }, {
+                     name: 'พันธกิจ 2',
+                     data: genData(),
+                     color: '#A755E1'
+                 }, {
+                     name: 'พันธกิจ 3',
+                     data: genData(),
+                     color: '#558FE1'
+                 }]
+             });
+           
+             };
+         });
+
+     </script>
 </asp:Content>
 

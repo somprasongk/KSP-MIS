@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,18 +22,7 @@
 
             <!--end:: Widgets/Activity-->
         </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
+         
 
     </div>
     <div class="row">
@@ -235,5 +224,173 @@
 </asp:Content>
 
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ 2562');
+         });
+
+         var vision = ['พันธกิจที่ 1', 'พันธกิจที่ 2'];
+         var budget = ['งบกลาง', 'งบบุคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น'];
+
+         function genData() {
+             var result = [];
+             for (var i = 0; i < budget.length; i++) {
+                 result.push(
+                     randomInteger(50000, 100000)
+                     //{ name: subject[i], y: randomInteger(10,5000) }
+                 );
+             }
+             return result;
+         }
+
+      
+         $(document).ready(function () {
+
+             Highcharts.chart('chart1', {
+                 chart: {
+                     type: 'line'
+                 },
+                 title: {
+                     text: 'Area chart with negative values'
+                 },
+                 xAxis: {
+                     categories: ['งบกลาง', 'งบบุคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น']
+                 },
+                 credits: {
+                     enabled: false
+                 },
+                 tooltip: {
+                     split: true,
+                     valueSuffix: ' บาท'
+                 },
+                 series: [{
+                     name: 'สำนักงานมาตรฐานวิชาชีพ',
+                     data: genData()
+                 }
+                 , {
+                     name: 'สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ',
+                     data: genData()
+                 }, {
+                     name: 'จรรยาบรรณวิชาชีพและนิติการ',
+                     data: genData()
+                 }, {
+                     name: 'สำนักพัฒนาและส่งเสริมวิชาชีพ',
+                     data: genData()
+                 }, {
+                     name: 'สำนักนโยบายและแผน',
+                     data: genData()
+                 }, {
+                     name: 'สำนักอำนวยการ',
+                     data: genData()
+                 }, {
+                     name: 'สำนักเทคโนโลยีสารสนเทศและการสื่อสาร',
+                     data: genData()
+                 }, {
+                     name: 'หน่วยตรวจสอบภายใน',
+                     data: genData()
+                 }, {
+                     name: 'กลุ่มพัฒนาระบบงาน',
+                     data: genData()
+                 }, {
+                     name: 'สถาบันคุรุพัฒนา',
+                     data: genData()
+                 }, {
+                     name: 'งบกลาง',
+                     data: genData()
+                 }
+                 ]
+             });
+
+
+               Highcharts.chart('chart2', {
+                 chart: {
+                     type: 'area'
+                 },
+                 title: {
+                     text: 'งบประมาณรายจ่ายประจำปีตามส่วนงาน',
+                     style: {
+                         fontSize: 14
+                     }
+                 },
+                 subtitle: {
+                     text: 'ปีงบประมาณ 2562',
+                     style: {
+                         fontSize: 12
+                     }
+                 },
+                 xAxis: {
+                     categories: ['งบกลาง', 'งบบุคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น'],
+                     tickmarkPlacement: 'on',
+                     title: {
+                         enabled: false
+                     }
+                 },
+                 yAxis: {
+                     title: {
+                         text: 'บาท'
+                     },
+                     labels: {
+                         formatter: function () {
+                             return this.value ;
+                         }
+                     }
+                 },
+                 tooltip: {
+                     split: true,
+                     valueSuffix: ' บาท'
+                 },
+                 plotOptions: {
+                     area: {
+                         stacking: 'normal',
+                         lineColor: '#666666',
+                         lineWidth: 1,
+                         marker: {
+                             lineWidth: 1,
+                             lineColor: '#666666'
+                         }
+                     }
+                 },
+                 series: [{
+                     name: 'สำนักงานมาตรฐานวิชาชีพ',
+                     data: genData() 
+                 }
+                 , {
+                     name: 'สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ',
+                     data: genData()
+                 }, {
+                     name: 'จรรยาบรรณวิชาชีพและนิติการ',
+                     data: genData()
+                 }, {
+                     name: 'สำนักพัฒนาและส่งเสริมวิชาชีพ',
+                     data: genData()
+                 }, {
+                     name: 'สำนักนโยบายและแผน',
+                     data: genData()
+                 }, {
+                     name: 'สำนักอำนวยการ',
+                     data: genData()
+                 }, {
+                     name: 'สำนักเทคโนโลยีสารสนเทศและการสื่อสาร',
+                     data: genData()
+                 }, {
+                     name: 'หน่วยตรวจสอบภายใน',
+                     data: genData()
+                 }, {
+                     name: 'กลุ่มพัฒนาระบบงาน',
+                     data: genData()
+                 }, {
+                     name: 'สถาบันคุรุพัฒนา',
+                     data: genData()
+                 }, {
+                     name: 'งบกลาง',
+                     data: genData()
+                 }
+                 ]
+             });
+            
+         });
+         
+
+     </script>
 </asp:Content>
 

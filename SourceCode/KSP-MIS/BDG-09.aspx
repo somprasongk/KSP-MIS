@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,18 +22,7 @@
 
             <!--end:: Widgets/Activity-->
         </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
+         
 
     </div>
     <div class="row">
@@ -132,7 +121,7 @@
 
 
 
-                    
+
                 </div>
             </div>
             <!--end::Section-->
@@ -145,5 +134,63 @@
 </asp:Content>
 
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ 2562');
+        });
+
+        var vision= ['พันธกิจ 1', 'พันธกิจ 2', 'พันธกิจ 3', 'พันธกิจ 4', 'พันธกิจ 5']
+        function genData() {
+            var result = [];
+            for (var i = 0; i < vision.length; i++) {
+                result.push(
+                    randomInteger(50000, 100000)
+                    //{ name: subject[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+     
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'งบประมาณรายจ่ายตามพันธกิจ/ไตรมาส',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: 'ปีงบประมาณ 2562',
+                    style: {
+                        fontSize: 12
+                    }
+                } ,
+                xAxis: {
+                    categories: ['พันธกิจ 1', 'พันธกิจ 2', 'พันธกิจ 3', 'พันธกิจ 4', 'พันธกิจ 5']
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'ไตรมาสที่ 1',
+                    data: genData()
+                }, {
+                    name: 'ไตรมาสที่ 2',
+                    data: genData()
+                }, {
+                    name: 'ไตรมาสที่ 3',
+                    data: genData()
+                }, {
+                    name: 'ไตรมาสที่ 4',
+                    data: genData()
+                }]
+            });
+        });
+
+     </script>
 </asp:Content>
 
