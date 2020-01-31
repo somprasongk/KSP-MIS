@@ -9,7 +9,23 @@
 <asp:Content ID="FilterPlaceHolder" ContentPlaceHolderID="FilterPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="row">
+        <div class="col-6 dashboard-chart">
+            <div class="kt-portlet">
 
+                <div class="kt-portlet__body" id="chart1">
+                </div>
+            </div>
+        </div>
+        <div class="col-6 dashboard-chart">
+            <div class="kt-portlet">
+
+                <div class="kt-portlet__body" id="chart2">
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div class="row">
 		<div class="col-12 dashboard-table">
 			<div class="kt-portlet">
@@ -181,10 +197,150 @@
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
 
-    <script type="text/javascript">
+<script type="text/javascript">
         $(document).ready(function () {
-            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด จำนวน xxx รายการ');
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ 2562');
         });
-     </script>
+         
+        var budget = ['วัสดุคงเหลือแยกประเภท'];
+
+        function genData() {
+            var result = [];
+            for (var i = 0; i < budget.length; i++) {
+                result.push(
+                    randomInteger(1, 100)
+                    //{ name: subject[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+
+
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'ความถี่การขอใช้ห้องประชุม',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: 'ปีงบประมาณ 2562',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+                xAxis: {
+                    categories: [
+                        'ห้องประชุม 1',
+                        'ห้องประชุม 2',
+                        'ห้องประชุม 3',
+                        'ห้องประชุม 4',
+                        'ห้องประชุม 5',
+                        'ห้องประชุม 6'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'การใช้ห้องประชุม (ครั้ง)'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'ความถี่ในการใช้ห้องประชุม',
+                    data: [49, 71, 106, 129, 20, 176],
+                    colorByPoint: true
+
+                }]
+            });
+
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: 'งบประมาณที่ใช้สำหรับการประชุม',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: 'ปีงบประมาณ 2562',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+                xAxis: {
+                    categories: [
+                        'ห้องประชุม 1',
+                        'ห้องประชุม 2',
+                        'ห้องประชุม 3',
+                        'ห้องประชุม 4',
+                        'ห้องประชุม 5',
+                        'ห้องประชุม 6'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'งบประมาณ (บาท)'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'งบประมาณการใช้ห้องประชุม',
+                    data: [49000, 71000, 106000, 129000, 20000, 176000],
+                    colorByPoint: true
+
+                }]
+            });
+
+ 
+
+
+        });
+
+    </script>
 
 </asp:Content>

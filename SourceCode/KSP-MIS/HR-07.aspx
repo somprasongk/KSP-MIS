@@ -10,7 +10,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,18 +22,7 @@
             <!--end:: Widgets/Activity-->
         </div>
 
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
+ 
     </div>
     <div class="row">
         <div class="col-12 dashboard-table">
@@ -130,5 +119,143 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
+        });
+
+         
+        $(document).ready(function () {
+
+            // Data gathered from http://populationpyramid.net/germany/2015/
+
+            // Age categories
+            var categories = ['พ.ศ.2555', 'พ.ศ.2556', 'พ.ศ.2557', 'พ.ศ.2558', 'พ.ศ.2559', 'พ.ศ.2560', 'พ.ศ.2561', 'พ.ศ.2562'
+            ];
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'bar',
+                    height: 500
+                },
+                title: {
+                    text: 'การขอพระราชทานเครื่องราชอิสริยาภรณ์ พ.ศ.2562',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: 'จำนวนที่ได้รับการแต่งตั้งให้ดำรงตำแหน่งในกลุ่มบริหาร | จำนวนขอพระราชทานเครื่องราชอิสริยาภรณ์ในแต่ละชั้นตรา',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+                accessibility: {
+                    point: {
+                        descriptionFormatter: function (point) {
+                            var index = point.index + 1,
+                                category = point.category,
+                                val = Math.abs(point.y),
+                                series = point.series.name;
+
+                            return index + ', Age ' + category + ', ' + val + '%. ' + series + '.';
+                        }
+                    }
+                },
+                xAxis: [{
+                    categories: categories,
+                    reversed: false,
+                    labels: {
+                        step: 1
+                    },
+                    accessibility: {
+                        description: 'ปี '
+                    }
+                }, { // mirror axis on right side
+                    opposite: true,
+                    reversed: false,
+                    categories: categories,
+                    linkedTo: 0,
+                    labels: {
+                        step: 1
+                    },
+                    accessibility: {
+                        description: 'ปี'
+                    }
+                }],
+                yAxis: {
+                    title: {
+                        text: null
+                    },
+                    labels: {
+                        formatter: function () {
+                            return Math.abs(this.value) + '';
+                        }
+                    },
+                    accessibility: {
+                        description: 'Percentage population',
+                        rangeDescription: 'Range: 0 to 5%'
+                    }
+                },
+
+                plotOptions: {
+                    series: {
+                        stacking: 'normal'
+                    }
+                },
+
+                tooltip: {
+                    formatter: function () {
+                        return '<b>' + this.series.name + ', ปี พ.ศ. ' + this.point.category + '</b><br/>' +
+                            'จำนวน: ' + Highcharts.numberFormat(Math.abs(this.point.y), 0) + '';
+                    }
+                },
+                
+                 
+
+                series: [{
+                    name: 'ผู้อำนวยการกลุ่มหรือเทียบเท่า',
+                    data: [
+                        -26	,	-30	,	-21	,	-22	,	-30	,	-15	,	-25	,	-28
+                    ]
+                    , stack: 'ผู้อำนวยการกลุ่มหรือเทียบเท่า'
+                }, {
+                    name: 'ผู้อำนวยการสำนักหรือเทียบเท่า',
+                    data: [                        
+                        -17	,	-16	,	-22	,	-23	,	-10	,	-11	,	-13	,	-10
+                    ]
+                    , stack: 'ผู้อำนวยการสำนักหรือเทียบเท่า'
+                }, {
+                    name: 'บ.ม.',
+                    data: [
+                        27, 25, 18, 24, 28, 12, 24, 19
+                    ]
+                    , stack: 'บ.ม.'
+                }, {
+                    name: 'บ.ช.',
+                    data: [                        
+                        18, 25, 12, 19, 30, 20, 16, 15
+                    ]
+                    , stack: 'บ.ช.'
+                }, {
+                    name: 'จ.ม.',
+                    data: [
+                        21, 22, 13, 15, 27, 15, 13, 13
+                    ]
+                    , stack: 'จ.ม.'
+                }, {
+                    name: 'จ.ช.',
+                    data: [
+                        12, 28, 26, 21, 28, 22, 19, 22
+                    ]
+                    , stack: 'จ.ช.'
+                }]
+            });
+             
+
+
+
+        });
+    </script>
 </asp:Content>
 

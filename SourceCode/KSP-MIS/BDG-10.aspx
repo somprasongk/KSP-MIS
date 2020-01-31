@@ -2,7 +2,7 @@
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
-<asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server"> 
+<asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
 </asp:Content>
 <asp:Content ID="Breadcrumb" ContentPlaceHolderID="Breadcrumb" runat="server">
     <uc1:uc_Breadcrumb runat="server" id="uc_Breadcrumb" />
@@ -11,28 +11,12 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
-
-
+        <div class="col-12 dashboard-chart">
             <div class="kt-portlet">
 
-                <div class="kt-portlet__body" id="chart1">
+                <div class="kt-portlet__body" id="chartOverview">
                 </div>
             </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
         </div>
 
     </div>
@@ -75,9 +59,10 @@
                                 <th>ไตรมาส 2</th>
                                 <th>ไตรมาส 3</th>
                                 <th>ไตรมาส 4</th>
+                                <th>ปริมาณรายรับแต่ละไตรมาส</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tbody-sparkline">
                             <tr>
                                 <td>1. เงินงบประมาณ</td>
                                 <td></td>
@@ -85,9 +70,13 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td>
+                                    <div id="chart1"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td style="padding-left: 2em;">1.1. เงินอุดหนุนจากงบประมาณแผ่นดิน</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -101,9 +90,11 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td style="padding-left: 2em;">2.1.ค่าธรรมเนียมตามพระราชบัญญัติ</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -117,9 +108,11 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td style="padding-left: 2em;">2.3.ดอกผลของเงินและทรัพย์สิน</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -133,12 +126,14 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                             </tr>
 
                         </tbody>
                         <tfoot>
                             <tr>
                                 <td>รวมทั้งสิ้น</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -160,4 +155,246 @@
 </asp:Content>
 
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
+        });
+
+        var budget = ['เงินงบประมาณ', 'เงินนอกงบประมาณ'];
+        function genDataPart() {
+            var result = [];
+            for (var i = 0; i < budget.length; i++) {
+                result.push(
+                    randomInteger(10000, 50000)
+                    //{ name: subject[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+        function genDataEstimate() {
+            var result = [];
+            for (var i = 0; i < budget.length; i++) {
+                result.push(
+                    randomInteger(100000, 120000)
+                    //{ name: subject[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+
+ 
+
+        //========================================
+
+        var minRate = 30000,
+            maxRate = 0
+        var part = ['ไตรมาส 1', 'ไตรมาส 2', 'ไตรมาส 3', 'ไตรมาส 4'];
+        function genData() {
+            var result = [];
+            for (var i = 0; i < part.length; i++) {
+                result.push(
+                    randomInteger(10000, 50000)
+                    //{ name: subject[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+
+        $(document).ready(function () {
+            Highcharts.chart('chartOverview', {
+                chart: {
+                    type: 'bar'
+                }, 
+                title: {
+                    text: 'รายรับตามไตรมาสเทียบกับการประมาณการรายรับ',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: 'ปีงบประมาณ 2562',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+                xAxis: {
+                    categories: ['เงินงบประมาณ', 'เงินนอกงบประมาณ']
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'งบประมาณรายรับ (บาท)'
+                    }
+                },
+                legend: {
+                    reversed: true
+                },
+                plotOptions: {
+                    series: {
+                        stacking: 'normal'
+                    }
+                },
+                series: [{
+                    name: 'ไตรมาส 1',
+                    data: genDataPart(),
+                    stack: 'part',
+                    color: 'LIGHTSKYBLUE'
+                }, {
+                    name: 'ไตรมาส 2',
+                    data: genDataPart(),
+                    stack: 'part',
+                    color: 'SKYBLUE'
+                }, {
+                    name: 'ไตรมาส 3',
+                    data: genDataPart(),
+                    stack: 'part',
+                    color: 'POWDERBLUE'
+                }
+                , {
+                    name: 'ไตรมาส 4',
+                    data: genDataPart(),
+                    stack: 'part',
+                    color: 'LIGHTSTEELBLUE'
+                }
+
+                , {
+                    name: 'ประมาณการรายรับ',
+                    data: genDataEstimate(),
+                    stack: 'estimate',
+                    color: 'NAVY'
+                }
+                ]
+            });
+
+
+            $(document).ready(function () {
+
+                var colHTML = '<div style="width:4px; height:30px; background:#2c77f4; "></div>';
+
+                var rowHTML = '<div id="xxx"></div>';
+
+                var i = 1;
+                $('.dataTable[role="grid"] tbody tr').each(function () {
+
+                    var tr = $(this);
+                    tr.find('td:last')
+                    .append(rowHTML.replace('xxx', 'chart' + i));
+
+                    Highcharts.chart('chart' + i, {
+                        chart: {
+                            //renderTo: (options.chart && options.chart.renderTo) || this,
+                            backgroundColor: null,
+                            borderWidth: 0,
+                            type: 'area',
+                            margin: [2, 0, 2, 0],
+                            width: 200,
+                            height: 20,
+                            style: {
+                                overflow: 'visible'
+                            },
+                            // small optimalization, saves 1-2 ms each sparkline
+                            skipClone: true
+                        },
+                        xAxis: {
+                            categories: ['ไตรมาส 1', 'ไตรมาส 2', 'ไตรมาส 3', 'ไตรมาส 4'],
+                            labels: {
+                                enabled: false
+                            },
+                            title: {
+                                text: null
+                            },
+                            startOnTick: false,
+                            endOnTick: false,
+                            tickPositions: []
+                        },
+                        yAxis: {
+                            endOnTick: false,
+                            startOnTick: false,
+                            labels: {
+                                enabled: false
+                            },
+                            title: {
+                                text: null
+                            },
+                            tickPositions: [0],
+                            //plotLines: [{
+                            //    value: genDataMax(),
+                            //    color: 'green',
+                            //    dashStyle: 'shortdash',
+                            //    width: 2,
+                            //    label: {
+                            //        text: ''
+                            //    }
+                            //}]
+                        },
+
+                        title: {
+                            text: ''
+                        },
+                        credits: {
+                            enabled: false
+                        },
+                        legend: {
+                            enabled: false
+                        },
+                        tooltip: {
+                            hideDelay: 0,
+                            outside: true,
+                            shared: true
+                        },
+                        plotOptions: {
+                            series: {
+                                animation: false,
+                                lineWidth: 1,
+                                shadow: false,
+                                states: {
+                                    hover: {
+                                        lineWidth: 1
+                                    }
+                                },
+                                marker: {
+                                    radius: 1,
+                                    states: {
+                                        hover: {
+                                            radius: 2
+                                        }
+                                    }
+                                },
+                                fillOpacity: 0.25
+                            },
+                            column: {
+                                negativeColor: '#910000',
+                                borderColor: 'silver'
+                            },
+                            line: {
+                                dataLabels: {
+                                    enabled: false
+                                },
+                                enableMouseTracking: false
+                            }
+                        },
+                        series: [{
+                            name: '',
+                            data: genData(),
+                            color: 'DEEPSKYBLUE',
+                            dataLabels: {
+                                enabled: false
+                            }
+                        }
+                        ]
+                    });
+
+
+                    i += 1;
+                });
+            });
+
+
+
+
+
+
+        });
+    </script>
+
 </asp:Content>

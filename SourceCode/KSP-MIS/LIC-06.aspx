@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -23,17 +23,6 @@
             <!--end:: Widgets/Activity-->
         </div>
 
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
 
     </div>
     <div class="row">
@@ -184,6 +173,99 @@
         $(document).ready(function () {
             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด');
         });
+
+        $(document).ready(function () {
+
+            var degree = ['ต่ำกว่าปริญญาตรี'
+                            , 'ปริญญาบัณฑิตวิชาชีพครู'
+                            , 'ประกาศนียบัตรบัณฑิตวิชาชีพครู'
+                            , 'ประกาศนียบัตรบัณฑิตทางการบริหาร'
+                            , 'ปริญญาตรี'
+                            , 'ปริญญาตรีทางการศึกษา'
+                            , 'ปริญญาโท'
+                            , 'ปริญญาโททางการศึกษา'
+                            , 'ปริญญาเอกทางการศึกษา'
+                            , 'ไม่มีวุฒิการศึกษา<br>(ปริญญาตรี / ปริญญาโท / ปริญญาเอก)'
+                            , 'วุฒิอื่นๆ']
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'bar',
+                    height: 600
+                },
+                title: {
+                    text: 'จำนวนผู้ได้รับใบอนุญาตตามวุฒิ ปี พ.ศ.2562',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: 'แบ่งตามประเภทวิชาชีพ',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+                xAxis: {
+                    categories: degree,
+                    title: {
+                        text: null
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนผู้ได้รับใบอนุญาต',
+                        align: 'high'
+                    },
+                    labels: {
+                        //overflow: 'justify'
+                    }
+                },
+                tooltip: {
+                    valueSuffix: ' คน'
+                },
+                plotOptions: {
+                    bar: {
+                        dataLabels: {
+                            enabled: true
+                        }
+                    }
+                },
+                legend: {
+                    //layout: 'vertical',
+                    //align: 'right',
+                    //verticalAlign: 'top',
+                    //x: -40,
+                    //y: 80,
+                    //floating: true,
+                    //borderWidth: 1,
+                    //backgroundColor:
+                    //    Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+                    //shadow: true,
+                    reversed: true
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'ครู',
+                    data: [147, 346, 229, 161, 269, 428, 364, 225, 442, 402, 166]
+                }, {
+                    name: 'ผู้บริหารสถานศึกษา',
+                    data: [290, 281, 396, 295, 286, 154, 239, 239, 265, 345, 363]
+                }, {
+                    name: 'ผู้บริหารการศึกษา',
+                    data: [394, 140, 309, 463, 109, 158, 316, 441, 171, 156, 274]
+                }, {
+                    name: 'ศึกษานิเทศก์',
+                    data: [464, 267, 288, 484, 216, 393, 125, 455, 112, 242, 238]
+                }]
+            });
+
+        });
+
+
+
 
     </script>
 </asp:Content>

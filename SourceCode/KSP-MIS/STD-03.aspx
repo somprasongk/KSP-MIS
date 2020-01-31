@@ -3,6 +3,12 @@
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
+    <style>
+        html, body, #myChart {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Breadcrumb" ContentPlaceHolderID="Breadcrumb" runat="server">
     <uc1:uc_Breadcrumb runat="server" id="uc_Breadcrumb" />
@@ -11,7 +17,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,18 +28,7 @@
 
             <!--end:: Widgets/Activity-->
         </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
+ 
 
     </div>
     <div class="row">
@@ -112,7 +107,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">5</th>
                                 <td>ดนตรี-นาฏศิลป์</td>
                                 <td></td>
@@ -140,7 +135,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">9</th>
                                 <td>บริหารธุรกิจ</td>
                                 <td></td>
@@ -154,7 +149,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">11</th>
                                 <td>เกษตรกรรม</td>
                                 <td></td>
@@ -168,7 +163,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">13</th>
                                 <td>คหกรรม</td>
                                 <td></td>
@@ -182,7 +177,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">15</th>
                                 <td>คณิตศาสตร์</td>
                                 <td></td>
@@ -224,7 +219,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">21</th>
                                 <td>ภาษาอังกฤษ</td>
                                 <td></td>
@@ -245,14 +240,14 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="even">
+                            <tr role="row" class="even">
                                 <th scope="row">24</th>
                                 <td>การศึกษาพิเศษ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">25</th>
                                 <td>ประมง</td>
                                 <td></td>
@@ -298,7 +293,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">5</th>
                                 <td>ดนตรี-นาฏศิลป์</td>
                                 <td></td>
@@ -326,7 +321,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">9</th>
                                 <td>บริหารธุรกิจ</td>
                                 <td></td>
@@ -340,7 +335,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">11</th>
                                 <td>เกษตรกรรม</td>
                                 <td></td>
@@ -354,7 +349,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">13</th>
                                 <td>คหกรรม</td>
                                 <td></td>
@@ -368,7 +363,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">15</th>
                                 <td>คณิตศาสตร์</td>
                                 <td></td>
@@ -410,7 +405,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">21</th>
                                 <td>ภาษาอังกฤษ</td>
                                 <td></td>
@@ -431,14 +426,14 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="even">
+                            <tr role="row" class="even">
                                 <th scope="row">24</th>
                                 <td>การศึกษาพิเศษ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                           <tr role="row" class="odd">
+                            <tr role="row" class="odd">
                                 <th scope="row">25</th>
                                 <td>ประมง</td>
                                 <td></td>
@@ -455,7 +450,6 @@
 
                         </tbody>
                         <tfoot>
-
                         </tfoot>
 
 
@@ -473,14 +467,388 @@
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
 
-    
+
     <script type="text/javascript">
         $(document).ready(function () {
             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
         });
 
-    </script>
+        var subject = ['ภาษามลายู'			
+        ,'ภาษาญี่ปุ่น'			
+        ,'การงานอาชีพและเทคโนโลยี'			
+        ,'ศิลปศึกษา'			
+        ,'ดนตรี-นาฏศิลป์'			
+        ,'กิจกรรมพัฒนาผู้เรียน'			
+        ,'ปฐมวัย'			
+        ,'อุตสาหกรรม'			
+        ,'บริหารธุรกิจ'			
+        ,'บูรณาการสาระ'			
+        ,'เกษตรกรรม'			
+        ,'เทคโนโลยีสารสนเทศและการสื่อสาร'			
+        ,'คหกรรม'			
+        ,'อื่นๆ'			
+        ,'คณิตศาสตร์'			
+        ,'ภาษาจีน	'		
+        ,'ศิลปกรรม'			
+        ,'อุตสาหกรรมการท่องเที่ยว' 			
+        ,'วิทยาศาสตร์'			
+        ,'ภาษาไทย'			
+        ,'ภาษาอังกฤษ'			
+        ,'สังคมศึกษา ศาสนา และวัฒนธรรม'			
+        ,'สุขศึกษาและพลศึกษา'			
+        ,'การศึกษาพิเศษ'			
+        ,'ประมง']
 
+        var orgs = ['ระดับพื้นฐาน', 'ระดับกลาง', 'ระดับสูง'];
+
+        function genDataL1() {
+            var result = [];
+            for (var i = 0; i < subject.length; i++) {
+                result.push(
+                    randomInteger(1, 5)
+                    //{ name: subject[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+
+        function genDataL2() {
+            var result = [];
+            for (var i = 0; i < subject.length; i++) {
+                result.push(
+                    randomInteger(1, 5)
+                    //{ name: subject[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+
+        function genDataL3() {
+            var result = [];
+            for (var i = 0; i < subject.length; i++) {
+                result.push(
+                    randomInteger(1, 5)
+                    //{ name: subject[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+
+
+    
+
+        $(document).ready(function () {
+
+
+            Highcharts.seriesType('lowmedhigh', 'boxplot', {
+                keys: ['low', 'median', 'high']
+            }, {
+                // Change point shape to a line with three crossing lines for low/median/high
+                // Stroke width is hardcoded to 1 for simplicity
+                drawPoints: function () {
+                    var series = this;
+                    Highcharts.each(this.points, function (point) {
+                        var graphic = point.graphic,
+                            verb = graphic ? 'animate' : 'attr',
+                            shapeArgs = point.shapeArgs,
+                            width = shapeArgs.width,
+                            left = Math.floor(shapeArgs.x) + 0.5,
+                            right = left + width,
+                            crispX = left + Math.round(width / 2) + 0.5,
+                            highPlot = Math.floor(point.highPlot) + 0.5,
+                            medianPlot = Math.floor(point.medianPlot) + 0.5,
+                            lowPlot = Math.floor(point.lowPlot) + 0.5 - (point.low === 0 ? 1 : 0); // Sneakily draw low marker even if 0
+
+                        if (point.isNull) {
+                            return;
+                        }
+
+                        if (!graphic) {
+                            point.graphic = graphic = series.chart.renderer.path('point').add(series.group);
+                        }
+
+                        graphic.attr({
+                            stroke: point.color || series.color,
+                            "stroke-width": 1
+                        });
+
+                        graphic[verb]({
+                            d: [
+                                'M', left, highPlot,
+                                'H', right,
+                                'M', left, medianPlot,
+                                'H', right,
+                                'M', left, lowPlot,
+                                'H', right,
+                                'M', crispX, highPlot,
+                                'V', lowPlot
+                            ]
+                        });
+                    });
+                }
+            });
+
+            //var sector = ['สำนักงานคณะกรรมการการอาชีวศึกษา (สอศ.)', 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน (สพฐ.)']
+            var sector = ['สอศ.', 'สพฐ.']
+            var subject = ['ภาษามลายู'
+                , 'ภาษาญี่ปุ่น'
+                , 'การงานอาชีพและเทคโนโลยี'
+                , 'ศิลปศึกษา'
+                , 'ดนตรี-นาฏศิลป์'
+                , 'กิจกรรมพัฒนาผู้เรียน'
+                , 'ปฐมวัย'
+                , 'อุตสาหกรรม'
+                , 'บริหารธุรกิจ'
+                , 'บูรณาการสาระ'
+                , 'เกษตรกรรม'
+                , 'เทคโนโลยีสารสนเทศและการสื่อสาร'
+                , 'คหกรรม'
+                , 'อื่นๆ'
+                , 'คณิตศาสตร์'
+                , 'ภาษาจีน	'
+                , 'ศิลปกรรม'
+                , 'อุตสาหกรรมการท่องเที่ยว'
+                , 'วิทยาศาสตร์'
+                , 'ภาษาไทย'
+                , 'ภาษาอังกฤษ'
+                , 'สังคมศึกษา ศาสนา และวัฒนธรรม'
+                , 'สุขศึกษาและพลศึกษา'
+                , 'การศึกษาพิเศษ'
+                , 'ประมง']
+
+            var orgs = ['ระดับพื้นฐาน', 'ระดับกลาง', 'ระดับสูง'];
+
+            // Create chart
+            var chart = Highcharts.chart('chart1', {
+                chart: {
+                    type: 'lowmedhigh'
+                },
+
+                title: {
+                    text: 'ระดับความลุ่มลึก ปี 2562',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: 'ของหลักสูตรที่ได้รับการรับรองมาตรฐานวิชาชีพ',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+
+                accessibility: {
+                    point: {
+                        descriptionFormatter: function (point) {
+                            // Use default formatter for null points
+                            if (point.isNull) {
+                                return false;
+                            }
+
+                            return point.category + ', ระดับพื้นฐาน ' + point.low + ', ระดับกลาง ' +
+                                point.median + ', ระดับสูง ' + point.high;
+                        }
+                    },
+
+                    series: {
+                        descriptionFormatter: function (series) {
+                            return series.name + ', series ' + (series.index + 1) + ' of ' +
+                                series.chart.series.length + ' with ' + series.points.length +
+                                ' data points.';
+                        }
+                    },
+
+                    typeDescription: 'Low, median, high. Each data point has a low, median and high value, depicted vertically as small ticks.' // Describe the chart type to screen reader users, since this is not a traditional boxplot chart
+                },
+
+                xAxis: [{
+                    accessibility: {
+                        description: 'หลักสูตร'
+                    },
+                    categories: subject,
+                    labels: {
+                        rotation: -45
+                    }
+                }],
+
+                yAxis: {
+                    title: {
+                        text: 'ระดับความลุ่มลึก'
+                    },
+                    min: 0
+                },
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 550
+                        },
+                        chartOptions: {
+                            xAxis: {
+                                categories: subject
+                            }
+                        }
+                    }]
+                },
+
+                plotOptions: {
+                    series: {
+                        stickyTracking: true,
+                        whiskerWidth: 5
+                    }
+                },
+
+                tooltip: {
+                    pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}:<br/>ระดับพื้นฐาน: <b>{point.low}</b><br/>ระดับกลาง: <b>{point.median}</b><br/>ระดับสูง: <b>{point.high}</b><br/>'
+                },
+
+                series: [{
+                    name: sector[0],
+                    data: [
+                        [0, 8, 19],
+                        [1, 11, 23],
+                        [3, 16, 28],
+                        [2, 15, 28],
+                        [1, 15, 27],
+                        [0, 9, 21],
+                        null,
+                        null,
+                        [1, 6, 19],
+                        [2, 8, 21],
+                        [2, 9, 22],
+                        [1, 11, 19],
+                        [0, 8, 19],
+                        [1, 11, 23],
+                        [3, 16, 28],
+                        [2, 15, 28],
+                        [1, 15, 27],
+                        [0, 9, 21],
+                        null,
+                        null,
+                        [1, 6, 19],
+                        [2, 8, 21],
+                        [2, 9, 22],
+                        [1, 11, 19],
+                        [0, 8, 19]
+                    ]
+                }, {
+                    name: sector[1],
+                    data: [
+                        [1, 6, 19],
+                        [2, 8, 21],
+                        [2, 9, 22],
+                        [1, 11, 19],
+                        [0, 8, 19],
+                        [0, 8, 19],
+                        [1, 11, 23],
+                        [3, 16, 28],
+                        [2, 15, 28],
+                        [1, 15, 27],
+                        [0, 9, 21],
+                        [0, 3, 6],
+                        [1, 2, 4],
+                        [0, 2, 5],
+                        [2, 2, 5],
+                        [1, 3, 6],
+                        [0, 1, 3],
+                        [1, 1, 2],
+                        [0, 1, 3],
+                        [1, 1, 3],
+                        [0, 2, 4],
+                        null,
+                        null,
+                        [1, 2, 5],
+                        [1, 3, 5]
+
+                    ]
+                }]
+            });
+
+            // Remove click events on container to avoid having "clickable" announced by AT
+            // These events are needed for custom click events, drag to zoom, and navigator
+            // support.
+            chart.container.onmousedown = null;
+            chart.container.onclick = null;
+
+
+            //for (var i = 0; i < orgs.length; i++) {
+
+
+            //    Highcharts.chart('chart' + (i + 1), {
+            //        chart: {
+            //            type: "bar", 
+            //            polar: false,
+            //            height: 700
+            //        },
+
+            //        title: {
+            //            text: 'ความลุ่มลึก' + orgs[i],
+            //            style: {
+            //                fontSize: 14
+            //            }
+            //        },
+            //        //subtitle: {
+            //        //    text: orgs[i],
+            //        //    style: {
+            //        //        fontSize: 12
+            //        //    }
+            //        //},
+            //        legend: {
+            //            enabled: true
+            //        },
+            //        xAxis: {                       
+
+            //            categories: subject,
+            //            lineWidth: 0
+            //        },
+            //        yAxis: {
+            //            max: 5,
+            //            reversed: false,
+            //            lineWidth: 0,
+            //            allowDecimals: false
+            //        },
+
+
+                     
+            //        series: [
+            //            //{
+            //            //    name: 'ระดับพื้นฐาน',
+            //            //    data: genDataL1(),
+            //            //    color: 'Gainsboro',
+            //            //},
+            //            {
+            //                type: 'scatter',
+            //                name: 'สำนักงานคณะกรรมการการอาชีวศึกษา (สอศ.)',
+            //                data: genDataL2(),
+            //                color: 'DarkKhaki',
+            //                marker: {
+            //                    radius: 4
+            //                }
+            //            },
+            //             {
+            //                 name: 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน (สพฐ.)',
+            //                 data: genDataL3(),
+            //                 color: 'Goldenrod',
+            //             }
+            //        ],
+            //        plotOptions: {
+            //            series:
+            //                {
+            //                    animation: true,
+            //                    lineWidth: 4,
+            //                    marker: {
+            //                        radius: 3,
+            //                        symbol: "circle"
+            //                    },
+            //                    dataLabels: {
+            //                        enabled: false
+            //                    }
+            //                }
+            //        }
+            //    });
+            //}
+        });
+    </script>
 
 </asp:Content>
 

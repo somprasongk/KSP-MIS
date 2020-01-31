@@ -20,7 +20,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-4 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -31,20 +31,26 @@
 
             <!--end:: Widgets/Activity-->
         </div>
+        <div class="col-4 kt-portlet">
 
-        <div class="col-6 dashboard-chart">
+            <div class="kt-portlet__body" id="chart2">
+            </div>
+        </div>
+        <div class="col-4 dashboard-chart">
 
 
             <div class="kt-portlet">
 
-                <div class="kt-portlet__body" id="chart2">
+                <div class="kt-portlet__body" id="chart3">
                 </div>
             </div>
 
-            <!--end:: Widgets/Activity-->
         </div>
 
+
     </div>
+
+
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
@@ -152,7 +158,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr> 
+                            </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td></td>
@@ -171,7 +177,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr> 
+                            </tr>
                             <tr>
                                 <th scope="row">4</th>
                                 <td></td>
@@ -190,9 +196,9 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr> 
+                            </tr>
 
-                            <tr style="border-bottom: 1px solid #ebedf2" >
+                            <tr style="border-bottom: 1px solid #ebedf2">
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -419,5 +425,186 @@
 </asp:Content>
 
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ 2562');
+        });
+        var minRate = 500000,
+            maxRate = 0
+        function genData() {
+            var result = [];
+            for (var i = 0; i < budget.length; i++) {
+                result.push(
+                    randomInteger(50000, 100000)
+                    //{ name: subject[i], y: randomInteger(10,5000) }
+                );
+            }
+            return result;
+        }
+
+
+        $(document).ready(function () {
+
+            // Build the chart
+            Highcharts.chart('chart1', {
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: 'pie'
+                },
+                title: {
+                    text: 'จำนวนเงินที่จ่ายแล้วและคงเหลือทั้งหมด ปี 2562',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b><br> จำนวนเงิน: <b>{point.y} บาท</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true
+                    }
+                },
+                series: [{
+                    name: 'ร้อยละ',
+                    colorByPoint: true,
+                    data: [{
+                        name: 'จ่ายแล้ว',
+                        y: 245000,
+                        sliced: true,
+                        selected: true
+                    }, {
+                        name: 'คงเหลือ',
+                        y: 100590
+                    }]
+                }]
+            });
+
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'ประเภทงบประมาณที่จ่ายแล้วและคงเหลือในปีงบประมาณ 2562',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                xAxis: {
+                    categories: ['ดำเนินงาน', 'ลงทุน', 'อุดหนุน', 'รายจ่ายอื่น']
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'จ่ายแล้ว',
+                    data: [-40000, -13580, -60000, null]
+                }, {
+                    name: 'คงเหลือ',
+                    data: [78000, 29000, null, 70000]
+                }]
+            });
+
+
+            Highcharts.chart('chart3', {
+                chart: {
+                    type: 'line'
+                },
+                title: {
+                    text: 'เปรียบเทียบงบระหว่างปีตามแผนงาน ปีงบประมาณ 2562',
+                    style: {
+                        fontSize: 14
+                    }
+                },
+                subtitle: {
+                    text: '',
+                    style: {
+                        fontSize: 12
+                    }
+                },
+                xAxis: {
+                    categories: ['งบประมาณทั้งหมด', 'เงินจ่ายแล้ว', 'เงินคงเหลือ']
+
+                },
+                //yAxis: {
+                //    title: {
+                //        text: 'งบประมาณ (บาท)'
+                //    }
+                //},
+
+                yAxis: {
+                    title: {
+                        text: 'Exchange rate'
+                    },
+                    plotLines: [{
+                        value: minRate,
+                        color: 'green',
+                        dashStyle: 'shortdash',
+                        width: 2,
+                        label: {
+                            text: 'งบประมาณกันเหลื่อม'
+                        }
+                    }, {
+                        value: maxRate,
+                        color: 'red',
+                        dashStyle: 'shortdash',
+                        width: 2,
+                        label: {
+                            text: ''
+                        }
+                    }]
+                },
+
+                plotOptions: {
+
+                    spline: {
+                        marker: {
+                            radius: 10,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    },
+                    line: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        enableMouseTracking: true
+                    }
+                },
+                series: [
+                    {
+                        name: 'งบประมาณ',
+                        data: [500000],
+                        dataLabels: {
+                            enabled: false
+                        }
+                    },
+                    {
+                        type: 'scatter',
+                        name: 'รวมรายการกันเหลื่อมปี',
+                        data: [null, 400000, 100000]
+                    }, {
+                        type: 'scatter',
+                        name: 'กันเหลื่อมปีทั้งหมด',
+                        data: [450000, 620000, null],
+                        color: Highcharts.getOptions().colors[5]
+                    }]
+            });
+
+
+
+        });
+
+
+    </script>
+
 </asp:Content>
 

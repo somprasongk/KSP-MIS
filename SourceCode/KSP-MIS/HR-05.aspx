@@ -10,7 +10,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,17 +22,6 @@
             <!--end:: Widgets/Activity-->
         </div>
 
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
 
     </div>
     <div class="row">
@@ -194,4 +183,106 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด');
+        });
+
+    
+        $(document).ready(function () {          
+            
+            Highcharts.chart('chart1', {
+                chart: { height: 500 },
+                              
+                title: {
+                    text: 'เปรียบเทียบจำนวนหลักสูตรการพัฒนาบุคคลากร',
+                    style: {
+                            fontSize: 14
+                        }
+                },
+                xAxis: {
+                    categories: ['2558','2559', '2560', '2561', '2562']
+                },
+                labels: {
+                    items: [{
+                        html: 'จำนวนหลักสูตรของปีปัจจุบัน พ.ศ.2562',
+                        style: {
+                            left: '50px',
+                            top: '18px',
+                            color: ( // theme
+                                Highcharts.defaultOptions.title.style &&
+                                Highcharts.defaultOptions.title.style.color
+                            ) || 'black'
+                        }
+                    }]
+                },
+                series: [{
+                    type: 'column',
+                    name: 'ผอ.สำนัก',
+                    data: [3, 2, 1, 3, 4]
+                }, {
+                    type: 'column',
+                    name: 'ผอ.กลุ่ม',
+                    data: [2, 3, 5, 4, 6]
+                }, {
+                    type: 'column',
+                    name: 'วิชาการ',
+                    data: [4, 3, 3, 9, 0]
+                }, {
+                    type: 'column',
+                    name: 'ปฏิบัติการ',
+                    data: [4, 10, 5, 3, 9]
+                },
+                {
+                    type: 'spline',
+                    name: 'Average',
+                    data: [3, 2.67, 3, 6.33, 3.33],
+                    marker: {
+                        lineWidth: 2,
+                        lineColor: Highcharts.getOptions().colors[3],
+                        fillColor: 'white'
+                    }
+                },
+                {
+                    type: 'pie',
+                    name: 'จำนวนกิจกรรมหลักสูตรของปีปัจจุบัน พ.ศ.2562',
+                    data: [{
+                        name: 'ผอ.สำนัก',
+                        y: 13,
+                        color: Highcharts.getOptions().colors[0] // Jane's color
+                    }, {
+                        name: 'ผอ.กลุ่ม',
+                        y: 23,
+                        color: Highcharts.getOptions().colors[1] // John's color
+                    }, {
+                        name: 'วิชาการ',
+                        y: 19,
+                        color: Highcharts.getOptions().colors[2] // Joe's color
+                    }, {
+                        name: 'ปฏิบัติการ',
+                        y: 19,
+                        color: Highcharts.getOptions().colors[3] // Joe's color
+                    }],
+                    center: [100, 80],
+                    size: 100,
+                    showInLegend: false,
+                    dataLabels: {
+                        enabled: false
+                    }
+                }]
+            });
+
+
+
+
+
+
+
+        });
+
+
+
+
+    </script>
+
 </asp:Content>
