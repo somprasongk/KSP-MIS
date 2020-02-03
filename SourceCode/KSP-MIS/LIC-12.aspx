@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -52,13 +52,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>ประเภทคำขอ</th>
+                                <th>ประเภทวิชาชีพ</th>
                                 <th>ต.ค.</th>
                                 <th>พ.ย.</th>
                                 <th>ธ.ค.</th>
@@ -70,15 +70,17 @@
                                 <th>มิ.ย.</th>
                                 <th>ส.ค.</th>
                                 <th class="border-right">ก.ย.</th>
+                                <th>รวม</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th colspan="13">ปีงบประมาณ พ.ศ.2558 (ตุลาคม 2557 - กันยายน 2558)</th>
+                                <th colspan="14">ปีงบประมาณ พ.ศ.2558 (ตุลาคม 2557 - กันยายน 2558)</th>
                             </tr>
                             <tr>
                                 <th>1</th>
                                 <td>ครู</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -105,10 +107,28 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <th>3</th>
-                                <td>ครูชาวต่างประเทศ</td>
+                                <td>ผู้บริหารการศึกษา</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>นิเทศก์ศึกษา</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -122,7 +142,8 @@
                                 <td></td>
                             </tr>
                             <tr class="dtrg-group">
-                                <td colspan="2">รวม</td>
+                                <td colspan="2" class="text-center">รวม</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -136,11 +157,12 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <th colspan="13">ปีงบประมาณ พ.ศ.2559 (ตุลาคม 2558 - กันยายน 2559)</th>
+                                <th colspan="14">ปีงบประมาณ พ.ศ.2559 (ตุลาคม 2558 - กันยายน 2559)</th>
                             </tr>
                             <tr>
                                 <th>1</th>
                                 <td>ครู</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -167,10 +189,28 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <th>3</th>
-                                <td>ครูชาวต่างประเทศ</td>
+                                <td>ผู้บริหารการศึกษา</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>นิเทศก์ศึกษา</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -186,7 +226,8 @@
                         </tbody>
                         <tfoot>
                             <tr class="dtrg-group">
-                                <td colspan="2">รวม</td>
+                                <td colspan="2" class="text-center">รวม</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -309,22 +350,21 @@
             , { name: 'กย', y: 300 }
         ];
 
-        var Diff = [
-            { name: 'ตค', y: 50, radius:50, color:'green' }
-            , { name: 'พย', y: 70, radius: 70,  color: 'red' }
-            , { name: 'ธค', y: 280, radius: 280,  color: 'red' }
-            , { name: 'มค', y: 0, radius: 0,  color: 'green' }
-            , { name: 'กพ', y: 260, radius: 260,  color: 'red' }
-            , { name: 'มีค', y: 350, radius: 350,  color: 'green' }
-            , { name: 'เมย', y: 450, radius: 450,  color: 'green' }
-            , { name: 'พค', y: 600, radius: 600,  color: 'green' }
-            , { name: 'มิย', y: 325, radius: 325,  color: 'green' }
-            , { name: 'กค', y: 25, radius: 25,  color: 'red' }
-            , { name: 'สค', y: 500, radius: 500,  color: 'red' }
-            , { name: 'กย', y: 675, radius: 675,  color: 'red' }
+        var Type4_58 = [
+            { name: 'ตค', y: 500 }
+            , { name: 'พย', y: 1500 }
+            , { name: 'ธค', y: 2000 }
+            , { name: 'มค', y: 1800 }
+            , { name: 'กพ', y: 1500 }
+            , { name: 'มีค', y: 1700 }
+            , { name: 'เมย', y: 1800 }
+            , { name: 'พค', y: 2000 }
+            , { name: 'มิย', y: 2100 }
+            , { name: 'กค', y: 2300 }
+            , { name: 'สค', y: 2200 }
+            , { name: 'กย', y: 2400 }
         ];
 
-            
 
         $(document).ready(function () {
 
@@ -333,7 +373,7 @@
                     zoomType: 'xy'
                 },
                 title: {
-                    text: 'เปรีนบเทียบปีงบประมาณ พ.ศ. 2557 - 2558',
+                    text: 'เปรียบเทียบปีงบประมาณ พ.ศ. 2557 - 2558',
                     style: {
                         display: 'relative'
                     }
@@ -364,13 +404,7 @@
                                 color: Highcharts.getOptions().colors[0]
                             }
                         }
-                    },
-                    {
-                        title: {
-                            text: 'ส่วนต่างจำนวน (คน)'
-                        }, opposite: true
                     }
-
                 ] ,
                 tooltip: {
                     formatter: function () {
@@ -382,62 +416,60 @@
                         stacking: 'normal'
                     }
                 },
-                series: [        
+                series: [   
                     {
-                        name: 'ครูชาวต่างประเทศ',
+                        name: 'นิเทศก์ศึกษา',
+                        type: 'column',
+                        data: Type4_58,
+                        color: 'blue',
+                        stack: '57'
+                    },
+                    {
+                        name: 'ผู้บริหารการศึกษา',
                         type: 'column',
                         data: Type3_57,
                         color: 'navy',
-                        yAxis: 0,
                         stack: '57'
                     }, {
                         name: 'ผู้บริหารสถานศึกษา',
                         type: 'column',
                         data: Type2_57,
                         color: 'lightblue',
-                        yAxis: 0,
-                        stack: '57'
+                         stack: '57'
                     },{
                         name: 'ครู',
                         type: 'column',
                         data: Type1_57,
                         color: 'steelblue',
-                        yAxis: 0,
                         stack: '57'
-                    },                    {
-                        name: 'ครูชาวต่างประเทศ',
+                    },
+                    {
+                        name: 'นิเทศก์ศึกษา',
+                        type: 'column',
+                        data: Type4_58,
+                        color: 'blue',
+                        stack: '58'
+                    },
+                    {
+                        name: 'ผู้บริหารการศึกษา',
                         type: 'column',
                         data: Type3_58,
                         color: 'navy',
-                        yAxis: 0,
                         stack: '58'
                     }, {
                         name: 'ผู้บริหารสถานศึกษา',
                         type: 'column',
                         data: Type2_58,
                         color: 'lightblue',
-                        yAxis: 0,
                         stack: '58'
                     }, {
                         name: 'ครู',
                         type: 'column',
                         data: Type1_58,
                         color: 'steelblue',
-                        yAxis: 0,
                         stack: '58'
                     }
-                    , {
-                        name: 'ส่วนต่าง',
-                        type: 'scatter',
-                        data: Diff,
-                        yAxis: 1,
-                        stack: 'Diff',
-                        marker: {
-                            radius: 6,
-                            border:'2px'
-                        }
-                    }
-
+                   
                 ]
             });
             

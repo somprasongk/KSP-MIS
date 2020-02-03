@@ -313,15 +313,15 @@
                          labels: {
                              format: '{value} คน',
                              style: {
-                                 color: Highcharts.getOptions().colors[2]
+                                 color: Highcharts.getOptions().colors[0]
                              }
                          },
                          title: {
                              text: 'รวม'
-                             //,
-                             //style: {
-                             //    color: Highcharts.getOptions().colors[2]
-                             //}
+                             ,
+                             style: {
+                                 color: Highcharts.getOptions().colors[0]
+                             }
                          },
                          opposite: true
                      }
@@ -330,12 +330,14 @@
                          gridLineWidth: 1,
                          labels: {
                              format: '{value} คน'
-                         },
+                             
+                         },                         
                          title: {
-                             text: 'แยกตามประเภท',
-                             style: {
-                                 color: Highcharts.getOptions().colors[0]
-                             }
+                             text: 'แยกตามประเภท'
+                             //,
+                             //style: {
+                             //    color: Highcharts.getOptions().colors[0]
+                             //}
                          }
                      }
                  ]
