@@ -969,25 +969,20 @@
                             <div class="form-group row">
                                 <labe class="col-3 col-form-label text-right">บุคคลากร</labe>
                                 <div class="col-9">
-                                    <div class="kt-radio-inline">
-                                        <label class="kt-radio kt-radio--tick kt-radio--danger">
-                                            <input type="radio" name="radio2">
+                                    <div class="kt-checkbox-inline">
+                                        <label class="kt-checkbox kt-checkbox--tick kt-checkbox--danger">
+                                            <input type="checkbox" name="radio2">
                                             ไทย
 										
                                             <span></span>
                                         </label>
-                                        <label class="kt-radio kt-radio--tick kt-radio--warning">
-                                            <input type="radio" name="radio2">
+                                        <label class="kt-checkbox kt-checkbox--tick kt-checkbox--warning">
+                                            <input type="checkbox" name="radio2">
                                             ต่างประเทศ
 										
                                             <span></span>
                                         </label>
-                                        <label class="kt-radio kt-radio--tick kt-radio--success">
-                                            <input type="radio" name="radio2">
-                                            ทั้งหมด
-										
-                                            <span></span>
-                                        </label>
+                                        
                                     </div>
                                 </div>
                             </div>
