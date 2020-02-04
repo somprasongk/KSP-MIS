@@ -59,6 +59,36 @@
                 </div>
             </div>
         </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart9">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart10">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart11">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart12">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 dashboard-chart">
+            <div class="kt-portlet">
+                <div class="kt-portlet__body" id="chart13">
+                </div>
+            </div>
+        </div>
 
     </div>
     <div class="row">
@@ -106,7 +136,7 @@
                         </thead>
                         <tbody>
                             <tr role="row" class="odd">
-                                <td>xxxx</td>
+                                <td>สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -116,7 +146,7 @@
                                 <td></td>
                             </tr>
                             <tr role="row" class="even">
-                                <td>xxxx</td>
+                                <td>สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -126,7 +156,7 @@
                                 <td></td>
                             </tr>
                             <tr role="row" class="odd">
-                                <td>xxxx</td>
+                                <td>องค์กรปกครองส่วนท้องถิ่น</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -136,7 +166,97 @@
                                 <td></td>
                             </tr>
                             <tr role="row" class="even">
-                                <td>xxxx</td>
+                                <td>กรุงเทพมหานคร</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td>สำนักงานคณะกรรมการการอาชีวศึกษา</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td>สำนักงานคณะกรรมการการอุดมศึกษา</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td>สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td>โรงเรียนมหิดลวิทยานุสรณ์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td>สถาบันการพลศึกษา</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td>สำนักงานพระพุทธศาสนาแห่งชาติ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr> 
+                            <tr role="row" class="odd">
+                                <td>สถาบันบัณฑิตพัฒนศิลป์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                             
+                            <tr role="row" class="odd">
+                                <td>สำนักงานบริหารงานการศึกษาพิเศษ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                            
+                            <tr role="row" class="odd">
+                                <td>ตำรวจตระเวนชายแดน</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -162,6 +282,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
                 </div>
             </div>
             <!--end::Section-->
@@ -181,14 +321,19 @@
 
         var ages = ['น้อยกว่า 31 ปี', '31-40 ปี', '41-50 ปี', '51-60 ปี', '61-70 ปี', '70 ปีขึ้นไป']
 
-        var orgs = ['สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน',
-            'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน',
-            'กรุงเทพมหานคร',
-            'สำนักงานคณะกรรมการการอาชีวศึกษา',
-            'สำนักงานคณะกรรมการการอุดมศึกษา',
-            'องค์กรปกครองส่วนท้องถิ่น',
-            'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย',
-            'สถาบันบัณฑิตพัฒนศิลป์'];
+        var orgs = [ 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน'
+                    , 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน'
+                    , 'องค์กรปกครองส่วนท้องถิ่น'
+                    , 'กรุงเทพมหานคร'
+                    , 'สำนักงานคณะกรรมการการอาชีวศึกษา'
+                    , 'สำนักงานคณะกรรมการการอุดมศึกษา'
+                    , 'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย'
+                    , 'โรงเรียนมหิดลวิทยานุสรณ์'
+                    , 'สถาบันการพลศึกษา	'
+                    , 'สำนักงานพระพุทธศาสนาแห่งชาติ'
+                    , 'สถาบันบัณฑิตพัฒนศิลป์'
+                    , 'สำนักงานบริหารงานการศึกษาพิเศษ'
+                    , 'ตำรวจตระเวนชายแดน'];
 
         function genData() {
             var result = [];
@@ -255,3 +400,4 @@
 
     </script>
 </asp:Content>
+

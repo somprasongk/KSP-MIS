@@ -89,8 +89,8 @@
                         </thead>
                         <tbody>
                             <tr role="row" class="odd">
-                                <td>xxxx</td>
-                                <td>yyyy</td>
+                                <td>.....</td>
+                                <td>สพฐ.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -105,8 +105,8 @@
                                 <td></td>
                             </tr>
                             <tr role="row" class="even">
-                                <td>xxxx</td>
-                                <td>yyyy</td>
+                                <td>.....</td>
+                                <td>สช.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -120,9 +120,9 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr role="row" class="odd">
-                                <td>xxxx</td>
-                                <td>yyyy</td>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>อปท.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -136,7 +136,167 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                        </tbody>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>กทม.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>สอศ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>สกอ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>กศน.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>มวส.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>พลศึกษา</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>พศ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>สบศ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>สศศ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>ตชด.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody> 
                         <thead>
                             <tr role="row">
                                 <th rowspan="2">ชื่อสถานศึกษา</th>
@@ -160,10 +320,10 @@
                                 <th>รวม</th>
                             </tr>
                         </thead>
-                        <tbody>
+<tbody>
                             <tr role="row" class="odd">
-                                <td>xxxx</td>
-                                <td>yyyy</td>
+                                <td>.....</td>
+                                <td>สพฐ.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -178,8 +338,8 @@
                                 <td></td>
                             </tr>
                             <tr role="row" class="even">
-                                <td>xxxx</td>
-                                <td>yyyy</td>
+                                <td>.....</td>
+                                <td>สช.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -193,9 +353,9 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr role="row" class="odd">
-                                <td>xxxx</td>
-                                <td>yyyy</td>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>อปท.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -209,8 +369,167 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                        </tbody>
-                    </table>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>กทม.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>สอศ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>สกอ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>กศน.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>มวส.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>พลศึกษา</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>พศ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>สบศ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>สศศ.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row">
+                                <td>.....</td>
+                                <td>ตชด.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>                    </table>
                 </div>
             </div>
             <!--end::Section-->
@@ -358,7 +677,7 @@
                 },
                 series: [                   
                     {
-                        name:'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน',
+                        name: 'สพฐ.',
                         data: [
                             [1, 2552, 25000],
                             [1, 2553, 27000],
@@ -378,7 +697,7 @@
                     }
                     ,
                     {
-                        name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน',
+                        name: 'สช.',
                         data: [
                             [2, 2552, 5000],
                             [2, 2553, 3000],
@@ -397,7 +716,7 @@
 
                     },
                     {
-                        name: 'กรุงเทพมหานคร',
+                        name: 'อปท.',
                         data: [
                             [3, 2552, 2000],
                             [3, 2553, 4000],
@@ -415,7 +734,7 @@
                         }
                     },
                     {
-                        name: 'สำนักงานคณะกรรมการการอาชีวศึกษา',
+                        name: 'กทม.',
                         data: [
                             [4, 2552, 1000],
                             [4, 2553, 950],
@@ -434,7 +753,7 @@
 
                     },
                     {
-                        name: 'สำนักงานคณะกรรมการการอุดมศึกษา',
+                        name: 'สอศ.',
                         data: [
                             [5, 2552, 8000],
                             [5, 2553, 8500],
@@ -453,7 +772,7 @@
 
                     },
                     {
-                        name: 'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย',
+                        name: 'สกอ.',
                         data: [
                             [6, 2552, 5000],
                             [6, 2553, 6000],
@@ -473,7 +792,7 @@
                     }
                     ,
                     {
-                        name: 'สํานักบริหารงานการศึกษาพิเศษ',
+                        name: 'กศน.',
                         data: [
                             [7, 2552, 3000],
                             [7, 2553, 5000],
@@ -493,7 +812,7 @@
                     }
                     ,
                     {
-                        name: 'สถาบันบัณฑิตพัฒนศิลป์',
+                        name: 'มวส.',
                         data: [
                             [8, 2552, 1500],
                             [8, 2553, 1000],
@@ -505,6 +824,82 @@
                                 stops: [
                                     [0, 'pink'],
                                     [1, 'violet']
+                                ]
+                            }
+
+                        }
+
+                    },
+                    {
+                        name: 'พศ.',
+                        data: [
+                            [8, 2552, 1500],
+                            [8, 2553, 1000],
+                            [8, 2554, 5000]
+                        ],
+                        marker: {
+                            fillColor: {
+                                radialGradient: { cx: 0.4, cy: 0.3, r: 0.7 },
+                                stops: [
+                                    [0, 'FUCHSIA'],
+                                    [1, 'MEDIUMPURPLE']
+                                ]
+                            }
+
+                        }
+
+                    },
+                    {
+                        name: 'สบศ.',
+                        data: [
+                            [8, 2552, 1500],
+                            [8, 2553, 1000],
+                            [8, 2554, 5000]
+                        ],
+                        marker: {
+                            fillColor: {
+                                radialGradient: { cx: 0.4, cy: 0.3, r: 0.7 },
+                                stops: [
+                                    [0, 'MEDIUMSLATEBLUE'],
+                                    [1, 'LIMEGREEN']
+                                ]
+                            }
+
+                        }
+
+                    },
+                    {
+                        name: 'สศศ.',
+                        data: [
+                            [8, 2552, 1500],
+                            [8, 2553, 1000],
+                            [8, 2554, 5000]
+                        ],
+                        marker: {
+                            fillColor: {
+                                radialGradient: { cx: 0.4, cy: 0.3, r: 0.7 },
+                                stops: [
+                                    [0, 'SEAGREEN'],
+                                    [1, 'TURQUOISE']
+                                ]
+                            }
+
+                        }
+
+                    },
+                    {
+                        name: 'ตชด.',
+                        data: [
+                            [8, 2552, 1500],
+                            [8, 2553, 1000],
+                            [8, 2554, 5000]
+                        ],
+                        marker: {
+                            fillColor: {
+                                radialGradient: { cx: 0.4, cy: 0.3, r: 0.7 },
+                                stops: [
+                                    [0, 'CORNFLOWERBLUE'],
+                                    [1, 'MIDNIGHTBLUE']
                                 ]
                             }
 
@@ -522,3 +917,15 @@
     </script>
 
 </asp:Content>
+
+
+
+
+	
+
+
+
+
+
+
+

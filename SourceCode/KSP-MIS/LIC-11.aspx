@@ -79,7 +79,7 @@
                         <tbody>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
-                                <td>สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน</td>
+                                <td>สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -95,7 +95,7 @@
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">2</th>
-                                <td>สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</td>
+                                <td>สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -268,7 +268,25 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                            </tr> 
+                            <tr role="row" class="odd">
+                                <th scope="row">13</th>
+                                <td>ตำรวจตระเวนชายแดน</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
+
+
                         </tbody>
                         <tfoot>
                             <tr class="dtrg-group">
@@ -293,10 +311,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
@@ -555,32 +569,32 @@
                         //color: 'gold',
                     }
                     , {
-                        name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชนนพื้นฐาน',
+                        name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน',
                         //type: 'area',
                         data: Org2,
                         yAxis: 1
                         //color: 'gold',
                     }
                     , {
-                        name: 'กรุงเทพมหานคร',
+                        name: 'องค์กรปกครองส่วนท้องถิ่น',
                         //type: 'area',
                         data: Org3,
                         yAxis: 1
                         //color: 'gold',
                     }, {
-                        name: 'สำนักงานคณะกรรมการการอาชีวศึกษา',
+                        name: 'กรุงเทพมหานคร',
                         //type: 'area',
                         data: Org4,
                         yAxis: 1
                         //color: 'gold',
                     }, {
-                        name: 'สำนักงานคณะกรรมการการอุดมศึกษา',
+                        name: 'สำนักงานคณะกรรมการการอาชีวศึกษา',
                         //type: 'area',
                         data: Org5,
                         yAxis: 1
                         //color: 'gold',
                     } , {
-                        name: 'องค์กรปกครองส่วนท้องถิ่น',
+                        name: 'สำนักงานคณะกรรมการการอุดมศึกษา',
                         //type: 'area',
                         data: Org6,
                         yAxis: 1
@@ -592,19 +606,40 @@
                         yAxis: 1
                         //color: 'gold',
                     }, {
-                        name: 'สํานักบริหารงานการศึกษาพิเศษ',
+                        name: 'โรงเรียนมหิดลวิทยานุสรณ์',
                         //type: 'area',
                         data: Org8,
                         yAxis: 1
                         //color: 'gold',
                     }, {
-                        name: 'สถาบันบัณฑิตพัฒนศิลป์',
+                        name: 'สถาบันการพลศึกษา',
                         //type: 'area',
                         data: Org9,
                         yAxis: 1
                         //color: 'gold',
                     }, {
-                        name: 'โรงเรียนมหิดลวิทยานุสรณ์',
+                        name: 'สำนักงานพระพุทธศาสนาแห่งชาติ',
+                        //type: 'area',
+                        data: Org10,
+                        yAxis: 1
+                        //color: 'gold',
+                    }
+                    , {
+                        name: 'สถาบันบัณฑิตพัฒนศิลป์',
+                        //type: 'area',
+                        data: Org10,
+                        yAxis: 1
+                        //color: 'gold',
+                    }
+                    , {
+                        name: 'สำนักงานบริหารงานการศึกษาพิเศษ',
+                        //type: 'area',
+                        data: Org10,
+                        yAxis: 1
+                        //color: 'gold',
+                    }
+                    , {
+                        name: 'ตำรวจตระเวนชายแดน',
                         //type: 'area',
                         data: Org10,
                         yAxis: 1
@@ -615,4 +650,16 @@
         });
     </script>
 </asp:Content>
+
+
+
+
+
+
+
+
+
+	
+
+
 

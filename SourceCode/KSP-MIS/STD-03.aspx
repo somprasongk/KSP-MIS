@@ -77,7 +77,7 @@
                         </thead>
                         <tbody>
                             <tr role="row" class="even">
-                                <th colspan="5" scope="row">สำนักงานคณะกรรมการการอาชีวศึกษา (สอศ.)</th>
+                                <th colspan="5" scope="row">สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน	 (สพฐ.)</th>
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
@@ -263,7 +263,7 @@
 
 
                             <tr role="row" class="even">
-                                <th colspan="5" scope="row">สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน (สพฐ.)</th>
+                                <th colspan="5" scope="row">สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน	 (สช.)</th>
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
@@ -463,6 +463,7 @@
         <!--end::Form-->
     </div>
 
+     
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
@@ -589,7 +590,7 @@
             });
 
             //var sector = ['สำนักงานคณะกรรมการการอาชีวศึกษา (สอศ.)', 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน (สพฐ.)']
-            var sector = ['สอศ.', 'สพฐ.']
+            var sector = ['สช.', 'สพฐ.', 'aaa.']
             var subject = ['ภาษามลายู'
                 , 'ภาษาญี่ปุ่น'
                 , 'การงานอาชีพและเทคโนโลยี'
