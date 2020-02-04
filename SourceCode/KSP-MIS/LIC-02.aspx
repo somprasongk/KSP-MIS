@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-8 dashboard-chart">
+        <div class="col-6 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -23,7 +23,7 @@
             <!--end:: Widgets/Activity-->
         </div>
 
-        <div class="col-4 dashboard-chart">
+        <div class="col-6 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -223,7 +223,7 @@
                     align: 'left'
                 },
                 title: {
-                    text: 'ปีงบประมาณ พ.ศ. 2557 - 2560',
+                    text: 'จำนวนใบอนุญาตประกอบวิชาชีพที่่ออกให้แก่ ... จำแนกตามสังกัด ปีงบประมาณ พ.ศ. 2557 - 2560',
                     style: {
                         display: 'relative'
                     }
@@ -308,7 +308,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'รวม'
+                    text: 'ยอดรวมจำนวนใบอนุญาตประกอบวิชาชีพที่่ออกให้แก่ ... จำแนกตามสังกัด ปีงบประมาณ พ.ศ. 2557 - 2560'
                 },
                 xAxis: {
                     type: 'category'
@@ -318,7 +318,7 @@
                         allowPointSelect: true,
                         cursor: 'pointer',
                         dataLabels: {
-                            enabled: false
+                            enabled: true
                         }
                     }
                 },

@@ -38,7 +38,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -75,12 +75,18 @@
                                 <th>ปี 2558</th>
                                 <th>ปี 2559</th>
                                 <th>ปี 2560</th>
+                                <th>ปี 2561</th>
+                                <th>ปี 2562</th>
+                                <th>รวม</th>
                             </tr>
                         </thead>
                         <tbody>
                              <tr role="row" class="odd">
                                 <th scope="row">1</th>
                                 <td>ขึ้นทะเบียนรับใบอนุญาตประกอบวิชาชีพครู</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -95,6 +101,9 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                              <tr role="row" class="odd">
                                 <th scope="row">3</th>
@@ -104,8 +113,24 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
+                        <tfoot>
+                            <tr role="row" class="odd">
+                                <th scope="row" colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
                     </table>
 
 
@@ -298,10 +323,7 @@
                      zoomType: 'xy'
                  },
                  title: {
-                     text: '',
-                     style: {
-                         display: 'none'
-                     }
+                     text: 'จำนวนใบอนุญาต / หนังสืออนุญาต ที่ออกให้แก่ครู ... จำแนกตามประเภทคำขอ '
                  },
                  xAxis: {
                      type: 'category',
@@ -388,7 +410,7 @@
                      type: 'pie'
                  },
                  title: {
-                     text: 'รวมจำนวนตามสัดส่วน ย้อนหลัง 7 ปี'
+                     text: 'รวมจำนวนตามสัดส่วน ย้อนหลัง ... ปี'
                  },
                  tooltip: {
                      pointFormat: '<b>จำนวน {point.y}</b> <br>คิดเป็น {point.percentage:.1f} %'

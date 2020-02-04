@@ -58,7 +58,7 @@
                             <tr>
                                 <th rowspan="2">#</th>
                                 <th rowspan="2">ประเภทคำขอ</th>
-                                <th colspan="12">ปีงบประมาณ พ.ศ 2562  (ตุลาคม 2561 - กันยายน 2562)</th>
+                                <th colspan="12">ปีงบประมาณ พ.ศ ...  (ตุลาคม ... - กันยายน ...)</th>
                                 <th rowspan="2">รวม</th>
                             </tr>
                             <tr>
@@ -328,7 +328,7 @@
                     zoomType: 'xy'
                 },
                 title: {
-                    text: 'ปีงบประมาณ พ.ศ 2561  (ตุลาคม 2561 - กันยายน 2562)',
+                    text: 'จำนวนหนังสืออนุญาตให้ประกอบวิชาชีพทางการศึกษาโดยไม่มีใบประกอบวิชาชีพ จำแนกตามประเภทคำขอ ในปีงบประมาณ ...',
                     style: {
                         display: 'relative'
                     }
@@ -360,13 +360,10 @@
                     { // Secondary yAxis
                         gridLineWidth: 1,
                         labels: {
-                            format: '{value} คน'
+                            format: '{value} ราย'
                         },
                         title: {
-                            text: 'ประเภทคำขอ',
-                            style: {
-                                color: Highcharts.getOptions().colors[0]
-                            }
+                            text: ''
                         }
                     }
                 ]

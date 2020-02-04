@@ -69,6 +69,11 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr role="row">
+                                <th colspan="11" class="text-center">
+                                    สังกัด ...
+                                </th>
+                            </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
                                 <td>ครู</td>
@@ -208,7 +213,7 @@
                     height:300
                 },
                 title: {
-                    text: 'ผู้ได้รับอนุญาตปี พ.ศ. 2552 - 2560',
+                    text: 'จำนวนผู้ได้รับหนังสืออนุญาตให้ประกอบวิชาชีพทางการศึกษาโดยไม่มีใบอนุญาตประกอบวิชาชีพ จำแนกตามประเภท ทุกสังกัด พ.ศ. ... - ...',
                     style: {
                         display: 'relative'
                     }
@@ -226,7 +231,8 @@
                             //    color: Highcharts.getOptions().colors[2]
                             //}
                         },
-                        title: {
+                    title: {
+                            enabled : false,
                             text: 'ได้รับอนุญาต (คน)'
                             //,
                             //style: {

@@ -253,29 +253,23 @@
                      type: 'bar'
                  },
                  title: {
-                     text: '', display: 'none'
+                     text: 'จำนวนผู้ได้รับใบอนุญาตประกอบวิชาชีพ จำแนกตามสังกัด ประเภทวิชาชีพ และเพศ ช่วงวันที่ ... ถึง ...'
                  },
                  subtitle: {
                      text: '<b><< หญิง | ชาย >></b>'
                  },
                  legend: {
-                     enabled: false
+                     enabled: true
                  },
                  xAxis: [{
                      gridLineWidth: 1,
                      categories: categories,
-                     reversed: false,
-                     accessibility: {
-                         description: 'เอกสารเข้า'
-                     }
+                     reversed: false
                  }, {
                      opposite: true, // mirror axis on right side
                          reversed: false,
                          gridLineWidth: 1,
-                     categories: categories,
-                     accessibility: {
-                         description: 'เอกสารออก'
-                     }
+                     categories: categories
                  }],
                  yAxis: {
                      gridLineWidth: 0,
@@ -305,37 +299,53 @@
 
                  series: [
                      {
-                         name: 'ครู(ชาย)',
-                         data: m1,
-                         xAxis : 1
-                    }, {
-                         name: 'ครู(หญืง)',
-                         data : f1,
-                         xAxis: 0
-                     }, {
-                         name: 'ผู้บริหารสถานศึกษา(ชาย)',
-                         data: m2,
-                         xAxis: 1
+                         name: 'ครู(หญิง)',
+                         data: f1,
+                         color: 'pink',
+                         xAxis: 0,
+                         index: 0
                      }, {
                          name: 'ผู้บริหารสถานศึกษา(หญิง)',
                          data: f2,
-                         xAxis: 0
-                     },{
-                         name: 'ผู้บริหารการศึกษา(ชาย)',
-                         data: m3,
-                         xAxis: 1
+                         color: 'aqua',
+                         xAxis: 0,
+                         index: 1
                      }, {
                          name: 'ผู้บริหารการศึกษา(หญิง)',
                          data: f3,
-                         xAxis: 0
-                     }, {
-                         name: 'ศึกษานิเทศก์(ชาย)',
-                         data: m4,
-                         xAxis: 1
+                         color: 'gold',
+                         xAxis: 0,
+                         index: 2
                      }, {
                          name: 'ศึกษานิเทศก์(หญิง)',
                          data: f4,
-                         xAxis: 0
+                         color: 'lightgreen',
+                         xAxis: 0,
+                         index: 3
+                     }, {
+                         name: 'ครู(ชาย)',
+                         data: m1,
+                         color: 'pink',
+                         xAxis: 1,
+                         legendIndex : 7
+                     }, {
+                         name: 'ผู้บริหารสถานศึกษา(ชาย)',
+                         data: m2,
+                         color: 'aqua',
+                         xAxis: 1,
+                         legendIndex : 6
+                     }, {
+                         name: 'ผู้บริหารการศึกษา(ชาย)',
+                         data: m3,
+                         color: 'gold',
+                         xAxis: 1,
+                         legendIndex : 5
+                     }, {
+                         name: 'ศึกษานิเทศก์(ชาย)',
+                         data: m4,
+                         color: 'lightgreen',
+                         xAxis: 1,
+                         legendIndex : 4
                      }
                  ]
              });

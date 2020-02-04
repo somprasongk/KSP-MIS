@@ -625,18 +625,8 @@
                 },
 
                 title: {
-                    text: 'ระดับความลุ่มลึก ปี 2562',
-                    style: {
-                        fontSize: 14
-                    }
+                    text: 'ผลการรับรองหลักสูตรเพื่อการพัฒนาครูและบุคลากรทางการศึกษา สายงานการสอน ประจำปีงบประมาณ พ.ศ. ... สังกัด ...'
                 },
-                subtitle: {
-                    text: 'ของหลักสูตรที่ได้รับการรับรองมาตรฐานวิชาชีพ',
-                    style: {
-                        fontSize: 12
-                    }
-                },
-
                 accessibility: {
                     point: {
                         descriptionFormatter: function (point) {

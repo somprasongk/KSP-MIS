@@ -218,6 +218,9 @@
                             fontSize: 12
                         }
                     },
+                    subtitle: {
+                        text: "จำนวนผู้ได้รับใบอนุญาตประกอบวิชาชีพชาว ... ช่วงวันที่ ... ถึง ..."
+                    },
                     legend: {
                         enabled: false
                     },
@@ -238,7 +241,7 @@
                     plotOptions: {
                         series: {
                             animation: true,
-                            lineWidth: 4,
+                            lineWidth: 2,
                             marker: {
                                 radius: 3,
                                 symbol: "circle"

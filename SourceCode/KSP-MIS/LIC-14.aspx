@@ -173,10 +173,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: '',
-                    style: {
-                        display:'none'
-                    }
+                    text: 'จำนวนการส่งหนังสือ/เอกสารออก จำแนกตามประเภทเอกสาร ระหว่างวันที่ ... ถึงวันที่ …'
                 },
                 xAxis: {
                     type: 'category',
@@ -187,14 +184,14 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนเอกสารเข้า'
+                        text: 'จำนวนเอกสาร'
                     }
                 },
-                //legend: {
-                //    enabled: true
-                //},
+                legend: {
+                    enabled: false
+                },
                 tooltip: {
-                    pointFormat: '{ประเภทเอกสาร} จำนวนเอกสารเข้า: <b>{point.y} รายการ</b>'
+                    pointFormat: '{ประเภทเอกสาร} จำนวนเอกสาร: <b>{point.y} รายการ</b>'
                 },
                 plotOptions: {
                     //column: {
@@ -226,10 +223,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: '',
-                    style: {
-                        display: 'none'
-                    }
+                    text: 'สัดส่วนการส่งหนังสือ/เอกสารออก จำแนกตามประเภทเอกสาร ระหว่างวันที่ ... ถึงวันที่ …'
                 },
                 xAxis: {
                     type: 'category',
@@ -240,14 +234,14 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนเอกสารเข้า'
+                        text: 'จำนวนเอกสาร'
                     }
                 },
                 //legend: {
                 //    enabled: true
                 //},
                 tooltip: {
-                    pointFormat: '{ประเภทเอกสาร} จำนวนเอกสารเข้า: <b>{point.y} รายการ</b>'
+                    pointFormat: '{ประเภทเอกสาร} จำนวนเอกสาร: <b>{point.y} รายการ</b>'
                 },
                 plotOptions: {
                     //column: {

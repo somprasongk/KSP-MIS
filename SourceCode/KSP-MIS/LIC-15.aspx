@@ -59,7 +59,7 @@
                             <tr role="row">
                                 <th rowspan="2">ประเภทวิชาชีพ</th>
                                 <th colspan="3">สาเหตุการออกใบแทนใบอนุญาต</th>
-                                <th rowspan="2">รวม</th>
+                                <th rowspan="2" class="border-left">รวม</th>
                             </tr>
                             <tr>
                                 <th>ผู้ประกอบวิชาชีพเทำเอกสารชำรุด สูญหาย</th>
@@ -99,7 +99,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td style="border-left;">รวม</td>
+                                <td>รวม</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -130,17 +130,7 @@
                     type: 'bar'
                 },
                 title: {
-                    text: 'จำนวนการออกใบแทนใบอนุญาต และสาเหตุ',
-                    style: {
-                                fontSize: 14
-                    }
-                        },
-                subtitle: {
-                    enabled: false;
-                    text: 'พ.ศ.2562',
-                    style: {
-                        fontSize: 12
-                    }
+                    text: 'จำนวนการออกใบแทนใบอนุญาต จำแนกตามประเภทวิชาชีพและสาเหตุ ปี พ.ศ. ...'
                 },
                 xAxis: {
                     categories: ['ครู', 'ผู้บริหารสถานศึกษา', 'ผู้บริหารการศึกษา', 'ศึกษานิเทศก์']

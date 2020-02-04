@@ -55,13 +55,10 @@
                             <tr role="row">
                                 <th rowspan="2">#</th>
                                 <th rowspan="2">ประเทศ</th>
-                                <th colspan="11">ปีงบประมาณ พ.ศ.2562 (ตุลาคม 2561 - กันยายน 2562)</th>
+                                <th colspan="11">ปี พ.ศ....</th>
                                 <th rowspan="2">รวม</th>
                             </tr>
                             <tr>
-                                <th>ต.ค.</th>
-                                <th>พ.ย.</th>
-                                <th>ธ.ค.</th>
                                 <th>ม.ค.</th>
                                 <th>ก.พ.</th>
                                 <th>มี.ค.</th>
@@ -69,7 +66,10 @@
                                 <th>พ.ค.</th>
                                 <th>มิ.ย.</th>
                                 <th>ส.ค.</th>
-                                <th class="border-right">ก.ย.</th>
+                                <th>ก.ย.</th>
+                                <th>ต.ค.</th>
+                                <th>พ.ย.</th>
+                                <th class="border-right">ธ.ค.</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1023,10 +1023,8 @@
          });
 
         var data = [
-             { name: 'ตค', y: 2500 }
-            , { name: 'พย', y: 1500 }
-            , { name: 'ธค', y: 2000 }
-             , { name: 'มค', y: 1800 }
+             
+             { name: 'มค', y: 1800 }
              , { name: 'กพ', y: 1500 }
              , { name: 'มีค', y: 1700 }
              , { name: 'เมย', y: 1800 }
@@ -1034,7 +1032,10 @@
              , { name: 'มิย', y: 2100 }
              , { name: 'กค', y: 2300 }
              , { name: 'สค', y: 2200 }
-             , { name: 'กย', y: 2400 }            
+            , { name: 'กย', y: 2400 }   
+            , { name: 'ตค', y: 2500 }
+            , { name: 'พย', y: 1500 }
+            , { name: 'ธค', y: 2000 }
          ];
 
       
@@ -1045,10 +1046,13 @@
                      zoomType: 'xy'
                  },
                  title: {
-                     text: 'ยอดรวมบุคลากรชาวต่างชาติ ปีงบประมาณ 2561',
+                     text: 'ข้อมูลชาวต่างประเทศที่ขึ้นทะเบียนรับใบอนุญาตประกอบวิชาชีพครู จำแนกตามประเทศ ปี พ.ศ. ...',
                      style: {
                          display: 'relative'
                      }
+                 },
+                 legend: {
+                     enabled:false
                  },
                  xAxis: {
                      type: 'category',

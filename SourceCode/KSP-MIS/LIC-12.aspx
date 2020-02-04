@@ -75,7 +75,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th colspan="14">ปีงบประมาณ พ.ศ.2558 (ตุลาคม 2557 - กันยายน 2558)</th>
+                                <th colspan="14">ปีงบประมาณ พ.ศ.... (ตุลาคม ... - กันยายน ...)</th>
                             </tr>
                             <tr>
                                 <th>1</th>
@@ -156,7 +156,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <%--<tr>
                                 <th colspan="14">ปีงบประมาณ พ.ศ.2559 (ตุลาคม 2558 - กันยายน 2559)</th>
                             </tr>
                             <tr>
@@ -222,9 +222,9 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr>
+                            </tr>--%>
                         </tbody>
-                        <tfoot>
+                        <%--<tfoot>
                             <tr class="dtrg-group">
                                 <td colspan="2" class="text-center">รวม</td>
                                 <td></td>
@@ -240,7 +240,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                        </tfoot>
+                        </tfoot>--%>
                     </table>
                 </div>
             </div>
@@ -379,7 +379,7 @@
                     align: 'left'
                 },
                 title: {
-                    text: 'เปรียบเทียบปีงบประมาณ พ.ศ. 2557 - 2558',
+                    text: 'จำนวนหนังสืออนุญาตให้ประกอบวิชาชีพทางการศึกษาโดยไม่มีใบประกอบวิชาชีพ จำแนกตามประเภทวิชาชีพ ในปีงบประมาณ ... ',
                     style: {
                         display: 'relative'
                     }
@@ -402,9 +402,11 @@
                         min: 0,
                         gridLineWidth: 1,
                         labels: {
+                            
                             format: '{value} คน'
                         },
                         title: {
+                            enabled: false,
                             text: 'จำนวน (คน)',
                             style: {
                                 color: Highcharts.getOptions().colors[0]
@@ -418,63 +420,64 @@
                     }
                 },
                 plotOptions: {
-                    column: {
+                    spline: {
                         stacking: 'normal'
                     }
                 },
                 series: [   
                     {
                         name: 'ศึกษานิเทศก์',
-                        type: 'column',
+                        type: 'spline',
                         data: Type4_58,
                         color: 'blue',
                         stack: '57'
                     },
                     {
                         name: 'ผู้บริหารการศึกษา',
-                        type: 'column',
+                        type: 'spline',
                         data: Type3_57,
                         color: 'navy',
                         stack: '57'
                     }, {
                         name: 'ผู้บริหารสถานศึกษา',
-                        type: 'column',
+                        type: 'spline',
                         data: Type2_57,
                         color: 'lightblue',
                          stack: '57'
                     },{
                         name: 'ครู',
-                        type: 'column',
+                        type: 'spline',
                         data: Type1_57,
                         color: 'steelblue',
                         stack: '57'
-                    },
-                    {
-                        name: 'ศึกษานิเทศก์',
-                        type: 'column',
-                        data: Type4_58,
-                        color: 'blue',
-                        stack: '58'
-                    },
-                    {
-                        name: 'ผู้บริหารการศึกษา',
-                        type: 'column',
-                        data: Type3_58,
-                        color: 'navy',
-                        stack: '58'
-                    }, {
-                        name: 'ผู้บริหารสถานศึกษา',
-                        type: 'column',
-                        data: Type2_58,
-                        color: 'lightblue',
-                        stack: '58'
-                    }, {
-                        name: 'ครู',
-                        type: 'column',
-                        data: Type1_58,
-                        color: 'steelblue',
-                        stack: '58'
                     }
+                    //,
+                    //{
+                    //    name: 'ศึกษานิเทศก์',
+                    //    type: 'column',
+                    //    data: Type4_58,
+                    //    color: 'blue',
+                    //    stack: '58'
+                    //},
+                    //{
+                    //    name: 'ผู้บริหารการศึกษา',
+                    //    type: 'column',
+                    //    data: Type3_58,
+                    //    color: 'navy',
+                    //    stack: '58'
+                    //}, {
+                    //    name: 'ผู้บริหารสถานศึกษา',
+                    //    type: 'column',
+                    //    data: Type2_58,
+                    //    color: 'lightblue',
+                    //    stack: '58'
+                    //}, {
+                    //    name: 'ครู',
+                    //    type: 'column',
+                    //    data: Type1_58,
+                    //    color: 'steelblue',
+                    //    stack: '58'
+                    //}
                    
                 ]
             });

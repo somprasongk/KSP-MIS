@@ -59,7 +59,7 @@
                             <tr role="row">
                                 <th rowspan="2">#</th>
                                 <th rowspan="2">สังกัด</th>
-                                <th colspan="11">ปี พ.ศ.2561</th>
+                                <th colspan="11">ปี พ.ศ....</th>
                                 <th rowspan="2">รวม</th>
                             </tr>
                             <tr>
@@ -492,7 +492,7 @@
                     type: 'area'
                 },
                 title: {
-                    text: 'ปี พ.ศ 2561',
+                    text: 'จำนวนผู้ได้รับหนังสืออนุญาตประกอบวิชาชีพครู โดยไม่มีใบอนุญาตประกอบวิชาชีพ ชาว.. จำแนกตามสังกัด ในปี พ.ศ. ...',
                     style: {
                         display: 'relative'
                     }

@@ -198,7 +198,7 @@
 
     <script type="text/javascript">
          $(document).ready(function () {
-             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปี พ.ศ. 2559-2560');
+             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปี พ.ศ. ... - ...');
          });
 
         var category = [
@@ -225,10 +225,7 @@
                         height: 520
                     },
                     title: {
-                        text: '10 อันดับประเทศที่ได้รับใบอนุญาต ตามประเภทคำขอ ปี พ.ศ. <b>' + (2558+i) + '</b>',
-                        style: {
-                            fontSize: 14
-                        }
+                        text: 'ลำดับประเทศที่มีการออกใบอนุญาต /หนังสืออนุญาตสูงสุด จำแนกตามประเภทคำขอ และ ปี พ.ศ. … </b>'
                     },
                     xAxis: {
                         categories: category
