@@ -26,7 +26,7 @@
 
 	 <div class="col-12 dashboard-table">
 			<div class="kt-portlet">
-				<div class="kt-portlet__head">
+				<%--<div class="kt-portlet__head">
 					<div class="kt-portlet__head-label">
 						<span class="kt-portlet__head-icon">
 							<i class="flaticon-squares-3"></i>
@@ -52,7 +52,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>--%>
 				<div class="kt-portlet__body dashboard-table-container">
 
 					<table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
@@ -213,12 +213,18 @@
 
 
              Highcharts.chart('chart1', {
+                 chart: {
+                     height: 500,
+                 },
                  title: {
-                     text: ''
+                     text: 'สรุปผลการดำเนินงานทางการเงินของสำนักงานเลขขาธิการคุรุสภา มูลนิธิ และกองทุน ปี พ.ศ.2562' 
                  },
                  xAxis: {
                      categories: ['สำนักงานเลขาธิการคุรุสภา', 'สวัสดิการสำนักงานเลขาธิการคุรุสภา', 'มูลนิธิช่วยครูอาวุโสในพระบรมราชูปถัมภ์', 'มูลนิธิรางวัลคุรุสภา',
-                         'กองทุนผู้เสียสละ และมีจิตวิญญาณครู', 'กองทุนพัฒนาวิชาชีพทางการศึกษา', 'กองทุนบำเหน็จพนักงานเจ้าหน้าที่']
+                         'กองทุนผู้เสียสละ และมีจิตวิญญาณครู', 'กองทุนพัฒนาวิชาชีพทางการศึกษา', 'กองทุนบำเหน็จพนักงานเจ้าหน้าที่'],
+                     labels: {
+                         rotation: -30
+                     }
                  },
                  yAxis: {
                      title: {

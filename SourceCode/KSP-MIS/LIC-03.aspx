@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -84,7 +84,7 @@
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">2</th>
-                                <td>ครูชาวต่างชาติ</td>
+                                <td>ผู้บริหารสถานศึกษา</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -97,7 +97,32 @@
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">3</th>
-                                <td>ผู้บริหารสถานศึกษา</td>
+                                <td>ผู้บริหารการศึกษา</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ศึกษานิเทศก์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="dtrg-group">
+                                <td colspan="2" class="text-center">รวม</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -162,6 +187,17 @@
             , { name: '2559', y: 4000 }
             , { name: '2560', y: 2750 }
         ];
+        var Type4 = [
+            { name: '2552', y: 1000 }
+            , { name: '2553', y: 1050 }
+            , { name: '2554', y: 1000 }
+            , { name: '2555', y: 800 }
+            , { name: '2556', y: 800 }
+            , { name: '2557', y: 600 }
+            , { name: '2558', y: 900 }
+            , { name: '2559', y: 400 }
+            , { name: '2560', y: 1750 }
+        ];
 
         $(document).ready(function () {
 
@@ -201,8 +237,7 @@
                 ,
                 tooltip: {
                     formatter: function () {
-                        return this.series.name + ': ' + this.y + '<br/>' +
-                            'รวม : ' + this.point.stackTotal;
+                        return this.series.name + ': ' + this.y ;
                     }
                 },
                 plotOptions: {
@@ -212,19 +247,24 @@
                 },
                 series: [
                     {
-                        name: 'ต่ออายุใบอนุญาต',
+                        name: 'ครู',
                         data: Type1,
                         color: 'orange'
                     },
                     {
-                        name: 'ครู',
+                        name: 'ผู้บริหารสถานศึกษา',
                         data: Type2,
                         color: 'darkgreen'
                     },
                     {
-                        name: 'ขึ้นทะเบียนรับใบอนุญาต',                        
+                        name: 'ผู้บริหารการศึกษา',                        
                         data: Type3,
                         color: 'steelblue'
+                    },
+                    {
+                        name: 'ศึกษานิเทศก์',
+                        data: Type4,
+                        color: 'violet'
                     }
 
                 ]

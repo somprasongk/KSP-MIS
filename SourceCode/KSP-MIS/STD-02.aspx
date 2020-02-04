@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-8 dashboard-chart">
+        <div class="col-6 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -23,7 +23,7 @@
             <!--end:: Widgets/Activity-->
         </div>
 
-        <div class="col-4 dashboard-chart">
+        <div class="col-6 dashboard-chart">
             <div class="kt-portlet">
 
                 <div class="kt-portlet__body" id="chart2">
@@ -38,7 +38,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -63,33 +63,25 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
                                 <th rowspan="2">มาตรฐานที่</th>
                                 <th rowspan="2">ชื่อมาตรฐาน</th>
-                                <th colspan="2">ผู้ลงทะเบียนสมัครทดสอบ (คน)</th>
                                 <th colspan="2">ผู้ผ่านการทดสอบ (คน)</th>
-                                <th colspan="2">ผู้ไม่ผ่านการทดสอบ (คน)</th>
                             </tr>
                             <tr >
                                 <th>ชาย</th>
                                 <th>หญิง</th>
-                                <th>ชาย</th>
-                                <th>หญิง</th>
-                                <th>ชาย</th>
-                                <th>หญิง</th>
+                                <th>รวม</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
                                 <td>ภาษาและเทคโนโลยีสำหรับครู</td>
-                                 <td></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -100,16 +92,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">3</th>
                                 <td>การจัดการเรียนรู้</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -120,16 +106,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">5</th>
                                 <td>การวัดและประเมินผลการศึกษา</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -140,16 +120,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">7</th>
                                 <td>การวิจัยทางการศึกษา</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -160,16 +134,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">9</th>
                                 <td>ความเป็นครู</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -178,9 +146,6 @@
                         <tfoot>
                             <tr>
                                 <td colspan="2">รวม</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -434,7 +399,7 @@
                     type: 'bar'
                 },
                 title: {
-                    text: 'จำนวนผู้ผ่าน/ไม่ผ่านการทดสอบมาตรฐานวิชาชีพ ชาย|หญิง ในปี 2562',
+                    text: 'จำนวนผู้ผ่านการทดสอบมาตรฐานวิชาชีพในปี 2562',
                     style: {
                         display: 'relative',
                         fontSize: 14
@@ -483,31 +448,33 @@
 
                 tooltip: {
                     formatter: function () {
-                        return '<b>' + this.series.name + '</b> : ' + Math.abs(this.point.y) + ' คน<br/>' + 
-                            'รวม : ' + this.point.stackTotal + ' คน<br/>';
+                        return '<b>' + this.series.name + '</b> : ' + Math.abs(this.point.y) + ' คน<br/>';
+                            //+ 'รวม : ' + this.point.stackTotal + ' คน<br/>';
                     }
                 },
 
-                series: [{
-                    name: 'ไม่ผ่าน (ช)',
-                    data: docData(Plan1, -1),
-                    color: 'red',
-                    stack: 'Doc1'
-                },
+                series: [
+                //    {
+                //    name: 'ไม่ผ่าน (ช)',
+                //    data: docData(Plan1, -1),
+                //    color: 'red',
+                //    stack: 'Doc1'
+                //},
                 {
-                    name: 'ผ่าน (ช)',
+                    name: 'ชาย',
                     data: docData(Plan2, -1),
                     color: 'steelblue',
                     stack: 'Doc1'
-                },
-                {
-                    name: 'ไม่ผ่าน (ญ)',
-                    data: Plan3,
-                    color: 'red',
-                    stack: 'Doc2'
-                }
+                    }
+                //    ,
+                //{
+                //    name: 'ไม่ผ่าน (ญ)',
+                //    data: Plan3,
+                //    color: 'red',
+                //    stack: 'Doc2'
+                //}
                 , {
-                    name: 'ผ่าน (ญ)',
+                    name: 'หญิง',
                     type: 'bar',
                     data: Plan4,
                     color: 'pink',
@@ -537,14 +504,14 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนหนังสือเอกสารเข้า'
+                        text: 'จำนวนหลักสูตร'
                     }
                 },
                 //legend: {
                 //    enabled: true
                 //},
                 tooltip: {
-                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเอกสารเข้า: <b>{point.y} รายการ</b>'
+                    pointFormat: '{หลักสูตร} <b>{point.y} หลักสูตร</b>'
                 },
                 plotOptions: {
                     //column: {
@@ -554,7 +521,7 @@
                     //}
                 },
                 series: [{
-                    name: 'หน่วยงาน',
+                    name: 'หลักสูตร',
                     data: Total,
                     dataLabels: {
                         //enabled: true,

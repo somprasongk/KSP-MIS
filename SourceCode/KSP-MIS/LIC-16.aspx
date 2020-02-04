@@ -46,10 +46,13 @@
                             <tr role="row">
                                 <th rowspan="2">#</th>
                                 <th rowspan="2" align="center">ประเทศ</th>
+                                <th colspan="2" align="center">ปี 2558</th>
                                 <th colspan="2" align="center">ปี 2559</th>
                                 <th colspan="2" align="center">ปี 2560</th>
                             </tr>
                             <tr>
+                                <th>หนังสืออนุญาต</th>
+                                <th>ใบอนุญาต</th>
                                 <th>หนังสืออนุญาต</th>
                                 <th>ใบอนุญาต</th>
                                 <th>หนังสืออนุญาต</th>
@@ -64,10 +67,14 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">2</th>
                                 <td>สหรัฐอเมริกา</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -80,10 +87,14 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">4</th>
                                 <td>จีน</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -96,10 +107,14 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">6</th>
                                 <td>แคนาดา</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -112,10 +127,14 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">8</th>
                                 <td>ออสเตรเลีย</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -128,10 +147,14 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">10</th>
                                 <td>ไอร์แลนด์ / ฝรั่งเศส</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>

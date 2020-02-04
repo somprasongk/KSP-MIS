@@ -39,7 +39,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
 
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
@@ -90,7 +90,7 @@
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
-                                <td>ประวัติหน้าที่โดยมิชอบ</td>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
                                 <td>261</td>
                                 <td>326</td>
                                 <td>122</td>
@@ -132,50 +132,6 @@
                                 <td>246</td>
                                 <td>1642</td>
                             </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             <tr role="row" class="odd">
                                 <th scope="row">5</th>
                                 <td>การพนันและสุรา,ยาเสพติด</td>
@@ -258,7 +214,7 @@
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
-                                <td>ประวัติหน้าที่โดยมิชอบ</td>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -409,7 +365,7 @@
         });
 
         var region = ['เหนือ', 'อีสาน', 'ใต้', 'ตะวันออก', 'กลาง', 'ตะวันตก'];
-        var dataList = ['ประวัติหน้าที่โดยมิชอบ'
+        var dataList = ['ปฏิบัติหน้าที่โดยมิชอบ'
         , 'ทำร้ายร่างกาย	'
         , 'ชู้สาว'
         , 'ความผิดเกี่ยวกับเพศ'

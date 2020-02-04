@@ -27,7 +27,7 @@
                                     <div class="kt-checkbox-list">
                                         <label class="kt-checkbox kt-checkbox--tick kt-checkbox--danger">
                                             <input type="checkbox">
-                                            ประวัติหน้าที่โดยมิชอบ										                  
+                                            ปฏิบัติหน้าที่โดยมิชอบ										                  
 											<span></span>
                                         </label>
                                         <label class="kt-checkbox kt-checkbox--tick kt-checkbox--danger">

@@ -195,7 +195,7 @@
 											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
 												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
 													<i class="kt-menu__link-icon fa fa-copy"></i>
-													<span class="kt-menu__link-text">จำนวนเอกสาร</span>
+													<span class="kt-menu__link-text">จำนวนเอกสารของใบอนุญาต</span>
 													<i class="kt-menu__ver-arrow la la-angle-right"></i>
 												</a>
 												<div class="kt-menu__submenu ">
@@ -225,7 +225,7 @@
 											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
 												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
 													<i class="kt-menu__link-icon flaticon2-world"></i>
-													<span class="kt-menu__link-text">สรุปจำนวนบุคคลากรต่างประเทศ</span>
+													<span class="kt-menu__link-text">สรุปจำนวนบุคลากรต่างประเทศ</span>
 													<i class="kt-menu__ver-arrow la la-angle-right"></i>
 												</a>
 												<div class="kt-menu__submenu ">
@@ -323,7 +323,7 @@
 											<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
 												<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
 													<i class="kt-menu__link-icon fa fa-user-friends"></i>
-													<span class="kt-menu__link-text">จำนวนบุคคลากร</span>
+													<span class="kt-menu__link-text">จำนวนบุคลากร</span>
 													<i class="kt-menu__ver-arrow la la-angle-right"></i>
 												</a>
 												<div class="kt-menu__submenu ">
@@ -388,7 +388,7 @@
 														<li class="kt-menu__item " aria-haspopup="true">
 															<a href="HR-05.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">กิจกรรมการพัฒนาบุคคลากรตามประเภท</span>
+																<span class="kt-menu__link-text">กิจกรรมการพัฒนาบุคลากรตามประเภท</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
@@ -681,12 +681,12 @@
 
 														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fab fa-black-tie"></i> <span class="kt-menu__link-text">งานบริหารงานบุคคล</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
 														<ul class="kt-menu__inner">
-															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนบุคคลากรตามสายงาน</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-08.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนบุคคลากรตามระดับความชำนาญ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนบุคลากรตามสายงาน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-08.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนบุคลากรตามระดับความชำนาญ</span></a></li>
 															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">เงินรายได้รายเดือน และเงินตอบแทนอื่นๆ</span></a></li>
 															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">เงินเดือนย้อนหลัง 60 เดือน</span></a></li>
 															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-04.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">รายชื่อและยอดรวมเงินหักสะสม กบจ.</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-05.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">กิจกรรมการพัฒนาบุคคลากรตามประเภท</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-05.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">กิจกรรมการพัฒนาบุคลากรตามประเภท</span></a></li>
 															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-06.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ผู้มีคุณสมบัติคัดเลือกในกลุ่มบริหาร เพื่อเลื่อนวิทยฐานะ</span></a></li>
 															<li class="kt-menu__item " aria-haspopup="true"><a href="HR-07.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">การขอพระราชทานเครื่องราชอิสริยาภรณ์</span></a></li>
 														</ul>
@@ -967,7 +967,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <labe class="col-3 col-form-label text-right">บุคคลากร</labe>
+                                <labe class="col-3 col-form-label text-right">บุคลากร</labe>
                                 <div class="col-9">
                                     <div class="kt-checkbox-inline">
                                         <label class="kt-checkbox kt-checkbox--tick kt-checkbox--danger">

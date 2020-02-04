@@ -39,7 +39,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -64,13 +64,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
                                 <th>#</th>
                                 <th>สังกัด</th>
+                                <th>ปี 2557</th>
+                                <th>ปี 2558</th>
                                 <th>ปี 2559</th>
                                 <th>ปี 2560</th>
                             </tr>
@@ -81,10 +83,14 @@
                                 <td>สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -93,10 +99,14 @@
                                 <td>องค์กรปกครองส่วนท้องถิ่น</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
                                 <td>กรุงเทพมหานคร</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -105,10 +115,14 @@
                                 <td>สำนักงานคณะกรรมการการอาชีวศึกษา</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
                                 <td>สำนักงานคณะกรรมการการอุดมศึกษา</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -117,10 +131,14 @@
                                 <td>สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <th scope="row">8</th>
                                 <td>โรงเรียนมหิดลวิทยานุสรณ์</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -129,15 +147,21 @@
                                 <td>สถาบันบัณฑิตพัฒนศิลป์</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <th scope="row">10</th>
                                 <td>สํานักบริหารงานการศึกษาพิเศษ</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr class="dtrg-group">
                                 <td colspan="2" class="text-center">รวม</td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -192,8 +216,14 @@
                     zoomType: 'xy',
                     type: 'bar'
                 },
+                legend: {
+                    enabled: false,
+
+                    verticalAlign: 'bottom',
+                    align: 'left'
+                },
                 title: {
-                    text: 'ปีงบประมาณ พ.ศ. 2559 - 2560',
+                    text: 'ปีงบประมาณ พ.ศ. 2557 - 2560',
                     style: {
                         display: 'relative'
                     }
@@ -203,7 +233,7 @@
                     type: 'category',
                     crosshair: true,
                     title: {
-                        text: 'จำนวน'
+                        text: ''
                         //,
                         //style: {
                         //    color: Highcharts.getOptions().colors[2]
@@ -219,6 +249,7 @@
                             format: '{value} คน'
                         },
                         title: {
+                            enabled:false,
                             text: 'จำนวน (คน)',
                             style: {
                                 color: Highcharts.getOptions().colors[0]
@@ -245,6 +276,18 @@
                 },
                 series: [
                     {
+                        name: '2557',
+                        type: 'bar',
+                        data: Y60,
+                        yAxis: 0
+                    },
+                    {
+                        name: '2558',
+                        type: 'bar',
+                        data: Y59,
+                        yAxis: 0
+                    }, 
+                    {
                         name: '2559',
                         type: 'bar',
                         data: Y59,
@@ -265,7 +308,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'ปี 2560'
+                    text: 'รวม'
                 },
                 xAxis: {
                     type: 'category'

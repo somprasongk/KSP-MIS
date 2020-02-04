@@ -29,7 +29,7 @@
 	<div class="row">
 		<div class="col-12 dashboard-table">
 			<div class="kt-portlet">
-				<div class="kt-portlet__head">
+				<%--<div class="kt-portlet__head">
 					<div class="kt-portlet__head-label">
 						<span class="kt-portlet__head-icon">
 							<i class="flaticon-squares-3"></i>
@@ -55,7 +55,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>--%>
 				<div class="kt-portlet__body dashboard-table-container">
 
 
@@ -289,7 +289,7 @@
                     type: 'bar'
                 },
                 title: {
-                    text: '',display:'none'
+                    text: 'จำนวนหนังสือเอกสารเข้า - ออก ปี พ.ศ. 2562'
                 },
                 xAxis: [{
                     categories: categories(),
@@ -326,7 +326,9 @@
                     //    rangeDescription: 'Range: 0 to 5%'
                     //}
                 },
-
+                legend: {
+                    enabled:false
+                },
                 plotOptions: {
                     series: {
                         stacking: 'normal'
@@ -345,7 +347,7 @@
                 }, {
                     name: 'เอกสารออก',
                      data: dataOut
-                }]
+                    }]
             });
 
 

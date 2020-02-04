@@ -28,7 +28,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -155,6 +155,13 @@
                                 <td></td>
                                 <td></td>
                             </tr>
+                            <tr role="row" class="even dtrg-group">
+                                <td>รวม<td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -247,19 +254,20 @@
                 credits: {
                     enabled: false
                 },
-                series: [{
+                series: [  {
+                        name: 'ศึกษานิเทศก์',
+                        data: [464, 267, 288, 484, 216, 393, 125, 455, 112, 242, 238]
+                    }, {
+                        name: 'ผู้บริหารการศึกษา',
+                        data: [394, 140, 309, 463, 109, 158, 316, 441, 171, 156, 274]
+                    }, {
+                        name: 'ผู้บริหารสถานศึกษา',
+                        data: [290, 281, 396, 295, 286, 154, 239, 239, 265, 345, 363]
+                    }, {
                     name: 'ครู',
                     data: [147, 346, 229, 161, 269, 428, 364, 225, 442, 402, 166]
-                }, {
-                    name: 'ผู้บริหารสถานศึกษา',
-                    data: [290, 281, 396, 295, 286, 154, 239, 239, 265, 345, 363]
-                }, {
-                    name: 'ผู้บริหารการศึกษา',
-                    data: [394, 140, 309, 463, 109, 158, 316, 441, 171, 156, 274]
-                }, {
-                    name: 'ศึกษานิเทศก์',
-                    data: [464, 267, 288, 484, 216, 393, 125, 455, 112, 242, 238]
-                }]
+                    }
+                ]
             });
 
         });

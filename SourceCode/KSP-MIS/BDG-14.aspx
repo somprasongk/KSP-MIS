@@ -47,7 +47,7 @@
 	<div class="row">
 		<div class="col-12 dashboard-table">
 			<div class="kt-portlet">
-				<div class="kt-portlet__head">
+				<%--<div class="kt-portlet__head">
 					<div class="kt-portlet__head-label">
 						<span class="kt-portlet__head-icon">
 							<i class="flaticon-squares-3"></i>
@@ -73,7 +73,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>--%>
 				<div class="kt-portlet__body dashboard-table-container">
 
 					 <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
@@ -97,7 +97,7 @@
                                 <td colspan="8" class="text-center">แผนงานบุคคลภาครัฐ</td>                                                               
                             </tr>
 							<tr>
-                                <td>งบบุคคลากร</td>
+                                <td>งบบุคลากร</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -162,7 +162,7 @@
                                 <td colspan="8" class="text-center">แผนงานพื้นฐานด้านการพัฒนาพื้นฐานและเสริมสร้างศักยภาพคน</td>                                                               
                             </tr>
 							<tr>
-                                <td>งบบุคคลากร</td>
+                                <td>งบบุคลากร</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -227,7 +227,7 @@
                                 <td colspan="8" class="text-center">แผนงานยุทธศาสตร์ชาติ 20 ปี</td>                                                               
                             </tr>
 							<tr>
-                                <td>งบบุคคลากร</td>
+                                <td>งบบุคลากร</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -327,7 +327,7 @@
             }, {
                 id: '1.1',
                 parent: '1.0',
-                name: 'งบบุคคลากร',
+                name: 'งบบุคลากร',
                 value: 50000000
             }, {
                 id: '1.2',
@@ -357,7 +357,7 @@
             }, {
                 id: '2.1',
                 parent: '2.0',
-                name: 'งบบุคคลากร',
+                name: 'งบบุคลากร',
                 value: 250949599
             }, {
                 id: '2.2',
@@ -386,7 +386,7 @@
             }, {
                 id: '3.1',
                 parent: '3.0',
-                name: 'งบบุคคลากร',
+                name: 'งบบุคลากร',
                 value: 214390820
             }, {
                 id: '3.2',
@@ -523,7 +523,7 @@
                     }
                 },
                 series: [{
-                    name: 'งบบุคคลากร',
+                    name: 'งบบุคลากร',
                     data: [50000000, 250949599, 214390820]
                     }, {
                             name: 'งบดำเนินงาน',
@@ -590,7 +590,7 @@
                         name: 'คงเหลือ',
                         data: [26.72, 82.32, 56.48],
                         color: 'silver',
-                        stack: 'งบบุคคลากร'
+                        stack: 'งบบุคลากร'
                     }, {
                         name: 'คงเหลือ',
                         data: [6.77, 17.39, 147.25],
@@ -616,7 +616,7 @@
                         name: 'เบิกจ่ายแล้ว',
                         data: [23.28, 168.63, 157.91],
                         color: 'seagreen',
-                        stack: 'งบบุคคลากร'
+                        stack: 'งบบุคลากร'
                     },
                     {
                         name: 'เบิกจ่ายแล้ว',
@@ -664,7 +664,7 @@
                 },
 
                 xAxis: {
-                    categories: ['งบบุคคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น'],
+                    categories: ['งบบุคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น'],
                     title: {
                         text: null
                     }

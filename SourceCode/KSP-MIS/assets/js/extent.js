@@ -48,3 +48,17 @@ function topRightMenuPrinting(btn) {
     btn.closest('dropdown-menu').removeClass('show').prev('button').attr('aria-expanded', false);
     setTimeout(window.print, 1000);
 }
+
+
+function removeDuplicatedLegend(chart) {
+    var buf = [];
+
+    $(chart).find('.highcharts-legend g.highcharts-legend-item').each(function () {
+        var legend = $(this).find('text tspan').html();
+        if (buf.indexOf(legend) == -1) {
+            buf.push(legend);
+        } else {
+            $(this).remove();
+        }
+    });
+}

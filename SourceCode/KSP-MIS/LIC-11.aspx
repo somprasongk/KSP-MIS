@@ -16,7 +16,7 @@
 
             <div class="kt-portlet">
 
-                <div class="kt-portlet__body" id="chart1">
+                <div class="kt-portlet__body" id="chart1" style="height:800px;">
                 </div>
             </div>
 
@@ -26,7 +26,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
 
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
@@ -488,7 +488,8 @@
 
             Highcharts.chart('chart1', {
                 chart: {
-                    zoomType: 'xy'
+                    zoomType: 'xy',
+                    type: 'area'
                 },
                 title: {
                     text: 'ปี พ.ศ 2561',
@@ -511,6 +512,7 @@
                             //}
                         },
                         title: {
+                            enabled: false,
                             text: 'รวม'
                             //,
                             //style: {
@@ -524,6 +526,7 @@
                             format: '{value} คน'
                         },
                         title: {
+                            enabled: false,
                             text: 'ประเภทคำขอ',
                             style: {
                                 color: Highcharts.getOptions().colors[0]
@@ -539,70 +542,70 @@
                     }
                 },
                 plotOptions: {
-                    column: {
+                    area: {
                         stacking: 'normal'
                     }
-                },
+                },                
                 series: [
                     {
                         name: 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน',
-                        type: 'column',
+                        //type: 'area',
                         data: Org1,
                         yAxis: 1
                         //color: 'gold',
                     }
                     , {
                         name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชนนพื้นฐาน',
-                        type: 'column',
+                        //type: 'area',
                         data: Org2,
                         yAxis: 1
                         //color: 'gold',
                     }
                     , {
                         name: 'กรุงเทพมหานคร',
-                        type: 'column',
+                        //type: 'area',
                         data: Org3,
                         yAxis: 1
                         //color: 'gold',
                     }, {
                         name: 'สำนักงานคณะกรรมการการอาชีวศึกษา',
-                        type: 'column',
+                        //type: 'area',
                         data: Org4,
                         yAxis: 1
                         //color: 'gold',
                     }, {
                         name: 'สำนักงานคณะกรรมการการอุดมศึกษา',
-                        type: 'column',
+                        //type: 'area',
                         data: Org5,
                         yAxis: 1
                         //color: 'gold',
                     } , {
                         name: 'องค์กรปกครองส่วนท้องถิ่น',
-                        type: 'column',
+                        //type: 'area',
                         data: Org6,
                         yAxis: 1
                         //color: 'gold',
                     }, {
                         name: 'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย',
-                        type: 'column',
+                        //type: 'area',
                         data: Org7,
                         yAxis: 1
                         //color: 'gold',
                     }, {
                         name: 'สํานักบริหารงานการศึกษาพิเศษ',
-                        type: 'column',
+                        //type: 'area',
                         data: Org8,
                         yAxis: 1
                         //color: 'gold',
                     }, {
                         name: 'สถาบันบัณฑิตพัฒนศิลป์',
-                        type: 'column',
+                        //type: 'area',
                         data: Org9,
                         yAxis: 1
                         //color: 'gold',
                     }, {
                         name: 'โรงเรียนมหิดลวิทยานุสรณ์',
-                        type: 'column',
+                        //type: 'area',
                         data: Org10,
                         yAxis: 1
                         //color: 'gold',

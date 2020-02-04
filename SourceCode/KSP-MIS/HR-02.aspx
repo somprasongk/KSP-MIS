@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -182,7 +182,7 @@
                 type:'line'
             },
             title: {
-                text: '',
+                text: 'การจ่ายเงินค่าตอบแทนในปี พ.ศ.2562',
                 style: {
                     display: 'none'
                 }
@@ -199,11 +199,14 @@
                     labels: {
                         format: '{value} คน',
                         style: {
-                            color: Highcharts.getOptions().colors[4]
+                            color: 'violet'
                         }
                     },
                     title: {
-                        text: 'รวมจำนวน'
+                        text: 'รวมจำนวนบุคคลากรที่ได้รับเงิน',
+                        style: {
+                            color: 'violet'
+                        }
                     },
                     opposite: true
                 }
@@ -211,10 +214,13 @@
                 { // Secondary yAxis
                     gridLineWidth: 1,
                     labels: {
-                        format: '{value} บาท'
+                        format: '{value} บาท',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
                     },
                     title: {
-                        text: 'รวมจำนวน',
+                        text: 'รวมเงินที่จ่าย',
                         style: {
                             color: Highcharts.getOptions().colors[0]
                         }
@@ -233,7 +239,7 @@
 
             },
             {
-                name: 'บุคคลากรที่ได้รับเงินเดือน',
+                name: 'บุคลากรที่ได้รับเงิน',
                 type: 'spline',
                 data: [1000, 1003, 998, 1000, 1010, 1020, 1000, 999, 1000, 1000, 1004, 1000],
                 yAxis: 0,

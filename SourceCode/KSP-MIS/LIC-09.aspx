@@ -39,7 +39,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -77,16 +77,16 @@
                             </tr>
                             <tr>
                                 <th>ครู</th>
-                                <th>ครู ตปท.</th>
                                 <th>ผส.</th>
+                                <th>ศีกษานิเทศก์</th>
                                 <th>รวม</th>
                                 <th>ครู</th>
-                                <th>ครู ตปท.</th>
                                 <th>ผส.</th>
+                                <th>ศีกษานิเทศก์</th>
                                 <th>รวม</th>
                                 <th>ครู</th>
-                                <th>ครู ตปท.</th>
                                 <th>ผส.</th>
+                                <th>ศีกษานิเทศก์</th>
                                 <th>รวม</th>
                             </tr>
                         </thead>
@@ -417,7 +417,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: 'แบ่งตามประเภทบุคคลากร พ.ศ.2552-2554'
+                    text: 'แบ่งตามประเภทบุคลากร พ.ศ.2552-2554'
                 },
                 xAxis: {
                     categories: [
@@ -452,11 +452,11 @@
                         color : 'lightblue',
                         data: [24366, 16666, 12000]
                 }, {
-                        name: 'ครู ต่างประเทศ',
+                        name: 'ผู้บริหารสถานศึกษา',
                         color: 'slateblue',
                         data: [15000, 11000, 9000]
                 }, {
-                        name: 'ผู้บริหารสถานศึกษา',
+                        name: 'ศึกษานิเทศก์',
                         color: 'navy',
                         data: [6666, 6000, 5333]
                 }
