@@ -39,7 +39,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+               <%-- <div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
 
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
@@ -78,7 +78,7 @@
                         <tbody>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
-                                <td>ประวัติหน้าที่โดยมิชอบ</td>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
                                 <td></td>
                             </tr>
                             <tr role="row" class="even">
@@ -154,7 +154,7 @@
 
         var docData = [
             {
-                name: 'ประวัติหน้าที่โดยมิชอบ',
+                name: 'ปฏิบัติหน้าที่โดยมิชอบ',
                 y: 523,
                 color: 'salmon'
             },
@@ -227,12 +227,12 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนคดีผิดทางจรรยาบรรณ'
+                        text: 'จำนวนคดีความผิดทางจรรยาบรรณ'
                     }
                 },
-                //legend: {
-                //    enabled: true
-                //},
+                legend: {
+                    enabled: false
+                },
                 tooltip: {
                     pointFormat: '{ความผิดทางจรรยาบรรณ} จำนวน: <b>{point.y} คดี</b>'
                 },

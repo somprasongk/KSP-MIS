@@ -42,7 +42,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+               <%-- <div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -351,18 +351,12 @@
                     height: 500
                 },
                 title: {
-                    text: 'จำนวนบุคคลากรกลุ่มบริหาร พ.ศ.2562',
+                    text: 'จำนวนบุคลากรกลุ่มบริหาร พ.ศ.2562 จำแนกตามตำแหน่งและวุฒิการศึกษา',
                     style: {
                         display: 'relative'
                     },
                     style: {
                         fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: 'แยกตามกลุ่มตำแหน่งและวุฒิการศึกษา',
-                    style: {
-                        fontSize: 12
                     }
                 },
                 xAxis: {
@@ -376,10 +370,10 @@
                     {
                         labels: {
                             format: '{value} '
-                            //,
-                            //style: {
-                            //    color: Highcharts.getOptions().colors[2]
-                            //}
+                            ,
+                            style: {
+                                color: 'ORCHID'
+                            }
                         },
                         title: {
                             text: 'จำนวนผู้มีวุฒิการศึกษา',
@@ -395,7 +389,10 @@
                     { // Secondary yAxis
                         gridLineWidth: 1,
                         labels: {
-                            format: '{value} คน'
+                            format: '{value} คน',
+                            style: {
+                                color: 'MEDIUMSEAGREEN'
+                            }
                         },
                         title: {
                             text: 'จำนวนพนักงานเจ้าหน้าที่ในแต่ละกลุ่มตำแหน่ง',
@@ -492,15 +489,9 @@
                     height: 500
                 },
                 title: {
-                    text: 'จำนวนคนในแต่ละช่วงของระยะเวลาในการดำรงตำแหน่ง',
+                    text: 'ระยะเวลาการดำรงตำแหน่งของบุค ปี พ.ศ.2562 จำแนกตามระดับ',
                     style: {
                         fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: 'แยกตามระดับ ปี พ.ศ.2562',
-                    style: {
-                        fontSize: 12
                     }
                 },
                 accessibility: {
@@ -528,13 +519,13 @@
                 ],
                 yAxis: {
                     title: {
-                        text: null
+                        text: 'จำนวนบุคลากร (คน)'
                     },
                     labels: {
                         formatter: function () {
                             return this.value;
                         }
-                    },
+                    },                    
                     accessibility: {
                         description: 'Percentage population',
                         rangeDescription: 'Range: 0 to 5%'

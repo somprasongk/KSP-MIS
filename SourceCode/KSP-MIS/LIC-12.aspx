@@ -127,7 +127,7 @@
                             </tr>
                             <tr>
                                 <th>4</th>
-                                <td>นิเทศก์ศึกษา</td>
+                                <td>ศึกษานิเทศก์</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -209,7 +209,7 @@
                             </tr>
                             <tr>
                                 <th>4</th>
-                                <td>นิเทศก์ศึกษา</td>
+                                <td>ศึกษานิเทศก์</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -372,6 +372,12 @@
                 chart: {
                     zoomType: 'xy'
                 },
+                legend: {
+                    enabled: true,
+                
+                    verticalAlign: 'bottom',
+                    align: 'left'
+                },
                 title: {
                     text: 'เปรียบเทียบปีงบประมาณ พ.ศ. 2557 - 2558',
                     style: {
@@ -383,7 +389,7 @@
                         type: 'category',
                         crosshair: true,
                         title: {
-                            text: 'จำนวน'
+                            text: ''
                             //,
                             //style: {
                             //    color: Highcharts.getOptions().colors[2]
@@ -418,7 +424,7 @@
                 },
                 series: [   
                     {
-                        name: 'นิเทศก์ศึกษา',
+                        name: 'ศึกษานิเทศก์',
                         type: 'column',
                         data: Type4_58,
                         color: 'blue',
@@ -444,7 +450,7 @@
                         stack: '57'
                     },
                     {
-                        name: 'นิเทศก์ศึกษา',
+                        name: 'ศึกษานิเทศก์',
                         type: 'column',
                         data: Type4_58,
                         color: 'blue',
@@ -473,6 +479,11 @@
                 ]
             });
             
+                       
+            removeDuplicatedLegend('#chart1');
+
         });
+
+        
     </script>
 </asp:Content>

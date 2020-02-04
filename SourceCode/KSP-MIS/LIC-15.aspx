@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -62,10 +62,9 @@
                                 <th rowspan="2">รวม</th>
                             </tr>
                             <tr>
-                                <th>ชำรุด สูญหาย</th>
-                                <th>เปลี่ยนข้อมูลทางทะเบียน<br>
-                                    (แก้ไขคำนำหน้า-ชื่อ-สกุล)</th>
-                                <th>เจ้าหน้าที่ขอแก้ไข</th>
+                                <th>ผู้ประกอบวิชาชีพเทำเอกสารชำรุด สูญหาย</th>
+                                <th>ผู้ประกอบวิชาชีพเปลี่ยนแปลงข้อมูล</th>
+                                <th>เจ้าหน้าที่แก้ไขเอง</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -100,7 +99,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td>รวม</td>
+                                <td style="border-left;">รวม</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -131,12 +130,13 @@
                     type: 'bar'
                 },
                 title: {
-                    text: 'จำนวนเอกสารการออกใบแทนใบอนุญาต และสาเหตุการออกใบแทน',
+                    text: 'จำนวนการออกใบแทนใบอนุญาต และสาเหตุ',
                     style: {
                                 fontSize: 14
                     }
                         },
                 subtitle: {
+                    enabled: false;
                     text: 'พ.ศ.2562',
                     style: {
                         fontSize: 12
@@ -148,6 +148,7 @@
                 yAxis: {
                     min: 0,
                     title: {
+                        enabled : false,
                         text: 'สาเหตุการออกใบแทนใบอนุญาต'
                     }
                 },
@@ -161,13 +162,13 @@
                     }
                 },
                 series: [{
-                    name: 'ชำรุด สูญหาย',
+                    name: 'ผู้ประกอบวิชาชีพเทำเอกสารชำรุด สูญหาย',
                     data: [95, 33, 14, 57]
                 }, {
-                    name: 'เปลี่ยนข้อมูลทางทะเบียน (แก้ไขคำนำหน้า-ชื่อ-สกุล)',
+                    name: 'ผู้ประกอบวิชาชีพเปลี่ยนแปลงข้อมูล',
                     data: [22, 12, 43, 22]
                 }, {
-                    name: 'เจ้าหน้าที่ขอแก้ไข',
+                    name: 'เจ้าหน้าที่แก้ไขเอง',
                     data: [293, 114,94, 112]
                 }]
             });

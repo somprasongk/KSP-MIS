@@ -46,7 +46,7 @@
 
         <div class="col-12 dashboard-table">
 			<div class="kt-portlet">
-				<div class="kt-portlet__head">
+				<%--<div class="kt-portlet__head">
 					<div class="kt-portlet__head-label">
 						<span class="kt-portlet__head-icon">
 							<i class="flaticon-squares-3"></i>
@@ -72,7 +72,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>--%>
 				<div class="kt-portlet__body dashboard-table-container">
 
 
@@ -104,7 +104,7 @@
                             </tr>
                             <tr class="level-0">
                                 <td></td>
-                                <td>ค่าใช้จ่ายบุคคลากร</td>
+                                <td>ค่าใช้จ่ายบุคลากร</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -467,7 +467,7 @@
                             </tr>
                             <tr class="level-1">
                                 <td></td>
-                                <td>3. เงินอุดหนุนพัฒนาวิชาชีพแก่สมาชิก เครือข่ายพัฒนาวิชาชีพครู และบุคคลากรทางการศึกษา</td>
+                                <td>3. เงินอุดหนุนพัฒนาวิชาชีพแก่สมาชิก เครือข่ายพัฒนาวิชาชีพครู และบุคลากรทางการศึกษา</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -665,7 +665,7 @@
                 {
                     id: '1.1',
                     parent: '1.0',
-                    name: 'ค่าใช้จ่ายบุคคลากร / เงินตอบแทน',
+                    name: 'ค่าใช้จ่ายบุคลากร / เงินตอบแทน',
                     value: 278273800
                 },
                 {
@@ -779,7 +779,7 @@
                 {
                     id: '3.1',
                     parent: '3.0',
-                    name: 'ค่าใช้จ่ายบุคคลากร / เงินตอบแทน',
+                    name: 'ค่าใช้จ่ายบุคลากร / เงินตอบแทน',
                     value: 120900922
                 },
                 {
@@ -830,7 +830,7 @@
                     y: 690900092
                 },
                 {
-                    name: 'ค่าใช้จ่ายบุคคลากร',
+                    name: 'ค่าใช้จ่ายบุคลากร',
                     y: 399174722
                 },   
                 {
@@ -907,7 +907,7 @@
                 },
 
                 title: {
-                    text: 'สัดส่วนงบประมาณ ปี 2562'
+                    text: 'สัดส่วนงบประมาณ ปี พ.ศ.2562'
                 },
                 
                 series: [{
@@ -965,10 +965,7 @@
                     height: "300px"
                 },
                 title: {
-                    text: '',
-                    style: {
-                        display: 'none'
-                    }
+                    text: 'ค่าใช้จ่ายจำแนกตามประเภท ปี พ.ศ.2562'
                 },
                 xAxis: {
                     type: 'category',
@@ -979,17 +976,17 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text:null
+                        text:'จำนวนเงิน (บาท)'
                     }
                 },
-                //legend: {
-                //    enabled: true
-                //},
+                legend: {
+                    enabled: false
+                },
                 tooltip: {
                     pointFormat: '{หน่วยงาน} งบประมาณ: <b>{point.y} บาท</b>'
                 },
                  series: [{
-                    name: 'ค่าใช้จ่ายแยกตามประเภท',
+                    name: 'ค่าใช้จ่ายจำแนกตามประเภท',
                     data: barData,
                     dataLabels: {
                         enabled: true,
@@ -1010,10 +1007,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: '',
-                    style: {
-                        display: 'none'
-                    }
+                    text: 'แผนการเบิกจ่ายปี พ.ศ.2562 ตามไตรมาส'
                 },
                 xAxis: {
                     type: 'category',
@@ -1024,7 +1018,7 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'แผนการเบิกจ่ายตามไตรมาส'
+                        text: 'มูลค่าการเบิกจ่าย (บาท)'
                     }
                 },
                 tooltip: {

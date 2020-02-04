@@ -28,7 +28,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -53,19 +53,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
                                 <th rowspan="2">#</th>
                                 <th rowspan="2">หลักสูตร</th>
-                                <th colspan="5">จำนวน (คน)</th>
+                                <th colspan="3">จำนวน (คน)</th>
                             </tr>
                             <tr>
-                                <th>เข้าฝึกอบรมจำนวน</th>
-                                <th>ชาย</th>
-                                <th>หญิง</th>
+                                <th>เข้าฝึกอบรมจำนวน</th>                                
                                 <th>ผ่าน</th>
                                 <th>ไม่ผ่าน</th>
                             </tr>
@@ -77,14 +75,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">2</th>
                                 <td>การพัฒนาหลักสูตร</td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -95,14 +89,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">4</th>
                                 <td>จิตวิทยาสำหรับครู</td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -113,14 +103,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">6</th>
                                 <td>การบริหารจัดการในห้องเรียน</td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -131,14 +117,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">8</th>
                                 <td>นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา</td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -149,15 +131,11 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
                                 <td colspan="2">รวม</td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -350,19 +328,19 @@
            },
            {
                name: 'จิตวิทยาสำหรับครู',
-               y: 10
+               y: 100
            },
             {
                 name: 'การวัดและประเมินผลการศึกษา',
-                y: 0
+                y: 300
             },
             {
                 name: 'การบริหารจัดการในห้องเรียน',
-                y: 0
+                y: 130
             },
             {
                 name: 'การวิจัยทางการศึกษา',
-                y: 50
+                y: 150
             },
             {
                 name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
@@ -396,38 +374,20 @@
                     }
                 },
 
-                yAxis: [ // Primary yAxis
-                    {
-                        labels: {
-                            format: '{value} คน'
-                            //,
-                            //style: {
-                            //    color: Highcharts.getOptions().colors[2]
-                            //}
-                        },
-                        title: {
-                            text: 'รวม'
-                            //,
-                            //style: {
-                            //    color: Highcharts.getOptions().colors[2]
-                            //}
-                        },
-                        opposite: true
-                    }
-                    ,
+                yAxis:
                     { // Secondary yAxis
                         gridLineWidth: 1,
                         labels: {
                             format: '{value} คน'
                         },
                         title: {
+                            enabled: false,
                             text: 'ประเภทคำขอ',
                             style: {
                                 color: Highcharts.getOptions().colors[0]
                             }
                         }
                     }
-                ]
                 ,
                 tooltip: {
                     formatter: function () {
@@ -436,60 +396,26 @@
                     }
                 },
                 plotOptions: {
-                    column: {
+                    area: {
                         stacking: 'normal'
                     }
                 },
                 series: [
-                    //{
-                    //    name: 'จำนวนเข้าฝึกอบรม',
-                    //    type: 'column',
-                    //    data: Plan1,
-                    //    yAxis: 1,
-                    //    color: 'gold',
-                    //    stack: 'Doc1'
-                    //},
+
                     {
-                        name: 'หญิง',
-                        type: 'column',
-                        data: Plan2,
-                        yAxis: 1,
-                        color: 'pink',
-                        stack: 'Doc2'
-                    },
-                    {
-                        name: 'ชาย',
-                        type: 'column',
-                        data: Plan3,
-                        yAxis: 1,
-                        color: 'lightblue',
-                        stack: 'Doc2'
+                        name: 'ไม่ผ่าน',
+                        type: 'area',
+                        data: Plan5,
+                        color: 'red',
+                        stack: 'Doc3'
                     },
                     {
                         name: 'ผ่าน',
-                        type: 'column',
+                        type: 'area',
                         data: Plan4,
-                        yAxis: 1,
                         color: 'seagreen',
                         stack: 'Doc3'
-                    },
-                    {
-                        name: 'ไม่ผ่าน',
-                        type: 'column',
-                        data: Plan5,
-                        yAxis: 1,
-                        color: 'brown',
-                        stack: 'Doc3'
                     }
-                    ,
-                    {
-                        name: 'รวม',
-                        type: 'spline',
-                        data: Plan1,
-                        yAxis: 0
-                    }
-
-
                 ]
             });
 

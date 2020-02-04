@@ -36,7 +36,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -74,16 +74,16 @@
                             </tr>
                             <tr>
                                 <th>ครู</th>
-                                <th>ครู ตปท.</th>
-                                <th>ผส.</th>
+                                <th>ผู้บริหารสถานศึกษา</th>
+                                <th>ศึกษานิเทศก์</th>
                                 <th>รวม</th>
                                 <th>ครู</th>
-                                <th>ครู ตปท.</th>
-                                <th>ผส.</th>
+                                <th>ผู้บริหารสถานศึกษา</th>
+                                <th>ศึกษานิเทศก์</th>
                                 <th>รวม</th>
                                 <th>ครู</th>
-                                <th>ครู ตปท.</th>
-                                <th>ผส.</th>
+                                <th>ผู้บริหารสถานศึกษา</th>
+                                <th>ศึกษานิเทศก์</th>
                                 <th>รวม</th>
                             </tr>
                         </thead>
@@ -147,16 +147,16 @@
                             </tr>
                             <tr>
                                 <th>ครู</th>
-                                <th>ครู ตปท.</th>
-                                <th>ผส.</th>
+                                <th>ผู้บริหารสถานศึกษา</th>
+                                <th>ศึกษานิเทศก์</th>
                                 <th>รวม</th>
                                 <th>ครู</th>
-                                <th>ครู ตปท.</th>
-                                <th>ผส.</th>
+                                <th>ผู้บริหารสถานศึกษา</th>
+                                <th>ศึกษานิเทศก์</th>
                                 <th>รวม</th>
                                 <th>ครู</th>
-                                <th>ครู ตปท.</th>
-                                <th>ผส.</th>
+                                <th>ผู้บริหารสถานศึกษา</th>
+                                <th>ศึกษานิเทศก์</th>
                                 <th>รวม</th>
                             </tr>
                         </thead>
@@ -244,7 +244,7 @@
                     }
                 },
                 title: {
-                    text: 'แบ่งตามประเภทบุคคลากร พ.ศ.2552-2554'
+                    text: 'แบ่งตามประเภทบุคลากร พ.ศ.2552-2554'
                 },
                 xAxis: {
                     categories: [
@@ -262,7 +262,14 @@
                     }, {
                         min: 0,
                         title: {
-                            text: 'รวมจำนวน'
+                            text: 'รวมจำนวน',
+                            enabled:false
+                        },
+                        labels: {
+                            format: '{value} คน',
+                            style: {
+                                color: Highcharts.getOptions().colors[0]
+                            }
                         },
                         opposite: true
                     }
@@ -295,11 +302,11 @@
                     color: 'lightblue',
                     data: [24366, 16666, 12000]
                 }, {
-                    name: 'ครู ต่างประเทศ',
+                        name: 'ผู้บริหารสถานศึกษา',
                     color: 'slateblue',
                     data: [15000, 11000, 9000]
                 }, {
-                    name: 'ผู้บริหารสถานศึกษา',
+                    name: 'ศึกษานิเทศก์',
                     color: 'navy',
                     data: [6666, 6000, 5333]
                 }]
@@ -373,9 +380,9 @@
                     {
                         name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน',
                         data: [
-                            [2, 2552, 15000],
-                            [2, 2553, 13000],
-                            [2, 2554, 12000]
+                            [2, 2552, 5000],
+                            [2, 2553, 3000],
+                            [2, 2554, 2000]
                         ],
                         marker: {
                             fillColor: {
@@ -392,9 +399,9 @@
                     {
                         name: 'กรุงเทพมหานคร',
                         data: [
-                            [3, 2552, 12000],
-                            [3, 2553, 14000],
-                            [3, 2554, 15000]
+                            [3, 2552, 2000],
+                            [3, 2553, 4000],
+                            [3, 2554, 5000]
                         ],
                         marker: {
                             fillColor: {
@@ -410,9 +417,9 @@
                     {
                         name: 'สำนักงานคณะกรรมการการอาชีวศึกษา',
                         data: [
-                            [4, 2552, 10000],
-                            [4, 2553, 9500],
-                            [4, 2554, 8400]
+                            [4, 2552, 1000],
+                            [4, 2553, 950],
+                            [4, 2554, 840]
                         ],
                         marker: {
                             fillColor: {

@@ -37,7 +37,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <labe class="col-3 col-form-label text-right">บุคคลากร</labe>
+                                <labe class="col-3 col-form-label text-right">บุคลากร</labe>
                                 <div class="col-9">
                                     <div class="kt-radio-inline">
                                         <label class="kt-radio kt-radio--tick kt-radio--danger">

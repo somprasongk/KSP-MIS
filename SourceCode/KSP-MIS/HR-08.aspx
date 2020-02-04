@@ -38,7 +38,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -498,15 +498,9 @@
                     height: 650
                 },
                 title: {
-                    text: 'จำนวนวุฒิการศึกษาของบุคคลากรตามกลุ่ม/ประเภท',
+                    text: 'จำนวนวุฒิการศึกษาของบุคลากรตามกลุ่ม/ประเภท ปี พ.ศ.2562',
                     style: {
                         fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: 'ปี พ.ศ.2562',
-                    style: {
-                        fontSize: 12
                     }
                 },
                 xAxis: {
@@ -519,7 +513,7 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนวุฒิการศึกษา'
+                        text: 'จำนวนบุคคลากร'
                     },
                     stackLabels: {
                         enabled: true,
@@ -584,22 +578,15 @@
                     height: 650
                 },
                 title: {
-                    text: 'จำนวนบุคคลากร แบ่งตามช่วงอายุ'
+                    text: 'จำนวนบุคลากร แบ่งตามช่วงอายุ'
                 },
 
                 title: {
-                    text: 'จำนวนบุคคลากรกลุ่ม/ประเภท แบ่งตามช่วงอายุ',
+                    text: 'จำนวนบุคลากรกลุ่ม/ประเภท แบ่งตามช่วงอายุ ปี พ.ศ.2562',
                     style: {
                         fontSize: 14
                     }
                 },
-                subtitle: {
-                    text: 'ปี พ.ศ.2562',
-                    style: {
-                        fontSize: 12
-                    }
-                },
-
                 xAxis: {
                     categories: ['ผู้บริหาร สนง.', 'บริหาร', 'วิชาการ', 'ปฏิบัติการ']
                 },

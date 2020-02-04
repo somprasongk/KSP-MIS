@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -1045,7 +1045,7 @@
                      zoomType: 'xy'
                  },
                  title: {
-                     text: 'ปีงบประมาณ 2561',
+                     text: 'ยอดรวมบุคลากรชาวต่างชาติ ปีงบประมาณ 2561',
                      style: {
                          display: 'relative'
                      }
@@ -1055,7 +1055,7 @@
                      crosshair: true
                  },
 
-                 yAxis: [ // Primary yAxis
+                 yAxis:  // Primary yAxis
                      {
                          labels: {
                              format: '{value} คน'
@@ -1065,27 +1065,14 @@
                              //}
                          },
                          title: {
-                             text: 'รวม'
+                             text: 'ยอดรวม'
                              //,
                              //style: {
                              //    color: Highcharts.getOptions().colors[2]
                              //}
                          }
-                     },
-                     { // Secondary yAxis
-                         gridLineWidth: 1,
-                         labels: {
-                             format: '{value} คน'
-                         },
-                         title: {
-                             text: 'ยอดรวมชาวต่างชาติ',
-                             style: {
-                                 color: Highcharts.getOptions().colors[0]
-                             }
-                         }
                      }
-                 ]
-                 ,
+                  ,
                  tooltip: {
                      formatter: function () {
                          return this.series.name + ': ' + this.y + '<br/>' +
@@ -1102,14 +1089,7 @@
                          name: 'ปีงบประมาณ 2561',
                          type: 'column',
                          data: data
-                     },
-                     {
-                         name: 'ปีงบประมาณ 2561',
-                         type: 'spline',
-                         color: '#1dc9b7',
-                         data: data
-                     }
-                     
+                     }                     
                  ]
              });
          });

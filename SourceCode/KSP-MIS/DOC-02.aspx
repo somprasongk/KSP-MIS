@@ -45,7 +45,7 @@
 	<div class="row">
 		<div class="col-12 dashboard-table">
 			<div class="kt-portlet">
-				<div class="kt-portlet__head">
+				<%--<div class="kt-portlet__head">
 					<div class="kt-portlet__head-label">
 						<span class="kt-portlet__head-icon">
 							<i class="flaticon-squares-3"></i>
@@ -71,7 +71,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>--%>
 				<div class="kt-portlet__body dashboard-table-container">
 
 
@@ -244,10 +244,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: '',
-                    style: {
-                        display:'none'
-                    }
+                    text: 'จำนวนหนังสือออก ปี พ.ศ.2562 จำแนกตามประเภทเอกสาร'
                 },
                 xAxis: {
                     type: 'category',
@@ -260,12 +257,12 @@
                     title: {
                         text: 'จำนวนหนังสือเอกสารออก'
                     }
+                },                
+                legend: {
+                    enabled: false
                 },
-                //legend: {
-                //    enabled: true
-                //},
                 tooltip: {
-                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเอกสารออก: <b>{point.y} รายการ</b>'
+                    pointFormat: '{หน่วยงาน} จำนวนหนังสือออก: <b>{point.y} รายการ</b>'
                 },
                 plotOptions: {
                     //column: {
@@ -297,10 +294,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: '',
-                    style: {
-                        display: 'none'
-                    }
+                    text: 'จำนวนหนังสือออก ปี พ.ศ.2562 จำแนกตามประเภทเอกสาร'
                 },
                 xAxis: {
                     type: 'category',
@@ -311,7 +305,7 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนหนังสือเอกสารออก'
+                        text: 'จำนวนหนังสือออก'
                     }
                 },
                 tooltip: {

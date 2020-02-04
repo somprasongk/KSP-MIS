@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -187,12 +187,12 @@
                  },
                  yAxis: {
                      title: {
-                         text: 'Billions'
+                         text: 'จำนวน (คน)'
                      },
                      labels: {
-                         formatter: function () {
-                             return this.value / 1000;
-                         }
+                         //formatter: function () {
+                         //    return this.value / 1000;
+                         //}
                      }
                  },
                  tooltip: {

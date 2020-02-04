@@ -65,7 +65,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -90,7 +90,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
 
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
@@ -542,7 +542,7 @@
                     height:650
                 },
                 title: {
-                    text: 'จำนวนบุคคลากรตามสายงาน พ.ศ.2562',
+                    text: 'จำนวนบุคลากรตามสายงาน พ.ศ.2562',
                     style: {
                         display: 'relative'
                     }
@@ -556,12 +556,13 @@
 
                 yAxis: [ // Primary yAxis
                     {
+                        max : 100,
                         labels: {
                             format: '{value} %'
-                            //,
-                            //style: {
-                            //    color: Highcharts.getOptions().colors[2]
-                            //}
+                            ,
+                            style: {
+                                color: "ORCHID"
+                            }
                         },
                         title: {
                             text: 'วุฒิการศึกษา',
@@ -571,6 +572,7 @@
                                 color: 'ORCHID'
                             }
                         },
+                        endOnTick: false,
                         opposite: true
                     }
                     ,
@@ -679,13 +681,13 @@
                         height: 300
                     },
                     title: {
-                        text: 'ช่วงอายุบุคคลากร',
+                        text: orgs[i],
                         style: {
                             fontSize: 14
                         }
                     },
                     subtitle: {
-                        text: orgs[i],
+                        text: 'ช่วงอายุบุคลากร',
                         style: {
                             fontSize: 12
                         }
@@ -719,7 +721,7 @@
                         series:
                             {
                                 animation: true,
-                                lineWidth: 4,
+                                lineWidth: 2,
                                 marker: {
                                     radius: 3,
                                     symbol: "circle"

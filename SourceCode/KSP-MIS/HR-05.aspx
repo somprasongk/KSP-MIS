@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -195,13 +195,22 @@
                 chart: { height: 500 },
                               
                 title: {
-                    text: 'เปรียบเทียบจำนวนหลักสูตรการพัฒนาบุคคลากร',
+                    text: 'เปรียบเทียบจำนวนหลักสูตรการพัฒนาบุคลากร',
                     style: {
                             fontSize: 14
                         }
                 },
                 xAxis: {
                     categories: ['2558','2559', '2560', '2561', '2562']
+                },
+                yAxis: {
+           
+                    title: {
+                        text: "คนที่เข้าร่วมหลักสูตร"
+                    },
+                    dataLabels: {
+                        enabled: false
+                    }
                 },
                 labels: {
                     items: [{
