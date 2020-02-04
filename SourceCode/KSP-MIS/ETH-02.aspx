@@ -86,7 +86,7 @@
                         </thead>
                         <tbody>
                             <tr role="row">
-                                <th colspan="9">สำนักงานเขตพื้นที่การศึกษาประถมศึกษา</th>
+                                <th colspan="9">สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน	 (สพฐ.)</th>
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
@@ -97,7 +97,7 @@
                                 <td>294</td>
                                 <td>342</td>
                                 <td>343</td>
-                                <td>1688</td> 
+                                <td>1688</td>
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">2</th>
@@ -109,7 +109,7 @@
                                 <td>424</td>
                                 <td>420</td>
                                 <td>2184</td>
-                            </tr> 
+                            </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">3</th>
                                 <td>ชู้สาว</td>
@@ -120,7 +120,7 @@
                                 <td>322</td>
                                 <td>246</td>
                                 <td>1780</td>
-                            </tr> 
+                            </tr>
                             <tr role="row" class="even">
                                 <th scope="row">4</th>
                                 <td>ความผิดเกี่ยวกับเพศ</td>
@@ -208,9 +208,9 @@
                                 <td>3095</td>
                                 <td>16943</td>
                             </tr>
-                            
+
                             <tr role="row">
-                                <th colspan="9">สำนักงานเขตพื้นที่การศึกษามัธยมศึกษา</th>
+                                <th colspan="9">สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน	 (สช.)</th>
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
@@ -332,6 +332,1373 @@
                                 <td></td>
                                 <td></td>
                             </tr>
+
+                            <tr role="row">
+                                <th colspan="9">องค์กรปกครองส่วนท้องถิ่น	 (อปท.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+
+
+                            <tr role="row">
+                                <th colspan="9">กรุงเทพมหานคร	 (กทม.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr role="row">
+                                <th colspan="9">สำนักงานคณะกรรมการการอาชีวศึกษา	 (สอศ.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr role="row">
+                                <th colspan="9">สำนักงานคณะกรรมการการอุดมศึกษา	 (สกอ.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr role="row">
+                                <th colspan="9">สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย	 (กศน.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr role="row">
+                                <th colspan="9">โรงเรียนมหิดลวิทยานุสรณ์	 (มวส.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr role="row">
+                                <th colspan="9">สถาบันการพลศึกษา	 (พลศึกษา)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr role="row">
+                                <th colspan="9">สำนักงานพระพุทธศาสนาแห่งชาติ	 (พศ.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr role="row">
+                                <th colspan="9">สถาบันบัณฑิตพัฒนศิลป์	 (สบศ.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr role="row">
+                                <th colspan="9">สำนักงานบริหารงานการศึกษาพิเศษ	 (สศศ.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr role="row">
+                                <th colspan="9">ตำรวจตระเวนชายแดน	 (ตชด.)</th>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">1</th>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">2</th>
+                                <td>ทำร้ายร่างกาย</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">3</th>
+                                <td>ชู้สาว</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">4</th>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">5</th>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
+                                <td>อื่นๆ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                             
                         </tbody>
                         <tfoot>
                             <tr>
@@ -389,16 +1756,14 @@
 
         $(document).ready(function () {
 
+
         Highcharts.chart('chart1', {
             chart: {
                 type: 'packedbubble',
                 height: '600'
             },
             title: {
-                text: 'จำนวนคดีจรรยาบรรณของวิชาชีพสังกัด ... จำแนกตามภาค และประเภทความผิด ปี พ.ศ. ...',
-                style: {
-                    fontSize: 14
-                }
+                text: 'จำนวนคดีจรรยาบรรณของวิชาชีพสังกัด ... จำแนกตามภาค และประเภทความผิด ปี พ.ศ. ...'
             },
             tooltip: {
                 useHTML: true,
@@ -433,332 +1798,317 @@
                     }
                 }
             },
-
             series: [{
-                name: region[0],
-                data: [{
-                    name: dataList[0],
-                    value: 767.1
-                }, {
-                    name: dataList[1],
-                    value: 20.7
-                },
-                {
-                    name: dataList[2],
-                    value: 97.2
-                },
-                {
-                    name: dataList[3],
-                    value: 111.7
-                },
-                {
-                    name: dataList[4],
-                    value: 158.1
-                },
-                {
-                    name: dataList[5],
-                    value: 241.6
-                },
-                {
-                    name: dataList[6],
-                    value: 249.1
-                },
-                {
-                    name: dataList[7],
-                    value: 298.1
-                },
-                {
-                    name: dataList[8],
-                    value: 323.7
-                },
-                {
-                    name: dataList[9],
-                    value: 78.3
-                }]
-
-
-            }
-
-            , {
-                name: region[1],
-                data: [{
-                    name: dataList[0],
-                    value: 8.2
-                },
-                {
-                    name: dataList[1],
-                    value: 9.2
-                },
-                {
-                    name: dataList[2],
-                    value: 290
-                },
-                {
-                    name: dataList[3],
-                    value: 560
-                },
-                {
-                    name: dataList[4],
-                    value: 14.1
-                },
-                {
-                    name: dataList[5],
-                    value: 17.3
-                },
-                {
-                    name: dataList[6],
-                    value: 67
-                },
-                {
-                    name: dataList[7],
-                    value: 25
-                },
-                {
-                    name: dataList[8],
-                    value: 50.6
-                },
-                {
-                    name: dataList[9],
-                    value: 50
-                }]
-            }
-
-            , {
-                name: region[2],
-                data: [{
-                    name: dataList[0],
-                    value: 8.2
-                },
-                {
-                    name: dataList[1],
-                    value: 230
-                },
-                {
-                    name: dataList[2],
-                    value: 560
-                },
-                {
-                    name: dataList[3],
-                    value: 14.1
-                },
-                {
-                    name: dataList[4],
-                    value: 14.1
-                },
-                {
-                    name: dataList[5],
-                    value: 17.3
-                },
-                {
-                    name: dataList[6],
-                    value: 90
-                },
-                {
-                    name: dataList[7],
-                    value: 25
-                },
-                {
-                    name: dataList[8],
-                    value: 50.6
-                },
-                {
-                    name: dataList[9],
-                    value: 70
-                }]
-            }
-
-            , {
-                name: region[3],
-                data: [{
-                    name: dataList[0],
-                    value: 8.2
-                },
-                {
-                    name: dataList[1],
-                    value: 9.2
-                },
-                {
-                    name: dataList[2],
-                    value: 34
-                },
-                {
-                    name: dataList[3],
-                    value: 14.1
-                },
-                {
-                    name: dataList[4],
-                    value: 130
-                },
-                {
-                    name: dataList[5],
-                    value: 17.3
-                },
-                {
-                    name: dataList[6],
-                    value: 40
-                },
-                {
-                    name: dataList[7],
-                    value: 400
-                },
-                {
-                    name: dataList[8],
-                    value: 230
-                },
-                {
-                    name: dataList[9],
-                    value: 10
-                }]
-            }
-            , {
-                name: region[4],
-                data: [{
-                    name: dataList[0],
-                    value: 290
-                },
-                {
-                    name: dataList[1],
-                    value: 9.2
-                },
-                {
-                    name: dataList[2],
-                    value: 12
-                },
-                {
-                    name: dataList[3],
-                    value: 14.1
-                },
-                {
-                    name: dataList[4],
-                    value: 14.1
-                },
-                {
-                    name: dataList[5],
-                    value: 340
-                },
-                {
-                    name: dataList[6],
-                    value: 10
-                },
-                {
-                    name: dataList[7],
-                    value: 25
-                },
-                {
-                    name: dataList[8],
-                    value: 50.6
-                },
-                {
-                    name: dataList[9],
-                    value: 30
-                }]
-            }
-            , {
-                name: region[5],
-                data: [{
-                    name: dataList[0],
-                    value: 210
-                },
-                {
-                    name: dataList[1],
-                    value: 9.2
-                },
-                {
-                    name: dataList[2],
-                    value: 12
-                },
-                {
-                    name: dataList[3],
-                    value: 320
-                },
-                {
-                    name: dataList[4],
-                    value: 14.1
-                },
-                {
-                    name: dataList[5],
-                    value: 234
-                },
-                {
-                    name: dataList[6],
-                    value: 240
-                },
-                {
-                    name: dataList[7],
-                    value: 25
-                },
-                {
-                    name: dataList[8],
-                    value: 50.6
-                },
-                {
-                    name: dataList[9],
-                    value: 29
-                }]
-            }
-            ]
-        });
-
-
-        Highcharts.chart('chart2', {
-            chart: {
-                //plotBackgroundColor: null,
-                //plotBorderWidth: 0,
-                //plotShadow: false
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                type: 'pie',
-                height: '600'
-            },
-
-           
-            title: {
-                text: 'สัดส่วนการกระทำความผิดทางจรรยาบรรณของวิชาชีพ จำแนกตามประเภทความผิด ปี พ.ศ. ...'
-            },
-            legend: {
-                enabled: true
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true,
-                        format: '<b>{point.name}</b>: {point.percentage:.1f} %'
-                    }
-                }
-            },
-
-            series: [{
-                type: 'pie',
-                name: 'ค่าเฉลี่ย',
-                innerSize: '50%',
-                data: [
-                    [dataList[0], 690],
-                    [dataList[1], 300],
-                    [dataList[2], 400],
-                    [dataList[3], 100],
-                    [dataList[4], 120],
-                    [dataList[5], 230],
-                    [dataList[6], 110],
-                    [dataList[7], 400],
-                    [dataList[8], 290],
-                    [dataList[9], 130],
+                    name: region[0],
+                    data: [{
+                        name: dataList[0],
+                        value: 767.1
+                    }, {
+                        name: dataList[1],
+                        value: 20.7
+                    },
                     {
-                        name: 'Other',
-                        y: 7.61,
-                        dataLabels: {
-                            enabled: false
-                        }
-                    }
+                        name: dataList[2],
+                        value: 97.2
+                    },
+                    {
+                        name: dataList[3],
+                        value: 111.7
+                    },
+                    {
+                        name: dataList[4],
+                        value: 158.1
+                    },
+                    {
+                        name: dataList[5],
+                        value: 241.6
+                    },
+                    {
+                        name: dataList[6],
+                        value: 249.1
+                    },
+                    {
+                        name: dataList[7],
+                        value: 298.1
+                    },
+                    {
+                        name: dataList[8],
+                        value: 323.7
+                    },
+                    {
+                        name: dataList[9],
+                        value: 78.3
+                    }]
+
+
+                }
+
+                , {
+                    name: region[1],
+                    data: [{
+                        name: dataList[0],
+                        value: 8.2
+                    },
+                    {
+                        name: dataList[1],
+                        value: 9.2
+                    },
+                    {
+                        name: dataList[2],
+                        value: 290
+                    },
+                    {
+                        name: dataList[3],
+                        value: 560
+                    },
+                    {
+                        name: dataList[4],
+                        value: 14.1
+                    },
+                    {
+                        name: dataList[5],
+                        value: 17.3
+                    },
+                    {
+                        name: dataList[6],
+                        value: 67
+                    },
+                    {
+                        name: dataList[7],
+                        value: 25
+                    },
+                    {
+                        name: dataList[8],
+                        value: 50.6
+                    },
+                    {
+                        name: dataList[9],
+                        value: 50
+                    }]
+                }
+
+                , {
+                    name: region[2],
+                    data: [{
+                        name: dataList[0],
+                        value: 8.2
+                    },
+                    {
+                        name: dataList[1],
+                        value: 230
+                    },
+                    {
+                        name: dataList[2],
+                        value: 560
+                    },
+                    {
+                        name: dataList[3],
+                        value: 14.1
+                    },
+                    {
+                        name: dataList[4],
+                        value: 14.1
+                    },
+                    {
+                        name: dataList[5],
+                        value: 17.3
+                    },
+                    {
+                        name: dataList[6],
+                        value: 90
+                    },
+                    {
+                        name: dataList[7],
+                        value: 25
+                    },
+                    {
+                        name: dataList[8],
+                        value: 50.6
+                    },
+                    {
+                        name: dataList[9],
+                        value: 70
+                    }]
+                }
+
+                , {
+                    name: region[3],
+                    data: [{
+                        name: dataList[0],
+                        value: 8.2
+                    },
+                    {
+                        name: dataList[1],
+                        value: 9.2
+                    },
+                    {
+                        name: dataList[2],
+                        value: 34
+                    },
+                    {
+                        name: dataList[3],
+                        value: 14.1
+                    },
+                    {
+                        name: dataList[4],
+                        value: 130
+                    },
+                    {
+                        name: dataList[5],
+                        value: 17.3
+                    },
+                    {
+                        name: dataList[6],
+                        value: 40
+                    },
+                    {
+                        name: dataList[7],
+                        value: 400
+                    },
+                    {
+                        name: dataList[8],
+                        value: 230
+                    },
+                    {
+                        name: dataList[9],
+                        value: 10
+                    }]
+                }
+                , {
+                    name: region[4],
+                    data: [{
+                        name: dataList[0],
+                        value: 290
+                    },
+                    {
+                        name: dataList[1],
+                        value: 9.2
+                    },
+                    {
+                        name: dataList[2],
+                        value: 12
+                    },
+                    {
+                        name: dataList[3],
+                        value: 14.1
+                    },
+                    {
+                        name: dataList[4],
+                        value: 14.1
+                    },
+                    {
+                        name: dataList[5],
+                        value: 340
+                    },
+                    {
+                        name: dataList[6],
+                        value: 10
+                    },
+                    {
+                        name: dataList[7],
+                        value: 25
+                    },
+                    {
+                        name: dataList[8],
+                        value: 50.6
+                    },
+                    {
+                        name: dataList[9],
+                        value: 30
+                    }]
+                }
+                , {
+                    name: region[5],
+                    data: [{
+                        name: dataList[0],
+                        value: 210
+                    },
+                    {
+                        name: dataList[1],
+                        value: 9.2
+                    },
+                    {
+                        name: dataList[2],
+                        value: 12
+                    },
+                    {
+                        name: dataList[3],
+                        value: 320
+                    },
+                    {
+                        name: dataList[4],
+                        value: 14.1
+                    },
+                    {
+                        name: dataList[5],
+                        value: 234
+                    },
+                    {
+                        name: dataList[6],
+                        value: 240
+                    },
+                    {
+                        name: dataList[7],
+                        value: 25
+                    },
+                    {
+                        name: dataList[8],
+                        value: 50.6
+                    },
+                    {
+                        name: dataList[9],
+                        value: 29
+                    }]
+                }
                 ]
-            }]
-        });
+            });
+
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    //plotBackgroundColor: null,
+                    //plotBorderWidth: 0,
+                    //plotShadow: false
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: 'pie',
+                    height: '600'
+                },
+                title: {
+                    text: 'สัดส่วนการกระทำผิดจรรยาบรรณของวิชาชีพ จำแนกตามประเภทความผิด ปี พ.ศ. ...'
+                },
+                legend: {
+                    enabled: true
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'ค่าเฉลี่ย',
+                    innerSize: '50%',
+                    data: [
+                        [dataList[0], 690],
+                        [dataList[1], 300],
+                        [dataList[2], 400],
+                        [dataList[3], 100],
+                        [dataList[4], 120],
+                        [dataList[5], 230],
+                        [dataList[6], 110],
+                        [dataList[7], 400],
+                        [dataList[8], 290],
+                        [dataList[9], 130],
+                        {
+                            name: 'Other',
+                            y: 7.61,
+                            dataLabels: {
+                                enabled: false
+                            }
+                        }
+                    ]
+                }]
+            });
         });
     </script>
 

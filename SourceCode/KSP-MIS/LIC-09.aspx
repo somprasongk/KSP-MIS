@@ -93,7 +93,7 @@
                         <tbody>
                             <tr role="row" class="odd">
                                 <th scope="row">1</th>
-                                <td>สช.</td>
+                                <td>สพฐ.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -109,7 +109,7 @@
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">2</th>
-                                <td>สพฐ.</td>
+                                <td>สช.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -125,7 +125,7 @@
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">3</th>
-                                <td>ปค.</td>
+                                <td>อปท.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -141,7 +141,7 @@
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">4</th>
-                                <td>กรุงเทพฯ</td>
+                                <td>กทม.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -157,7 +157,7 @@
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">5</th>
-                                <td>อาชีวะ</td>
+                                <td>สอศ.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -205,7 +205,7 @@
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">8</th>
-                                <td>มหิดลวิทยานุสรณ์</td>
+                                <td>มวส.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -221,7 +221,7 @@
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">9</th>
-                                <td>สถานบันการพละศึกษา</td>
+                                <td>พลศึกษา</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -237,7 +237,7 @@
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">10</th>
-                                <td>สำนักงานพระพุทธฯ</td>
+                                <td>พศ.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -253,7 +253,7 @@
                             </tr>
                             <tr role="row" class="odd">
                                 <th scope="row">11</th>
-                                <td>สถานบัณบัณฑิตพัฒนศิลป์</td>
+                                <td>สบศ.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -269,7 +269,7 @@
                             </tr>
                             <tr role="row" class="even">
                                 <th scope="row">12</th>
-                                <td>การศึกษาพิเศษ</td>
+                                <td>สศศ.</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -322,9 +322,7 @@
         </div>
 
         <!--end::Form-->
-    </div>
-
-
+    </div> 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
 
@@ -373,41 +371,49 @@
                     }
                 },
                 series: [{
-                        name: 'สพฐ.',
+                    name: 'สพฐ.',
                         data: [25000, 27000, 29000]
                     }, {
                         name: 'สช.',
                         data: [15000, 13000, 12000]
                     }, {
-                        name: 'กรุงเทพฯ',
+                        name: 'อปท.',
                         data: [12000, 14000, 15000]
                     }, {
-                        name: 'อาชีวะ',
+                        name: 'กทม.',
                         data: [10000, 9000, 8000]
                     }, {
-                        name: '	สกอ.',
+                        name: 'สอศ.',
                         data: [8000, 8500, 10000]
                     }, {
-                        name: 'สำนักงานพระพุทธฯ',
+                        name: 'สกอ.',
                         data: [4000, 5000, 7000]
                     }, {
-                        name: 'สถานบัณบัณฑิตพัฒนศิลป์',
+                        name: 'กศน.',
                         data: [3000, 2700, 2500]
                     }, {
-                        name: 'สถานบัณบัณฑิตพัฒนศิลป์',
+                        name: 'มวส.',
                         data: [2000, 1900, 1400]
                     }, {
-                        name: 'สถานบัณบัณฑิตพัฒนศิลป์',
+                        name: 'พลศึกษา',
                         data: [1500, 1000, 1200]
                     },                    {
-                        name: 'การศึกษาพิเศษ',
+                        name: 'พศ.',
                         data: [400, 250, 333]
                     },
                     {
-                        name: 'ตชด.',
+                        name: 'สบศ.',
                         data: [66, 100, 133]
+                    },
+                    {
+                        name: 'สศศ.',
+                        data: [123, 43, 123]
+                    },
+                    {
+                        name: 'ตชด.',
+                        data: [90, 111, 50]
                     }
-
+                     
 
                 ]
             });
