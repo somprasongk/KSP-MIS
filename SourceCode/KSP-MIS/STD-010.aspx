@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="STD-02.aspx.vb" Inherits="KSP_MIS.STD_02" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="STD-010.aspx.vb" Inherits="KSP_MIS.STD_01" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -11,22 +11,12 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
 
                 <div class="kt-portlet__body" id="chart1">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
-        <div class="col-6 dashboard-chart">
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
                 </div>
             </div>
 
@@ -68,14 +58,14 @@
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
-                                <th rowspan="2">มาตรฐานที่</th>
-                                <th rowspan="2">ชื่อมาตรฐาน</th>
-                                <th colspan="2">ผู้ผ่านการทดสอบ (คน)</th>
+                                <th rowspan="2">#</th>
+                                <th rowspan="2">หลักสูตร</th>
+                                <th colspan="3">จำนวน (คน)</th>
                             </tr>
-                            <tr >
-                                <th>ชาย</th>
-                                <th>หญิง</th>
-                                <th>รวม</th>
+                            <tr>
+                                <th>เข้าฝึกอบรมจำนวน</th>                                
+                                <th>ผ่าน</th>
+                                <th>ไม่ผ่าน</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -152,140 +142,137 @@
                             </tr>
                         </tfoot>
                     </table>
-                     
+
+
                 </div>
             </div>
-            <!--end::Section-->
         </div>
-
-        <!--end::Form-->
     </div>
+
+
+
 
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
-    
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด จำนวน xxx รายการ');
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
         });
-
 
         var Plan1 = [
              {
                  name: 'ภาษาและเทคโนโลยีสำหรับครู',
-                 y: 500
+                 y: 3000
              },
              {
                  name: 'การพัฒนาหลักสูตร',
-                 y: 500
+                 y: 2500
              },
              {
                  name: 'การจัดการเรียนรู้',
-                 y: 100
+                 y: 3000
              },
              {
                  name: 'จิตวิทยาสำหรับครู',
-                 y: 300
+                 y: 1200
              },
              {
                  name: 'การวัดและประเมินผลการศึกษา',
-                 y: 100
+                 y: 2000
              },
              {
                  name: 'การบริหารจัดการในห้องเรียน',
-                 y: 400
+                 y: 2000
              },
              {
                  name: 'การวิจัยทางการศึกษา',
-                 y: 50
+                 y: 1800
              },
              {
-                 name: 'นวัตกรรมและเทคโนโลยีสารสนเทศ<br/>ทางการศึกษา',
-                 y: 300
+                 name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
+                 y: 2400
              },
              {
                  name: 'ความเป็นครู',
-                 y: 400
+                 y: 3000
              }
 
         ];
         var Plan2 = [
-             {
-                 name: 'ภาษาและเทคโนโลยีสำหรับครู',
-                 y: 1000
-             },
-             {
-                 name: 'การพัฒนาหลักสูตร',
-                 y: 3000
-             },
-             {
-                 name: 'การจัดการเรียนรู้',
-                 y: 2400
-             },
-             {
-                 name: 'จิตวิทยาสำหรับครู',
-                 y: 2000
-             },
-             {
-                 name: 'การวัดและประเมินผลการศึกษา',
-                 y: 1400
-             },
-             {
-                 name: 'การบริหารจัดการในห้องเรียน',
-                 y: 3600
-             },
-             {
-                 name: 'การวิจัยทางการศึกษา',
-                 y: 2300
-             },
-             {
-                 name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
-                 y: 3000
-             },
-             {
-                 name: 'ความเป็นครู',
-                 y: 2600
-             }
-
-        ];
-
-        var Plan3 = [
             {
                 name: 'ภาษาและเทคโนโลยีสำหรับครู',
-                y: 100
+                y: 1200
             },
             {
                 name: 'การพัฒนาหลักสูตร',
-                y: 500
+                y: 2234
             },
             {
                 name: 'การจัดการเรียนรู้',
-                y: 900
+                y: 1234
             },
             {
                 name: 'จิตวิทยาสำหรับครู',
-                y: 300
+                y: 890
             },
             {
                 name: 'การวัดและประเมินผลการศึกษา',
-                y: 200
+                y: 1234
             },
             {
                 name: 'การบริหารจัดการในห้องเรียน',
-                y: 500
+                y: 1200
             },
             {
                 name: 'การวิจัยทางการศึกษา',
-                y: 100
+                y: 800
             },
             {
                 name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
-                y: 300
+                y: 1340
             },
             {
                 name: 'ความเป็นครู',
-                y: 0
+                y: 1560
+            }
+        ];
+        var Plan3 = [
+            {
+                name: 'ภาษาและเทคโนโลยีสำหรับครู',
+                y: 1800
+            },
+            {
+                name: 'การพัฒนาหลักสูตร',
+                y: 266
+            },
+            {
+                name: 'การจัดการเรียนรู้',
+                y: 1766
+            },
+            {
+                name: 'จิตวิทยาสำหรับครู',
+                y: 110
+            },
+            {
+                name: 'การวัดและประเมินผลการศึกษา',
+                y: 766
+            },
+            {
+                name: 'การบริหารจัดการในห้องเรียน',
+                y: 800
+            },
+            {
+                name: 'การวิจัยทางการศึกษา',
+                y: 1000
+            },
+            {
+                name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
+                y: 1060
+            },
+            {
+                name: 'ความเป็นครู',
+                y: 1440
             }
         ];
         var Plan4 = [
@@ -303,7 +290,7 @@
            },
            {
                name: 'จิตวิทยาสำหรับครู',
-               y: 3000
+               y: 990
            },
             {
                 name: 'การวัดและประเมินผลการศึกษา',
@@ -315,7 +302,7 @@
             },
             {
                 name: 'การวิจัยทางการศึกษา',
-                y: 3500
+                y: 1750
             },
             {
                 name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
@@ -323,176 +310,61 @@
             },
             {
                 name: 'ความเป็นครู',
-                y: 2900
+                y: 2840
             }
         ];
-        var Total = [
+        var Plan5 = [
            {
                name: 'ภาษาและเทคโนโลยีสำหรับครู',
-               y: 2800,
-               color: 'salmon'
+               y: 200
            },
            {
                name: 'การพัฒนาหลักสูตร',
-               y: 1000,
-               color: 'brown'
+               y: 120
            },
            {
                name: 'การจัดการเรียนรู้',
-               y: 6000,
-               color: 'olive'
+               y: 345
            },
            {
                name: 'จิตวิทยาสำหรับครู',
-               y: 3000,
-               color: 'teal'
+               y: 100
            },
             {
                 name: 'การวัดและประเมินผลการศึกษา',
-                y: 2000,
-                color: 'lightblue'
+                y: 300
             },
             {
                 name: 'การบริหารจัดการในห้องเรียน',
-                y: 2000,
-                color: 'violet'
+                y: 130
             },
             {
                 name: 'การวิจัยทางการศึกษา',
-                y: 3500,
-                color: 'pink'
+                y: 150
             },
             {
-                name: 'นวัตกรรมและเทคโนโลยี<br/>สารสนเทศทางการศึกษา',
-                y: 2200,
-                color: 'coral'
+                name: 'นวัตกรรมและเทคโนโลยีสารสนเทศทางการศึกษา',
+                y: 200
             },
             {
                 name: 'ความเป็นครู',
-                y: 3000,
-                color: 'seagreen'
+                y: 160
             }
+
+
+
         ];
-
-        function docData(data,step) {
-            var result = [];
-            for (var i = 0; i < data.length; i++) {
-                var item = data[i];
-                item.y = item.y*step;
-                result.push(item);
-            }
-            return result;
-        }
-
-        function categories() {
-            var result = [];
-            for (var i = 0; i < Plan1.length; i++) {
-                result.push(Plan1[i].name);
-            }
-            return result;
-        }
 
         $(document).ready(function () {
 
             Highcharts.chart('chart1', {
                 chart: {
-                    type: 'bar'
+                    zoomType: 'xy'
                 },
                 title: {
-                    text: 'ผู้ขอรับรองความรู้ตามมาตรฐานวิชาชีพครู โดยการทดสอบ ของครูไทย จำแนกตามเพศ ปี พ.ศ. ...',
+                    text: 'สรุปจำนวนผู้ฝึกอบรมมาตรฐานความรู้วิชาชีพครูของคุรุสภา  9 มาตรฐาน ปี พ.ศ. ...',
                     style: {
-                        display: 'relative',
-                        fontSize: 14
-                    }
-                },
-                xAxis: [{
-                    categories: categories(),
-                    reversed: false,
-                    //labels: {
-                    //    step: 1
-                    //},
-                    accessibility: {
-                        description: 'ชาย'
-                    }
-                }, { // mirror axis on right side
-                    opposite: true,
-                    reversed: false,
-                    categories: categories(),
-                    //linkedTo: 0,
-                    //labels: {
-                    //    step: 1
-                    //},
-                    accessibility: {
-                        description: 'หญิง'
-                    }
-                }],
-                yAxis: {
-                    title: {
-                        text: null
-                    },
-                    labels: {
-                        formatter: function () {
-                            return Math.abs(this.value);
-                        }
-                    },
-                    //accessibility: {
-                    //    description: 'Percentage population',
-                    //    rangeDescription: 'Range: 0 to 5%'
-                    //}
-                },
-                plotOptions: {
-                    series: {
-                        stacking: 'normal'
-                    }
-                },
-
-                tooltip: {
-                    formatter: function () {
-                        return '<b>' + this.series.name + '</b> : ' + Math.abs(this.point.y) + ' คน<br/>';
-                            //+ 'รวม : ' + this.point.stackTotal + ' คน<br/>';
-                    }
-                },
-
-                series: [
-                //    {
-                //    name: 'ไม่ผ่าน (ช)',
-                //    data: docData(Plan1, -1),
-                //    color: 'red',
-                //    stack: 'Doc1'
-                //},
-                {
-                    name: 'ชาย',
-                    data: docData(Plan2, -1),
-                    color: 'steelblue',
-                    stack: 'Doc1'
-                    }
-                //    ,
-                //{
-                //    name: 'ไม่ผ่าน (ญ)',
-                //    data: Plan3,
-                //    color: 'red',
-                //    stack: 'Doc2'
-                //}
-                , {
-                    name: 'หญิง',
-                    type: 'bar',
-                    data: Plan4,
-                    color: 'pink',
-                    stack: 'Doc2'
-         
-                }]
-            });
-
-
-            Highcharts.chart('chart2', {
-                chart: {
-                    type: 'pie'
-                },
-                title: {
-                    text: 'มาตรฐานวิชาชีพครู ที่ใช้รับรอง ปี พ.ศ. ...',
-                    style: {
-                        display: 'relative',
-                        fontSize:14
+                        display: 'relative'
                     }
                 },
                 xAxis: {
@@ -501,44 +373,55 @@
                         rotation: -45
                     }
                 },
-                yAxis: {
-                    min: 0,
-                    title: {
-                        text: 'จำนวนหลักสูตร'
+
+                yAxis:
+                    { // Secondary yAxis
+                        gridLineWidth: 1,
+                        labels: {
+                            format: '{value} คน'
+                        },
+                        title: {
+                            enabled: false,
+                            text: 'ประเภทคำขอ',
+                            style: {
+                                color: Highcharts.getOptions().colors[0]
+                            }
+                        }
                     }
-                },
-                //legend: {
-                //    enabled: true
-                //},
+                ,
                 tooltip: {
-                    pointFormat: '{หลักสูตร} <b>{point.y} หลักสูตร</b>'
+                    formatter: function () {
+                        return this.series.name + ': ' + this.y + '<br/>' +
+                            'รวม : ' + this.point.stackTotal;
+                    }
                 },
                 plotOptions: {
-                    //column: {
-                    //    //pointPadding: 0.2,
-                    //    //borderWidth: 0,
-                    //    //borderRadius: 20
-                    //}
-                },
-                series: [{
-                    name: 'หลักสูตร',
-                    data: Total,
-                    dataLabels: {
-                        //enabled: true,
-                        //rotation: -90,
-                        //color: '#FFFFFF',
-                        //align: 'right' //,
-                        //format: '{point.y:.1f}', // one decimal
-                        //y: 10 //, // 10 pixels down from the top
-                        //style: {
-                        //    fontSize: '13px',
-                        //    fontFamily: 'Verdana, sans-serif'
-                        //}
+                    area: {
+                        stacking: 'normal'
                     }
-                }]
+                },
+                series: [
+
+                    {
+                        name: 'ไม่ผ่าน',
+                        type: 'area',
+                        data: Plan5,
+                        color: 'red',
+                        stack: 'Doc3'
+                    },
+                    {
+                        name: 'ผ่าน',
+                        type: 'area',
+                        data: Plan4,
+                        color: 'seagreen',
+                        stack: 'Doc3'
+                    }
+                ]
             });
 
         });
     </script>
+
+
 </asp:Content>
 

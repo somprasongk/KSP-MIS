@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="LIC-13.aspx.vb" Inherits="KSP_MIS.LIC_13" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="LIC-130.aspx.vb" Inherits="KSP_MIS.LIC_14" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -76,43 +76,33 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr role="row" class="odd">
+                            <tr>
                                 <th scope="row">1</th>
-                                <td>ขอขึ้นทะเบียนรับใบอนุญาตฯ</td>
+                                <td>ใบอนุญาตประกอบวิชาชีพ</td>
                                 <td></td>
                             </tr>
-                            <tr role="row" class="even">
+                            <tr>
                                 <th scope="row">2</th>
-                                <td>ขอต่ออายุใบอนุญาตฯ</td>
+                                <td>หนังสืออนุญาตให้ประกอบวิชาชีพโดยไม่มีใบอนุญาต (ผ่อนผัน)</td>
                                 <td></td>
                             </tr>
-                            <tr role="row" class="odd">
+                            <tr>
                                 <th scope="row">3</th>
-                                <td>ขอหนังสืออนุญาตให้ประกอบวิชาชีพโดยไม่มีใบอนุญาต (ผ่อนผัน)</td>
+                                <td>ใบอนุญาตปฏิบัติการสอน</td>
                                 <td></td>
                             </tr>
-                            <tr role="row" class="even">
+                            <tr>
                                 <th scope="row">4</th>
-                                <td>ขอใบอนุญาตปฏิบัติการสอน</td>
+                                <td>ใบแทนใบอนุญาต</td>
                                 <td></td>
                             </tr>
-                            <tr role="row" class="odd">
+                            <tr>
                                 <th scope="row">5</th>
-                                <td>ขอใบแทนใบอนุญาต</td>
+                                <td>ทวงเอกสารต่างๆ</td>
                                 <td></td>
                             </tr>
-                            <tr role="row" class="even">
+                            <tr>
                                 <th scope="row">6</th>
-                                <td>ขอคืนเงินค่าธรรมเนียมใบอนุญาตฯ</td>
-                                <td></td>
-                            </tr>
-                            <tr role="row" class="odd">
-                                <th scope="row">7</th>
-                                <td>ขอตรวจสอบสอบใบอนุญาตฯ</td>
-                                <td></td>
-                            </tr>
-                            <tr role="row" class="even">
-                                <th scope="row">8</th>
                                 <td>อื่นๆ</td>
                                 <td></td>
                             </tr>
@@ -124,6 +114,7 @@
                             </tr>
                         </tfoot>
                     </table>
+
                 </div>
             </div>
             <!--end::Section-->
@@ -143,39 +134,29 @@
 
         var docData = [
             {
-                name: 'ขอขึ้นทะเบียนรับใบอนุญาตฯ',
+                name: 'ใบอนุญาตประกอบวิชาชีพ',
                 y: 523,
                 color: 'salmon'
             },
             {
-                name: 'ขอต่ออายุใบอนุญาตฯ',
+                name: 'หนังสืออนุญาตให้ประกอบวิชาชีพ<br/>โดยไม่มีใบอนุญาต (ผ่อนผัน)',
                 y: 432,
                 color: 'brown'
             },
             {
-                name: 'ขอหนังสืออนุญาตให้ประกอบวิชาชีพ<br/>โดยไม่มีใบอนุญาต (ผ่อนผัน)',
+                name: 'ใบอนุญาตปฏิบัติการสอน',
                 y: 400,
                 color: 'olive'
             },
             {
-                name: 'ขอใบอนุญาตปฏิบัติการสอน',
+                name: 'ใบแทนใบอนุญาต',
                 y: 370,
                 color: 'teal'
             },
             {
-                name: 'ขอใบแทนใบอนุญาต',
+                name: 'ทวงเอกสารต่างๆ',
                 y: 317,
                 color: 'lightblue'
-            },
-            {
-                name: 'ขอคืนเงินค่าธรรมเนียมใบอนุญาตฯ',
-                y: 245,
-                color: 'coral'
-            },
-            {
-                name: 'ขอตรวจสอบสอบใบอนุญาตฯ',
-                y: 215,
-                color: 'gold'
             },
             {
                 name: 'อื่นๆ',
@@ -192,7 +173,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: 'จำนวนการส่งหนังสือ/เอกสารเข้า จำแนกตามประเภทเอกสาร ระหว่างวันที่ ... ถึงวันที่ …'
+                    text: 'จำนวนการส่งหนังสือ/เอกสารออก จำแนกตามประเภทเอกสาร ระหว่างวันที่ ... ถึงวันที่ …'
                 },
                 xAxis: {
                     type: 'category',
@@ -242,7 +223,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'สัดส่วนการส่งหนังสือ/เอกสารเข้า จำแนกตามประเภทเอกสาร ระหว่างวันที่ ... ถึงวันที่ …'
+                    text: 'สัดส่วนการส่งหนังสือ/เอกสารออก จำแนกตามประเภทเอกสาร ระหว่างวันที่ ... ถึงวันที่ …'
                 },
                 xAxis: {
                     type: 'category',

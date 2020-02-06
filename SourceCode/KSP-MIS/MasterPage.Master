@@ -116,75 +116,75 @@
 													<span class="kt-menu__arrow"></span>
 													<ul class="kt-menu__subnav">
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-01.aspx" class="kt-menu__link ">
+															<a href="LIC-010.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">ออกให้แก่ครู ตามประเภทคำขอ</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-04.aspx" class="kt-menu__link ">
+															<a href="LIC-020.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">หนังสืออนุญาตฯ จำแนกตามประเภทคำขอ ประจำปี</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-12.aspx" class="kt-menu__link ">
+															<a href="LIC-030.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">หนังสืออนุญาตฯ จำแนกตามประเภทวิชาชีพ ประจำปี</span>
 															</a>
 														</li>
 
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-02.aspx" class="kt-menu__link ">
+															<a href="LIC-040.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">ใบอนุญาตประกอบวิชาชีพ จำแนกตามสังกัด</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-03.aspx" class="kt-menu__link ">
+															<a href="LIC-050.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">หนังสืออนุญาตฯ จำแนกตามประเภทวิชาชีพ ปี พ.ศ. ทุกสังกัด</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-11.aspx" class="kt-menu__link ">
+															<a href="LIC-060.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">หนังสืออนุญาตฯ ประกอบวิชาชีพครู จำแนกตามสังกัด ประจำปี</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-09.aspx" class="kt-menu__link ">
+															<a href="LIC-070.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">หนังสืออนุญาตฯ ประกอบวิชาชีพครู จำแนกตามสังกัด</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-10.aspx" class="kt-menu__link ">
+															<a href="LIC-080.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">สถานศึกษาที่ขอหนังสืออนุญาตฯ จำแนกตาม ปี พ.ศ.</span>
 															</a>
 														</li>
 
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-05.aspx" class="kt-menu__link ">
+															<a href="LIC-090.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">ใบอนุญาตฯ จำแนกตามสังกัด และช่วงอายุ</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-06.aspx" class="kt-menu__link ">
+															<a href="LIC-100.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">ใบอนุญาตฯ จำแนกตามวุฒิการศึกษาและประเภทวิชาชีพ</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-08.aspx" class="kt-menu__link ">
+															<a href="LIC-110.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">หนังสืออนุญาตฯ จำแนกตามคุณวุฒิการศึกษา</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-07.aspx" class="kt-menu__link ">
+															<a href="LIC-120.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">ใบอนุญาตฯ จำแนกตามสังกัด ประเภทวิชาชีพ และเพศ</span>
 															</a>
@@ -202,19 +202,19 @@
 													<span class="kt-menu__arrow"></span>
 													<ul class="kt-menu__subnav">
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-14.aspx" class="kt-menu__link ">
+															<a href="LIC-130.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">หนังสือ/เอกสารออก จำแนกตามประเภทเอกสาร</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-13.aspx" class="kt-menu__link ">
+															<a href="LIC-140.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">หนังสือ/เอกสารเข้า จำแนกตามประเภทเอกสาร</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-15.aspx" class="kt-menu__link ">
+															<a href="LIC-150.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">การออกใบแทนใบอนุญาต และสาเหตุ</span>
 															</a>
@@ -232,13 +232,13 @@
 													<span class="kt-menu__arrow"></span>
 													<ul class="kt-menu__subnav">
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-16.aspx" class="kt-menu__link ">
+															<a href="LIC-160.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">10 อันดับประเทศที่ได้รับการออกใบอนุญาตฯ หนังสืออนุญาตฯ</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="LIC-17.aspx" class="kt-menu__link ">
+															<a href="LIC-170.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">จำนวนชาวต่างประเทศที่ขึ้นทะเบียนรับใบอนุญาตประกอบวิชาชีพครู</span>
 															</a>
@@ -259,19 +259,19 @@
 										<span class="kt-menu__arrow"></span>
 										<ul class="kt-menu__subnav">
 											<li class="kt-menu__item " aria-haspopup="true">
-												<a href="STD-01.aspx" class="kt-menu__link ">
+												<a href="STD-010.aspx" class="kt-menu__link ">
 													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 													<span class="kt-menu__link-text">จำนวนผู้ฝึกอบรมวิชาชีพฯ  9 มาตรฐาน</span>
 												</a>
 											</li>
 											<li class="kt-menu__item " aria-haspopup="true">
-												<a href="STD-02.aspx" class="kt-menu__link ">
+												<a href="STD-020.aspx" class="kt-menu__link ">
 													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 													<span class="kt-menu__link-text">ผู้ขอรับรองมาตรฐานวิชาชีพฯ โดยการทดสอบ จำแนกตามเพศ</span>
 												</a>
 											</li>
 											<li class="kt-menu__item " aria-haspopup="true">
-												<a href="STD-03.aspx" class="kt-menu__link ">
+												<a href="STD-030.aspx" class="kt-menu__link ">
 													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 													<span class="kt-menu__link-text">ผลการรับรองหลักสูตร ประจำปีงบประมาณ จำแนกตามสังกัด</span>
 												</a>
@@ -289,19 +289,19 @@
 										<span class="kt-menu__arrow"></span>
 										<ul class="kt-menu__subnav">
 											<li class="kt-menu__item " aria-haspopup="true">
-												<a href="ETH-01.aspx" class="kt-menu__link ">
+												<a href="ETH-010.aspx" class="kt-menu__link ">
 													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 													<span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณจำแนกตามสังกัด และประเภทความผิด</span>
 												</a>
 											</li>
 											<li class="kt-menu__item " aria-haspopup="true">
-												<a href="ETH-02.aspx" class="kt-menu__link ">
+												<a href="ETH-020.aspx" class="kt-menu__link ">
 													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 													<span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณจำแนกตามภาค และประเภทความผิด</span>
 												</a>
 											</li>
 											<li class="kt-menu__item " aria-haspopup="true">
-												<a href="ETH-03.aspx" class="kt-menu__link ">
+												<a href="ETH-030.aspx" class="kt-menu__link ">
 													<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 													<span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณสังกัดกรุงเทพมหานคร</span>
 												</a>
@@ -638,23 +638,23 @@
 													<li class="kt-menu__item ">
 														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-user-check"></i> <span class="kt-menu__link-text">ใบอนุญาตประกอบวิชาชีพ</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
 														<ul class="kt-menu__inner">
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามประเภทคำขอ</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-04.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามประเภทคำขอ รายปี</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-12.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามประเภทวิชาชีพ รายปี</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด รายปี</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-11.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด รายเดือน</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-09.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด และประเภทวิชาชีพ รายปี</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-10.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัดถานศึกษา และประเภทวิชาชีพ รายปี</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-05.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด และช่วงอายุ</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-06.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามวุฒิ และประเภทวิชาชีพ</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-08.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามวุฒิการศึกษา ในแต่ละปี</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-07.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด ประเภทวิชาชีพ และเพศ</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-14.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเอกสารเอกสารเข้า ตามประเภทเอกสาร</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-13.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเอกสารเอกสารออก ตามประเภทเอกสาร</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-15.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเอกสารการออกใบแทนใบอนุญาต และสาเหตุการออกใบแทน</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-16.asxp" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">10 อันดับประเทศที่ได้รับใบอนุญาตตามประเภทคำขอ</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-17.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนชาวต่างประเทศที่ได้รับอนุญาต ตามช่วงเวลา</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-010.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามประเภทคำขอ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-020.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามประเภทคำขอ รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-030.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามประเภทวิชาชีพ รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-040.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-050.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-060.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด รายเดือน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-070.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด และประเภทวิชาชีพ รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-080.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัดถานศึกษา และประเภทวิชาชีพ รายปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-090.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด และช่วงอายุ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-100.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามวุฒิ และประเภทวิชาชีพ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-110.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามวุฒิการศึกษา ในแต่ละปี</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-120.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ได้รับใบอนุญาตตามสังกัด ประเภทวิชาชีพ และเพศ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-130.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเอกสารเอกสารเข้า ตามประเภทเอกสาร</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-140.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเอกสารเอกสารออก ตามประเภทเอกสาร</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-150.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนเอกสารการออกใบแทนใบอนุญาต และสาเหตุการออกใบแทน</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-160.asxp" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">10 อันดับประเทศที่ได้รับใบอนุญาตตามประเภทคำขอ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="LIC-170.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนชาวต่างประเทศที่ได้รับอนุญาต ตามช่วงเวลา</span></a></li>
 														</ul>
 
 														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-copy"></i> <span class="kt-menu__link-text">สารบรรณ</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
@@ -667,16 +667,16 @@
 													<li class="kt-menu__item ">
 														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-medal"></i> <span class="kt-menu__link-text">มาตรฐานวิชาชีพครู</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
 														<ul class="kt-menu__inner">
-															<li class="kt-menu__item " aria-haspopup="true"><a href="STD-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ฝึกอบรม</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="STD-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ผู้ขอรับรองมาตรฐานวิชาชีพ</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="STD-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">หลักสูตรที่ได้รับการรับรองตามต้นสังกัด</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="STD-010.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนผู้ฝึกอบรม</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="STD-020.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">ผู้ขอรับรองมาตรฐานวิชาชีพ</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="STD-030.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">หลักสูตรที่ได้รับการรับรองตามต้นสังกัด</span></a></li>
 														</ul>
 
 														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fa fa-balance-scale"></i> <span class="kt-menu__link-text">จรรยาบรรณวิชาชีพครู</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
 														<ul class="kt-menu__inner">
-															<li class="kt-menu__item " aria-haspopup="true"><a href="ETH-01.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">คดีจรรยาบรรณทุกสังกัดตามประเภทความผิด</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="ETH-02.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณแยกตามสังกัด</span></a></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="ETH-03.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณสังกัดกรุงเทพมหานคร</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ETH-010.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">คดีจรรยาบรรณทุกสังกัดตามประเภทความผิด</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ETH-020.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณแยกตามสังกัด</span></a></li>
+															<li class="kt-menu__item " aria-haspopup="true"><a href="ETH-030.aspx" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">จำนวนคดีจรรยาบรรณสังกัดกรุงเทพมหานคร</span></a></li>
 														</ul>
 
 														<h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-icon fab fa-black-tie"></i> <span class="kt-menu__link-text">งานบริหารงานบุคคล</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>

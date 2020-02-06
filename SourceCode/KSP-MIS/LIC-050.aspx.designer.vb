@@ -12,4 +12,13 @@ Option Explicit On
 
 
 Partial Public Class LIC_02
+
+    '''<summary>
+    '''uc_Breadcrumb control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uc_Breadcrumb As Global.KSP_MIS.uc_Breadcrumb
 End Class

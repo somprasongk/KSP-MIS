@@ -15,7 +15,7 @@ Public Class uc_Breadcrumb
 
     Private Sub SetBreadcrumb()
         Dim PageCode As String = GetPageName(Me.Page).ToUpper.Replace(".ASPX", "")
-        Dim SQL As String = "SELECT Menu.Menu_FullName,Menu_Group.Menu_ID Group_ID,Menu_Group.Icon_CSS, Menu_Group.Menu_FullName Group_Name " & vbLf
+        Dim SQL As String = "SELECT Menu.Menu_FullName,Menu_Group.Menu_ID Group_ID,Menu_Group.Icon_CSS,Menu.Menu_Code ,Menu_Group.Menu_FullName Group_Name " & vbLf
         SQL &= " FROM TB_Menu Menu " & vbLf
         SQL &= " Inner Join TB_Menu Menu_Group ON Menu.Menu_Group=Menu_Group.Menu_ID " & vbLf
         SQL &= " WHERE Menu.Menu_Code='" & PageCode & "'"
@@ -28,7 +28,7 @@ Public Class uc_Breadcrumb
         Span.Visible = True
         Div.Visible = True
 
-        Title.InnerHtml = DT.Rows(0).Item("Menu_FullName").ToString
+        Title.InnerHtml = DT.Rows(0).Item("Menu_FullName").ToString & " <span class='kt-shape-bg-color-3' style='margin-left:5px; font-weight:500; padding: 5px; color: #fff;'>" & DT.Rows(0).Item("Menu_Code").ToString & "</span>"
         Icon.Attributes("class") = DT.Rows(0).Item("Icon_CSS").ToString
         GroupName.InnerHtml = DT.Rows(0).Item("Group_Name").ToString
     End Sub

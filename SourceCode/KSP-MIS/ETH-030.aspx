@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="LIC-14.aspx.vb" Inherits="KSP_MIS.LIC_14" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="ETH-030.aspx.vb" Inherits="KSP_MIS.ETH_03" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -39,7 +39,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <%--<div class="kt-portlet__head">
+               <%-- <div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -70,39 +70,59 @@
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
-                                <th rowspan="2">#</th>
-                                <th>ประเภทเอกสาร</th>
-                                <th>จำนวน</th>
+                                <th>#</th>
+                                <th>ประเภทความผิดทางจรรยาบรรณ</th>
+                                <th>จำนวนคดี</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">1</th>
-                                <td>ใบอนุญาตประกอบวิชาชีพ</td>
+                                <td>ปฏิบัติหน้าที่โดยมิชอบ</td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="even">
                                 <th scope="row">2</th>
-                                <td>หนังสืออนุญาตให้ประกอบวิชาชีพโดยไม่มีใบอนุญาต (ผ่อนผัน)</td>
+                                <td>ทำร้ายร่างกาย</td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">3</th>
-                                <td>ใบอนุญาตปฏิบัติการสอน</td>
+                                <td>ชู้สาว</td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="even">
                                 <th scope="row">4</th>
-                                <td>ใบแทนใบอนุญาต</td>
+                                <td>ความผิดเกี่ยวกับเพศ</td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">5</th>
-                                <td>ทวงเอกสารต่างๆ</td>
+                                <td>การพนันและสุรา,ยาเสพติด</td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="even">
                                 <th scope="row">6</th>
+                                <td>ความผิดเกี่ยวกับทรัพย์</td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">7</th>
+                                <td>ละทิ้ง,ละเว้น</td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">8</th>
+                                <td>ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม</td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th scope="row">9</th>
+                                <td>ความผิดทางแพ่ง</td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th scope="row">10</th>
                                 <td>อื่นๆ</td>
                                 <td></td>
                             </tr>
@@ -134,30 +154,50 @@
 
         var docData = [
             {
-                name: 'ใบอนุญาตประกอบวิชาชีพ',
+                name: 'ปฏิบัติหน้าที่โดยมิชอบ',
                 y: 523,
                 color: 'salmon'
             },
             {
-                name: 'หนังสืออนุญาตให้ประกอบวิชาชีพ<br/>โดยไม่มีใบอนุญาต (ผ่อนผัน)',
+                name: 'ทำร้ายร่างกาย',
                 y: 432,
                 color: 'brown'
             },
             {
-                name: 'ใบอนุญาตปฏิบัติการสอน',
+                name: 'ชู้สาว',
                 y: 400,
                 color: 'olive'
             },
             {
-                name: 'ใบแทนใบอนุญาต',
+                name: 'ความผิดเกี่ยวกับเพศ',
                 y: 370,
                 color: 'teal'
             },
             {
-                name: 'ทวงเอกสารต่างๆ',
+                name: 'การพนันและสุรา,ยาเสพติด',
                 y: 317,
                 color: 'lightblue'
             },
+            {
+                name: 'ความผิดเกี่ยวกับทรัพย์',
+                y: 245,
+                color: 'coral'
+            },
+            {
+                name: 'ละทิ้ง,ละเว้น',
+                y: 215,
+                color: 'gold'
+            },
+            {
+                name: 'ดูหมิ่น หมิ่นประมาท กล่าวถ้อนคำไม่เหมาะสม',
+                y: 225,
+                color: 'seagreen'
+            },
+            {
+                name: 'ความผิดทางแพ่ง',
+                y: 275,
+                color: 'pink'
+            },            
             {
                 name: 'อื่นๆ',
                 y: 300,
@@ -173,7 +213,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: 'จำนวนการส่งหนังสือ/เอกสารออก จำแนกตามประเภทเอกสาร ระหว่างวันที่ ... ถึงวันที่ …'
+                    text: 'จำนวนคดีจรรยาบรรณของวิชาชีพ สังกัดกรุงเทพมหานคร จำแนกตามประเภทความผิด ปี พ.ศ. ...'
                 },
                 xAxis: {
                     type: 'category',
@@ -184,14 +224,14 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนเอกสาร'
+                        text: 'จำนวนคดีความผิดทางจรรยาบรรณ'
                     }
                 },
                 legend: {
                     enabled: false
                 },
                 tooltip: {
-                    pointFormat: '{ประเภทเอกสาร} จำนวนเอกสาร: <b>{point.y} รายการ</b>'
+                    pointFormat: '{ความผิดทางจรรยาบรรณ} จำนวน: <b>{point.y} คดี</b>'
                 },
                 plotOptions: {
                     //column: {
@@ -201,7 +241,7 @@
                     //}
                 },
                 series: [{
-                    name: 'ประเภทเอกสาร',
+                    name: 'ความผิดทางจรรยาบรรณ',
                     data: docData,
                     dataLabels: {
                         //enabled: true,
@@ -223,7 +263,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'สัดส่วนการส่งหนังสือ/เอกสารออก จำแนกตามประเภทเอกสาร ระหว่างวันที่ ... ถึงวันที่ …'
+                    text: 'สัดส่วนการกระทำความผิดทางจรรยาบรรณของวิชาชีพ สังกัดกรุงเทพมหานคร จำแนกตามประเภทความผิด ปี พ.ศ. ...'                   
                 },
                 xAxis: {
                     type: 'category',
@@ -234,14 +274,14 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนเอกสาร'
+                        text: 'จำนวนคดี'
                     }
                 },
                 //legend: {
                 //    enabled: true
                 //},
                 tooltip: {
-                    pointFormat: '{ประเภทเอกสาร} จำนวนเอกสาร: <b>{point.y} รายการ</b>'
+                    pointFormat: '{ความผิดทางจรรยาบรรณ} จำนวน: <b>{point.y} คดี</b>'
                 },
                 plotOptions: {
                     //column: {
@@ -251,7 +291,7 @@
                     //}
                 },
                 series: [{
-                    name: 'ประเภทเอกสาร',
+                    name: 'ความผิดทางจรรยาบรรณ',
                     data: docData,
                     dataLabels: {
                         //enabled: true,

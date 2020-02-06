@@ -94,6 +94,13 @@
 }
 /* End Change Left Menu Size to 450px*/
 
+
+.kt-subheader .kt-container,
+.kt-subheader .kt-subheader__toolbar {
+    display: unset;
+} /*Header Toolbar vertical Flow*/
+
+
 .kt-header-menu .kt-menu__submenu--fixed {
     transform: scale(0.8) !important;
     top: 0px !important;

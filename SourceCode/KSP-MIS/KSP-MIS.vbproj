@@ -1833,9 +1833,9 @@
     <Content Include="DOC-01.aspx" />
     <Content Include="DOC-02.aspx" />
     <Content Include="DOC-03.aspx" />
-    <Content Include="ETH-01.aspx" />
-    <Content Include="ETH-02.aspx" />
-    <Content Include="ETH-03.aspx" />
+    <Content Include="ETH-010.aspx" />
+    <Content Include="ETH-020.aspx" />
+    <Content Include="ETH-030.aspx" />
     <Content Include="GIS-01.aspx" />
     <Content Include="GIS-02.aspx" />
     <Content Include="GIS-03.aspx" />
@@ -1848,27 +1848,27 @@
     <Content Include="HR-06.aspx" />
     <Content Include="HR-07.aspx" />
     <Content Include="HR-08.aspx" />
-    <Content Include="LIC-01.aspx" />
-    <Content Include="LIC-02.aspx" />
-    <Content Include="LIC-03.aspx" />
-    <Content Include="LIC-04.aspx" />
-    <Content Include="LIC-05.aspx" />
-    <Content Include="LIC-06.aspx" />
-    <Content Include="LIC-07.aspx" />
-    <Content Include="LIC-08.aspx" />
-    <Content Include="LIC-09.aspx" />
-    <Content Include="LIC-10.aspx" />
-    <Content Include="LIC-11.aspx" />
-    <Content Include="LIC-12.aspx" />
-    <Content Include="LIC-13.aspx" />
-    <Content Include="LIC-14.aspx" />
-    <Content Include="LIC-15.aspx" />
-    <Content Include="LIC-16.aspx" />
-    <Content Include="LIC-17.aspx" />
+    <Content Include="LIC-010.aspx" />
+    <Content Include="LIC-040.aspx" />
+    <Content Include="LIC-050.aspx" />
+    <Content Include="LIC-020.aspx" />
+    <Content Include="LIC-090.aspx" />
+    <Content Include="LIC-100.aspx" />
+    <Content Include="LIC-120.aspx" />
+    <Content Include="LIC-110.aspx" />
+    <Content Include="LIC-070.aspx" />
+    <Content Include="LIC-080.aspx" />
+    <Content Include="LIC-060.aspx" />
+    <Content Include="LIC-030.aspx" />
+    <Content Include="LIC-140.aspx" />
+    <Content Include="LIC-130.aspx" />
+    <Content Include="LIC-150.aspx" />
+    <Content Include="LIC-160.aspx" />
+    <Content Include="LIC-170.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="STD-01.aspx" />
-    <Content Include="STD-02.aspx" />
-    <Content Include="STD-03.aspx" />
+    <Content Include="STD-010.aspx" />
+    <Content Include="STD-020.aspx" />
+    <Content Include="STD-030.aspx" />
     <Content Include="uc_Breadcrumb.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -2044,25 +2044,25 @@
       <DependentUpon>DOC-03.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="ETH-01.aspx.designer.vb">
-      <DependentUpon>ETH-01.aspx</DependentUpon>
+    <Compile Include="ETH-010.aspx.designer.vb">
+      <DependentUpon>ETH-010.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ETH-01.aspx.vb">
-      <DependentUpon>ETH-01.aspx</DependentUpon>
+    <Compile Include="ETH-010.aspx.vb">
+      <DependentUpon>ETH-010.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="ETH-02.aspx.designer.vb">
-      <DependentUpon>ETH-02.aspx</DependentUpon>
+    <Compile Include="ETH-020.aspx.designer.vb">
+      <DependentUpon>ETH-020.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ETH-02.aspx.vb">
-      <DependentUpon>ETH-02.aspx</DependentUpon>
+    <Compile Include="ETH-020.aspx.vb">
+      <DependentUpon>ETH-020.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="ETH-03.aspx.designer.vb">
-      <DependentUpon>ETH-03.aspx</DependentUpon>
+    <Compile Include="ETH-030.aspx.designer.vb">
+      <DependentUpon>ETH-030.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ETH-03.aspx.vb">
-      <DependentUpon>ETH-03.aspx</DependentUpon>
+    <Compile Include="ETH-030.aspx.vb">
+      <DependentUpon>ETH-030.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="GIS-01.aspx.designer.vb">
@@ -2149,123 +2149,123 @@
       <DependentUpon>HR-08.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-01.aspx.designer.vb">
-      <DependentUpon>LIC-01.aspx</DependentUpon>
+    <Compile Include="LIC-010.aspx.designer.vb">
+      <DependentUpon>LIC-010.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-01.aspx.vb">
-      <DependentUpon>LIC-01.aspx</DependentUpon>
+    <Compile Include="LIC-010.aspx.vb">
+      <DependentUpon>LIC-010.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-02.aspx.designer.vb">
-      <DependentUpon>LIC-02.aspx</DependentUpon>
+    <Compile Include="LIC-040.aspx.designer.vb">
+      <DependentUpon>LIC-040.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-02.aspx.vb">
-      <DependentUpon>LIC-02.aspx</DependentUpon>
+    <Compile Include="LIC-040.aspx.vb">
+      <DependentUpon>LIC-040.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-03.aspx.designer.vb">
-      <DependentUpon>LIC-03.aspx</DependentUpon>
+    <Compile Include="LIC-050.aspx.designer.vb">
+      <DependentUpon>LIC-050.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-03.aspx.vb">
-      <DependentUpon>LIC-03.aspx</DependentUpon>
+    <Compile Include="LIC-050.aspx.vb">
+      <DependentUpon>LIC-050.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-04.aspx.designer.vb">
-      <DependentUpon>LIC-04.aspx</DependentUpon>
+    <Compile Include="LIC-020.aspx.designer.vb">
+      <DependentUpon>LIC-020.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-04.aspx.vb">
-      <DependentUpon>LIC-04.aspx</DependentUpon>
+    <Compile Include="LIC-020.aspx.vb">
+      <DependentUpon>LIC-020.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-05.aspx.designer.vb">
-      <DependentUpon>LIC-05.aspx</DependentUpon>
+    <Compile Include="LIC-090.aspx.designer.vb">
+      <DependentUpon>LIC-090.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-05.aspx.vb">
-      <DependentUpon>LIC-05.aspx</DependentUpon>
+    <Compile Include="LIC-090.aspx.vb">
+      <DependentUpon>LIC-090.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-06.aspx.designer.vb">
-      <DependentUpon>LIC-06.aspx</DependentUpon>
+    <Compile Include="LIC-100.aspx.designer.vb">
+      <DependentUpon>LIC-100.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-06.aspx.vb">
-      <DependentUpon>LIC-06.aspx</DependentUpon>
+    <Compile Include="LIC-100.aspx.vb">
+      <DependentUpon>LIC-100.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-07.aspx.designer.vb">
-      <DependentUpon>LIC-07.aspx</DependentUpon>
+    <Compile Include="LIC-120.aspx.designer.vb">
+      <DependentUpon>LIC-120.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-07.aspx.vb">
-      <DependentUpon>LIC-07.aspx</DependentUpon>
+    <Compile Include="LIC-120.aspx.vb">
+      <DependentUpon>LIC-120.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-08.aspx.designer.vb">
-      <DependentUpon>LIC-08.aspx</DependentUpon>
+    <Compile Include="LIC-110.aspx.designer.vb">
+      <DependentUpon>LIC-110.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-08.aspx.vb">
-      <DependentUpon>LIC-08.aspx</DependentUpon>
+    <Compile Include="LIC-110.aspx.vb">
+      <DependentUpon>LIC-110.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-09.aspx.designer.vb">
-      <DependentUpon>LIC-09.aspx</DependentUpon>
+    <Compile Include="LIC-070.aspx.designer.vb">
+      <DependentUpon>LIC-070.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-09.aspx.vb">
-      <DependentUpon>LIC-09.aspx</DependentUpon>
+    <Compile Include="LIC-070.aspx.vb">
+      <DependentUpon>LIC-070.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-10.aspx.designer.vb">
-      <DependentUpon>LIC-10.aspx</DependentUpon>
+    <Compile Include="LIC-080.aspx.designer.vb">
+      <DependentUpon>LIC-080.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-10.aspx.vb">
-      <DependentUpon>LIC-10.aspx</DependentUpon>
+    <Compile Include="LIC-080.aspx.vb">
+      <DependentUpon>LIC-080.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-11.aspx.designer.vb">
-      <DependentUpon>LIC-11.aspx</DependentUpon>
+    <Compile Include="LIC-060.aspx.designer.vb">
+      <DependentUpon>LIC-060.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-11.aspx.vb">
-      <DependentUpon>LIC-11.aspx</DependentUpon>
+    <Compile Include="LIC-060.aspx.vb">
+      <DependentUpon>LIC-060.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-12.aspx.designer.vb">
-      <DependentUpon>LIC-12.aspx</DependentUpon>
+    <Compile Include="LIC-030.aspx.designer.vb">
+      <DependentUpon>LIC-030.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-12.aspx.vb">
-      <DependentUpon>LIC-12.aspx</DependentUpon>
+    <Compile Include="LIC-030.aspx.vb">
+      <DependentUpon>LIC-030.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-13.aspx.designer.vb">
-      <DependentUpon>LIC-13.aspx</DependentUpon>
+    <Compile Include="LIC-140.aspx.designer.vb">
+      <DependentUpon>LIC-140.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-13.aspx.vb">
-      <DependentUpon>LIC-13.aspx</DependentUpon>
+    <Compile Include="LIC-140.aspx.vb">
+      <DependentUpon>LIC-140.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-14.aspx.designer.vb">
-      <DependentUpon>LIC-14.aspx</DependentUpon>
+    <Compile Include="LIC-130.aspx.designer.vb">
+      <DependentUpon>LIC-130.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-14.aspx.vb">
-      <DependentUpon>LIC-14.aspx</DependentUpon>
+    <Compile Include="LIC-130.aspx.vb">
+      <DependentUpon>LIC-130.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-15.aspx.designer.vb">
-      <DependentUpon>LIC-15.aspx</DependentUpon>
+    <Compile Include="LIC-150.aspx.designer.vb">
+      <DependentUpon>LIC-150.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-15.aspx.vb">
-      <DependentUpon>LIC-15.aspx</DependentUpon>
+    <Compile Include="LIC-150.aspx.vb">
+      <DependentUpon>LIC-150.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-16.aspx.designer.vb">
-      <DependentUpon>LIC-16.aspx</DependentUpon>
+    <Compile Include="LIC-160.aspx.designer.vb">
+      <DependentUpon>LIC-160.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-16.aspx.vb">
-      <DependentUpon>LIC-16.aspx</DependentUpon>
+    <Compile Include="LIC-160.aspx.vb">
+      <DependentUpon>LIC-160.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="LIC-17.aspx.designer.vb">
-      <DependentUpon>LIC-17.aspx</DependentUpon>
+    <Compile Include="LIC-170.aspx.designer.vb">
+      <DependentUpon>LIC-170.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LIC-17.aspx.vb">
-      <DependentUpon>LIC-17.aspx</DependentUpon>
+    <Compile Include="LIC-170.aspx.vb">
+      <DependentUpon>LIC-170.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.vb">
@@ -2302,25 +2302,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="STD-01.aspx.designer.vb">
-      <DependentUpon>STD-01.aspx</DependentUpon>
+    <Compile Include="STD-010.aspx.designer.vb">
+      <DependentUpon>STD-010.aspx</DependentUpon>
     </Compile>
-    <Compile Include="STD-01.aspx.vb">
-      <DependentUpon>STD-01.aspx</DependentUpon>
+    <Compile Include="STD-010.aspx.vb">
+      <DependentUpon>STD-010.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="STD-02.aspx.designer.vb">
-      <DependentUpon>STD-02.aspx</DependentUpon>
+    <Compile Include="STD-020.aspx.designer.vb">
+      <DependentUpon>STD-020.aspx</DependentUpon>
     </Compile>
-    <Compile Include="STD-02.aspx.vb">
-      <DependentUpon>STD-02.aspx</DependentUpon>
+    <Compile Include="STD-020.aspx.vb">
+      <DependentUpon>STD-020.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="STD-03.aspx.designer.vb">
-      <DependentUpon>STD-03.aspx</DependentUpon>
+    <Compile Include="STD-030.aspx.designer.vb">
+      <DependentUpon>STD-030.aspx</DependentUpon>
     </Compile>
-    <Compile Include="STD-03.aspx.vb">
-      <DependentUpon>STD-03.aspx</DependentUpon>
+    <Compile Include="STD-030.aspx.vb">
+      <DependentUpon>STD-030.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="uc_Breadcrumb.ascx.designer.vb">
@@ -2611,6 +2611,9 @@
     <Content Include="assets\sass\style.scss" />
     <Content Include="assets\sass\_config.scss" />
     <Content Include="MasterPage.Master" />
+    <Content Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </Content>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

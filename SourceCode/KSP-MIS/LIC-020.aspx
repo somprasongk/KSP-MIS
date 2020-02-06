@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="LIC-12.aspx.vb" Inherits="KSP_MIS.LIC_12" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="LIC-020.aspx.vb" Inherits="KSP_MIS.LIC_04" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -22,7 +22,6 @@
 
             <!--end:: Widgets/Activity-->
         </div>
-
     </div>
     <div class="row">
         <div class="col-12 dashboard-table">
@@ -57,8 +56,12 @@
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>ประเภทวิชาชีพ</th>
+                                <th rowspan="2">#</th>
+                                <th rowspan="2">ประเภทคำขอ</th>
+                                <th colspan="12">ปีงบประมาณ พ.ศ ...  (ตุลาคม ... - กันยายน ...)</th>
+                                <th rowspan="2">รวม</th>
+                            </tr>
+                            <tr>
                                 <th>ต.ค.</th>
                                 <th>พ.ย.</th>
                                 <th>ธ.ค.</th>
@@ -68,18 +71,16 @@
                                 <th>เม.ย.</th>
                                 <th>พ.ค.</th>
                                 <th>มิ.ย.</th>
+                                <th>ก.ค.</th>
                                 <th>ส.ค.</th>
                                 <th class="border-right">ก.ย.</th>
-                                <th>รวม</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <th colspan="14">ปีงบประมาณ พ.ศ.... (ตุลาคม ... - กันยายน ...)</th>
-                            </tr>
+                        <tbody>              
                             <tr>
                                 <th>1</th>
-                                <td>ครู</td>
+                                <td>ขึ้นทะเบียนรับใบอนุญาต</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -95,54 +96,8 @@
                             </tr>
                             <tr>
                                 <th>2</th>
-                                <td>ผู้บริหารสถานศึกษา</td>
+                                <td>ต่ออายุใบอนุญาต</td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>3</th>
-                                <td>ผู้บริหารการศึกษา</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>4</th>
-                                <td>ศึกษานิเทศก์</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr class="dtrg-group">
-                                <td colspan="2" class="text-center">รวม</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -157,11 +112,9 @@
                                 <td></td>
                             </tr>
                             <%--<tr>
-                                <th colspan="14">ปีงบประมาณ พ.ศ.2559 (ตุลาคม 2558 - กันยายน 2559)</th>
-                            </tr>
-                            <tr>
                                 <th>1</th>
                                 <td>ครู</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -190,10 +143,12 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <th>3</th>
                                 <td>ผู้บริหารการศึกษา</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -222,11 +177,13 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                             </tr>--%>
                         </tbody>
-                        <%--<tfoot>
+                        <tfoot>
                             <tr class="dtrg-group">
-                                <td colspan="2" class="text-center">รวม</td>
+                                <th colspan="2">รวม</th>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -240,27 +197,56 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                        </tfoot>--%>
+                        </tfoot>
                     </table>
                 </div>
             </div>
+            <!--end::Section-->
         </div>
+
+        <!--end::Form-->
     </div>
-
-
-
 
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
 
     <script type="text/javascript">
-         $(document).ready(function () {
-             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ พ.ศ. 2557 - 2558');
-         });
+         //$(document).ready(function () {
+         //    $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
+         //});
 
+        var Doc1 = [
+             { name: 'ตค', y: 500 }
+            , { name: 'พย', y: 1500 }
+            , { name: 'ธค', y: 2000 }
+            , { name: 'มค', y: 1800 }
+            , { name: 'กพ', y: 1500 }
+            , { name: 'มีค', y: 1700 }
+            , { name: 'เมย', y: 1800 }
+            , { name: 'พค', y: 2000 }
+            , { name: 'มิย', y: 2100 }
+            , { name: 'กค', y: 2300 }
+            , { name: 'สค', y: 2200 }
+            , { name: 'กย', y: 2400 }
+        ];
 
-        var Type1_57 = [
+        var Doc2 = [
+             { name: 'ตค', y: 700 }
+            , { name: 'พย', y: 1000 }
+            , { name: 'ธค', y: 1200 }
+            , { name: 'มค', y: 900 }
+            , { name: 'กพ', y: 800 }
+            , { name: 'มีค', y: 700 }
+            , { name: 'เมย', y: 750 }
+            , { name: 'พค', y: 600 }
+            , { name: 'มิย', y: 400 }
+            , { name: 'กค', y: 650 }
+            , { name: 'สค', y: 800 }
+            , { name: 'กย', y: 1000 }
+        ];
+
+        var Type1 = [
             { name: 'ตค', y: 1000 }
             , { name: 'พย', y: 1200 }
             , { name: 'ธค', y: 1300 }
@@ -275,7 +261,7 @@
             , { name: 'กย', y: 1200 }
         ];
 
-        var Type2_57 = [
+        var Type2 = [
             { name: 'ตค', y: 500 }
             , { name: 'พย', y: 600 }
             , { name: 'ธค', y: 800 }
@@ -290,7 +276,7 @@
             , { name: 'กย', y: 900 }
         ];
 
-        var Type3_57 = [
+        var Type3 = [
             { name: 'ตค', y: 300 }
             , { name: 'พย', y: 450 }
             , { name: 'ธค', y: 300 }
@@ -305,66 +291,35 @@
             , { name: 'กย', y: 275 }
         ];
 
-        var Type1_58 = [
-            { name: 'ตค', y: 1100 }
-            , { name: 'พย', y: 1400 }
-            , { name: 'ธค', y: 1500 }
-            , { name: 'มค', y: 1500 }
-            , { name: 'กพ', y: 1100 }
-            , { name: 'มีค', y: 1000 }
-            , { name: 'เมย', y: 900 }
-            , { name: 'พค', y: 1200 }
-            , { name: 'มิย', y: 1050 }
-            , { name: 'กค', y: 1000 }
-            , { name: 'สค', y: 900 }
-            , { name: 'กย', y: 1000 }
+        var Type4 = [
+            { name: 'ตค', y: 300 }
+            , { name: 'พย', y: 450 }
+            , { name: 'ธค', y: 300 }
+            , { name: 'มค', y: 400 }
+            , { name: 'กพ', y: 300 }
+            , { name: 'มีค', y: 100 }
+            , { name: 'เมย', y: 100 }
+            , { name: 'พค', y: 400 }
+            , { name: 'มิย', y: 275 }
+            , { name: 'กค', y: 575 }
+            , { name: 'สค', y: 400 }
+            , { name: 'กย', y: 275 }
         ];
 
-        var Type2_58 = [
-             { name: 'ตค', y: 600 }
-            , { name: 'พย', y: 600 }
-            , { name: 'ธค', y: 500 }
-            , { name: 'มค', y: 500 }
-            , { name: 'กพ', y: 700 }
-            , { name: 'มีค', y: 750 }
-            , { name: 'เมย', y: 600 }
-            , { name: 'พค', y: 700 }
-            , { name: 'มิย', y: 700 }
-            , { name: 'กค', y: 650 }
-            , { name: 'สค', y: 500 }
-            , { name: 'กย', y: 400 }
+        var Total = [
+             { name: 'ตค', y: 3000 }
+            , { name: 'พย', y: 4750 }
+            , { name: 'ธค', y: 5900 }
+            , { name: 'มค', y: 4800 }
+            , { name: 'กพ', y: 4700 }
+            , { name: 'มีค', y: 4200 }
+            , { name: 'เมย', y: 3750 }
+            , { name: 'พค', y: 3800 }
+            , { name: 'มิย', y: 4225 }
+            , { name: 'กค', y: 4675 }
+            , { name: 'สค', y: 5100 }
+            , { name: 'กย', y: 6100 }
         ];
-
-        var Type3_58 = [
-            { name: 'ตค', y: 150 }
-            , { name: 'พย', y: 180 }
-            , { name: 'ธค', y: 120 }
-            , { name: 'มค', y: 100 }
-            , { name: 'กพ', y: 140 }
-            , { name: 'มีค', y: 200 }
-            , { name: 'เมย', y: 150 }
-            , { name: 'พค', y: 200 }
-            , { name: 'มิย', y: 300 }
-            , { name: 'กค', y: 350 }
-            , { name: 'สค', y: 200 }
-            , { name: 'กย', y: 300 }
-        ];
-
-        var Type4_58 = [
-            { name: 'ตค', y: 500 }
-            , { name: 'พย', y: 1500 }
-            , { name: 'ธค', y: 2000 }
-            , { name: 'มค', y: 1800 }
-            , { name: 'กพ', y: 1500 }
-            , { name: 'มีค', y: 1700 }
-            , { name: 'เมย', y: 1800 }
-            , { name: 'พค', y: 2000 }
-            , { name: 'มิย', y: 2100 }
-            , { name: 'กค', y: 2300 }
-            , { name: 'สค', y: 2200 }
-            , { name: 'กย', y: 2400 }
-        ];
-
 
         $(document).ready(function () {
 
@@ -372,121 +327,118 @@
                 chart: {
                     zoomType: 'xy'
                 },
-                legend: {
-                    enabled: true,
-                
-                    verticalAlign: 'bottom',
-                    align: 'left'
-                },
                 title: {
-                    text: 'จำนวนหนังสืออนุญาตให้ประกอบวิชาชีพทางการศึกษาโดยไม่มีใบประกอบวิชาชีพ จำแนกตามประเภทวิชาชีพ ในปีงบประมาณ ... ',
+                    text: 'จำนวนหนังสืออนุญาตให้ประกอบวิชาชีพทางการศึกษาโดยไม่มีใบประกอบวิชาชีพ จำแนกตามประเภทคำขอ ในปีงบประมาณ ...',
                     style: {
                         display: 'relative'
                     }
                 },
-                xAxis: 
-                    {
-                        type: 'category',
-                        crosshair: true,
-                        title: {
-                            text: ''
-                            //,
-                            //style: {
-                            //    color: Highcharts.getOptions().colors[2]
-                            //}
-                        }
-                    }               
-                ,
-                yAxis: [
-                    {
-                        min: 0,
+                xAxis: {
+                    type: 'category',
+                    crosshair: true
+                },
+
+                yAxis: [ // Primary yAxis
+                    //{
+                    //    labels: {
+                    //        format: '{value} คน'
+                    //        //,
+                    //        //style: {
+                    //        //    color: Highcharts.getOptions().colors[2]
+                    //        //}
+                    //    },
+                    //    title: {
+                    //        text: 'รวม'
+                    //        //,
+                    //        //style: {
+                    //        //    color: Highcharts.getOptions().colors[2]
+                    //        //}
+                    //    },
+                    //    opposite: true
+                    //}
+                    //,
+                    { // Secondary yAxis
                         gridLineWidth: 1,
                         labels: {
-                            
-                            format: '{value} คน'
+                            format: '{value} ราย'
                         },
                         title: {
-                            enabled: false,
-                            text: 'จำนวน (คน)',
-                            style: {
-                                color: Highcharts.getOptions().colors[0]
-                            }
+                            text: ''
                         }
                     }
-                ] ,
+                ]
+                ,
                 tooltip: {
                     formatter: function () {
-                        return this.series.name  + ': ' + this.y + ' คน'
+                        return this.series.name + ': ' + this.y + '<br/>' +
+                            'รวม : ' + this.point.stackTotal;
                     }
                 },
                 plotOptions: {
-                    spline: {
+                    column: {
                         stacking: 'normal'
                     }
                 },
-                series: [   
+                series: [
+                    
                     {
-                        name: 'ศึกษานิเทศก์',
-                        type: 'spline',
-                        data: Type4_58,
-                        color: 'blue',
-                        stack: '57'
-                    },
-                    {
-                        name: 'ผู้บริหารการศึกษา',
-                        type: 'spline',
-                        data: Type3_57,
-                        color: 'navy',
-                        stack: '57'
-                    }, {
-                        name: 'ผู้บริหารสถานศึกษา',
-                        type: 'spline',
-                        data: Type2_57,
-                        color: 'lightblue',
-                         stack: '57'
+                        name: 'ต่ออายุใบอนุญาต',
+                        type: 'line',
+                        data: Doc2,
+                        //yAxis: 1,
+                        color: 'pink',
+                        stack: 'Doc1'
                     },{
-                        name: 'ครู',
-                        type: 'spline',
-                        data: Type1_57,
-                        color: 'steelblue',
-                        stack: '57'
-                    }
-                    //,
+                        name: 'ขึ้นทะเบียนรับใบอนุญาต',
+                        type: 'line',
+                        data: Doc1,
+                        //yAxis: 1,
+                        color: 'gold',
+                        stack: 'Doc1'
+                    }//,
                     //{
-                    //    name: 'ศึกษานิเทศก์',
+                    //    name: 'ครู',
                     //    type: 'column',
-                    //    data: Type4_58,
-                    //    color: 'blue',
-                    //    stack: '58'
+                    //    data: Type1,
+                    //    //yAxis: 1,
+                    //    color: 'steelblue',
+                    //    stack:'Doc3'
+                    //},
+                    //{
+                    //    name: 'ผู้บริหารสถานศึกษา',
+                    //    type: 'column',
+                    //    data: Type2,
+                    //    //yAxis: 1,
+                    //    color: 'lightblue',
+                    //    stack: 'Doc3'
                     //},
                     //{
                     //    name: 'ผู้บริหารการศึกษา',
                     //    type: 'column',
-                    //    data: Type3_58,
+                    //    data: Type3,
+                    //    //yAxis: 1,
                     //    color: 'navy',
-                    //    stack: '58'
-                    //}, {
-                    //    name: 'ผู้บริหารสถานศึกษา',
+                    //    stack: 'Doc3'
+                    //},
+                    //{
+                    //    name: 'ศึกษานิเทศก์',
                     //    type: 'column',
-                    //    data: Type2_58,
-                    //    color: 'lightblue',
-                    //    stack: '58'
-                    //}, {
-                    //    name: 'ครู',
-                    //    type: 'column',
-                    //    data: Type1_58,
-                    //    color: 'steelblue',
-                    //    stack: '58'
+                    //    data: Type4,
+                    //    //yAxis: 1,
+                    //    //color: 'navy',
+                    //    stack: 'Doc3'
                     //}
-                   
+                    //{
+                    //    name: 'รวม',
+                    //    type: 'spline',
+                    //    data: Total,
+                    //    yAxis: 0
+                    //}
+                
+
                 ]
             });
             
-                       
-            removeDuplicatedLegend('#chart1');
-
         });
-
-        
     </script>
 </asp:Content>
