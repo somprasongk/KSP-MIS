@@ -141,6 +141,12 @@
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
+															<a href="LIC-045.aspx" class="kt-menu__link ">
+																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+																<span class="kt-menu__link-text">ใบอนุญาตประกอบวิชาชีพ จำแนกข้อมูลตามสังกัดและประเภทวิชาชีพ</span>
+															</a>
+														</li>
+														<li class="kt-menu__item " aria-haspopup="true">
 															<a href="LIC-050.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">หนังสืออนุญาตฯ จำแนกตามประเภทวิชาชีพ ปี พ.ศ. ทุกสังกัด</span>

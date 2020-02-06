@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="LIC-040.aspx.vb" Inherits="KSP_MIS.LIC_03" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="LIC-045.aspx.vb" Inherits="KSP_MIS.LIC_045" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -7,12 +7,11 @@
 <asp:Content ID="Breadcrumb" ContentPlaceHolderID="Breadcrumb" runat="server">
     <uc1:uc_Breadcrumb runat="server" id="uc_Breadcrumb" />
 </asp:Content>
-<asp:Content ID="FilterPlaceHolder" ContentPlaceHolderID="FilterPlaceHolder" runat="server">
-</asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
         <div class="col-6 dashboard-chart">
-            
+
+
             <div class="kt-portlet">
 
                 <div class="kt-portlet__body" id="chart1">
@@ -68,121 +67,139 @@
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
-                                <th>#</th>
-                                <th>สังกัด</th>
-                                <th>ปี 2557</th>
-                                <th>ปี 2558</th>
-                                <th>ปี 2559</th>
-                                <th>ปี 2560</th>
+                                <th rowspan="2">#</th>
+                                <th rowspan="2">สังกัด</th>
+                                <th colspan="5">ประเภทวิชาชีพ</th>
+                            </tr>
+                            <tr>
+                                <th>ครู</th>
+                                <th>ผู้บริหารสถานศึกษา</th>
+                                <th>บริหารการศึกษา</th>
+                                <th>ศีกษานิเทศก์</th>
+                                <th>รวม</th>                               
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">1</th>
-                                <td>สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</td>
+                                <td>สพฐ.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="even">
                                 <th scope="row">2</th>
-                                <td>สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน</td>
+                                <td>สช.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">3</th>
-                                <td>องค์กรปกครองส่วนท้องถิ่น</td>
+                                <td>อปท.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="even">
                                 <th scope="row">4</th>
-                                <td>กรุงเทพมหานคร</td>
+                                <td>กทม.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">5</th>
-                                <td>สำนักงานคณะกรรมการการอาชีวศึกษา</td>
+                                <td>สอศ.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="even">
                                 <th scope="row">6</th>
-                                <td>สำนักงานคณะกรรมการการอุดมศึกษา</td>
+                                <td>สกอ.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">7</th>
-                                <td>สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย</td>
+                                <td>กศน.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="even">
                                 <th scope="row">8</th>
-                                <td>โรงเรียนมหิดลวิทยานุสรณ์</td>
+                                <td>มวส.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">9</th>
-                                <td>สถาบันการพลศึกษา</td>
+                                <td>พลศึกษา</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="even">
                                 <th scope="row">10</th>
-                                <td>สำนักงานพระพุทธศาสนาแห่งชาติ</td>
+                                <td>พศ.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">11</th>
-                                <td>สถาบันบัณฑิตพัฒนศิลป์</td>
+                                <td>สบศ.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="even">
                                 <th scope="row">12</th>
-                                <td>สำนักงานบริหารงานการศึกษาพิเศษ</td>
+                                <td>สศศ.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
+                            <tr role="row" class="odd">
                                 <th scope="row">13</th>
-                                <td>ตำรวจตระเวนชายแดน</td>
+                                <td>ตชด.</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr class="dtrg-group">
-                                <td colspan="2" class="text-center">รวมทุกประเภท</td>
+                            <tr role="row" class="dtrg-group">
+                                <th colspan="2" class="text-center">รวม</th>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -190,54 +207,74 @@
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
             </div>
+            <!--end::Section-->
         </div>
-    </div>
+
+        <!--end::Form-->
+    </div> 
 
 </asp:Content>
+<asp:Content ID="FilterPlaceHolder" ContentPlaceHolderID="FilterPlaceHolder" runat="server">
+</asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
-
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ พ.ศ. 2559 - 2560');
-        });
 
-        var Y59 = [
-            { name: 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน', color: 'salmon', y: 25000 }
-            , { name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน', color: 'brown', y: 15000 }
-            , { name: 'องค์กรปกครองส่วนท้องถิ่น', color: 'olive', y: 12000 }
-            , { name: 'กรุงเทพมหานคร', color: 'teal', y: 10000 }
-            , { name: 'สำนักงานคณะกรรมการการอาชีวศึกษา', color: 'lightblue', y: 8000 }
-            , { name: 'สำนักงานคณะกรรมการการอุดมศึกษา', color: 'violet', y: 4000 }
-            , { name: 'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย', color: 'pink', y: 3000 }
-            , { name: 'โรงเรียนมหิดลวิทยานุสรณ์', color: 'coral', y: 2000 }
-            , { name: 'สถาบันการพลศึกษา', color: 'seagreen', y: 1500 }
+        var type1 = [
+            { name: 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน', y: 25000 }
+            , { name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน', y: 15000 }
+            , { name: 'องค์กรปกครองส่วนท้องถิ่น', y: 12000 }
+            , { name: 'กรุงเทพมหานคร',  y: 10000 }
+            , { name: 'สำนักงานคณะกรรมการการอาชีวศึกษา',  y: 8000 }
+            , { name: 'สำนักงานคณะกรรมการการอุดมศึกษา',  y: 4000 }
+            , { name: 'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย',  y: 3000 }
+            , { name: 'โรงเรียนมหิดลวิทยานุสรณ์',  y: 2000 }
+            , { name: 'สถาบันการพลศึกษา',  y: 1500 }
             , { name: 'สำนักงานพระพุทธศาสนาแห่งชาติ', y: 100 }
-            , { name: 'สถาบันบัณฑิตพัฒนศิลป์', color: 'YELLOW', y: 2000 }
-            , { name: 'สำนักงานบริหารงานการศึกษาพิเศษ', color: 'DARKKHAKI', y: 1500 }
-            , { name: 'ตำรวจตระเวนชายแดน', color: 'ORCHID', y: 100 }
-
-
+            , { name: 'สถาบันบัณฑิตพัฒนศิลป์',  y: 2000 }
+            , { name: 'สำนักงานบริหารงานการศึกษาพิเศษ',  y: 1500 }
+            , { name: 'ตำรวจตระเวนชายแดน',  y: 100 }
         ];
 
-        var Y60 = [
-            { name: 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน', color: 'salmon', y: 27000 }
-            , { name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน', color: 'brown', y: 1300 }
-            , { name: 'องค์กรปกครองส่วนท้องถิ่น', color: 'olive', y: 14000 }
-            , { name: 'กรุงเทพมหานคร', color: 'teal', y: 9000 }
-            , { name: 'สำนักงานคณะกรรมการการอาชีวศึกษา', color: 'lightblue', y: 8500 }
-            , { name: 'สำนักงานคณะกรรมการการอุดมศึกษา', color: 'violet', y: 5000 }
-            , { name: 'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย', color: 'pink', y: 2700 }
-            , { name: 'โรงเรียนมหิดลวิทยานุสรณ์', color: 'coral', y: 1900 }
-            , { name: 'สถาบันการพลศึกษา', color: 'seagreen', y: 1000 }
-            , { name: 'สำนักงานพระพุทธศาสนาแห่งชาติ', color: 'gold', y: 150 }
-            , { name: 'สถาบันบัณฑิตพัฒนศิลป์', color: 'YELLOW', y: 1900 }
-            , { name: 'สำนักงานบริหารงานการศึกษาพิเศษ', color: 'DARKKHAKI', y: 1000 }
-            , { name: 'ตำรวจตระเวนชายแดน', color: 'ORCHID', y: 150 }
+        var type2 = [
+            { name: 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน', y: 2500 }
+            , { name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน', y: 2500 }
+            , { name: 'องค์กรปกครองส่วนท้องถิ่น', y: 2200 }
+            , { name: 'กรุงเทพมหานคร', y: 1000 }
+            , { name: 'สำนักงานคณะกรรมการการอาชีวศึกษา', y: 1800 }
+            , { name: 'สำนักงานคณะกรรมการการอุดมศึกษา', y: 1400 }
+            , { name: 'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย', y: 1300 }
+            , { name: 'โรงเรียนมหิดลวิทยานุสรณ์', y: 1200 }
+            , { name: 'สถาบันการพลศึกษา', y: 1500 }
+            , { name: 'สำนักงานพระพุทธศาสนาแห่งชาติ', y: 1110 }
+            , { name: 'สถาบันบัณฑิตพัฒนศิลป์', y: 1200 }
+            , { name: 'สำนักงานบริหารงานการศึกษาพิเศษ', y: 1150 }
+            , { name: 'ตำรวจตระเวนชายแดน', y: 810 }
         ];
-        
+        var type3 = [
+            { name: 'สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน', y: 2500 }
+            , { name: 'สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน', y: 2500 }
+            , { name: 'องค์กรปกครองส่วนท้องถิ่น', y: 2500 }
+            , { name: 'กรุงเทพมหานคร', y: 2500 }
+            , { name: 'สำนักงานคณะกรรมการการอาชีวศึกษา', y: 2500 }
+            , { name: 'สำนักงานคณะกรรมการการอุดมศึกษา', y: 2500 }
+            , { name: 'สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัย', y: 2500 }
+            , { name: 'โรงเรียนมหิดลวิทยานุสรณ์', y: 2500 }
+            , { name: 'สถาบันการพลศึกษา', y: 2500 }
+            , { name: 'สำนักงานพระพุทธศาสนาแห่งชาติ', y: 2500 }
+            , { name: 'สถาบันบัณฑิตพัฒนศิลป์', y: 2500 }
+            , { name: 'สำนักงานบริหารงานการศึกษาพิเศษ', y: 2500 }
+            , { name: 'ตำรวจตระเวนชายแดน', y: 2500 }
+        ];
+
+        var pieData = [
+            { name: 'ครู', y: 25000 }
+            , { name: 'ผู้บริหารสถานศึกษา', y: 15000 }
+            , { name: 'บริหารการศึกษา', y: 12000 }
+            , { name: 'ศึกษานิเทศก์', y: 10000 }
+        ]
+
         $(document).ready(function () {
 
 
@@ -247,13 +284,12 @@
                     type: 'bar'
                 },
                 legend: {
-                    enabled: false,
-
+     
                     verticalAlign: 'bottom',
                     align: 'left'
                 },
                 title: {
-                    text: 'จำนวนใบอนุญาตประกอบวิชาชีพที่่ออกให้แก่ ... จำแนกตามสังกัด ปีงบประมาณ พ.ศ. 2557 - 2560',
+                    text: 'จำนวนใบอนุญาตประกอบวิชาชีพจำแนกข้อมูลตามสังกัด และประเภทวิชาชีพ ระหว่างวันที่ ... ถึงวันที่ ...',
                     style: {
                         display: 'relative'
                     }
@@ -271,7 +307,7 @@
                     }
                 }
                 ,
-                yAxis: [
+                yAxis: 
                     {
                         min: 0,
                         gridLineWidth: 1,
@@ -279,56 +315,45 @@
                             format: '{value} คน'
                         },
                         title: {
-                            enabled:false,
+                            enabled: false,
                             text: 'จำนวน (คน)',
                             style: {
                                 color: Highcharts.getOptions().colors[0]
                             }
                         }
                     }
-                    //,
-                    //{
-                    //    title: {
-                    //        text: 'ส่วนต่างจำนวน (คน)'
-                    //    }, opposite: true
-                    //}
-
-                ],
+                ,
                 tooltip: {
                     formatter: function () {
                         return this.series.name + ': ' + this.y + ' คน'
                     }
                 },
                 plotOptions: {
-                    column: {
+                    bar: {
                         stacking: 'normal'
                     }
                 },
                 series: [
                     {
-                        name: '2557',
+                        name: 'ครู',
                         type: 'bar',
-                        data: Y60,
-                        yAxis: 0
+                        data: type1
                     },
                     {
-                        name: '2558',
+                        name: 'ผู้บริหารสถานศึกษา',
                         type: 'bar',
-                        data: Y59,
-                        yAxis: 0
-                    }, 
+                        data: type2
+                    },
                     {
-                        name: '2559',
+                        name: 'ผู้บริหารการศึกษา',
                         type: 'bar',
-                        data: Y59,
-                        yAxis: 0
-                    }, {
-                        name: '2560',
+                        data: type3
+                    },
+                    {
+                        name: 'ศึกษานิเทศก์',
                         type: 'bar',
-                        data: Y60,
-                        yAxis: 0
+                        data: type3
                     }
-                    
 
                 ]
             });
@@ -338,7 +363,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'ยอดรวมจำนวนใบอนุญาตประกอบวิชาชีพที่่ออกให้แก่ ... จำแนกตามสังกัด ปีงบประมาณ พ.ศ. 2557 - 2560'
+                    text: 'จำนวนใบอนุญาตประกอบวิชาชีพจำแนกข้อมูลประเภทวิชาชีพ ระหว่างวันที่ ... ถึงวันที่ ...'
                 },
                 xAxis: {
                     type: 'category'
@@ -358,15 +383,14 @@
                     }
                 },
                 series: [{
-                    name: 'สังกัด',
-                    data: Y60
+                    name: 'ประเภทวิชาชีพ',
+                    data: pieData
                 }]
             });
 
-            
+
 
         });
-    </script>
-    
 
+    </script>
 </asp:Content>

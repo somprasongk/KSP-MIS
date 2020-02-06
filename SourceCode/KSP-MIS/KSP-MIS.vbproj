@@ -1850,6 +1850,7 @@
     <Content Include="HR-020.aspx" />
     <Content Include="LIC-010.aspx" />
     <Content Include="LIC-040.aspx" />
+    <Content Include="LIC-045.aspx" />
     <Content Include="LIC-050.aspx" />
     <Content Include="LIC-020.aspx" />
     <Content Include="LIC-090.aspx" />
@@ -2161,6 +2162,13 @@
     </Compile>
     <Compile Include="LIC-040.aspx.vb">
       <DependentUpon>LIC-040.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LIC-045.aspx.designer.vb">
+      <DependentUpon>LIC-045.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIC-045.aspx.vb">
+      <DependentUpon>LIC-045.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="LIC-050.aspx.designer.vb">
