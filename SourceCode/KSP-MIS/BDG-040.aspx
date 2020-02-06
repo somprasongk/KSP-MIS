@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-14.aspx.vb" Inherits="KSP_MIS.BDG_14" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-040.aspx.vb" Inherits="KSP_MIS.BDG_14" %>
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -319,7 +319,7 @@
             {
             id: '0.0',
             parent: '',
-            name: 'งบประมาณปี 2562'
+                name: 'ฐานะเงินงบประมาณรายจ่ายปีปัจจุบันและปีก่อน ประจำปีงบประมาณ ปี พ.ศ....'
             }, {
                 id: '1.0',
                 parent: '0.0',
@@ -554,7 +554,7 @@
                 },
 
                 title: {
-                    text: 'งบประมาณคงค้างเบิกจ่าย'
+                    text: 'ฐานะเงินงบประมาณคงค้างเบิกจ่าย ปังบประมาณ พ.ศ....'
                 },
 
                 xAxis: {
@@ -656,7 +656,7 @@
                 },
 
                 title: {
-                    text: 'การเปลี่ยนแปลงงบประมาณระหว่างปี'
+                    text: 'การเปลี่ยนแปลงงบประมาณระหว่างปีวบประมาณ พ.ศ....'
                 },
 
                 legend: {

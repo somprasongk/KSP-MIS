@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-01.aspx.vb" Inherits="KSP_MIS.BDG_01" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-010.aspx.vb" Inherits="KSP_MIS.BDG_01" %>
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -907,7 +907,7 @@
                 },
 
                 title: {
-                    text: 'สัดส่วนงบประมาณ ปี พ.ศ.2562'
+                    text: 'สัดส่วนงบประมาณ ปีงบประมาณ พ.ศ.2562'
                 },
                 
                 series: [{
@@ -965,7 +965,7 @@
                     height: "300px"
                 },
                 title: {
-                    text: 'ค่าใช้จ่ายจำแนกตามประเภท ปี พ.ศ.2562'
+                    text: 'ค่าใช้จ่ายจำแนกตามประเภท ปีงบประมาณ พ.ศ.2562'
                 },
                 xAxis: {
                     type: 'category',
@@ -1007,7 +1007,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: 'แผนการเบิกจ่ายปี พ.ศ.2562 ตามไตรมาส'
+                    text: 'แผนการเบิกจ่ายปีงบประมาณ พ.ศ.2562 ตามไตรมาส'
                 },
                 xAxis: {
                     type: 'category',

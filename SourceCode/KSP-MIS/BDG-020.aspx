@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-11.aspx.vb" Inherits="KSP_MIS.BDG_11" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-020.aspx.vb" Inherits="KSP_MIS.BDG_11" %>
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -344,7 +344,7 @@
                      height:500
                  },
                  title: {
-                     text: 'สัดส่วนสินทรัพย์และหนี้สิน'
+                     text: 'สรุปฐานะการเงิน สัดส่วนสินทรัพย์และหนี้สิน ของสำนักงานเลขาธิการคุรุสภา มูลนิธิ และกองทุนของคุรุสภา ปีงบประมาณ พ.ศ....'
                  },
                  xAxis: {
                      categories: ['สำนักงานเลขาธิการคุรุสภา', 'สวัสดิการสำนักงานเลขาธิการคุรุสภา', 'มูลนิธิช่วยครูอาวุโสในพระบรมราชูปถัมภ์', 'มูลนิธิรางวัลคุรุสภา',
@@ -397,7 +397,7 @@
                      height: "300px"
                  },
                  title: {
-                     text: 'มูลค่าสินทรัพย์'
+                     text: 'มูลค่าสินทรัพย์ ของสำนักงานเลขาธิการคุรุสภา มูลนิธิ และกองทุนของคุรุสภา ปีงบประมาณ พ.ศ....'
                  },
                  xAxis: {
                      type: 'category',
@@ -441,7 +441,7 @@
                      height: "300px"
                  },
                  title: {
-                     text: 'มูลค่าหนี้สิน'
+                     text: 'มูลค่าหนี้สิน ของสำนักงานเลขาธิการคุรุสภา มูลนิธิ และกองทุนของคุรุสภา ปีงบประมาณ พ.ศ....'
                  },
                  xAxis: {
                      type: 'category'
@@ -486,7 +486,7 @@
                      type: 'pie'
                  },
                  title: {
-                     text: 'สัดส่วนสินทรัพย์'
+                     text: 'สัดส่วนสินทรัพย์ ของสำนักงานเลขาธิการคุรุสภา มูลนิธิ และกองทุนของคุรุสภา ปีงบประมาณ พ.ศ....'
                  },
                  xAxis: {
                      type: 'category',

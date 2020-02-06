@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-08.aspx.vb" Inherits="KSP_MIS.BDG_08" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-080.aspx.vb" Inherits="KSP_MIS.BDG_08" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -18,6 +18,9 @@
 
                 <div class="kt-portlet__body" id="chart1">
                 </div>
+
+                 <div class="kt-portlet__body" id="chart2">
+                </div>
             </div>
 
             <!--end:: Widgets/Activity-->
@@ -28,7 +31,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -53,14 +56,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
                                 <th rowspan="2">#</th>
                                 <th rowspan="2">ส่วนงาน/รายการ</th>
-                                <th colspan="6">ประเภทงบ</th>
+                                <th colspan="6">ประเภทงบประมาณ</th>
                                 <th rowspan="2">รวมทั้งสิ้น</th>
                             </tr>
                             <tr>
@@ -251,13 +254,20 @@
                      type: 'line'
                  },
                  title: {
-                     text: 'Area chart with negative values'
+                     text: 'งบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ.... ของสำนักงานเลขาธิการคุรุสภา จำแนกตามส่วนงาน/งบรายจ่าย'
                  },
                  xAxis: {
                      categories: ['งบกลาง', 'งบบุคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น']
                  },
-                 credits: {
-                     enabled: false
+                 yAxis: {
+                     title: {
+                         text: 'มูลค่างบประมาณ (บาท)'
+                     },
+                     labels: {                         
+                         formatter: function () {
+                             return  this.value;
+                         }
+                     }
                  },
                  tooltip: {
                      split: true,
@@ -307,16 +317,7 @@
                      type: 'area'
                  },
                  title: {
-                     text: 'งบประมาณรายจ่ายประจำปีตามส่วนงาน',
-                     style: {
-                         fontSize: 14
-                     }
-                 },
-                 subtitle: {
-                     text: 'ปีงบประมาณ 2562',
-                     style: {
-                         fontSize: 12
-                     }
+                     text: 'งบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ.... ของสำนักงานเลขาธิการคุรุสภา จำแนกตามส่วนงาน/งบรายจ่าย'
                  },
                  xAxis: {
                      categories: ['งบกลาง', 'งบบุคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น'],
@@ -327,7 +328,7 @@
                  },
                  yAxis: {
                      title: {
-                         text: 'บาท'
+                         text: 'มูลค่างบประมาณ (บาท)'
                      },
                      labels: {
                          formatter: function () {

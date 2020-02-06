@@ -709,17 +709,17 @@
                     {
                             name: 'ระดับพื้นฐาน',
                             data: genDataL1(),
-                        color: 'green',
+                            color: 'green',
                             index:2
                     }, {
                             name: 'ระดับกลาง',
                             data: genDataL2(),
-                        color: 'orange',
+                            color: 'orange',
                             index:1
                     }, {
                             name: 'ระดับสูง',
                             data: genDataL3(),
-                        color: 'red',
+                            color: 'red',
                             index:0
                     }
                 ]

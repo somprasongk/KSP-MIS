@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-13.aspx.vb" Inherits="KSP_MIS.BDG_13" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-050.aspx.vb" Inherits="KSP_MIS.BDG_13" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -14,7 +14,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -39,11 +39,18 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
 
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid" id="table-sparkline">
                         <thead>
+
+                            
+                            <tr role="row">
+                                <th colspan="7">
+                                    รายงานผลตัวชี้วัดผลตัวชี้วัด ปีงบประมาณ พ.ศ....
+                                </th>
+                            </tr>
                             <tr role="row">
                                 <th rowspan="2" aria-label="ประเด็นการประเมิน">ประเด็นการประเมิน</th>
                                 <th rowspan="2" aria-label="เป้าหมาย ปี งปม.ปัจจุบัน (2562)">เป้าหมาย ปี งปม.ปัจจุบัน (2562)</th>
@@ -51,7 +58,7 @@
                                 <th rowspan="1" colspan="1" aria-label="ผลการดำเนินงานต้อนหลัง 2 ปี งปม. (2560)">ผลการดำเนินงานย้อนหลัง 2 ปี งปม. (2560)</th>
                                 <th rowspan="1" colspan="1" aria-label="ผลการดำเนินงานต้อนหลัง 1 ปี งปม. (2561)">ผลการดำเนินงานย้อนหลัง 1 ปี งปม. (2561)</th>--%>
                                 <th colspan="3" aria-label="ผลการดำเนินงานปี งปม. ปัจจุบัน (2562)">ผลการดำเนินงานย้อนหลัง</th>
-                                <th rowspan="2" aria-label="ผลการดำเนินงานปี งปม. ปัจจุบัน (2562)">ผลการดำเนินงานปี งปม. ปัจจุบัน (2562)</th>
+                                <th rowspan="2" class="border-left" aria-label="ผลการดำเนินงานปี งปม. ปัจจุบัน (2562)">ผลการดำเนินงานปี งปม. ปัจจุบัน (2562)</th>
                                 <th rowspan="2" aria-label="กราฟ">ผลดำเนินงาน</th>
                             </tr>
                             <tr role="row">
@@ -404,6 +411,7 @@
                     tickPositions: [0]
                 },
                 title: {
+                    enabled:false ,
                     text: ''
                 },
                 credits: {

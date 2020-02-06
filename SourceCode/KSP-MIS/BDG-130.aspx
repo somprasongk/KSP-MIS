@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-06.aspx.vb" Inherits="KSP_MIS.BDG_06" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-130.aspx.vb" Inherits="KSP_MIS.BDG_06" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -14,7 +14,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -39,10 +39,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid" id="table-sparkline">
                         <thead>
+                            <tr role="row">
+                                <th colspan="10">
+                                    ทะเบียนคุมสัญญายืมเงินทดรองทั้งหมด สำนักงานเลขาธิการคุรุสภา วันที่ … ถึงวันที่ …
+                                </th>
+                            </tr>
                             <tr role="row">
                                 <th>#</th>
                                 <th>วันที่เงินรับ</th>

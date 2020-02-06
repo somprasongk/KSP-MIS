@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-10.aspx.vb" Inherits="KSP_MIS.BDG_10" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-150.aspx.vb" Inherits="KSP_MIS.BDG_10" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -16,6 +16,8 @@
 
                 <div class="kt-portlet__body" id="chartOverview">
                 </div>
+
+                
             </div>
         </div>
 
@@ -23,7 +25,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+               <%-- <div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -48,7 +50,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -188,13 +190,12 @@
 
         var minRate = 30000,
             maxRate = 0
-        var part = ['ไตรมาส 1', 'ไตรมาส 2', 'ไตรมาส 3', 'ไตรมาส 4'];
+        var triMonth = ['ไตรมาส 1', 'ไตรมาส 2', 'ไตรมาส 3', 'ไตรมาส 4'];
         function genData() {
             var result = [];
-            for (var i = 0; i < part.length; i++) {
+            for (var i = 0; i < triMonth.length; i++) {
                 result.push(
-                    randomInteger(10000, 50000)
-                    //{ name: subject[i], y: randomInteger(10,5000) }
+                    randomInteger(100000, 5000000)
                 );
             }
             return result;
@@ -203,66 +204,50 @@
         $(document).ready(function () {
             Highcharts.chart('chartOverview', {
                 chart: {
-                    type: 'bar'
+                    type: 'column'
                 }, 
                 title: {
-                    text: 'รายรับตามไตรมาสเทียบกับการประมาณการรายรับ',
-                    style: {
-                        fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: 'ปีงบประมาณ 2562',
-                    style: {
-                        fontSize: 12
-                    }
+                    text: 'ประมาณการรายรับ ประจำปีงบประมาณ พ.ศ.... จำแนกตามไตรมาส ของสำนักงานเลขาธิการคุรุสภา'
                 },
                 xAxis: {
-                    categories: ['เงินงบประมาณ', 'เงินนอกงบประมาณ']
+                    categories: triMonth
                 },
                 yAxis: {
-                    min: 0,
                     title: {
                         text: 'งบประมาณรายรับ (บาท)'
                     }
                 },
-                legend: {
-                    reversed: true
-                },
+                //legend: {
+                //    reversed: true
+                //},
                 plotOptions: {
-                    series: {
+                    column: {
                         stacking: 'normal'
                     }
                 },
                 series: [{
-                    name: 'ไตรมาส 1',
-                    data: genDataPart(),
-                    stack: 'part',
-                    color: 'LIGHTSKYBLUE'
-                }, {
-                    name: 'ไตรมาส 2',
-                    data: genDataPart(),
-                    stack: 'part',
-                    color: 'SKYBLUE'
-                }, {
-                    name: 'ไตรมาส 3',
-                    data: genDataPart(),
-                    stack: 'part',
-                    color: 'POWDERBLUE'
-                }
-                , {
-                    name: 'ไตรมาส 4',
-                    data: genDataPart(),
-                    stack: 'part',
-                    color: 'LIGHTSTEELBLUE'
-                }
+                        name: 'เงินงบประมาณ',
+                        data: genData(),
+                        stack: 'triMonth',
+                        color: 'palegreen',
+                        index: 1,
+                        legendIndex: 0
 
-                , {
-                    name: 'ประมาณการรายรับ',
-                    data: genDataEstimate(),
-                    stack: 'estimate',
-                    color: 'NAVY'
-                }
+                }, {
+                    name: 'เงินนอกงบประมาณ',
+                        data: genData(),
+                        stack: 'triMonth',
+                        color: 'gold',
+                        index: 0,
+                        legendIndex : 1
+                    },
+                    {
+                        name: 'รายรับจริง',
+                        type : 'line',
+                        data: [5000000, 1000000,null],
+                        color: 'blue',
+                        legendIndex: 2
+                    }
                 ]
             });
 
@@ -330,9 +315,6 @@
 
                         title: {
                             text: ''
-                        },
-                        credits: {
-                            enabled: false
                         },
                         legend: {
                             enabled: false

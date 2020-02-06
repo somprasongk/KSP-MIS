@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-03.aspx.vb" Inherits="KSP_MIS.BDG_03" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-110.aspx.vb" Inherits="KSP_MIS.BDG_04" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -31,14 +31,16 @@
             <div class="row">
                 <div class="col-6 kt-portlet">
 
-                    <div class="kt-portlet__body" id="chart2">
-                    </div>
-                </div>
-                <div class="col-6 kt-portlet">
-
                     <div class="kt-portlet__body" id="chart3">
                     </div>
                 </div>
+
+                <div class="col-6 kt-portlet">
+
+                    <div class="kt-portlet__body" id="chart2">
+                    </div>
+                </div>
+                
             </div>
 
 
@@ -46,11 +48,10 @@
         </div>
 
     </div>
-
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -75,18 +76,18 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
                                 <th rowspan="2">#</th>
-                                <th rowspan="2">พันธกิจ/รายการ</th>
+                                <th rowspan="2">ส่วนงาน/รายการ</th>
                                 <th rowspan="2">ประมาณการรายจ่าย<br>
-                                    ปีปัจจุบัน...</th>
+                                    ปีปัจจุบัน 2561</th>
                                 <th rowspan="2">ร้อยละ</th>
                                 <th rowspan="2">ประมาณการรายจ่าย<br>
-                                    ปีที่ขอตั้ง...</th>
+                                    ปีที่ขอตั้ง 2562</th>
                                 <th rowspan="2">ร้อยละ</th>
                                 <th colspan="2">+เพิ่ม(ลด)</th>
                             </tr>
@@ -140,6 +141,8 @@
                             </tr>
                         </tfoot>
                     </table>
+
+                    
                 </div>
             </div>
             <!--end::Section-->
@@ -176,19 +179,10 @@
                     type: 'line'
                 },
                 title: {
-                    text: 'เปรียบเทียบงบระหว่างปีตามแผนงาน ปีงบประมาณ 2562',
-                    style: {
-                        fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: '',
-                    style: {
-                        fontSize: 12
-                    }
+                    text: 'เปรียบเทียบงบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ.... ของสำนักงานเลขาธิการคุรุสภา จำแนกตามส่วนงาน'
                 },
                 xAxis: {
-                    categories: ['พันธกิจ 1', 'พันธกิจ 2', 'พันธกิจ 3', 'พันธกิจ 4', 'พันธกิจ 5', 'พันธกิจ 6']
+                    categories: ['ส่วนงาน 1', 'ส่วนงาน 2', 'ส่วนงาน 3', 'ส่วนงาน 4', 'ส่วนงาน 5', 'ส่วนงาน 6']
                 },
                 yAxis: {
                     title: {
@@ -212,12 +206,14 @@
                     }
                 },
                 series: [{
-                    name: 'ปีปัจจุบัน 2562',
-                    data: [35060, 41695, 41612, 35179, 27414, 28399]
+                    name: 'ปีปัจจุบัน พ.ศ....',
+                    data: [35060, 41695, 41612, 35179, 27414, 28399],
+                    color: 'SADDLEBROWN'
+
                 }, {
-                    name: 'ปีที่ขอตั้ง 2561',
+                        name: 'ปีที่ขอตั้ง พ.ศ....',
                     data: [18904, 23737, 23147, 11535, 43345, 26896],
-                    color: Highcharts.getOptions().colors[5]
+                    color: 'SEAGREEN'
                 }]
             });
             //41612
@@ -228,7 +224,7 @@
             // Make monochrome colors
             var pieColorsChart2 = (function () {
                 var colors = [],
-                    base = Highcharts.getOptions().colors[0],
+                    base = Highcharts.getOptions().colors[3],
                     i;
 
                 for (i = 0; i < 10; i += 1) {
@@ -247,16 +243,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'ประมาณการรายจ่ายปีปัจจุบัน 2562',
-                    style: {
-                        fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: 'ร้อยละ (%)',
-                    style: {
-                        fontSize: 12
-                    }
+                    text: 'ประมาณการรายจ่ายปีปัจจุบัน ปี พ.ศ....'
                 },
                 tooltip: {
                     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -279,14 +266,11 @@
                     }
                 },
                 series: [{
-                    name: 'Share',
+                    name: 'ปีปัจจุบัน',
                     data: [
-                        { name: 'พันธกิจ 1', y: 61.41 },
-                        { name: 'พันธกิจ 2', y: 11.84 },
-                        { name: 'พันธกิจ 3', y: 10.85 },
-                        { name: 'พันธกิจ 4', y: 4.67 },
-                        { name: 'พันธกิจ 5', y: 4.18 },
-                        { name: 'พันธกิจ 6', y: 7.05 }
+                        { name: 'ส่วนงาน 1', y: 68.41 },
+                        { name: 'ส่วนงาน 2', y: 15.84 },
+                        { name: 'ส่วนงาน 3', y: 15 }
                     ]
                 }]
             });
@@ -294,7 +278,7 @@
             // Build the chart
             var pieColorsChart3 = (function () {
                 var colors = [],
-                    base = Highcharts.getOptions().colors[5],
+                    base = Highcharts.getOptions().colors[9],
                     i;
 
                 for (i = 0; i < 10; i += 1) {
@@ -312,16 +296,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'ประมาณการรายจ่ายปีที่ขอตั้ง 2561',
-                    style: {
-                        fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: 'ร้อยละ (%)',
-                    style: {
-                        fontSize: 12
-                    }
+                    text: 'ประมาณการรายจ่ายปีที่ขอตั้ง ปี พ.ศ....'
                 },
                 tooltip: {
                     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -344,68 +319,16 @@
                     }
                 },
                 series: [{
-                    name: 'Share',
+                    name: 'ปีที่ขอตั้ง',
                     data: [
-                        { name: 'พันธกิจ 1', y: 21.41 },
-                        { name: 'พันธกิจ 2', y: 11.84 },
-                        { name: 'พันธกิจ 3', y: 25.85 },
-                        { name: 'พันธกิจ 4', y: 24.67 },
-                        { name: 'พันธกิจ 5', y: 9.18 },
-                        { name: 'พันธกิจ 6', y: 7.05 }
+                        { name: 'ส่วนงาน 1', y: 28.41 },
+                        { name: 'ส่วนงาน 2', y: 44.84 },
+                        { name: 'ส่วนงาน 3', y: 25.85 }
                     ]
                 }]
             });
 
-            Highcharts.chart('chart4', {
-                chart: {
-                    plotBackgroundColor: null,
-                    plotBorderWidth: null,
-                    plotShadow: false,
-                    type: 'pie'
-                },
-                title: {
-                    text: 'Browser market shares in January, 2018'
-                },
-                tooltip: {
-                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-                },
-                plotOptions: {
-                    pie: {
-                        allowPointSelect: true,
-                        cursor: 'pointer',
-                        dataLabels: {
-                            enabled: false
-                        },
-                        showInLegend: true
-                    }
-                },
-                series: [{
-                    name: 'Brands',
-                    colorByPoint: true,
-                    data: [{
-                        name: 'พันธกิจ 1',
-                        y: 35060,
-                        sliced: true,
-                        selected: true
-                    }, {
-                        name: 'พันธกิจ 2',
-                        y: 41695
-                    }, {
-                        name: 'พันธกิจ 3',
-                        y: 35179
-                    }, {
-                        name: 'พันธกิจ 4',
-                        y: 27414
-                    }, {
-                        name: 'พันธกิจ 5',
-                        y: 41612
-                    }, {
-                        name: 'พันธกิจ 6',
-                        y: 28399
-                    }]
-                }]
-            });
-
+ 
 
 
         });

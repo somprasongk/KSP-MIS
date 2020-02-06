@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-12.aspx.vb" Inherits="KSP_MIS.BDG_12" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-030.aspx.vb" Inherits="KSP_MIS.BDG_12" %>
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -217,7 +217,7 @@
                      height: 500,
                  },
                  title: {
-                     text: 'สรุปผลการดำเนินงานทางการเงินของสำนักงานเลขขาธิการคุรุสภา มูลนิธิ และกองทุน ปี พ.ศ.2562' 
+                     text: 'สรุปผลการดำเนินงานทางการเงินของสำนักงานเลขาธิการคุรุสภา มูลนิธิ และกองทุนของคุรุสภา ปีงบประมาณ พ.ศ....'                      
                  },
                  xAxis: {
                      categories: ['สำนักงานเลขาธิการคุรุสภา', 'สวัสดิการสำนักงานเลขาธิการคุรุสภา', 'มูลนิธิช่วยครูอาวุโสในพระบรมราชูปถัมภ์', 'มูลนิธิรางวัลคุรุสภา',

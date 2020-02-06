@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-02.aspx.vb" Inherits="KSP_MIS.BDG_02" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-070.aspx.vb" Inherits="KSP_MIS.BDG_15" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,24 +22,13 @@
 
             <!--end:: Widgets/Activity-->
         </div>
-        <div class="col-6 dashboard-chart">
+         
 
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
-
- 
     </div>
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -64,16 +53,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
-                            <tr>
+                            <tr role="row">
                                 <th rowspan="2">#</th>
-                                <th rowspan="2">พันธกิจ/งาน/โครงการ</th>
+                                <th rowspan="2">พันธกิจ/รายการ</th>
                                 <th colspan="6">ประเภทงบ</th>
                                 <th rowspan="2">รวมทั้งสิ้น</th>
-                                <th rowspan="2">ร้อยละ</th>
                             </tr>
                             <tr>
                                 <th>งบกลาง</th>
@@ -85,20 +73,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td colspan="2">พันธกิจที่ 1</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+
                             <tr>
                                 <th scope="row">1</th>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -118,7 +95,6 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
@@ -130,55 +106,8 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                             </tr>
-                            <tr>
-                                <td colspan="2">พันธกิจที่ 2</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+
                         </tbody>
                         <tfoot>
                             <tr>
@@ -190,10 +119,20 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">ร้อยละ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                             </tr>
                         </tfoot>
                     </table>
+                     
                 </div>
             </div>
             <!--end::Section-->
@@ -206,7 +145,7 @@
 </asp:Content>
 
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
-        <script type="text/javascript">
+    <script type="text/javascript">
          $(document).ready(function () {
              $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ 2562');
          });
@@ -234,18 +173,9 @@
                  chart: {
                      type: 'area'
                  },
-                 title: {
-                     text: 'งบประมาณรายจ่ายประจำปี ' + vision[i],
-                     style: {
-                         fontSize: 14
-                     }
-                 },
-                 subtitle: {
-                     text: 'ปีงบประมาณ 2562',
-                     style: {
-                         fontSize: 12
-                     }
-                 },
+                   title: {
+                       text: 'งบประมาณรายจ่ายประจำปี พ.ศ.... พันธกิจ ... ของสำนักงานเลขาธิการคุรุสภา จำแนกตามพันธกิจ และงบรายจ่าย '
+                   },
                  xAxis: {
                      categories: ['งบกลาง', 'งบบุคลากร', 'งบดำเนินงาน', 'งบลงทุน', 'งบเงินอุดหนุน', 'งบรายจ่ายอื่น'],
                      tickmarkPlacement: 'on',
@@ -259,7 +189,7 @@
                      },
                      labels: {
                          formatter: function () {
-                             return this.value / 1000;
+                             return this.value ;
                          }
                      }
                  },
@@ -279,14 +209,17 @@
                      }
                  },
                  series: [{
-                     name: 'โครงการ 1',
-                     data: genData()
+                     name: 'พันธกิจ 1',
+                     data: genData(),
+                     color: '#E1558F'
                  }, {
-                     name: 'โครงการ 2',
-                     data: genData()
+                     name: 'พันธกิจ 2',
+                     data: genData(),
+                     color: '#A755E1'
                  }, {
-                     name: 'โครงการ 3',
-                     data: genData()
+                     name: 'พันธกิจ 3',
+                     data: genData(),
+                     color: '#558FE1'
                  }]
              });
            
@@ -294,6 +227,5 @@
          });
 
      </script>
-
 </asp:Content>
 

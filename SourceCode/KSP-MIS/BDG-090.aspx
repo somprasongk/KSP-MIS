@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-07.aspx.vb" Inherits="KSP_MIS.BDG_07" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-090.aspx.vb" Inherits="KSP_MIS.BDG_09" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-6 dashboard-chart">
+        <div class="col-12 dashboard-chart">
 
 
             <div class="kt-portlet">
@@ -22,24 +22,13 @@
 
             <!--end:: Widgets/Activity-->
         </div>
-
-        <div class="col-6 dashboard-chart">
-
-
-            <div class="kt-portlet">
-
-                <div class="kt-portlet__body" id="chart2">
-                </div>
-            </div>
-
-            <!--end:: Widgets/Activity-->
-        </div>
+         
 
     </div>
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -64,38 +53,34 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
-                                <th>วัน/เดือน/ปี</th>
-                                <th>รายการ</th>
-                                <th>สัญญา/ใบสั่งซื้อ/สั่งจ้างเลขที่</th>
-                                <th>สำนัก/กลุ่ม</th>
-                                <th>วิธีการจัดซื้อจัดจ้าง</th>
-                                <th>วงเงินงบประมาณ</th>
-                                <th>ราคากลาง&nbsp;</th>
-                                <th>วงเงินการจัดซื้อจัดจ้าง</th>
-                                <th>ผลต่าง</th>
-                                <th>ผู้รับจ้าง</th>
-                                <th>เจ้าหน้าที่ผู้รับผิดชอบ</th>
-                                <th>สถานะ</th>
-                                <th>แนบไฟล์สัญญาจ้าง /ใบสั่งจ้าง/ซื้อ</th>
-                                <th>แนบไฟล์เอกสารที่เกี่ยวข้อง</th>
+                                <th rowspan="3">#</th>
+                                <th rowspan="3">พันธกิจ/รายการ</th>
+                                <th colspan="5">งบประมาณรายจ่าย จำแนกตามไตรมาส</th>
+                            </tr>
+                            <tr>
+                                <th>ไตรมาสที่ 1</th>
+                                <th>ไตรมาสที่ 2</th>
+                                <th>ไตรมาสที่ 3</th>
+                                <th>ไตรมาสที่ 4</th>
+                                <th>รวม</th>
+                            </tr>
+                            <tr>
+                                <th>บาท (ร้อยละ)</th>
+                                <th>บาท (ร้อยละ)</th>
+                                <th>บาท (ร้อยละ)</th>
+                                <th>บาท (ร้อยละ)</th>
+                                <th>บาท (ร้อยละ)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>2/10/2562</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <th scope="row">1</th>
+                                <td>พันธกิจ...</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -103,15 +88,8 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>3/10/2562</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <th scope="row">2</th>
+                                <td>พันธกิจ...</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -119,39 +97,31 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>4/10/2562</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <th scope="row">3</th>
+                                <td>พันธกิจ...</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr>
-                                <td>5/10/2562</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+
                         </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">รวมทั้งสิ้น</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
                     </table>
+
+
+
+
                 </div>
             </div>
             <!--end::Section-->
@@ -164,5 +134,60 @@
 </asp:Content>
 
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ปีงบประมาณ 2562');
+        });
+
+        var triMonth = ['ไตรมาสที่ 1', 'ไตรมาสที่ 2', 'ไตรมาสที่ 3', 'ไตรมาสที่ 4']
+        function genData() {
+            var result = [];
+            for (var i = 0; i < triMonth.length; i++) {
+                result.push(
+                    randomInteger(50000, 100000)
+                );
+            }
+            return result;
+        }
+            
+        $(document).ready(function () {
+
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'งบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ.... ของสำนักงานเลขาธิการคุรุสภา จำแนกตามพันธกิจ/ไตรมาส'
+                },
+                xAxis: {
+                    categories: triMonth
+                },
+                yAxis: {
+                    title: {
+                        text: 'มูลค่างบประมาณ (บาท)'
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                series: [{
+                        name: 'พันธกิจที่ 1',
+                        data: genData()
+                }, {
+                        name: 'พันธกิจที่ 2',
+                        data: genData()
+                }, {
+                        name: 'พันธกิจที่ 3',
+                        data: genData()
+                }, {
+                        name: 'พันธกิจที่ 4',
+                        data: genData()
+                }]
+            });
+        });
+
+     </script>
 </asp:Content>
 

@@ -430,33 +430,33 @@
 													<span class="kt-menu__arrow"></span>
 													<ul class="kt-menu__subnav">
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-01.aspx" class="kt-menu__link ">
+															<a href="BDG-010.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">สรุปข้อมูลงบประมาณประจำปี</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-11.aspx" class="kt-menu__link ">
+															<a href="BDG-020.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">สรุปฐานะทางการเงิน</span>
+																<span class="kt-menu__link-text">สรุปฐานะการเงินของสำนักงานเลขาฯ มูลนิธิ และกองทุน</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-12.aspx" class="kt-menu__link ">
+															<a href="BDG-030.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">สรุปผลการดำเนินงานทางการเงิน</span>
+																<span class="kt-menu__link-text">สรุปผลการดำเนินงานทางการเงินของสำนักงานเลขาฯ มูลนิธิ และกองทุน</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-14.aspx" class="kt-menu__link ">
+															<a href="BDG-040.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">ฐานะเงินงบประมาณรายจ่ายปีปัจจุบันและปีก่อน</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-13.aspx" class="kt-menu__link ">
+															<a href="BDG-050.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">ผลตัวชี้วัดตามปีงบประมาณ</span>
+																<span class="kt-menu__link-text">ผลตัวชี้วัด จำแนกตามปีงบประมาณ</span>
 															</a>
 														</li>
 													</ul>
@@ -472,66 +472,66 @@
 													<span class="kt-menu__arrow"></span>
 													<ul class="kt-menu__subnav">
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-02.aspx" class="kt-menu__link ">
+															<a href="BDG-060.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">ตามพันธกิจ/งาน/โครงการ/งบรายจ่าย</span>
+																<span class="kt-menu__link-text">จำแนกตามพันธกิจ/งาน/โครงการ และงบรายจ่าย</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-15.aspx" class="kt-menu__link ">
+															<a href="BDG-070.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">ตามพันธกิจ/งบรายจ่าย</span>
+																<span class="kt-menu__link-text">จำแนกตามพันธกิจ/งบรายจ่าย</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-08.aspx" class="kt-menu__link ">
+															<a href="BDG-080.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">ตามส่วนงาน/งบรายจ่าย</span>
+																<span class="kt-menu__link-text">จำแนกตามส่วนงาน/งบรายจ่าย</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-09.aspx" class="kt-menu__link ">
+															<a href="BDG-090.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">ตามพันธกิจ/ไตรมาส</span>
+																<span class="kt-menu__link-text">จำแนกตามพันธกิจ/ไตรมาส</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-03.aspx" class="kt-menu__link ">
+															<a href="BDG-100.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">เปรียบเทียบงบระหว่างปีตามแผนงาน</span>
+																<span class="kt-menu__link-text">เปรียบเทียบงบประมาณรายจ่ายประจำปีงบประมาณ จำแนกตามแผนงาน</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-04.aspx" class="kt-menu__link ">
+															<a href="BDG-110.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">เปรียบเทียบงบระหว่างปีตามส่วนงาน</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-05.aspx" class="kt-menu__link ">
+															<a href="BDG-120.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">งบประมาณกันเหลื่อมปี</span>
+																<span class="kt-menu__link-text">รายงานกันเหลื่อมปี ประจำปีงบประมาณ</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-06.aspx" class="kt-menu__link ">
+															<a href="BDG-130.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
 																<span class="kt-menu__link-text">ทะเบียนคุมสัญญายืมเงินทดรองจ่าย</span>
 															</a>
 														</li>
 														<li class="kt-menu__item " aria-haspopup="true">
-															<a href="BDG-07.aspx" class="kt-menu__link ">
+															<a href="BDG-140.aspx" class="kt-menu__link ">
 																<i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-																<span class="kt-menu__link-text">การจัดซื้อจัดจ้างประจำปี</span>
+																<span class="kt-menu__link-text">ภาพรวมการจัดซื้อจัดจ้าง ประจำปีงบประมาณ</span>
 															</a>
 														</li>
 													</ul>
 												</div>
 											</li>
 											<li class="kt-menu__item " aria-haspopup="true">
-												<a href="BDG-10.aspx" class="kt-menu__link ">
+												<a href="BDG-150.aspx" class="kt-menu__link ">
 													<i class="kt-menu__link-icon fa fa-sign-in-alt"></i>
-													<span class="kt-menu__link-text">ประมาณการรายรับประจำปี ตามไตรมาสก์</span>
+													<span class="kt-menu__link-text">ประมาณการรายรับ ประจำปีงบประมาณ จำแนกตามไตรมาส</span>
 												</a>
 											</li>
 											<li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">

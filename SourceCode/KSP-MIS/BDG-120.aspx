@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-05.aspx.vb" Inherits="KSP_MIS.BDG_05" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="BDG-120.aspx.vb" Inherits="KSP_MIS.BDG_05" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -54,7 +54,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+               <%-- <div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
@@ -454,10 +454,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'จำนวนเงินที่จ่ายแล้วและคงเหลือทั้งหมด ปี 2562',
-                    style: {
-                        fontSize: 14
-                    }
+                    text: 'จำนวนเงินที่จ่ายแล้วและคงเหลือทั้งหมด ปีงบประมาณ พ.ศ....'
                 },
                 tooltip: {
                     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b><br> จำนวนเงิน: <b>{point.y} บาท</b>'
@@ -493,7 +490,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: 'ประเภทงบประมาณที่จ่ายแล้วและคงเหลือในปีงบประมาณ 2562',
+                    text: 'ประเภทงบประมาณที่จ่ายแล้วและคงเหลือในปีงบประมาณ พ.ศ....',
                     style: {
                         fontSize: 14
                     }
@@ -501,12 +498,24 @@
                 xAxis: {
                     categories: ['ดำเนินงาน', 'ลงทุน', 'อุดหนุน', 'รายจ่ายอื่น']
                 },
-                credits: {
-                    enabled: false
+                yAxis: {
+                    title: {
+                        text: 'งบประมาณ (บาท)'
+                    }                    
                 },
+                plotOptions: {
+                    column: {
+                        stacking: 'normal',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true
+                    }
+                },
+
                 series: [{
                     name: 'จ่ายแล้ว',
-                    data: [-40000, -13580, -60000, null]
+                    data: [-40000, -13580, -60000, -30000]
                 }, {
                     name: 'คงเหลือ',
                     data: [78000, 29000, null, 70000]
@@ -519,16 +528,7 @@
                     type: 'line'
                 },
                 title: {
-                    text: 'เปรียบเทียบงบระหว่างปีตามแผนงาน ปีงบประมาณ 2562',
-                    style: {
-                        fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: '',
-                    style: {
-                        fontSize: 12
-                    }
+                    text: 'เปรียบเทียบงบระหว่างปีตามแผนงาน ปีงบประมาณ พ.ศ....'
                 },
                 xAxis: {
                     categories: ['งบประมาณทั้งหมด', 'เงินจ่ายแล้ว', 'เงินคงเหลือ']
