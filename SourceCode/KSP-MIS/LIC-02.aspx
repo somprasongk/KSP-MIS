@@ -12,8 +12,7 @@
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
         <div class="col-6 dashboard-chart">
-
-
+            
             <div class="kt-portlet">
 
                 <div class="kt-portlet__body" id="chart1">
@@ -183,7 +182,7 @@
                                 <td></td>
                             </tr>
                             <tr class="dtrg-group">
-                                <td colspan="2" class="text-center">รวม</td>
+                                <td colspan="2" class="text-center">รวมทุกประเภท</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>

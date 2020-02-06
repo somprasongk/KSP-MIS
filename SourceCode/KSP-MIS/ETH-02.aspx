@@ -13,7 +13,6 @@
     <div class="row">
         <div class="col-6 dashboard-chart">
 
-
             <div class="kt-portlet">
 
                 <div class="kt-portlet__body" id="chart1">

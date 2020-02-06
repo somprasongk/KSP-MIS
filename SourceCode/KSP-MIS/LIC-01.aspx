@@ -390,12 +390,11 @@
                          color: 'lightblue'
                      },
                      {
-                         name: 'รวม',
+                         name: 'รวมทุกประเภท',
                          type: 'spline',
                          data: Total,
                          yAxis: 0
-                     }
-                    
+                     }                    
                  ]
              });
 
@@ -428,7 +427,7 @@
                  },
                  series: [
                      {
-                         name: 'รวม',
+                         name: 'รวมทุกประเภท',
                          data: ByType
                      }
                  ]
