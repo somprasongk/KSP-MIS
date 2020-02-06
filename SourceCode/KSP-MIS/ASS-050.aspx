@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="ASS-03.aspx.vb" Inherits="KSP_MIS.ASS_03" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="ASS-050.aspx.vb" Inherits="KSP_MIS.ASS_05" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -14,7 +14,7 @@
     <div class="row">
 		<div class="col-12 dashboard-table">
 			<div class="kt-portlet">
-				<div class="kt-portlet__head">
+				<%--<div class="kt-portlet__head">
 					<div class="kt-portlet__head-label">
 						<span class="kt-portlet__head-icon">
 							<i class="flaticon-squares-3"></i>
@@ -40,23 +40,29 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>--%>
 				<div class="kt-portlet__body dashboard-table-container">
 
 					<table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
-                                <th rowspan="1" colspan="1" aria-label="รับจาก">รับจาก</th>
-                                <th rowspan="1" colspan="1" aria-label="ใบส่งของเลขที่">ใบส่งของเลขที่</th>
-                                <th rowspan="1" colspan="1" aria-label="วันที่ซื้อ">วันที่ซื้อ</th>
-								<th rowspan="1" colspan="1" aria-label="จำนวนเงิน">จำนวนเงิน</th>  
-								<th rowspan="1" colspan="1" aria-label="ราคาต่อหน่วย">ราคาต่อหน่วย</th>
-								<th rowspan="1" colspan="1" aria-label="จำนวน">จำนวน</th>
-								<th rowspan="1" colspan="1" aria-label="จ่ายให้กับกลุ่มงาน">จ่ายให้กับกลุ่มงาน</th>
-								<th rowspan="1" colspan="1" aria-label="ใบเบิกเลขที่">ใบเบิกเลขที่</th>
-                                <th rowspan="1" colspan="1" aria-label="วันที่จ่าย">วันที่จ่าย</th>
-                                <th rowspan="1" colspan="1" aria-label="จำนวนที่จ่าย">จำนวนที่จ่าย</th>
-								<th rowspan="1" colspan="1" aria-label="หมายเหตุ">หมายเหตุ</th>
+                                <th colspan="12">
+                                    รายงานการแจ้งงานบริการอาคารสถานที่ สำนักงานเลขาธิการคุรุสภา ข้อมูล ณ วันที่ ...
+                                </th>
+                            </tr>
+                            <tr role="row">
+                                <th rowspan="1" colspan="1" aria-label="วันที่/เวลาแจ้งบริการ">วันที่/เวลา แจ้งบริการ</th>
+                                <th rowspan="1" colspan="1" aria-label="สำนัก/กลุ่มที่แจ้งบริการ">สำนัก/กลุ่ม ที่แจ้งบริการ</th>
+                                <th rowspan="1" colspan="1" aria-label="รายละเอียดการขอรับบริการ">รายละเอียด การขอรับบริการ</th>
+								<th rowspan="1" colspan="1" aria-label="สถานที่ขอรับบริการ">สถานที่ ขอรับบริการ</th>  
+								<th rowspan="1" colspan="1" aria-label="หมายเลขโทรศัพท์">หมายเลข โทรศัพท์</th>
+								<th rowspan="1" colspan="1" aria-label="ชื่อผู้แจ้งบริการ">ชื่อผู้แจ้งบริการ</th>
+								<th rowspan="1" colspan="1" aria-label="ชื่อผู้รับแจ้งบริการ">ชื่อผู้รับแจ้งบริการ</th>
+								<th rowspan="1" colspan="1" aria-label="วันที่/เวลารับแจ้ง">วันที่/เวลา รับแจ้ง</th>
+								<th rowspan="1" colspan="1" aria-label="ชื่อผู้รับมอบหมายงาน">ชื่อผู้รับมอบหมายงาน</th>
+                                <th rowspan="1" colspan="1" aria-label="วันที่/เวลารับมอบหมายงาน">วันที่/เวลา รับมอบหมายงาน</th>
+                                <th rowspan="1" colspan="1" aria-label="วันที่/เวลาแล้วเสร็จ">วันที่/เวลาแล้วเสร็จ</th>
+                                <th rowspan="1" colspan="1" aria-label="ผลการดำเนินงาน">ผลการดำเนินงาน</th>
                             </tr>
                         </thead>
 						<tbody>
@@ -71,18 +77,6 @@
                                 <td></td>
                                 <td></td> 
                                 <td></td>
-                                <td></td> 
-                            </tr>
-							<tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>  
-								<td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td> 
                                 <td></td>
                                 <td></td> 
                             </tr>
@@ -97,6 +91,7 @@
                                 <td></td>
                                 <td></td> 
                                 <td></td>
+                                <td></td>
                                 <td></td> 
                             </tr>
 							<tr>
@@ -109,6 +104,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td> 
+                                <td></td>
                                 <td></td>
                                 <td></td> 
                             </tr>
@@ -123,6 +119,7 @@
                                 <td></td>
                                 <td></td> 
                                 <td></td>
+                                <td></td>
                                 <td></td> 
                             </tr>
                             <tr>
@@ -135,6 +132,21 @@
                                 <td></td>
                                 <td></td>
                                 <td></td> 
+                                <td></td>
+                                <td></td>
+                                <td></td> 
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>  
+								<td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td> 
+                                <td></td>
                                 <td></td>
                                 <td></td> 
                             </tr>
@@ -154,4 +166,3 @@
      </script>
 
 </asp:Content>
-

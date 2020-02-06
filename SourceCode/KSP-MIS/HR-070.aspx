@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-06.aspx.vb" Inherits="KSP_MIS.HR_06" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-070.aspx.vb" Inherits="KSP_MIS.HR_06" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -351,7 +351,7 @@
                     height: 500
                 },
                 title: {
-                    text: 'จำนวนบุคลากรกลุ่มบริหาร พ.ศ.2562 จำแนกตามตำแหน่งและวุฒิการศึกษา',
+                    text: 'จำนวนบุคลากรกลุ่มบริหาร พ.ศ.... จำแนกตามตำแหน่งและวุฒิการศึกษา',
                     style: {
                         display: 'relative'
                     },
@@ -489,7 +489,7 @@
                     height: 500
                 },
                 title: {
-                    text: 'ระยะเวลาการดำรงตำแหน่งของบุค ปี พ.ศ.2562 จำแนกตามระดับ',
+                    text: 'ระยะเวลาการดำรงตำแหน่งของบุค ปี พ.ศ.... จำแนกตามระดับ',
                     style: {
                         fontSize: 14
                     }

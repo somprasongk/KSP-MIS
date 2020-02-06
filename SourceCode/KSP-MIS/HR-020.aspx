@@ -1,13 +1,7 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-01.aspx.vb" Inherits="KSP_MIS.HR_01" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-020.aspx.vb" Inherits="KSP_MIS.HR_08" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
-
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
-    <style>
-        th span {
-            writing-mode: vertical-rl;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Breadcrumb" ContentPlaceHolderID="Breadcrumb" runat="server">
     <uc1:uc_Breadcrumb runat="server" id="uc_Breadcrumb" />
@@ -30,36 +24,15 @@
 
         <div class="col-6 dashboard-chart">
 
-            <div class="row">
-                 <div class="col-6 kt-portlet">
 
-                    <div class="kt-portlet__body" id="chart2">
-                    </div>
-                </div>
-                 <div class="col-6 kt-portlet">
+            <div class="kt-portlet">
 
-                    <div class="kt-portlet__body" id="chart4">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6 kt-portlet">
-
-                    <div class="kt-portlet__body" id="chart3">
-                    </div>
-                </div>
-               
-                <div class="col-6 kt-portlet">
-
-                    <div class="kt-portlet__body" id="chart5">
-                    </div>
+                <div class="kt-portlet__body" id="chart2">
                 </div>
             </div>
 
             <!--end:: Widgets/Activity-->
         </div>
-        
 
     </div>
     <div class="row">
@@ -92,53 +65,39 @@
                     </div>
                 </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
-
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
                             <tr role="row">
-                                <th rowspan="3">ประเภท/กลุ่ม</th>
-                                <th rowspan="3">กรอบอัตรา</th>
-                                <th rowspan="3">จำนวน<br>
-                                    ที่มีจริง</th>
-                                <th rowspan="3">อัตราว่าง</th>
-                                <th rowspan="3">ตำแหน่งด้าน</th>
-                                <th colspan="15">จำนวน</th>
-                            </tr>
-                            <tr>
-                                <th colspan="4">ตำแหน่งระดับ</th>
+                                <th rowspan="2">ประเภท/กลุ่ม</th>
+                                <th rowspan="2">กรอบ</th>
+                                <th rowspan="2">อัตราว่าง</th>
+                                <th rowspan="2">ตำแหน่ง</th>
+                                <th rowspan="2">จำนวน<br>
+                                    (จริง)</th>
                                 <th colspan="2">เพศ</th>
                                 <th colspan="5">ช่วงอายุ</th>
                                 <th colspan="4">วุฒิการศึกษา</th>
                             </tr>
                             <tr>
-                                <th><span>เชี่ยวชาญ</span></th>
-                                <th><span>ชำนาญการ</span></th>
-                                <th><span>ปฏิบัติการ</span></th>
-                                <th><span>เจ้าหน้าที่</span></th>
                                 <th>ชาย</th>
                                 <th>หญิง</th>
-                                <th><span>61-70 </span></th>
-                                <th><span>51-60</span></th>
-                                <th><span>41-50</span></th>
-                                <th><span>31-40</span></th>
-                                <th><span>20-30</span></th>
-                                <th><span>ป.เอก</span></th>
-                                <th><span>ป.โท</span></th>
-                                <th><span>ป.ตรี</span></th>
-                                <th><span>ต่ำกว่า ป.ตรี</span></th>
+                                <th>61-70</th>
+                                <th>51-60</th>
+                                <th>41-50</th>
+                                <th>31-40</th>
+                                <th>20-30</th>
+                                <th>ป.เอก</th>
+                                <th>ป.โท</th>
+                                <th>ป.ตรี</th>
+                                <th>ต่ำกว่า ป.ตรี</th>
                             </tr>
                         </thead>
-
                         <tbody>
                             <tr role="row" class="odd">
-                                <td rowspan="11">ปฏิบัติการ</td>
+                                <td rowspan="4">ผู้บริหาร สนง.</td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>บริหารทั่วไป</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>เลขาธิการคุรุสภา</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -155,11 +114,7 @@
                             <tr role="row" class="even">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>การเงินและบัญชี</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>รองเลขาธิการคุรุสภา</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -176,11 +131,7 @@
                             <tr role="row" class="odd">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>พัสดุ</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>ที่ปรึกษา</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -197,11 +148,40 @@
                             <tr role="row" class="even">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>ตรวจสอบภายใน</td>
-                                <td></td>
+                                <td>ผู้เชี่ยวชาญพิเศษ</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th colspan="4">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td rowspan="3">บริหาร</td>
+                                <td></td>
+                                <td></td>
+                                <td>ผู้อำนวนการสำนัก</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -218,11 +198,7 @@
                             <tr role="row" class="odd">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>นโยบายและแผน</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>ผู้อำนวยการสถานบัน</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -239,11 +215,40 @@
                             <tr role="row" class="even">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>งานบุคคล</td>
-                                <td></td>
+                                <td>ผู้อำนวยการกลุ่ม</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th colspan="4">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td rowspan="4">วิชาการ</td>
+                                <td></td>
+                                <td></td>
+                                <td>ผู้เชี่ยวชาญพิเศษ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -260,11 +265,7 @@
                             <tr role="row" class="odd">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>นิติกร</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>ผู้เชี่ยวชาญ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -281,11 +282,7 @@
                             <tr role="row" class="even">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>วิเทศสัมพันธ์</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>ผู้ชำนาญการ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -302,11 +299,40 @@
                             <tr role="row" class="odd">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>เทคโนโลยีสารสนเทศ</td>
-                                <td></td>
+                                <td>นักวิชาการ</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <th colspan="4">รวม</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td rowspan="4">ปฏิบัติการ</td>
+                                <td></td>
+                                <td></td>
+                                <td>เจ้าหน้าที่เชี่ยวชาญ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -323,11 +349,7 @@
                             <tr role="row" class="even">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>ประชาสัมพันธ์</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>เจ้าหน้าที่ชำนาญการ</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -344,11 +366,39 @@
                             <tr role="row" class="odd">
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td>สารนิเทศ</td>
-                                <td></td>
+                                <td>เจ้าหน้าที่ปฏิบัติการ</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td></td>
+                                <td></td>
+                                <td>เจ้าหน้าที่</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <th colspan="4">รวม</th>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -365,11 +415,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td>รวม</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>รวมทั้งหมด</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -400,352 +446,214 @@
 
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
-    <script type="text/javascript">
+        <script type="text/javascript">
         $(document).ready(function () {
-            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' พ.ศ.2562');
+            $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด');
         });
 
-        var ages = ['61-70 ปี', '51-60 ปี', '41-50 ปี', '31-40 ปี', '20-30 ปี']
-
-        var orgs = ['ผู้บริหาร สนง.',
-            'บริหาร',
-            'วิชาการ',
-            'ปฏิบัติการ'];
-
-        function genDataM() {
-            var result = [];
-            for (var i = 0; i < ages.length; i++) {
-                result.push(
-                    randomInteger(10, 5000)
-                    //{ name: ages[i], y: randomInteger(10,5000) }
-                );
-            }
-            return result;
-        }
-
-        function genDataF() {
-            var result = [];
-            for (var i = 0; i < ages.length; i++) {
-                result.push(
-                    randomInteger(10, 2000)
-                    //{ name: ages[i], y: randomInteger(10,5000) }
-                );
-            }
-            return result;
-        }
-
-
-        var Plan1 = [
-             {
-                 name: 'ผู้บริหาร สนง.',
-                 y: 145
-             },
-             {
-                 name: 'บริหาร',
-                 y: 430
-             },
-             {
-                 name: 'วิชาการ',
-                 y: 500
-             },
-             {
-                 name: 'ปฏิบัติการ',
-                 y: 980
-             }
-
-        ];
-        var Plan2 = [
-            {
-                name: 'ผู้บริหาร สนง.',
-                y: 130
-            },
-            {
-                name: 'บริหาร',
-                y: 320
-            },
-            {
-                name: 'วิชาการ',
-                y: 500
-            },
-            {
-                name: 'ปฏิบัติการ',
-                y: 890
-            }
-        ];
-        var Plan3 = [
-            {
-                name: 'ผู้บริหาร สนง.',
-                y: 120
-            },
-            {
-                name: 'บริหาร',
-                y: 200
-            },
-            {
-                name: 'วิชาการ',
-                y: 450
-            },
-            {
-                name: 'ปฏิบัติการ',
-                y: 1100
-            }
-        ];
-        var Plan4 = [
-           {
-               name: 'ผู้บริหาร สนง.',
-               y: 150
-           },
-           {
-               name: 'บริหาร',
-               y: 200
-           },
-           {
-               name: 'วิชาการ',
-               y: 365
-           },
-           {
-               name: 'ปฏิบัติการ',
-               y: 1000
-           }
-        ];
-
-        var Degree1 = [
-              { name: 'ผู้บริหาร สนง.', y: 10 }
-            , { name: 'บริหาร', y: 5 }
-            , { name: 'วิชาการ', y: 20 }
-            , { name: 'ปฏิบัติการ', y: 5 }
-        ];
-        var Degree2 = [
-              { name: 'ผู้บริหาร สนง.', y: 20 }
-            , { name: 'บริหาร', y: 5 }
-            , { name: 'วิชาการ', y: 20 }
-            , { name: 'ปฏิบัติการ', y: 15 }
-        ];
-        var Degree3 = [
-              { name: 'ผู้บริหาร สนง.', y: 20 }
-            , { name: 'บริหาร', y: 30 }
-            , { name: 'วิชาการ', y: 20 }
-            , { name: 'ปฏิบัติการ', y: 25 }
-        ];
-        var Degree4 = [
-             { name: 'ผู้บริหาร สนง.', y: 50 }
-           , { name: 'บริหาร', y: 60 }
-           , { name: 'วิชาการ', y: 40 }
-           , { name: 'ปฏิบัติการ', y: 55 }
-        ];
-
         $(document).ready(function () {
+
+            
+
+            var Degree1 = [
+                  { name: 'ผู้บริหาร สนง.', y: 10 }
+                , { name: 'บริหาร', y: 5 }
+                , { name: 'วิชาการ', y: 20 }
+                , { name: 'ปฏิบัติการ', y: 5 }
+            ];
+            var Degree2 = [
+                  { name: 'ผู้บริหาร สนง.', y: 20 }
+                , { name: 'บริหาร', y: 5 }
+                , { name: 'วิชาการ', y: 20 }
+                , { name: 'ปฏิบัติการ', y: 15 }
+            ];
+            var Degree3 = [
+                  { name: 'ผู้บริหาร สนง.', y: 20 }
+                , { name: 'บริหาร', y: 30 }
+                , { name: 'วิชาการ', y: 20 }
+                , { name: 'ปฏิบัติการ', y: 25 }
+            ];
+            var Degree4 = [
+                 { name: 'ผู้บริหาร สนง.', y: 50 }
+               , { name: 'บริหาร', y: 60 }
+               , { name: 'วิชาการ', y: 40 }
+               , { name: 'ปฏิบัติการ', y: 55 }
+            ];
+
+            var degree = ['ต่ำกว่าปริญญาตรี'
+                            , 'ปริญญาบัณฑิตวิชาชีพครู'
+                            , 'ประกาศนียบัตรบัณฑิตวิชาชีพครู'
+                            , 'ประกาศนียบัตรบัณฑิตทางการบริหาร'
+                            , 'ปริญญาตรี'
+                            , 'ปริญญาตรีทางการศึกษา'
+                            , 'ปริญญาโท'
+                            , 'ปริญญาโททางการศึกษา'
+                            , 'ปริญญาเอกทางการศึกษา'
+                            , 'ไม่มีวุฒิการศึกษา<br>(ปริญญาตรี / ปริญญาโท / ปริญญาเอก)'
+                            , 'วุฒิอื่นๆ']
 
             Highcharts.chart('chart1', {
                 chart: {
                     zoomType: 'xy',
-                    height:650
+                    height: 650
                 },
                 title: {
-                    text: 'จำนวนบุคลากรตามสายงาน พ.ศ.2562',
+                    text: 'สรุปข้อมูลบุคลากรของสำนักงานเลขาธิการคุรุสภา ปี พ.ศ....',
                     style: {
-                        display: 'relative'
+                        fontSize: 14
                     }
                 },
                 xAxis: {
                     type: 'category',
                     labels: {
-                        rotation: -45
+                        //rotation: -45
                     }
                 },
 
-                yAxis: [ // Primary yAxis
-                    {
-                        max : 100,
-                        labels: {
-                            format: '{value} %'
-                            ,
-                            style: {
-                                color: "ORCHID"
-                            }
-                        },
-                        title: {
-                            text: 'วุฒิการศึกษา',
-                            min: 0,
-                            max: 100,
-                            style: {
-                                color: 'ORCHID'
-                            }
-                        },
-                        endOnTick: false,
-                        opposite: true
-                    }
-                    ,
-                    { // Secondary yAxis
-                        gridLineWidth: 1,
-                        labels: {
-                            format: '{value} คน'
-                        },
-                        title: {
-                            text: 'จำนวนบุคลากร',
-                            style: {
-                                color: 'MEDIUMSEAGREEN'
-                            }
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนบุคคลากร'
+                    },
+                    stackLabels: {
+                        enabled: true,
+                        style: {
+                            fontWeight: 'bold',
+                            color: ( // theme
+                                Highcharts.defaultOptions.title.style &&
+                                Highcharts.defaultOptions.title.style.color
+                            ) || 'gray'
                         }
                     }
-                ]
-                ,
+                },
                 tooltip: {
                     formatter: function () {
                         return this.series.name + ': ' + this.y + '<br/>' +
                             'รวม : ' + this.point.stackTotal;
                     }
                 },
+                
                 plotOptions: {
                     column: {
-                        stacking: 'normal'
+                        stacking: 'normal',
+                        dataLabels: {
+                            enabled: true
+                        }
                     }
                 },
                 series: [
                     {
-                        name: 'เชี่ยวชาญ',
-                        type: 'column',
-                        data: Plan1,
-                        yAxis: 1,
-                        color: 'TEAL',
-                        stack: 'Doc1'
-                    },
-                    {
-                        name: 'ชำนาญการ',
-                        type: 'column',
-                        data: Plan2,
-                        yAxis: 1,
-                        color: 'SEAGREEN',
-                        stack: 'Doc1'
-                    },
-                    {
-                        name: 'ปฏิบัติการ',
-                        type: 'column',
-                        data: Plan3,
-                        yAxis: 1,
-                        color: 'LIGHTSEAGREEN',
-                        stack: 'Doc1'
-                    },
-                    {
-                        name: 'เจ้าหน้าที่',
-                        type: 'column',
-                        data: Plan4,
-                        yAxis: 1,
-                        color: 'DARKSEAGREEN',
-                        stack: 'Doc1'
-                    }
-                    ,
-                    {
                         name: 'วุฒิการศึกษา ป.เอก',
                         type: 'column',
                         data: Degree1,
-                        yAxis: 0,
-                        color: 'VIOLET',
-                        stack: 'Doc2'
+                        color: 'VIOLET'
                     },
                     {
                         name: 'วุฒิการศึกษา ป.โท',
                         type: 'column',
                         data: Degree2,
-                        yAxis: 0,
-                        color: 'PLUM',
-                        stack: 'Doc2'
+                        color: 'PLUM'
                     },
                     {
                         name: 'วุฒิการศึกษา ป.ตรี',
                         type: 'column',
                         data: Degree3,
-                        yAxis: 0,
-                        color: 'THISTLE',
-                        stack: 'Doc2'
+                        color: 'THISTLE'
                     }
                     ,
-                    { 
+                    {
                         name: 'วุฒิการศึกษา ต่ำกว่า ป.ตรี',
                         type: 'column',
                         data: Degree4,
-                        yAxis: 0,
-                        color: 'LAVENDER',
-                        stack: 'Doc2'
+                        color: 'LAVENDER'
                     }
                 ]
             });
 
-            for (var i = 0; i < orgs.length; i++) {
 
 
-                Highcharts.chart('chart' + (i + 2), {
-                    chart: {
-                        type: "line",
-                        polar: true,
-                        height: 300
-                    },
-                    title: {
-                        text: orgs[i],
-                        style: {
-                            fontSize: 14
-                        }
-                    },
-                    subtitle: {
-                        text: 'ช่วงอายุบุคลากร',
-                        style: {
-                            fontSize: 12
-                        }
-                    },
-                    legend: {
-                        enabled: true
-                    },
-                    xAxis: {
-                        categories: ages,
-                        lineWidth: 0
-                    },
-                    yAxis: {
-                        max: 5000,
-                        reversed: false,
-                        lineWidth: 0,
-                        allowDecimals: false
-                    },
-                    series: [
-                        {
-                            name: 'ชาย',
-                            data: genDataM(),
-                            color: 'lightblue',
-                        },
-                        {
-                            name: 'หญิง',
-                            data: genDataF(),
-                            color: 'pink',
-                        }
-                    ],
-                    plotOptions: {
-                        series:
-                            {
-                                animation: true,
-                                lineWidth: 2,
-                                marker: {
-                                    radius: 3,
-                                    symbol: "circle"
-                                },
-                                dataLabels: {
-                                    enabled: false
-                                }
-                            }
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'column'                    ,
+                    height: 650
+                },
+                title: {
+                    text: 'จำนวนบุคลากร แบ่งตามช่วงอายุ'
+                },
+
+                title: {
+                    text: 'สรุปข้อมูลบุคลากรของสำนักงานเลขาธิการคุรุสภา จำแนกตามกลุ่ม/ประเภท แบ่งตามช่วงอายุ ปี พ.ศ....',
+                    style: {
+                        fontSize: 14
                     }
-                });
-            }
-
-
-
-
-
-
-
-
-
-
-
+                },
+                xAxis: {
+                    categories: ['ผู้บริหาร สนง.', 'บริหาร', 'วิชาการ', 'ปฏิบัติการ']
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'จำนวนบุคลากร'
+                    },
+                    stackLabels: {
+                        enabled: true,
+                        style: {
+                            fontWeight: 'bold',
+                            color: ( // theme
+                                Highcharts.defaultOptions.title.style &&
+                                Highcharts.defaultOptions.title.style.color
+                            ) || 'gray'
+                        }
+                    }
+                },
+                legend: {
+                    //align: 'right',
+                    //x: -30,
+                    //verticalAlign: 'top',
+                    //y: 25,
+                    //floating: true,
+                    //backgroundColor:
+                    //    Highcharts.defaultOptions.legend.backgroundColor || 'white',
+                    //borderColor: '#CCC',
+                    //borderWidth: 1,
+                    //shadow: false
+                    reversed: true
+                },
+                tooltip: {
+                    headerFormat: '<b>{point.x}</b><br/>',
+                    pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'normal',
+                        dataLabels: {
+                            enabled: true
+                        }
+                    }
+                },
+                series: [{
+                    name: 'ช่วงอายุ 61-70 ปี',
+                    data: [52, 69, 75, 53]
+                }, {
+                    name: 'ช่วงอายุ 51-60 ปี',
+                    data: [69, 85, 116, 101]
+                }, {
+                    name: 'ช่วงอายุ 41-50 ปี',
+                    data: [86, 82, 74, 73]
+                }, {
+                    name: 'ช่วงอายุ 31-40 ปี',
+                    data: [40, 44, 41, 64]
+                }, {
+                    name: 'ช่วงอายุ 20-30 ปี',
+                    data: [117, 120, 54, 105]
+                }]
+            });
         });
+
+        
+
+
     </script>
 
-
 </asp:Content>
+

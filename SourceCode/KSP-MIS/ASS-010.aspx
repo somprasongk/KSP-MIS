@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="ASS-01.aspx.vb" Inherits="KSP_MIS.ASS_01" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="ASS-010.aspx.vb" Inherits="KSP_MIS.ASS_01" %>
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -13,7 +13,7 @@
     <div class="row">
 		<div class="col-12 dashboard-table">
 			<div class="kt-portlet">
-				<div class="kt-portlet__head">
+				<%--<div class="kt-portlet__head">
 					<div class="kt-portlet__head-label">
 						<span class="kt-portlet__head-icon">
 							<i class="flaticon-squares-3"></i>
@@ -39,11 +39,16 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>--%>
 				<div class="kt-portlet__body dashboard-table-container">
 
 					<table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
+                            <tr role="row">
+                                <th colspan="9">
+                                    ทะเบียนคุมครุภัณฑ์ สำนักงานเลขาธิการคุรุสภา ข้อมูล ณ วันที่ ...
+                                </th>
+                            </tr>
                             <tr role="row">
                                 <th rowspan="1" colspan="1" aria-label="รหัสครุภัณฑ์">รหัสครุภัณฑ์</th>
                                 <th rowspan="1" colspan="1" aria-label="รายการ">รายการ</th>

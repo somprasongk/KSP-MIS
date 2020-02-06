@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="ASS-04.aspx.vb" Inherits="KSP_MIS.ASS_04" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="ASS-040.aspx.vb" Inherits="KSP_MIS.ASS_04" %>
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -29,7 +29,7 @@
     <div class="row">
 		<div class="col-12 dashboard-table">
 			<div class="kt-portlet">
-				<div class="kt-portlet__head">
+				<%--<div class="kt-portlet__head">
 					<div class="kt-portlet__head-label">
 						<span class="kt-portlet__head-icon">
 							<i class="flaticon-squares-3"></i>
@@ -55,7 +55,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>--%>
 				<div class="kt-portlet__body dashboard-table-container">
 
 					<table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
@@ -223,16 +223,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: 'ความถี่การขอใช้ห้องประชุม',
-                    style: {
-                        fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: 'ปีงบประมาณ 2562',
-                    style: {
-                        fontSize: 12
-                    }
+                    text: 'การขอใช้ห้องประชุม สำนักงานเลขาธิการคุรุสภา ปีงบประมาณ พ.ศ....'
                 },
                 xAxis: {
                     categories: [
@@ -282,16 +273,7 @@
                     type: 'bar'
                 },
                 title: {
-                    text: 'งบประมาณที่ใช้สำหรับการประชุม',
-                    style: {
-                        fontSize: 14
-                    }
-                },
-                subtitle: {
-                    text: 'ปีงบประมาณ 2562',
-                    style: {
-                        fontSize: 12
-                    }
+                    text: 'งบประมาณที่ใช้สำหรับการประชุม  สำนักงานเลขาธิการคุรุสภา ปีงบประมาณ พ.ศ....',
                 },
                 xAxis: {
                     categories: [

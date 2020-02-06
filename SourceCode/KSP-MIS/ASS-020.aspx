@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="ASS-02.aspx.vb" Inherits="KSP_MIS.ASS_02" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="ASS-020.aspx.vb" Inherits="KSP_MIS.ASS_02" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -14,7 +14,7 @@
     <div class="row">
         <div class="col-12 dashboard-table">
             <div class="kt-portlet">
-                <div class="kt-portlet__head">
+                <%--<div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
                         <span class="kt-portlet__head-icon">
                             <i class="flaticon-squares-3"></i>
@@ -39,10 +39,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
+                            <tr role="row">
+                                <th colspan="9">
+                                    สำนักงานเลขาธิการคุรุสภา กลุ่มการพัสดุและอาคารสถานที่ สำนักอำนวยการ<br>วัสดุคงเหลือ ณ วันที่ … 
+                                </th>
+                            </tr>
                             <tr role="row">
                                 <th aria-label="ลำดับที่">#</th>
                                 <th aria-label="รายการ">รายการ</th>
@@ -159,6 +164,7 @@
 
             $(document).ready(function () {
 
+                return;
                 var colHTML = '<div style="width:4px; height:30px; background:#2c77f4; "></div>';
 
                 var rowHTML = '<div id="xxx"></div>';

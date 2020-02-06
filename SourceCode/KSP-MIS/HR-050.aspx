@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-04.aspx.vb" Inherits="KSP_MIS.HR_04" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-050.aspx.vb" Inherits="KSP_MIS.HR_04" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
@@ -68,6 +68,9 @@
                 <div class="kt-portlet__body dashboard-table-container">
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
                         <thead>
+                            <tr role="row">
+                                <th colspan="15">รายชื่อ และยอดรวมจำนวนเงินที่หักสะสม 3% ของสมาชิก กบจ. ณ.วันที่ ... รวม … ราย</th>
+                            </tr>
                             <tr role="row">
                                 <th>#</th>
                                 <th>เลขที่สมาชิก</th>

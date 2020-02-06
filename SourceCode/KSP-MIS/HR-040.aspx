@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-03.aspx.vb" Inherits="KSP_MIS.HR_03" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-040.aspx.vb" Inherits="KSP_MIS.HR_03" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server"> 
@@ -375,7 +375,7 @@
                                 <th rowspan="2">วันบรรณจุ</th>
                                 <th rowspan="2">วันเกษียณอายุ</th>
                                 <th rowspan="2">อายุงานเกษียณ</th>
-                                <th rowspan="1" colspan="7" class="text-center">เงินเดือนย้อนหลัง 60 เดือน เพื่อการคำนวณบำเน็จรายเดือน</th>
+                                <th rowspan="1" colspan="7" class="text-center">เงินเดือนย้อนหลัง 60 เดือน ณ.วันที่ ... เพื่อการคำนวณบำเน็จรายเดือน</th>
                             </tr>
                             <tr>
                                 <th colspan="1">เริ่มจากเดือน</th>

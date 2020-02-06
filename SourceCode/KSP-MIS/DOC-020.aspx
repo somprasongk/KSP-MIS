@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="DOC-01.aspx.vb" Inherits="KSP_MIS.DOC_01" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="DOC-020.aspx.vb" Inherits="KSP_MIS.DOC_02" %>
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -10,7 +10,7 @@
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="row">
+     <div class="row">
 		<div class="col-6 dashboard-chart">
 
 			
@@ -37,8 +37,9 @@
 			</div>
 
 			<!--end:: Widgets/Activity-->
-		</div>					
-	
+		</div>
+						
+		
 	</div>
 
 	<div class="row">
@@ -75,24 +76,6 @@
 
 
                     <table class="table table-striped- table-bordered table-hover table-checkable dataTable" role="grid">
-                        <%--<thead>
-                            <tr role="row">
-                                <th colspan="2" rowspan="1">Order Information</th>
-                                <th colspan="3" rowspan="1">Shipping Information</th>
-                                <th colspan="3" rowspan="1">Agent Information</th>
-                            </tr>
-                            <tr role="row">
-                                <th class="sorting_asc" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 46.25px;" aria-sort="ascending" aria-label="Record ID: activate to sort column descending">Record ID</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 38.25px;" aria-label="Order ID: activate to sort column ascending">Order ID</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 63.25px;" aria-label="Country: activate to sort column ascending">Country</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 78.25px;" aria-label="Ship City: activate to sort column ascending">Ship City</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 96.25px;" aria-label="Ship Address: activate to sort column ascending">Ship Address</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 80.25px;" aria-label="Company Agent: activate to sort column ascending">Company Agent</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 117.25px;" aria-label="Company Name: activate to sort column ascending">Company Name</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 39.25px;" aria-label="Ship Date: activate to sort column ascending">Ship Date</th>
-                                
-                            </tr>
-                        </thead>--%>
                         <thead>                            
                             <tr role="row">
                                 <th rowspan="1" colspan="1" aria-label="ลำดับ">#</th>
@@ -195,7 +178,7 @@
 </asp:Content>
 <asp:Content ID="ScriptContainer" ContentPlaceHolderID="ScriptContainer" runat="server">
 
-	<script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function () {
             $('.dashboard-table .dashboard-title').html($('#Breadcrumb_uc_Breadcrumb_Title').html() + ' ทั้งหมด จำนวน xxx รายการ');
         });
@@ -203,52 +186,52 @@
         var docData = [
             {
                 name: 'สำนักมาตรฐานวิชาชีพ',
-                y: 523,
+                y: 623,
                 color: 'salmon'
             },
             {
                 name: 'สำนักทะเบียนและใบอนุญาตประกอบวิชาชีพ',
-                y: 432,
+                y: 332,
                 color: 'brown'
             },
             {
                 name: 'สำนักจรรยาบรรณวิชาชีพและนิติกร',
-                y: 400,
+                y: 315,
                 color: 'olive'
             },
             {
                 name: 'สำนักพัฒนาและส่งเสริมวิชาชีพ',
-                y: 370,
+                y: 250,
                 color: 'teal'
             },
             {
                 name: 'สำนักนโยบายและแผน',
-                y: 317,
+                y: 227,
                 color: 'lightblue'
             },
             {
                 name: 'สำนักอำนวยการ',
-                y: 300,
+                y: 200,
                 color: 'violet'
             },
             {
                 name: 'สำนักเทคโนโลยีสารสนเทศและการสื่อสาร',
-                y: 275,
+                y: 175,
                 color: 'pink'
             },
             {
                 name: 'หน่วยตรวจสอบภายใน',
-                y: 245,
+                y: 145,
                 color: 'coral'
             },
             {
                 name: 'กลุ่มพัฒนาระบบงาน',
-                y: 225,
+                y: 140,
                 color: 'seagreen'
             },
             {
                 name: 'สถาบันคุรุพัฒนา',
-                y: 215,
+                y: 105,
                 color: 'gold'
             }
         ];
@@ -261,7 +244,7 @@
                     type: 'column'
                 },
                 title: {
-                    text: 'จำนวนหนังสือเข้า ปี พ.ศ.2562 จำแนกตามประเภทเอกสาร'
+                    text: 'จำนวนหนังสือเอกสารออก จำแนกตามหน่วยงาน ปี พ.ศ....'
                 },
                 xAxis: {
                     type: 'category',
@@ -272,14 +255,14 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนหนังสือเอกสารเข้า'
+                        text: 'จำนวนหนังสือเอกสารออก'
                     }
-                },
+                },                
                 legend: {
                     enabled: false
                 },
                 tooltip: {
-                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเข้า: <b>{point.y} รายการ</b>'
+                    pointFormat: '{หน่วยงาน} จำนวนหนังสือออก: <b>{point.y} รายการ</b>'
                 },
                 plotOptions: {
                     //column: {
@@ -311,7 +294,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'จำนวนหนังสือเข้า ปี พ.ศ.2562 จำแนกตามประเภทเอกสาร'
+                    text: 'จำนวนหนังสือเอกสารออก จำแนกตามหน่วยงาน ปี พ.ศ....'
                 },
                 xAxis: {
                     type: 'category',
@@ -322,41 +305,20 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'จำนวนหนังสือเอกสารเข้า'
+                        text: 'จำนวนหนังสือออก'
                     }
                 },
-                //legend: {
-                //    enabled: true
-                //},
                 tooltip: {
-                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเข้า: <b>{point.y} รายการ</b>'
-                },
-                plotOptions: {
-                    //column: {
-                    //    //pointPadding: 0.2,
-                    //    //borderWidth: 0,
-                    //    //borderRadius: 20
-                    //}
+                    pointFormat: '{หน่วยงาน} จำนวนหนังสือเอกสารออก: <b>{point.y} รายการ</b>'
                 },
                 series: [{
                     name: 'หน่วยงาน',
-                    data: docData,
-                    dataLabels: {
-                        //enabled: true,
-                        //rotation: -90,
-                        //color: '#FFFFFF',
-                        //align: 'right' //,
-                        //format: '{point.y:.1f}', // one decimal
-                        //y: 10 //, // 10 pixels down from the top
-                        //style: {
-                        //    fontSize: '13px',
-                        //    fontFamily: 'Verdana, sans-serif'
-                        //}
-                    }
+                    data: docData
                 }]
             });
         });
 
         
     </script>
+
 </asp:Content>

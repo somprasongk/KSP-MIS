@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-07.aspx.vb" Inherits="KSP_MIS.HR_07" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-080.aspx.vb" Inherits="KSP_MIS.HR_07" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -142,7 +142,7 @@
                     //}
                 },
                 title: {
-                    text: 'การขอพระราชทานเครื่องราชอิสริยาภรณ์ พ.ศ.2562',
+                    text: 'การเสนอขอพระราชทานเครื่องราชอิสริยาภรณ์ พ.ศ....',
                     style: {
                         fontSize: 14
                     }

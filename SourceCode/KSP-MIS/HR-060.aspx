@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-05.aspx.vb" Inherits="KSP_MIS.HR_05" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="HR-060.aspx.vb" Inherits="KSP_MIS.HR_05" %>
 
 <%@ Register Src="~/uc_Breadcrumb.ascx" TagPrefix="uc1" TagName="uc_Breadcrumb" %>
 <asp:Content ID="HeaderCss" ContentPlaceHolderID="HeaderCss" runat="server">
@@ -195,7 +195,7 @@
                 chart: { height: 500 },
                               
                 title: {
-                    text: 'เปรียบเทียบจำนวนหลักสูตรการพัฒนาบุคลากร',
+                    text: 'สรุปข้อมูลกิจกรรมพัฒนาบุคลากรของสำนักงานเลขาธิการคุรุสภาในกิจกรรม … ณ วันที่ ...',
                     style: {
                             fontSize: 14
                         }
@@ -206,7 +206,7 @@
                 yAxis: {
            
                     title: {
-                        text: "คนที่เข้าร่วมหลักสูตร"
+                        text: "จำนวนผู้เข้าร่วมหลักสูตร"
                     },
                     dataLabels: {
                         enabled: false
@@ -214,7 +214,7 @@
                 },
                 labels: {
                     items: [{
-                        html: 'จำนวนหลักสูตรของปีปัจจุบัน พ.ศ.2562',
+                        html: 'จำนวนหลักสูตรของปี พ.ศ....',
                         style: {
                             left: '50px',
                             top: '18px',
