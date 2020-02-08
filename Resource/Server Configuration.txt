@@ -8,6 +8,7 @@ Gateway : 203.159.252.2
 	
 	User : somprasong
 	Pass : 1qaz@WSX
+
 -------------- App Server (Remote) ------------------
 Remote Desktop : 192.168.40.132
 User : tittech
@@ -30,4 +31,8 @@ Server : 192.168.40.133
 Database : KSP-FINANCE
 User : finance
 Pass : finance2019
+-------------- HR Database --------------------------
+192.168.40.24
+misuser
+2020mis2019
 
